@@ -41,7 +41,7 @@ export const defaultSettings: Settings = {
   strict: false,
   zoomDefault: true,
   practicalSeconds: 45,
-  practicalCount: 20,
+  practicalCount: 100,
   sessionCount: 15,
   groupSel: {},
 };

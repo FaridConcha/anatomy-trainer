@@ -20,7 +20,7 @@ export function SettingsScreen() {
       <label className="toggle"><input type="checkbox" checked={s.zoomDefault} onChange={(e) => set({ zoomDefault: e.target.checked })} /> Start sticker questions zoomed in</label>
       <div className="row">
         <label className="field grow">Items per study session<input type="number" min={5} max={60} value={s.sessionCount} onChange={(e) => set({ sessionCount: +e.target.value || 15 })} /></label>
-        <label className="field grow">Practical stations<input type="number" min={5} max={60} value={s.practicalCount} onChange={(e) => set({ practicalCount: +e.target.value || 20 })} /></label>
+        <label className="field grow">Practical stations<input type="number" min={5} max={150} value={s.practicalCount} onChange={(e) => set({ practicalCount: +e.target.value || 100 })} /></label>
         <label className="field grow">Seconds each<input type="number" min={10} max={180} value={s.practicalSeconds} onChange={(e) => set({ practicalSeconds: +e.target.value || 45 })} /></label>
       </div>
       <div className="eyebrow">Progress</div>

@@ -8,7 +8,9 @@ function load(): ProgressState {
     const raw = localStorage.getItem(KEY);
     if (!raw) return defaultProgress();
     const parsed = JSON.parse(raw) as ProgressState;
-    return { ...defaultProgress(), ...parsed, settings: { ...defaultSettings, ...(parsed.settings ?? {}) } };
+    const settings = { ...defaultSettings, ...(parsed.settings ?? {}) };
+    if (settings.practicalCount === 20) settings.practicalCount = defaultSettings.practicalCount;
+    return { ...defaultProgress(), ...parsed, settings };
   } catch {
     return defaultProgress();
   }

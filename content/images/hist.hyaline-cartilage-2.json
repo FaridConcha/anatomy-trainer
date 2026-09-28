@@ -5,7 +5,8 @@
  "height": 361,
  "labId": "lab2",
  "groupIds": [
-  "tissue.connective.cartilage"
+  "tissue.connective.cartilage",
+  "histo.structures"
  ],
  "title": "Hyaline cartilage",
  "view": "Slide",
@@ -15,6 +16,26 @@
    "shape": {
     "kind": "whole"
    }
+  },
+  {
+   "termId": "histo.structures.lacuna",
+   "shape": {
+    "kind": "point",
+    "x": 0.52,
+    "y": 0.5,
+    "r": 0.04
+   },
+   "prompt": "What is the clear space the sticker is on?"
+  },
+  {
+   "termId": "histo.structures.chondrocyte",
+   "shape": {
+    "kind": "point",
+    "x": 0.83,
+    "y": 0.6,
+    "r": 0.04
+   },
+   "prompt": "What cell is the sticker on?"
   }
  ],
  "masks": []

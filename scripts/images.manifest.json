@@ -1,1085 +1,5 @@
 [
  {
-  "id": "hist.simple-squamous-2",
-  "from": "raw/histology/hist-02.png",
-  "crop": [
-   478,
-   1036,
-   717,
-   553
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple squamous epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.hyaline-cartilage-1",
-  "from": "raw/histology/hist-03.png",
-  "crop": [
-   218,
-   273,
-   622,
-   515
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Hyaline cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.hyaline-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.hyaline-cartilage-2",
-  "from": "raw/histology/hist-03.png",
-  "crop": [
-   964,
-   242,
-   560,
-   361
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Hyaline cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.hyaline-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.hyaline-cartilage-3",
-  "from": "raw/histology/hist-03.png",
-  "crop": [
-   964,
-   634,
-   560,
-   323
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Hyaline cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.hyaline-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.fibrocartilage-1",
-  "from": "raw/histology/hist-04.png",
-  "crop": [
-   338,
-   271,
-   859,
-   670
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Fibrocartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.fibrocartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.areolar-1",
-  "from": "raw/histology/hist-05.png",
-  "crop": [
-   517,
-   292,
-   539,
-   876
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Areolar tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.areolar-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.areolar-2",
-  "from": "raw/histology/hist-05.png",
-  "crop": [
-   547,
-   1214,
-   547,
-   734
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Areolar tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.areolar-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.urothelium-1",
-  "from": "raw/histology/hist-06.png",
-  "crop": [
-   342,
-   400,
-   334,
-   552
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Urothelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.urothelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.urothelium-2",
-  "from": "raw/histology/hist-06.png",
-  "crop": [
-   756,
-   407,
-   298,
-   545
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Urothelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.urothelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.elastic-cartilage-1",
-  "from": "raw/histology/hist-07.png",
-  "crop": [
-   288,
-   377,
-   445,
-   707
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Elastic cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.elastic-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.elastic-cartilage-2",
-  "from": "raw/histology/hist-07.png",
-  "crop": [
-   802,
-   377,
-   377,
-   707
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Elastic cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.elastic-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.elastic-cartilage-3",
-  "from": "raw/histology/hist-07.png",
-  "crop": [
-   288,
-   1163,
-   886,
-   760
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Elastic cartilage",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.elastic-cartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.bone-1",
-  "from": "raw/histology/hist-08.png",
-  "crop": [
-   296,
-   409,
-   444,
-   599
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.other"
-  ],
-  "title": "Bone",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.other.bone",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.bone-2",
-  "from": "raw/histology/hist-08.png",
-  "crop": [
-   754,
-   416,
-   416,
-   606
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.other"
-  ],
-  "title": "Bone",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.other.bone",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.bone-3",
-  "from": "raw/histology/hist-08.png",
-  "crop": [
-   300,
-   1106,
-   878,
-   642
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.other"
-  ],
-  "title": "Bone",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.other.bone",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.pseudostratified-1",
-  "from": "raw/histology/hist-09.png",
-  "crop": [
-   391,
-   402,
-   366,
-   489
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Pseudostratified columnar epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.pseudostratified-2",
-  "from": "raw/histology/hist-09.png",
-  "crop": [
-   804,
-   410,
-   402,
-   457
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Pseudostratified columnar epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.keratinized-2",
-  "from": "raw/histology/hist-10.png",
-  "crop": [
-   686,
-   425,
-   357,
-   604
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Keratinized stratified squamous epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.keratinized-3",
-  "from": "raw/histology/hist-10.png",
-  "crop": [
-   329,
-   1207,
-   734,
-   693
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Keratinized stratified squamous epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.reticular-1",
-  "from": "raw/histology/hist-11.png",
-  "crop": [
-   218,
-   397,
-   553,
-   786
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Reticular tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.reticular-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.reticular-2",
-  "from": "raw/histology/hist-11.png",
-  "crop": [
-   257,
-   1315,
-   1019,
-   903
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Reticular tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.reticular-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.adipose-1",
-  "from": "raw/histology/hist-12.png",
-  "crop": [
-   300,
-   243,
-   399,
-   673
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Adipose tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.adipose-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.adipose-2",
-  "from": "raw/histology/hist-12.png",
-  "crop": [
-   751,
-   290,
-   323,
-   626
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Adipose tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.adipose-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.blood-1",
-  "from": "raw/histology/hist-13.png",
-  "crop": [
-   812,
-   365,
-   417,
-   648
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.other"
-  ],
-  "title": "Blood",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.other.blood",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-irregular-1",
-  "from": "raw/histology/hist-14.png",
-  "crop": [
-   382,
-   428,
-   435,
-   634
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense irregular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-irregular-2",
-  "from": "raw/histology/hist-14.png",
-  "crop": [
-   825,
-   458,
-   428,
-   626
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense irregular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-irregular-3",
-  "from": "raw/histology/hist-14.png",
-  "crop": [
-   420,
-   1077,
-   848,
-   924
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense irregular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-regular-1",
-  "from": "raw/histology/hist-15.png",
-  "crop": [
-   765,
-   365,
-   309,
-   604
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense regular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-regular-2",
-  "from": "raw/histology/hist-15.png",
-  "crop": [
-   267,
-   379,
-   442,
-   611
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense regular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.dense-regular-3",
-  "from": "raw/histology/hist-15.png",
-  "crop": [
-   288,
-   1074,
-   787,
-   857
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.fibrous"
-  ],
-  "title": "Dense regular connective tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-columnar-1",
-  "from": "raw/histology/hist-16.png",
-  "crop": [
-   390,
-   238,
-   325,
-   541
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple columnar epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-columnar-2",
-  "from": "raw/histology/hist-16.png",
-  "crop": [
-   779,
-   274,
-   332,
-   476
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple columnar epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-columnar-3",
-  "from": "raw/histology/hist-16.png",
-  "crop": [
-   390,
-   822,
-   721,
-   1241
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple columnar epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-cuboidal-1",
-  "from": "raw/histology/hist-17.png",
-  "crop": [
-   428,
-   428,
-   471,
-   677
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple cuboidal epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-cuboidal-2",
-  "from": "raw/histology/hist-17.png",
-  "crop": [
-   934,
-   454,
-   428,
-   660
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple cuboidal epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.simple-cuboidal-3",
-  "from": "raw/histology/hist-17.png",
-  "crop": [
-   480,
-   1148,
-   917,
-   1062
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple cuboidal epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.nonkeratinized-1",
-  "from": "raw/histology/hist-18.png",
-  "crop": [
-   570,
-   149,
-   586,
-   1040
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Nonkeratinized stratified squamous epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.nonkeratinized-2",
-  "from": "raw/histology/hist-18.png",
-  "crop": [
-   545,
-   1211,
-   605,
-   835
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Nonkeratinized stratified squamous epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.stratified-cuboidal-2",
-  "from": "raw/histology/hist-19.png",
-  "crop": [
-   871,
-   331,
-   360,
-   697
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Stratified cuboidal epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.stratified-cuboidal-3",
-  "from": "raw/histology/hist-19.png",
-  "crop": [
-   378,
-   1057,
-   860,
-   901
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Stratified cuboidal epithelium",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.nervous-1",
-  "from": "raw/histology/hist-20.png",
-  "crop": [
-   382,
-   512,
-   967,
-   1642
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.nervous"
-  ],
-  "title": "Nervous tissue",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.nervous.nervous-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.smooth-muscle-1",
-  "from": "raw/histology/muscle-1.png",
-  "crop": [
-   916,
-   349,
-   380,
-   683
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Smooth muscle",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.smooth-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.smooth-muscle-2",
-  "from": "raw/histology/muscle-1.png",
-  "crop": [
-   450,
-   357,
-   396,
-   683
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Smooth muscle",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.smooth-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.cardiac-muscle-1",
-  "from": "raw/histology/muscle-2.png",
-  "crop": [
-   320,
-   283,
-   458,
-   727
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Cardiac muscle",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.cardiac-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.cardiac-muscle-2",
-  "from": "raw/histology/muscle-2.png",
-  "crop": [
-   814,
-   283,
-   342,
-   727
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Cardiac muscle",
-  "view": "Slide",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.cardiac-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
   "id": "skin.block",
   "whiteOutBlack": true,
   "view": "Skin model, block section",
@@ -1513,33 +433,6 @@
     "h": 0.06
    }
   ]
- },
- {
-  "id": "hist.muscle-skeletal-w",
-  "view": "Slide",
-  "from": "raw/histology/hist-21.png",
-  "crop": [
-   768,
-   1577,
-   317,
-   500
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Skeletal muscle",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.skeletal-muscle",
-    "shape": {
-     "kind": "whole",
-     "x": null,
-     "y": null
-    }
-   }
-  ],
-  "masks": []
  },
  {
   "id": "skel.axial-03",
@@ -7210,6 +6103,1222 @@
     "y": 0.8317,
     "w": 0.2161,
     "h": 0.0633
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-squamous-2",
+  "from": "raw/histology/hist-02.png",
+  "crop": [
+   478,
+   1036,
+   717,
+   553
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple squamous epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-squamous-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.hyaline-cartilage-1",
+  "from": "raw/histology/hist-03.png",
+  "crop": [
+   218,
+   273,
+   622,
+   515
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Hyaline cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.hyaline-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.hyaline-cartilage-2",
+  "from": "raw/histology/hist-03.png",
+  "crop": [
+   964,
+   242,
+   560,
+   361
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage",
+   "histo.structures"
+  ],
+  "title": "Hyaline cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.hyaline-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.lacuna",
+    "shape": {
+     "kind": "point",
+     "x": 0.52,
+     "y": 0.5,
+     "r": 0.04
+    },
+    "prompt": "What is the clear space the sticker is on?"
+   },
+   {
+    "termId": "histo.structures.chondrocyte",
+    "shape": {
+     "kind": "point",
+     "x": 0.83,
+     "y": 0.6,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   }
+  ]
+ },
+ {
+  "id": "hist.hyaline-cartilage-3",
+  "from": "raw/histology/hist-03.png",
+  "crop": [
+   964,
+   634,
+   560,
+   323
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Hyaline cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.hyaline-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.fibrocartilage-1",
+  "from": "raw/histology/hist-04.png",
+  "crop": [
+   338,
+   271,
+   859,
+   670
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Fibrocartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.fibrocartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.areolar-1",
+  "from": "raw/histology/hist-05.png",
+  "crop": [
+   517,
+   292,
+   539,
+   876
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Areolar tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.areolar-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.areolar-2",
+  "from": "raw/histology/hist-05.png",
+  "crop": [
+   547,
+   1214,
+   547,
+   734
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Areolar tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.areolar-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.urothelium-1",
+  "from": "raw/histology/hist-06.png",
+  "crop": [
+   342,
+   400,
+   334,
+   552
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Urothelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.urothelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.urothelium-2",
+  "from": "raw/histology/hist-06.png",
+  "crop": [
+   756,
+   407,
+   298,
+   545
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Urothelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.urothelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.elastic-cartilage-1",
+  "from": "raw/histology/hist-07.png",
+  "crop": [
+   288,
+   377,
+   445,
+   707
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Elastic cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.elastic-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.elastic-cartilage-2",
+  "from": "raw/histology/hist-07.png",
+  "crop": [
+   802,
+   377,
+   377,
+   707
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Elastic cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.elastic-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.elastic-cartilage-3",
+  "from": "raw/histology/hist-07.png",
+  "crop": [
+   288,
+   1163,
+   886,
+   760
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.cartilage"
+  ],
+  "title": "Elastic cartilage",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.cartilage.elastic-cartilage",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.bone-1",
+  "from": "raw/histology/hist-08.png",
+  "crop": [
+   296,
+   409,
+   444,
+   599
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.other",
+   "histo.structures"
+  ],
+  "title": "Bone",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.other.bone",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.central-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.53,
+     "y": 0.57,
+     "r": 0.04
+    },
+    "prompt": "What is the dark opening under the sticker?"
+   },
+   {
+    "termId": "histo.structures.lamellae",
+    "shape": {
+     "kind": "point",
+     "x": 0.62,
+     "y": 0.62,
+     "r": 0.04
+    },
+    "prompt": "What are the concentric rings the sticker is on?"
+   },
+   {
+    "termId": "histo.structures.osteon",
+    "shape": {
+     "kind": "point",
+     "x": 0.78,
+     "y": 0.72,
+     "r": 0.04
+    },
+    "prompt": "What is the whole ring-shaped unit the sticker sits in?"
+   }
+  ]
+ },
+ {
+  "id": "hist.bone-2",
+  "from": "raw/histology/hist-08.png",
+  "crop": [
+   754,
+   416,
+   416,
+   606
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.other"
+  ],
+  "title": "Bone",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.other.bone",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.bone-3",
+  "from": "raw/histology/hist-08.png",
+  "crop": [
+   300,
+   1106,
+   878,
+   642
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.other"
+  ],
+  "title": "Bone",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.other.bone",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.pseudostratified-1",
+  "from": "raw/histology/hist-09.png",
+  "crop": [
+   391,
+   402,
+   366,
+   489
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Pseudostratified columnar epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.pseudostratified-2",
+  "from": "raw/histology/hist-09.png",
+  "crop": [
+   804,
+   410,
+   402,
+   457
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial",
+   "histo.structures"
+  ],
+  "title": "Pseudostratified columnar epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.goblet-cell",
+    "shape": {
+     "kind": "point",
+     "x": 0.55,
+     "y": 0.9,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   },
+   {
+    "termId": "histo.structures.cilia",
+    "shape": {
+     "kind": "point",
+     "x": 0.9,
+     "y": 0.3,
+     "r": 0.04
+    },
+    "prompt": "What are the projections the sticker is on?"
+   },
+   {
+    "termId": "histo.structures.basement-membrane",
+    "shape": {
+     "kind": "point",
+     "x": 0.06,
+     "y": 0.5,
+     "r": 0.04
+    },
+    "prompt": "What is the layer the sticker is on?"
+   }
+  ]
+ },
+ {
+  "id": "hist.keratinized-2",
+  "from": "raw/histology/hist-10.png",
+  "crop": [
+   686,
+   425,
+   357,
+   604
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Keratinized stratified squamous epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.keratinized-3",
+  "from": "raw/histology/hist-10.png",
+  "crop": [
+   329,
+   1207,
+   734,
+   693
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Keratinized stratified squamous epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.reticular-1",
+  "from": "raw/histology/hist-11.png",
+  "crop": [
+   218,
+   397,
+   553,
+   786
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Reticular tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.reticular-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.reticular-2",
+  "from": "raw/histology/hist-11.png",
+  "crop": [
+   257,
+   1315,
+   1019,
+   903
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Reticular tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.reticular-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.adipose-1",
+  "from": "raw/histology/hist-12.png",
+  "crop": [
+   300,
+   243,
+   399,
+   673
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous",
+   "histo.structures"
+  ],
+  "title": "Adipose tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.adipose-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.adipocyte",
+    "shape": {
+     "kind": "point",
+     "x": 0.5,
+     "y": 0.5,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   }
+  ]
+ },
+ {
+  "id": "hist.adipose-2",
+  "from": "raw/histology/hist-12.png",
+  "crop": [
+   751,
+   290,
+   323,
+   626
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Adipose tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.adipose-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.blood-1",
+  "from": "raw/histology/hist-13.png",
+  "crop": [
+   812,
+   365,
+   417,
+   648
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.other",
+   "histo.structures"
+  ],
+  "title": "Blood",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.other.blood",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.erythrocyte",
+    "shape": {
+     "kind": "point",
+     "x": 0.5,
+     "y": 0.62,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   },
+   {
+    "termId": "histo.structures.leukocyte",
+    "shape": {
+     "kind": "point",
+     "x": 0.34,
+     "y": 0.47,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   },
+   {
+    "termId": "histo.structures.platelets",
+    "shape": {
+     "kind": "point",
+     "x": 0.7,
+     "y": 0.12,
+     "r": 0.04
+    },
+    "prompt": "What are the small fragments the sticker is on?"
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-irregular-1",
+  "from": "raw/histology/hist-14.png",
+  "crop": [
+   382,
+   428,
+   435,
+   634
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense irregular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-irregular-2",
+  "from": "raw/histology/hist-14.png",
+  "crop": [
+   825,
+   458,
+   428,
+   626
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense irregular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-irregular-3",
+  "from": "raw/histology/hist-14.png",
+  "crop": [
+   420,
+   1077,
+   848,
+   924
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense irregular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-regular-1",
+  "from": "raw/histology/hist-15.png",
+  "crop": [
+   765,
+   365,
+   309,
+   604
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense regular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-regular-2",
+  "from": "raw/histology/hist-15.png",
+  "crop": [
+   267,
+   379,
+   442,
+   611
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense regular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.dense-regular-3",
+  "from": "raw/histology/hist-15.png",
+  "crop": [
+   288,
+   1074,
+   787,
+   857
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.connective.fibrous"
+  ],
+  "title": "Dense regular connective tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-columnar-1",
+  "from": "raw/histology/hist-16.png",
+  "crop": [
+   390,
+   238,
+   325,
+   541
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple columnar epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-columnar-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-columnar-2",
+  "from": "raw/histology/hist-16.png",
+  "crop": [
+   779,
+   274,
+   332,
+   476
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial",
+   "histo.structures"
+  ],
+  "title": "Simple columnar epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-columnar-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   },
+   {
+    "termId": "histo.structures.goblet-cell",
+    "shape": {
+     "kind": "point",
+     "x": 0.65,
+     "y": 0.6,
+     "r": 0.04
+    },
+    "prompt": "What cell is the sticker on?"
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-columnar-3",
+  "from": "raw/histology/hist-16.png",
+  "crop": [
+   390,
+   822,
+   721,
+   1241
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple columnar epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-columnar-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-cuboidal-1",
+  "from": "raw/histology/hist-17.png",
+  "crop": [
+   428,
+   428,
+   471,
+   677
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple cuboidal epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-cuboidal-2",
+  "from": "raw/histology/hist-17.png",
+  "crop": [
+   934,
+   454,
+   428,
+   660
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple cuboidal epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.simple-cuboidal-3",
+  "from": "raw/histology/hist-17.png",
+  "crop": [
+   480,
+   1148,
+   917,
+   1062
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Simple cuboidal epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.simple-cuboidal-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.nonkeratinized-1",
+  "from": "raw/histology/hist-18.png",
+  "crop": [
+   570,
+   149,
+   586,
+   1040
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Nonkeratinized stratified squamous epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.nonkeratinized-2",
+  "from": "raw/histology/hist-18.png",
+  "crop": [
+   545,
+   1211,
+   605,
+   835
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Nonkeratinized stratified squamous epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.stratified-cuboidal-2",
+  "from": "raw/histology/hist-19.png",
+  "crop": [
+   871,
+   331,
+   360,
+   697
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Stratified cuboidal epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.stratified-cuboidal-3",
+  "from": "raw/histology/hist-19.png",
+  "crop": [
+   378,
+   1057,
+   860,
+   901
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.epithelial"
+  ],
+  "title": "Stratified cuboidal epithelium",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.nervous-1",
+  "from": "raw/histology/hist-20.png",
+  "crop": [
+   382,
+   512,
+   967,
+   1642
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.nervous"
+  ],
+  "title": "Nervous tissue",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.nervous.nervous-tissue",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.smooth-muscle-1",
+  "from": "raw/histology/muscle-1.png",
+  "crop": [
+   916,
+   349,
+   380,
+   683
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Smooth muscle",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.smooth-muscle",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.smooth-muscle-2",
+  "from": "raw/histology/muscle-1.png",
+  "crop": [
+   450,
+   357,
+   396,
+   683
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Smooth muscle",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.smooth-muscle",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.cardiac-muscle-1",
+  "from": "raw/histology/muscle-2.png",
+  "crop": [
+   320,
+   283,
+   458,
+   727
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Cardiac muscle",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.cardiac-muscle",
+    "shape": {
+     "kind": "whole"
+    }
+   }
+  ]
+ },
+ {
+  "id": "hist.cardiac-muscle-2",
+  "from": "raw/histology/muscle-2.png",
+  "crop": [
+   814,
+   283,
+   342,
+   727
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Cardiac muscle",
+  "view": "Slide",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.cardiac-muscle",
+    "shape": {
+     "kind": "whole"
+    }
    }
   ]
  }

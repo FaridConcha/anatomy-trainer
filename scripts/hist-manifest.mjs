@@ -38,6 +38,15 @@ const replace = {
 const DROP = new Set(['hist.keratinized-1', 'hist.stratified-cuboidal-1', 'hist.nervous-2', 'hist.fibrocartilage-2', 'hist.simple-squamous-1', 'hist.smooth-muscle-3', 'hist.urothelium-3', 'hist.blood-2', 'hist.cardiac-muscle-3', 'hist.pseudostratified-3']);
 // Fractions [x0, y0, x1, y1] of the detected crop to keep.
 const TRIM = { 'hist.elastic-cartilage-3': [0, 0, 0.94, 1], 'hist.adipose-2': [0, 0.07, 0.78, 1], 'hist.hyaline-cartilage-1': [0, 0.06, 1, 0.78], 'hist.pseudostratified-1': [0.42, 0, 1, 1], 'hist.nonkeratinized-2': [0, 0, 1, 0.92], 'hist.elastic-cartilage-2': [0.1, 0, 1, 1], 'hist.bone-3': [0.25, 0.08, 1, 1], 'hist.fibrocartilage-1': [0, 0, 1, 0.92], 'hist.simple-squamous-2': [0, 0, 1, 0.8] };
+// Structure-level stickers on the clearest slides (fractions of the final crop).
+const STRUCTURES = {
+  'hist.pseudostratified-2': [{ t: 'goblet-cell', x: 0.55, y: 0.9, p: 'What cell is the sticker on?' }, { t: 'cilia', x: 0.9, y: 0.3, p: 'What are the projections the sticker is on?' }, { t: 'basement-membrane', x: 0.06, y: 0.5, p: 'What is the layer the sticker is on?' }],
+  'hist.hyaline-cartilage-2': [{ t: 'lacuna', x: 0.52, y: 0.5, p: 'What is the clear space the sticker is on?' }, { t: 'chondrocyte', x: 0.83, y: 0.6, p: 'What cell is the sticker on?' }],
+  'hist.bone-1': [{ t: 'central-canal', x: 0.53, y: 0.57, p: 'What is the dark opening under the sticker?' }, { t: 'lamellae', x: 0.62, y: 0.62, p: 'What are the concentric rings the sticker is on?' }, { t: 'osteon', x: 0.78, y: 0.72, p: 'What is the whole ring-shaped unit the sticker sits in?' }],
+  'hist.adipose-1': [{ t: 'adipocyte', x: 0.5, y: 0.5, p: 'What cell is the sticker on?' }],
+  'hist.blood-1': [{ t: 'erythrocyte', x: 0.5, y: 0.62, p: 'What cell is the sticker on?' }, { t: 'leukocyte', x: 0.34, y: 0.47, p: 'What cell is the sticker on?' }, { t: 'platelets', x: 0.7, y: 0.12, p: 'What are the small fragments the sticker is on?' }],
+  'hist.simple-columnar-2': [{ t: 'goblet-cell', x: 0.65, y: 0.6, p: 'What cell is the sticker on?' }],
+};
 const manifest = existsSync('scripts/images.manifest.json') ? JSON.parse(readFileSync('scripts/images.manifest.json', 'utf8')).filter(m => !m.id.startsWith('hist.')) : [];
 for (const [file, [slug, groupId, termId, title]] of Object.entries(pages)) {
   const d = byFile[file]; const k = d.width / 300;
@@ -49,7 +58,8 @@ for (const [file, [slug, groupId, termId, title]] of Object.entries(pages)) {
     if (DROP.has(id)) return;
     const t = TRIM[id];
     if (t) crop = [Math.round(crop[0] + t[0] * crop[2]), Math.round(crop[1] + t[1] * crop[3]), Math.round((t[2] - t[0]) * crop[2]), Math.round((t[3] - t[1]) * crop[3])];
-    manifest.push({ id, from: `raw/histology/${file}`, crop, labId: 'lab2', groupIds: [groupId], title, view: 'Slide', hotspots: [{ termId, shape: { kind: 'whole' } }] });
+    const extra = (STRUCTURES[id] ?? []).map((h) => ({ termId: `histo.structures.${h.t}`, shape: { kind: 'point', x: h.x, y: h.y, r: 0.04 }, prompt: h.p }));
+    manifest.push({ id, from: `raw/histology/${file}`, crop, labId: 'lab2', groupIds: extra.length ? [groupId, 'histo.structures'] : [groupId], title, view: 'Slide', hotspots: [{ termId, shape: { kind: 'whole' } }, ...extra] });
   });
 }
 writeFileSync('scripts/images.manifest.json', JSON.stringify(manifest, null, 1));

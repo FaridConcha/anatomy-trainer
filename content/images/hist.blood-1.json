@@ -5,7 +5,8 @@
  "height": 648,
  "labId": "lab2",
  "groupIds": [
-  "tissue.connective.other"
+  "tissue.connective.other",
+  "histo.structures"
  ],
  "title": "Blood",
  "view": "Slide",
@@ -15,6 +16,36 @@
    "shape": {
     "kind": "whole"
    }
+  },
+  {
+   "termId": "histo.structures.erythrocyte",
+   "shape": {
+    "kind": "point",
+    "x": 0.5,
+    "y": 0.62,
+    "r": 0.04
+   },
+   "prompt": "What cell is the sticker on?"
+  },
+  {
+   "termId": "histo.structures.leukocyte",
+   "shape": {
+    "kind": "point",
+    "x": 0.34,
+    "y": 0.47,
+    "r": 0.04
+   },
+   "prompt": "What cell is the sticker on?"
+  },
+  {
+   "termId": "histo.structures.platelets",
+   "shape": {
+    "kind": "point",
+    "x": 0.7,
+    "y": 0.12,
+    "r": 0.04
+   },
+   "prompt": "What are the small fragments the sticker is on?"
   }
  ],
  "masks": []

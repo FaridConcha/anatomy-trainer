@@ -5,7 +5,8 @@
  "height": 673,
  "labId": "lab2",
  "groupIds": [
-  "tissue.connective.fibrous"
+  "tissue.connective.fibrous",
+  "histo.structures"
  ],
  "title": "Adipose tissue",
  "view": "Slide",
@@ -15,6 +16,16 @@
    "shape": {
     "kind": "whole"
    }
+  },
+  {
+   "termId": "histo.structures.adipocyte",
+   "shape": {
+    "kind": "point",
+    "x": 0.5,
+    "y": 0.5,
+    "r": 0.04
+   },
+   "prompt": "What cell is the sticker on?"
   }
  ],
  "masks": []

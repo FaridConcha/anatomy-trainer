@@ -9,6 +9,7 @@
   "clavicle"
  ],
  "title": "Right scapula and clavicle",
+ "view": "Right scapula and clavicle",
  "hotspots": [
   {
    "termId": "scapula.acromion",
@@ -153,6 +154,15 @@
     "y": 0.7,
     "r": 0.03
    }
+  },
+  {
+   "termId": "scapula.acromion",
+   "shape": {
+    "kind": "point",
+    "x": 0.8711,
+    "y": 0.1857,
+    "r": 0.03
+   }
   }
  ],
  "masks": [
@@ -251,6 +261,12 @@
    "y": 0.6729,
    "w": 0.0884,
    "h": 0.0543
+  },
+  {
+   "x": 0.8253,
+   "y": 0.1571,
+   "w": 0.0916,
+   "h": 0.0571
   },
   {
    "x": 0.0211,

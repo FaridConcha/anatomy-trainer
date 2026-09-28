@@ -70,8 +70,8 @@ export function recallForFact(idx: Indexes, term: Term, key: FactKey): Item {
 
 export function wordformFor(idx: Indexes, term: Term): Item | null {
   const g = idx.groupsById.get(term.groupId)!;
-  if (g.kind === 'wordform' && term.facts?.plural) return { kind: 'wordform', id: `wf:${term.id}`, termId: term.id, prompt: `Plural of ${term.name}`, answer: term.facts.plural, note: term.facts.note };
-  if (g.kind === 'spelling' && term.facts?.definition) return { kind: 'wordform', id: `sp:${term.id}`, termId: term.id, prompt: `Spell the term: ${term.facts.definition}`, answer: term.name, note: term.facts.note };
+  if (g.kind === 'wordform' && term.facts?.plural) return { kind: 'wordform', id: `wf:${term.id}`, termId: term.id, prompt: `Plural of ${term.name}`, answer: term.facts.plural, alts: term.facts.plurals, note: term.facts.note };
+  if (g.kind === 'spelling' && term.facts?.definition) return { kind: 'wordform', id: `sp:${term.id}`, termId: term.id, prompt: `Spell the term: ${term.facts.definition}`, answer: term.name, alts: term.aliases, note: term.facts.note };
   return null;
 }
 
@@ -134,8 +134,9 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
       }
       continue;
     }
-    const key = askableFacts(term, g)[0];
-    if (!key) continue;
+    const keys = askableFacts(term, g);
+    if (!keys.length) continue;
+    const key = keys[(progress.terms[term.id]?.seen ?? 0) % keys.length];
     if (box <= 1) {
       const it = mcForFact(idx, term, key, rng);
       if (it) items.push(it);

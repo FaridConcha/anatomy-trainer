@@ -1,13 +1,14 @@
 {
  "id": "hist.elastic-cartilage-3",
  "src": "img/hist.elastic-cartilage-3.webp",
- "width": 943,
+ "width": 886,
  "height": 760,
  "labId": "lab2",
  "groupIds": [
   "tissue.connective.cartilage"
  ],
  "title": "Elastic cartilage",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.connective.cartilage.elastic-cartilage",

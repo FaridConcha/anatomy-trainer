@@ -24,6 +24,7 @@ export interface TermFacts {
   transmits?: string;
   category?: string;
   plural?: string;
+  plurals?: string[];
   note?: string;
 }
 
@@ -32,6 +33,7 @@ export interface Term {
   groupId: string;
   name: string;
   aliases?: string[];
+  partials?: string[];
   facts?: TermFacts;
   strict?: boolean;
 }
@@ -63,6 +65,7 @@ export interface Image {
   labId: LabId;
   groupIds: string[];
   title?: string;
+  view?: string;
   hotspots: Hotspot[];
   masks: Mask[];
   source: 'content' | 'user';

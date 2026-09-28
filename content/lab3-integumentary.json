@@ -1,90 +1,546 @@
 {
-  "lab": { "id": "lab3", "title": "Integumentary", "order": 3, "blurb": "skin layers · glands · hair · receptors" },
+  "lab": {
+    "id": "lab3",
+    "title": "Integumentary",
+    "order": 3,
+    "blurb": "skin layers · glands · hair · receptors"
+  },
   "groups": [
     {
-      "id": "skin.layers", "title": "Layers of the skin", "region": "integumentary", "kind": "structure",
+      "id": "skin.layers",
+      "title": "Layers of the skin",
+      "region": "integumentary",
+      "kind": "structure",
       "terms": [
-        { "name": "epidermis", "facts": { "definition": "The superficial layer of the skin: keratinized stratified squamous epithelium." } },
-        { "name": "dermis", "facts": { "definition": "The deep layer of the skin: connective tissue with blood vessels, glands, hair follicles, and nerve endings." } },
-        { "name": "hypodermis", "aliases": ["subcutaneous tissue"], "facts": { "definition": "Loose connective and adipose tissue beneath the dermis that anchors skin to underlying structures. Not part of the skin proper." } },
-        { "name": "papillary layer", "aliases": ["papillary layer of the dermis"], "facts": { "definition": "Thin superficial zone of areolar tissue in and near the dermal papillae; rich in small blood vessels and mobile defensive cells." } },
-        { "name": "reticular layer", "aliases": ["reticular layer of the dermis"], "facts": { "definition": "The deep, thick layer of dense irregular connective tissue; stretching it in obesity or pregnancy tears collagen and produces striae." } }
+        {
+          "name": "epidermis",
+          "facts": {
+            "definition": "The superficial layer of the skin: keratinized stratified squamous epithelium."
+          }
+        },
+        {
+          "name": "dermis",
+          "facts": {
+            "definition": "The deep layer of the skin: connective tissue with blood vessels, glands, hair follicles, and nerve endings."
+          }
+        },
+        {
+          "name": "hypodermis",
+          "aliases": [
+            "subcutaneous tissue",
+            "subcutaneous layer",
+            "subcutis",
+            "superficial fascia"
+          ],
+          "facts": {
+            "definition": "Loose connective and adipose tissue beneath the dermis that anchors skin to underlying structures. Not part of the skin proper."
+          }
+        },
+        {
+          "name": "papillary layer",
+          "aliases": [
+            "papillary layer of the dermis",
+            "papillary dermis"
+          ],
+          "facts": {
+            "definition": "Thin superficial zone of areolar tissue in and near the dermal papillae; rich in small blood vessels and mobile defensive cells."
+          }
+        },
+        {
+          "name": "reticular layer",
+          "aliases": [
+            "reticular layer of the dermis",
+            "reticular dermis"
+          ],
+          "facts": {
+            "definition": "The deep, thick layer of dense irregular connective tissue; stretching it in obesity or pregnancy tears collagen and produces striae."
+          }
+        }
       ]
     },
     {
-      "id": "skin.strata", "title": "Strata of the epidermis", "region": "integumentary", "kind": "structure",
+      "id": "skin.strata",
+      "title": "Strata of the epidermis",
+      "region": "integumentary",
+      "kind": "structure",
       "terms": [
-        { "name": "stratum basale", "aliases": ["stratum germinativum"], "facts": { "definition": "Deepest stratum: a single layer of cuboidal to low columnar keratinocytes on the basement membrane, with stem cells, melanocytes, and tactile cells. Stem cells here divide to replace the epidermis.", "category": "deepest (1 of 5)" } },
-        { "name": "stratum spinosum", "facts": { "definition": "Several layers of keratinocytes; usually the thickest stratum (except on palms and soles). Deepest cells still divide; higher cells flatten and make keratin filaments.", "category": "2 of 5" } },
-        { "name": "stratum granulosum", "facts": { "definition": "3 to 5 layers of flat keratinocytes packed with coarse, dark-staining keratohyalin granules.", "category": "3 of 5" } },
-        { "name": "stratum lucidum", "facts": { "definition": "A thin, pale, featureless zone of densely packed keratinocytes found only in thick skin (palms, soles).", "category": "4 of 5, thick skin only" } },
-        { "name": "stratum corneum", "facts": { "definition": "Up to 30 layers of dead, scaly, keratinized cells forming a durable surface resistant to abrasion, penetration, and water loss.", "category": "most superficial (5 of 5)" } }
+        {
+          "name": "stratum basale",
+          "aliases": [
+            "stratum germinativum",
+            "basal layer"
+          ],
+          "facts": {
+            "definition": "Deepest stratum: a single layer of cuboidal to low columnar keratinocytes on the basement membrane, with stem cells, melanocytes, and tactile cells. Stem cells here divide to replace the epidermis.",
+            "category": "deepest (1 of 5)"
+          }
+        },
+        {
+          "name": "stratum spinosum",
+          "facts": {
+            "definition": "Several layers of keratinocytes; usually the thickest stratum (except on palms and soles). Deepest cells still divide; higher cells flatten and make keratin filaments.",
+            "category": "2 of 5"
+          },
+          "aliases": [
+            "spiny layer",
+            "prickle cell layer"
+          ]
+        },
+        {
+          "name": "stratum granulosum",
+          "facts": {
+            "definition": "3 to 5 layers of flat keratinocytes packed with coarse, dark-staining keratohyalin granules.",
+            "category": "3 of 5"
+          },
+          "aliases": [
+            "granular layer"
+          ]
+        },
+        {
+          "name": "stratum lucidum",
+          "facts": {
+            "definition": "A thin, pale, featureless zone of densely packed keratinocytes found only in thick skin (palms, soles).",
+            "category": "4 of 5, thick skin only"
+          },
+          "aliases": [
+            "clear layer"
+          ]
+        },
+        {
+          "name": "stratum corneum",
+          "facts": {
+            "definition": "Up to 30 layers of dead, scaly, keratinized cells forming a durable surface resistant to abrasion, penetration, and water loss.",
+            "category": "most superficial (5 of 5)"
+          },
+          "aliases": [
+            "horny layer",
+            "cornified layer",
+            "keratin layer"
+          ]
+        }
       ]
     },
     {
-      "id": "skin.appendages", "title": "Hair and glands", "region": "integumentary", "kind": "structure",
+      "id": "skin.appendages",
+      "title": "Hair and glands",
+      "region": "integumentary",
+      "kind": "structure",
       "terms": [
-        { "name": "hair shaft", "facts": { "definition": "The part of the hair above the skin surface." } },
-        { "name": "hair root", "facts": { "definition": "The part of the hair within the follicle, below the surface." } },
-        { "name": "hair bulb", "facts": { "definition": "The swollen base of the hair root where the hair grows; contains the hair matrix and a dermal papilla." } },
-        { "name": "hair follicle", "facts": { "definition": "The tube of epithelium and connective tissue surrounding the hair root." } },
-        { "name": "arrector pili muscle", "aliases": ["arrector pili", "arrector muscle"], "facts": { "definition": "Smooth muscle attached to the follicle; contraction makes the hair stand up (goose bumps)." } },
-        { "name": "sebaceous gland", "aliases": ["oil gland"], "facts": { "definition": "A gland opening into the hair follicle that secretes oily sebum; overactivity at puberty causes acne." } },
-        { "name": "eccrine sweat gland", "aliases": ["merocrine sweat gland", "merocrine (eccrine) sweat gland"], "facts": { "definition": "The common sweat gland that opens by a duct onto the skin surface through a pore; cools the body." } },
-        { "name": "apocrine sweat gland", "facts": { "definition": "A sweat gland in the axilla and groin that opens into a hair follicle and produces thicker secretions; active after puberty." } },
-        { "name": "dermal papillae", "aliases": ["dermal papilla"], "facts": { "definition": "Finger-like upward projections of the dermis into the epidermis, carrying capillaries and touch receptors." } },
-        { "name": "epidermal ridges", "aliases": ["epidermal ridge"], "facts": { "definition": "Downward folds of the epidermis between the dermal papillae; they produce fingerprints." } },
-        { "name": "sweat pore", "facts": { "definition": "The opening of an eccrine sweat duct on the skin surface." } }
+        {
+          "name": "hair shaft",
+          "facts": {
+            "definition": "The part of the hair above the skin surface."
+          }
+        },
+        {
+          "name": "hair root",
+          "facts": {
+            "definition": "The part of the hair within the follicle, below the surface."
+          }
+        },
+        {
+          "name": "hair bulb",
+          "facts": {
+            "definition": "The swollen base of the hair root where the hair grows; contains the hair matrix and a dermal papilla."
+          }
+        },
+        {
+          "name": "hair follicle",
+          "facts": {
+            "definition": "The tube of epithelium and connective tissue surrounding the hair root."
+          }
+        },
+        {
+          "name": "arrector pili muscle",
+          "aliases": [
+            "arrector pili",
+            "arrector muscle",
+            "arrector pili muscles"
+          ],
+          "facts": {
+            "definition": "Smooth muscle attached to the follicle; contraction makes the hair stand up (goose bumps)."
+          }
+        },
+        {
+          "name": "sebaceous gland",
+          "aliases": [
+            "oil gland",
+            "sebaceous glands"
+          ],
+          "facts": {
+            "definition": "A gland opening into the hair follicle that secretes oily sebum; overactivity at puberty causes acne."
+          }
+        },
+        {
+          "name": "eccrine sweat gland",
+          "aliases": [
+            "merocrine sweat gland",
+            "merocrine (eccrine) sweat gland"
+          ],
+          "facts": {
+            "definition": "The common sweat gland that opens by a duct onto the skin surface through a pore; cools the body."
+          }
+        },
+        {
+          "name": "apocrine sweat gland",
+          "facts": {
+            "definition": "A sweat gland in the axilla and groin that opens into a hair follicle and produces thicker secretions; active after puberty."
+          }
+        },
+        {
+          "name": "dermal papillae",
+          "aliases": [
+            "dermal papilla"
+          ],
+          "facts": {
+            "definition": "Finger-like upward projections of the dermis into the epidermis, carrying capillaries and touch receptors."
+          }
+        },
+        {
+          "name": "epidermal ridges",
+          "aliases": [
+            "epidermal ridge",
+            "friction ridges"
+          ],
+          "facts": {
+            "definition": "Downward folds of the epidermis between the dermal papillae; they produce fingerprints."
+          }
+        },
+        {
+          "name": "sweat pore",
+          "facts": {
+            "definition": "The opening of an eccrine sweat duct on the skin surface."
+          },
+          "aliases": [
+            "pore"
+          ]
+        }
       ]
     },
     {
-      "id": "skin.receptors", "title": "Sensory receptors", "region": "integumentary", "kind": "structure",
+      "id": "skin.receptors",
+      "title": "Sensory receptors",
+      "region": "integumentary",
+      "kind": "structure",
       "terms": [
-        { "name": "tactile corpuscle", "aliases": ["meissner corpuscle", "meissner's corpuscle", "meissner's corpuscle of touch"], "facts": { "definition": "An oval receptor in the dermal papillae for light touch; dense in fingertips and lips." } },
-        { "name": "lamellated corpuscle", "aliases": ["pacinian corpuscle", "lamellated (pacinian) corpuscle"], "facts": { "definition": "A large onion-like receptor deep in the dermis or hypodermis for deep pressure and vibration." } },
-        { "name": "free nerve endings", "aliases": ["free nerve ending"], "facts": { "definition": "Bare nerve fibers in the epidermis and dermis that sense pain, heat, and cold." } },
-        { "name": "ruffini corpuscle", "aliases": ["bulbous corpuscle"], "facts": { "definition": "A receptor in the dermis for heavy, continuous pressure and skin stretch." } },
-        { "name": "krause end bulb", "aliases": ["krause's end bulb", "end bulb of krause"], "facts": { "definition": "A receptor in mucous membranes (lips, tongue, genitals) for light touch." } },
-        { "name": "hair receptor", "aliases": ["hair root plexus"], "facts": { "definition": "Nerve fibers wrapped around a follicle that detect hair movement." } }
+        {
+          "name": "tactile corpuscle",
+          "aliases": [
+            "Meissner corpuscle",
+            "meissner corpuscle",
+            "meissner's corpuscle",
+            "meissner's corpuscle of touch"
+          ],
+          "facts": {
+            "definition": "An oval receptor in the dermal papillae for light touch; dense in fingertips and lips."
+          },
+          "id": "skin.receptors.tactile-corpuscle"
+        },
+        {
+          "name": "lamellated corpuscle",
+          "aliases": [
+            "pacinian corpuscle",
+            "lamellated (pacinian) corpuscle"
+          ],
+          "facts": {
+            "definition": "A large onion-like receptor deep in the dermis or hypodermis for deep pressure and vibration."
+          }
+        },
+        {
+          "name": "free nerve endings",
+          "aliases": [
+            "free nerve ending"
+          ],
+          "facts": {
+            "definition": "Bare nerve fibers in the epidermis and dermis that sense pain, heat, and cold."
+          }
+        },
+        {
+          "name": "Ruffini corpuscle",
+          "aliases": [
+            "bulbous corpuscle",
+            "ruffini ending",
+            "ruffini's corpuscle"
+          ],
+          "facts": {
+            "definition": "A receptor in the dermis for heavy, continuous pressure and skin stretch."
+          },
+          "id": "skin.receptors.ruffini-corpuscle"
+        },
+        {
+          "name": "Krause end bulb",
+          "aliases": [
+            "krause's end bulb",
+            "end bulb of krause",
+            "end bulb",
+            "end bulbs"
+          ],
+          "facts": {
+            "definition": "A receptor in mucous membranes (lips, tongue, genitals) for light touch."
+          },
+          "id": "skin.receptors.krause-end-bulb"
+        },
+        {
+          "name": "hair receptor",
+          "aliases": [
+            "hair root plexus",
+            "peritrichial ending",
+            "root hair plexus"
+          ],
+          "facts": {
+            "definition": "Nerve fibers wrapped around a follicle that detect hair movement."
+          }
+        }
       ]
     },
     {
-      "id": "skin.cells", "title": "Cells of the epidermis", "region": "integumentary", "kind": "vocab",
+      "id": "skin.cells",
+      "title": "Cells of the epidermis",
+      "region": "integumentary",
+      "kind": "vocab",
       "terms": [
-        { "name": "keratinocyte", "facts": { "definition": "The main epidermal cell; produces keratin and is pushed upward from the stratum basale to be shed at the surface." } },
-        { "name": "melanocyte", "facts": { "definition": "A cell in the stratum basale that makes melanin and passes it to keratinocytes." } },
-        { "name": "tactile cell", "aliases": ["merkel cell"], "facts": { "definition": "A touch-sensing cell in the stratum basale linked to a nerve fiber." } },
-        { "name": "dendritic cell", "aliases": ["langerhans cell"], "facts": { "definition": "An immune cell in the stratum spinosum and granulosum that captures invading microbes." } },
-        { "name": "thick skin", "facts": { "definition": "Skin with a thick stratum corneum and a stratum lucidum, and no hair; palms, soles, fingertips." } },
-        { "name": "thin skin", "facts": { "definition": "Skin with a thin stratum corneum, no stratum lucidum, and hair follicles; most of the body." } }
+        {
+          "name": "keratinocyte",
+          "facts": {
+            "definition": "The main epidermal cell; produces keratin and is pushed upward from the stratum basale to be shed at the surface."
+          }
+        },
+        {
+          "name": "melanocyte",
+          "facts": {
+            "definition": "A cell in the stratum basale that makes melanin and passes it to keratinocytes."
+          }
+        },
+        {
+          "name": "tactile cell",
+          "aliases": [
+            "merkel cell",
+            "merkel's cell",
+            "tactile disc",
+            "merkel disc"
+          ],
+          "facts": {
+            "definition": "A touch-sensing cell in the stratum basale linked to a nerve fiber."
+          }
+        },
+        {
+          "name": "dendritic cell",
+          "aliases": [
+            "langerhans cell",
+            "langerhans' cell"
+          ],
+          "facts": {
+            "definition": "An immune cell in the stratum spinosum and granulosum that captures invading microbes."
+          }
+        }
       ]
     },
     {
-      "id": "skin.disorders", "title": "Burns, acne, cancer", "region": "integumentary", "kind": "vocab",
+      "id": "skin.types",
+      "title": "Thick and thin skin",
+      "region": "integumentary",
+      "kind": "vocab",
       "terms": [
-        { "name": "first-degree burn", "facts": { "definition": "Damages only the epidermis; red, painful, no blisters; heals in days (sunburn)." } },
-        { "name": "second-degree burn", "facts": { "definition": "Damages the epidermis and part of the dermis; blisters, very painful; epidermis regenerates from hair follicles and gland linings." } },
-        { "name": "third-degree burn", "facts": { "definition": "Destroys the epidermis, all of the dermis, and often deeper; can be painless at first because nerve endings are destroyed; needs grafting." } },
-        { "name": "whitehead", "aliases": ["closed comedo"], "facts": { "definition": "A follicle plugged with sebum and keratin that stays closed at the surface." } },
-        { "name": "blackhead", "aliases": ["open comedo"], "facts": { "definition": "A plugged follicle open at the surface; the dark color is oxidized melanin and lipid, not dirt." } },
-        { "name": "pustule", "facts": { "definition": "An inflamed, pus-filled lesion that forms when bacteria multiply in a plugged follicle." } },
-        { "name": "basal cell carcinoma", "facts": { "definition": "The most common and least dangerous skin cancer; arises from the stratum basale; rarely spreads." } },
-        { "name": "squamous cell carcinoma", "facts": { "definition": "Arises from keratinocytes of the stratum spinosum; can spread if untreated." } },
-        { "name": "melanoma", "facts": { "definition": "Cancer of melanocytes; the most dangerous skin cancer; spreads early. Screened with the ABCDE rule." } },
-        { "name": "abcde rule", "aliases": ["abcde"], "facts": { "definition": "Melanoma warning signs: Asymmetry, Border irregularity, Color variation, Diameter over 6 mm, Evolving." } }
+        {
+          "name": "thick skin",
+          "facts": {
+            "definition": "Skin with a thick stratum corneum and a stratum lucidum, and no hair; palms, soles, fingertips."
+          }
+        },
+        {
+          "name": "thin skin",
+          "facts": {
+            "definition": "Skin with a thin stratum corneum, no stratum lucidum, and hair follicles; most of the body."
+          }
+        }
+      ]
+    },
+    {
+      "id": "skin.disorders",
+      "title": "Burns, acne, cancer",
+      "region": "integumentary",
+      "kind": "vocab",
+      "terms": [
+        {
+          "name": "first-degree burn",
+          "facts": {
+            "definition": "Damages only the epidermis; red, painful, no blisters; heals in days (sunburn)."
+          },
+          "aliases": [
+            "superficial burn"
+          ]
+        },
+        {
+          "name": "second-degree burn",
+          "facts": {
+            "definition": "Damages the epidermis and part of the dermis; blisters, very painful; epidermis regenerates from hair follicles and gland linings."
+          },
+          "aliases": [
+            "partial-thickness burn"
+          ]
+        },
+        {
+          "name": "third-degree burn",
+          "facts": {
+            "definition": "Destroys the epidermis, all of the dermis, and often deeper; can be painless at first because nerve endings are destroyed; needs grafting."
+          },
+          "aliases": [
+            "full-thickness burn"
+          ]
+        },
+        {
+          "name": "whitehead",
+          "aliases": [
+            "closed comedo"
+          ],
+          "facts": {
+            "definition": "A follicle plugged with sebum and keratin that stays closed at the surface."
+          }
+        },
+        {
+          "name": "blackhead",
+          "aliases": [
+            "open comedo"
+          ],
+          "facts": {
+            "definition": "A plugged follicle open at the surface; the dark color is oxidized melanin and lipid, not dirt."
+          }
+        },
+        {
+          "name": "pustule",
+          "facts": {
+            "definition": "An inflamed, pus-filled lesion that forms when bacteria multiply in a plugged follicle."
+          }
+        },
+        {
+          "name": "basal cell carcinoma",
+          "facts": {
+            "definition": "The most common and least dangerous skin cancer; arises from the stratum basale; rarely spreads."
+          }
+        },
+        {
+          "name": "squamous cell carcinoma",
+          "facts": {
+            "definition": "Arises from keratinocytes of the stratum spinosum; can spread if untreated."
+          }
+        },
+        {
+          "name": "melanoma",
+          "facts": {
+            "definition": "Cancer of melanocytes; the most dangerous skin cancer; spreads early. Screened with the ABCDE rule."
+          },
+          "aliases": [
+            "malignant melanoma"
+          ]
+        },
+        {
+          "name": "ABCDE rule",
+          "aliases": [
+            "abcde",
+            "abcde criteria"
+          ],
+          "facts": {
+            "definition": "Melanoma warning signs: Asymmetry, Border irregularity, Color variation, Diameter over 6 mm, Evolving."
+          },
+          "id": "skin.disorders.abcde-rule"
+        }
       ]
     }
   ],
   "questions": [
-    { "kind": "short", "groupId": "skin.strata", "prompt": "You are given an unlabeled slide showing a very thick stratum corneum and a visible stratum lucidum. Is this thick or thin skin? Name two body locations it could have come from.", "modelAnswer": "Thick skin. The stratum lucidum exists only in thick skin. Palms of the hands and soles of the feet (also fingertips).", "termIds": ["skin.strata.stratum-lucidum", "skin.cells.thick-skin"] },
-    { "kind": "short", "groupId": "skin.strata", "prompt": "List the five strata of the epidermis from deep to superficial.", "modelAnswer": "Stratum basale, stratum spinosum, stratum granulosum, stratum lucidum (thick skin only), stratum corneum.", "termIds": ["skin.strata.stratum-basale", "skin.strata.stratum-corneum"] },
-    { "kind": "short", "groupId": "skin.cells", "prompt": "Of the hairy scalp, the axilla, and the sole of the foot, which is classified as thick skin, and which epidermal layer is responsible for that classification?", "modelAnswer": "The sole of the foot. Thick skin is defined by a thick stratum corneum and the presence of the stratum lucidum. The scalp and axilla are thin, hairy skin; the axilla also has apocrine sweat glands.", "termIds": ["skin.cells.thick-skin", "skin.strata.stratum-lucidum"] },
-    { "kind": "short", "groupId": "skin.disorders", "prompt": "From what structures can the epidermis regenerate after a second-degree burn? What is different about a third-degree burn?", "modelAnswer": "After a second-degree burn, new epidermis grows from the surviving epithelium lining hair follicles and sweat glands deep in the dermis. A third-degree burn destroys the whole dermis including those structures, so the skin cannot regenerate on its own and needs a graft.", "termIds": ["skin.disorders.second-degree-burn", "skin.disorders.third-degree-burn"] },
-    { "kind": "short", "groupId": "skin.disorders", "prompt": "Why can a third-degree burn be less painful, at least initially, than a second-degree burn?", "modelAnswer": "The third-degree burn destroys the nerve endings in the dermis, so the burned area itself cannot feel pain. A second-degree burn leaves the nerve endings alive and exposed.", "termIds": ["skin.disorders.third-degree-burn"] },
-    { "kind": "short", "groupId": "skin.disorders", "prompt": "What actually causes the dark color of a blackhead?", "modelAnswer": "Oxidation of the melanin and lipid in the plug exposed to air, not trapped dirt.", "termIds": ["skin.disorders.blackhead"] },
-    { "kind": "short", "groupId": "skin.appendages", "prompt": "Which gland is primarily responsible for acne, and what change at puberty increases the risk of developing it?", "modelAnswer": "The sebaceous gland. Rising sex hormones (androgens) at puberty increase sebum production, which plugs follicles.", "termIds": ["skin.appendages.sebaceous-gland"] },
-    { "kind": "short", "groupId": "skin.disorders", "prompt": "What do the ABCDE criteria refer to?", "modelAnswer": "Warning signs of melanoma: Asymmetry, Border irregularity, Color variation, Diameter greater than 6 mm, Evolving (changing) lesion.", "termIds": ["skin.disorders.abcde-rule", "skin.disorders.melanoma"] },
-    { "kind": "short", "groupId": "skin.receptors", "prompt": "Why do the palms, soles, and fingertips differ so much in receptor density and epidermal thickness from the skin of your back or abdomen?", "modelAnswer": "They take the most friction and are used for fine touch, so they have thick skin with a stratum lucidum for protection and dense tactile corpuscles for sensitivity. The back and abdomen have thin, hairy skin with fewer touch receptors." },
-    { "kind": "short", "groupId": "skin.layers", "prompt": "Describe what happens to a keratinocyte as it moves from the stratum basale to the stratum corneum.", "modelAnswer": "It is produced by stem cell division in the stratum basale, pushed upward, flattens and fills with keratin in the spinosum and granulosum, loses its nucleus and organelles, and finally becomes a dead, scale-like cell in the stratum corneum that is eventually shed." }
+    {
+      "kind": "short",
+      "groupId": "skin.strata",
+      "prompt": "You are given an unlabeled slide showing a very thick stratum corneum and a visible stratum lucidum. Is this thick or thin skin? Name two body locations it could have come from.",
+      "modelAnswer": "Thick skin. The stratum lucidum exists only in thick skin. Palms of the hands and soles of the feet (also fingertips).",
+      "termIds": [
+        "skin.strata.stratum-lucidum",
+        "skin.types.thick-skin"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.strata",
+      "prompt": "List the five strata of the epidermis from deep to superficial.",
+      "modelAnswer": "Stratum basale, stratum spinosum, stratum granulosum, stratum lucidum (thick skin only), stratum corneum.",
+      "termIds": [
+        "skin.strata.stratum-basale",
+        "skin.strata.stratum-corneum"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.cells",
+      "prompt": "Of the hairy scalp, the axilla, and the sole of the foot, which is classified as thick skin, and which epidermal layer is responsible for that classification?",
+      "modelAnswer": "The sole of the foot. Thick skin is defined by a thick stratum corneum and the presence of the stratum lucidum. The scalp and axilla are thin, hairy skin; the axilla also has apocrine sweat glands.",
+      "termIds": [
+        "skin.types.thick-skin",
+        "skin.strata.stratum-lucidum"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.disorders",
+      "prompt": "From what structures can the epidermis regenerate after a second-degree burn? What is different about a third-degree burn?",
+      "modelAnswer": "After a second-degree burn, new epidermis grows from the surviving epithelium lining hair follicles and sweat glands deep in the dermis. A third-degree burn destroys the whole dermis including those structures, so the skin cannot regenerate on its own and needs a graft.",
+      "termIds": [
+        "skin.disorders.second-degree-burn",
+        "skin.disorders.third-degree-burn"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.disorders",
+      "prompt": "Why can a third-degree burn be less painful, at least initially, than a second-degree burn?",
+      "modelAnswer": "The third-degree burn destroys the nerve endings in the dermis, so the burned area itself cannot feel pain. A second-degree burn leaves the nerve endings alive and exposed.",
+      "termIds": [
+        "skin.disorders.third-degree-burn"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.disorders",
+      "prompt": "What actually causes the dark color of a blackhead?",
+      "modelAnswer": "Oxidation of the melanin and lipid in the plug exposed to air, not trapped dirt.",
+      "termIds": [
+        "skin.disorders.blackhead"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.appendages",
+      "prompt": "Which gland is primarily responsible for acne, and what change at puberty increases the risk of developing it?",
+      "modelAnswer": "The sebaceous gland. Rising sex hormones (androgens) at puberty increase sebum production, which plugs follicles.",
+      "termIds": [
+        "skin.appendages.sebaceous-gland"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.disorders",
+      "prompt": "What do the ABCDE criteria refer to?",
+      "modelAnswer": "Warning signs of melanoma: Asymmetry, Border irregularity, Color variation, Diameter greater than 6 mm, Evolving (changing) lesion.",
+      "termIds": [
+        "skin.disorders.abcde-rule",
+        "skin.disorders.melanoma"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.receptors",
+      "prompt": "Why do the palms, soles, and fingertips differ so much in receptor density and epidermal thickness from the skin of your back or abdomen?",
+      "modelAnswer": "They take the most friction and are used for fine touch, so they have thick skin with a stratum lucidum for protection and dense tactile corpuscles for sensitivity. The back and abdomen have thin, hairy skin with fewer touch receptors."
+    },
+    {
+      "kind": "short",
+      "groupId": "skin.cells",
+      "prompt": "Describe what happens to a keratinocyte as it moves from the stratum basale to the stratum corneum.",
+      "modelAnswer": "It is produced by stem cell division in the stratum basale, pushed upward, flattens and fills with keratin in the spinosum and granulosum, loses its nucleus and organelles, and finally becomes a dead, scale-like cell in the stratum corneum that is eventually shed.",
+      "termIds": [
+        "skin.cells.keratinocyte",
+        "skin.strata.stratum-basale",
+        "skin.strata.stratum-corneum"
+      ]
+    }
   ]
 }

@@ -8,7 +8,8 @@
   "skin.strata",
   "skin.layers"
  ],
- "title": "Epidermis, photomicrograph",
+ "title": "Thick skin, photomicrograph",
+ "view": "Thick skin, photomicrograph",
  "hotspots": [
   {
    "termId": "skin.strata.stratum-corneum",
@@ -61,15 +62,6 @@
     "kind": "point",
     "x": 0.3896,
     "y": 0.9647,
-    "r": 0.03
-   }
-  },
-  {
-   "termId": "skin.layers.epidermis",
-   "shape": {
-    "kind": "point",
-    "x": 0.2597,
-    "y": 0.4588,
     "r": 0.03
    }
   }

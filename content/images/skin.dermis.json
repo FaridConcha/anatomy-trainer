@@ -8,6 +8,7 @@
   "skin.layers"
  ],
  "title": "Dermis: micrograph and SEM",
+ "view": "Skin, micrograph and electron micrographs",
  "hotspots": [
   {
    "termId": "skin.layers.papillary-layer",

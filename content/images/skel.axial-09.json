@@ -9,6 +9,7 @@
   "foot.tarsals"
  ],
  "title": "Right foot: dorsal, plantar, medial",
+ "view": "Right foot: dorsal, plantar, medial",
  "hotspots": [
   {
    "termId": "foot.bones.distal-phalanx",
@@ -114,7 +115,7 @@
    "shape": {
     "kind": "point",
     "x": 0.0895,
-    "y": 0.5513,
+    "y": 0.5295,
     "r": 0.03
    }
   },
@@ -169,6 +170,15 @@
     "kind": "point",
     "x": 0.9421,
     "y": 0.6231,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.navicular",
+   "shape": {
+    "kind": "point",
+    "x": 0.0789,
+    "y": 0.5628,
     "r": 0.03
    }
   }
@@ -242,9 +252,9 @@
   },
   {
    "x": 0.0189,
-   "y": 0.5205,
+   "y": 0.5051,
    "w": 0.1411,
-   "h": 0.0615
+   "h": 0.0487
   },
   {
    "x": 0.7621,
@@ -281,6 +291,12 @@
    "y": 0.591,
    "w": 0.0989,
    "h": 0.0641
+  },
+  {
+   "x": 0.0189,
+   "y": 0.5397,
+   "w": 0.12,
+   "h": 0.0462
   },
   {
    "x": 0.6947,

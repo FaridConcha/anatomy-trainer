@@ -2,12 +2,13 @@
  "id": "hist.fibrocartilage-1",
  "src": "img/hist.fibrocartilage-1.webp",
  "width": 859,
- "height": 728,
+ "height": 670,
  "labId": "lab2",
  "groupIds": [
   "tissue.connective.cartilage"
  ],
  "title": "Fibrocartilage",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.connective.cartilage.fibrocartilage",

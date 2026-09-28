@@ -34,7 +34,7 @@ function expandTerm(groupId, raw) {
   }
   if (!t.name) errors.push(`${groupId}: term without a name: ${JSON.stringify(raw)}`);
   const id = t.id ?? `${groupId}.${slug(t.name)}`;
-  return { id, groupId, name: t.name, aliases: t.aliases, facts: t.facts, strict: t.strict };
+  return { id, groupId, name: t.name, aliases: t.aliases, partials: t.partials, facts: t.facts, strict: t.strict };
 }
 
 for (const file of readdirSync(contentDir).filter((f) => /^lab\d.*\.json$/.test(f)).sort()) {
@@ -70,9 +70,18 @@ if (existsSync(imagesDir)) {
 }
 
 const termIds = new Set();
+const norm = (s) => s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
 for (const t of terms) {
   if (termIds.has(t.id)) errors.push(`duplicate term id ${t.id}`);
   termIds.add(t.id);
+  // a prompt built from a fact must not contain its own answer
+  const answers = [t.name, ...(t.aliases ?? [])].map(norm).filter((a) => a.length > 3);
+  for (const key of ['definition', 'location', 'transmits']) {
+    const text = t.facts?.[key];
+    if (!text) continue;
+    const hay = ` ${norm(text)} `;
+    for (const a of answers) if (hay.includes(` ${a} `)) errors.push(`${t.id}: ${key} leaks the answer “${a}”`);
+  }
 }
 const groupIds = new Set(groups.map((g) => g.id));
 if (groupIds.size !== groups.length) errors.push('duplicate group id');

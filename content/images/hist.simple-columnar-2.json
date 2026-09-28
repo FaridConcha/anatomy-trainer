@@ -8,6 +8,7 @@
   "tissue.epithelial"
  ],
  "title": "Simple columnar epithelium",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.epithelial.simple-columnar-epithelium",

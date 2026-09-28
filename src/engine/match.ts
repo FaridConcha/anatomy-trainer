@@ -1,6 +1,6 @@
 import type { Term } from '../content/types';
 
-export type Verdict = 'correct' | 'close' | 'sibling' | 'wrong';
+export type Verdict = 'correct' | 'close' | 'sibling' | 'partial' | 'wrong';
 
 export interface Grade {
   verdict: Verdict;
@@ -83,6 +83,8 @@ export function gradeAnswer(input: string, target: Term, siblings: Term[], stric
     const sf = forms(s);
     if (variants.some((v) => sf.includes(v))) return { verdict: 'sibling', canonical, siblingName: s.name };
   }
+  const partials = (target.partials ?? []).map(normalize);
+  if (variants.some((v) => partials.includes(v))) return { verdict: 'partial', canonical };
 
   const own = bestDistance(n, targetForms);
   const near = own.d <= tolerance(own.form.length);
@@ -101,4 +103,9 @@ export function gradeAnswer(input: string, target: Term, siblings: Term[], stric
 
 export function isCorrect(g: Grade): boolean {
   return g.verdict === 'correct' || g.verdict === 'close';
+}
+
+export function acceptsExact(input: string, answers: string[]): boolean {
+  const n = normalize(input);
+  return answers.some((a) => normalize(a) === n);
 }

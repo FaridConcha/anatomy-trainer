@@ -10,6 +10,7 @@
   "skin.receptors"
  ],
  "title": "Skin block diagram",
+ "view": "Skin model, block section",
  "hotspots": [
   {
    "termId": "skin.appendages.hair-shaft",
@@ -152,6 +153,15 @@
     "kind": "point",
     "x": 0.3,
     "y": 0.92,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skin.receptors.free-nerve-endings",
+   "shape": {
+    "kind": "point",
+    "x": 0.06,
+    "y": 0.41,
     "r": 0.03
    }
   }

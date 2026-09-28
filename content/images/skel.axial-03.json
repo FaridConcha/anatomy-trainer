@@ -8,6 +8,7 @@
   "skull.bones"
  ],
  "title": "Skull, right lateral view",
+ "view": "Skull, right lateral view",
  "hotspots": [
   {
    "termId": "skull.bones.temporal-bone",

@@ -10,7 +10,8 @@
   "skull.foramina",
   "skull.bones"
  ],
- "title": "Skull sutures (superior) and frontal bone (anterior)",
+ "title": "Skull, superior and anterior views",
+ "view": "Skull, superior and anterior views",
  "hotspots": [
   {
    "termId": "skull.frontal-facial.glabella",

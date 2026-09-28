@@ -8,6 +8,7 @@
   "tissue.epithelial"
  ],
  "title": "Simple cuboidal epithelium",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.epithelial.simple-cuboidal-epithelium",

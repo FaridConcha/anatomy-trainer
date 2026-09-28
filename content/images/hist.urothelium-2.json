@@ -8,6 +8,7 @@
   "tissue.epithelial"
  ],
  "title": "Urothelium",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.epithelial.urothelium",

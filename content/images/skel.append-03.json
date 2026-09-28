@@ -9,6 +9,7 @@
   "hand.carpals"
  ],
  "title": "Right hand, anterior view",
+ "view": "Right hand, anterior view",
  "hotspots": [
   {
    "termId": "hand.bones.distal-phalanx",
@@ -135,6 +136,42 @@
     "y": 0.7328,
     "r": 0.03
    }
+  },
+  {
+   "termId": "hand.bones.metacarpal-ii",
+   "shape": {
+    "kind": "point",
+    "x": 0.5814,
+    "y": 0.4875,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.metacarpal-iii",
+   "shape": {
+    "kind": "point",
+    "x": 0.5114,
+    "y": 0.4875,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.metacarpal-iv",
+   "shape": {
+    "kind": "point",
+    "x": 0.4357,
+    "y": 0.5016,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.metacarpal-v",
+   "shape": {
+    "kind": "point",
+    "x": 0.3657,
+    "y": 0.5562,
+    "r": 0.03
+   }
   }
  ],
  "masks": [
@@ -223,6 +260,30 @@
    "h": 0.075
   },
   {
+   "x": 0.5529,
+   "y": 0.4578,
+   "w": 0.0571,
+   "h": 0.0594
+  },
+  {
+   "x": 0.4829,
+   "y": 0.4578,
+   "w": 0.0571,
+   "h": 0.0594
+  },
+  {
+   "x": 0.4071,
+   "y": 0.4719,
+   "w": 0.0571,
+   "h": 0.0594
+  },
+  {
+   "x": 0.3371,
+   "y": 0.5266,
+   "w": 0.0571,
+   "h": 0.0594
+  },
+  {
    "x": 0,
    "y": 0.25,
    "w": 0.0714,
@@ -233,6 +294,18 @@
    "y": 0.2656,
    "w": 0.1714,
    "h": 0.1719
+  },
+  {
+   "x": 0.245,
+   "y": 0.7813,
+   "w": 0.15,
+   "h": 0.025
+  },
+  {
+   "x": 0.6643,
+   "y": 0.618,
+   "w": 0.0186,
+   "h": 0.0266
   },
   {
    "x": 0.0857,

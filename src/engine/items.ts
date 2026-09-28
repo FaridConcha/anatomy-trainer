@@ -17,7 +17,7 @@ export type Item =
   | { kind: 'match'; id: string; imageId: string; hotspotIndexes: number[] }
   | { kind: 'recall'; id: string; termId: string; prompt: string; label: string }
   | { kind: 'short'; id: string; questionId: string; prompt: string; modelAnswer: string; termIds: string[] }
-  | { kind: 'wordform'; id: string; termId: string; prompt: string; answer: string; note?: string };
+  | { kind: 'wordform'; id: string; termId: string; prompt: string; answer: string; alts?: string[]; note?: string };
 
 export type Mode = 'study' | 'practical';
 

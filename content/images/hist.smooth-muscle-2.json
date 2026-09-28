@@ -8,6 +8,7 @@
   "tissue.muscle"
  ],
  "title": "Smooth muscle",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.muscle.smooth-muscle",

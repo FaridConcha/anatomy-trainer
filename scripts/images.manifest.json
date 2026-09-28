@@ -1,41 +1,19 @@
 [
  {
-  "id": "hist.simple-squamous-1",
-  "from": "raw/histology/hist-02.png",
-  "crop": [
-   493,
-   312,
-   710,
-   565
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Simple squamous epithelium",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.simple-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
   "id": "hist.simple-squamous-2",
   "from": "raw/histology/hist-02.png",
   "crop": [
    478,
    1036,
    717,
-   691
+   553
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.epithelial"
   ],
   "title": "Simple squamous epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-squamous-epithelium",
@@ -50,15 +28,16 @@
   "from": "raw/histology/hist-03.png",
   "crop": [
    218,
-   230,
+   273,
    622,
-   715
+   515
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.connective.cartilage"
   ],
   "title": "Hyaline cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.hyaline-cartilage",
@@ -82,6 +61,7 @@
    "tissue.connective.cartilage"
   ],
   "title": "Hyaline cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.hyaline-cartilage",
@@ -105,6 +85,7 @@
    "tissue.connective.cartilage"
   ],
   "title": "Hyaline cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.hyaline-cartilage",
@@ -121,36 +102,14 @@
    338,
    271,
    859,
-   728
+   670
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.connective.cartilage"
   ],
   "title": "Fibrocartilage",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.cartilage.fibrocartilage",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.fibrocartilage-2",
-  "from": "raw/histology/hist-04.png",
-  "crop": [
-   338,
-   1025,
-   885,
-   781
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.cartilage"
-  ],
-  "title": "Fibrocartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.fibrocartilage",
@@ -174,6 +133,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Areolar tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.areolar-tissue",
@@ -197,6 +157,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Areolar tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.areolar-tissue",
@@ -220,6 +181,7 @@
    "tissue.epithelial"
   ],
   "title": "Urothelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.urothelium",
@@ -243,29 +205,7 @@
    "tissue.epithelial"
   ],
   "title": "Urothelium",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.urothelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.urothelium-3",
-  "from": "raw/histology/hist-06.png",
-  "crop": [
-   334,
-   1061,
-   800,
-   770
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Urothelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.urothelium",
@@ -289,6 +229,7 @@
    "tissue.connective.cartilage"
   ],
   "title": "Elastic cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.elastic-cartilage",
@@ -302,9 +243,9 @@
   "id": "hist.elastic-cartilage-2",
   "from": "raw/histology/hist-07.png",
   "crop": [
-   760,
+   802,
    377,
-   419,
+   377,
    707
   ],
   "labId": "lab2",
@@ -312,6 +253,7 @@
    "tissue.connective.cartilage"
   ],
   "title": "Elastic cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.elastic-cartilage",
@@ -327,7 +269,7 @@
   "crop": [
    288,
    1163,
-   943,
+   886,
    760
   ],
   "labId": "lab2",
@@ -335,6 +277,7 @@
    "tissue.connective.cartilage"
   ],
   "title": "Elastic cartilage",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.cartilage.elastic-cartilage",
@@ -358,6 +301,7 @@
    "tissue.connective.other"
   ],
   "title": "Bone",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.other.bone",
@@ -381,6 +325,7 @@
    "tissue.connective.other"
   ],
   "title": "Bone",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.other.bone",
@@ -394,16 +339,17 @@
   "id": "hist.bone-3",
   "from": "raw/histology/hist-08.png",
   "crop": [
-   7,
-   1050,
-   1170,
-   698
+   300,
+   1106,
+   878,
+   642
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.connective.other"
   ],
   "title": "Bone",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.other.bone",
@@ -417,9 +363,9 @@
   "id": "hist.pseudostratified-1",
   "from": "raw/histology/hist-09.png",
   "crop": [
-   126,
+   391,
    402,
-   631,
+   366,
    489
   ],
   "labId": "lab2",
@@ -427,6 +373,7 @@
    "tissue.epithelial"
   ],
   "title": "Pseudostratified columnar epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
@@ -450,55 +397,10 @@
    "tissue.epithelial"
   ],
   "title": "Pseudostratified columnar epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.pseudostratified-3",
-  "from": "raw/histology/hist-09.png",
-  "crop": [
-   410,
-   1073,
-   828,
-   915
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Pseudostratified columnar epithelium",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.keratinized-1",
-  "from": "raw/histology/hist-10.png",
-  "crop": [
-   281,
-   425,
-   364,
-   617
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Keratinized stratified squamous epithelium",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
     "shape": {
      "kind": "whole"
     }
@@ -519,6 +421,7 @@
    "tissue.epithelial"
   ],
   "title": "Keratinized stratified squamous epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
@@ -542,6 +445,7 @@
    "tissue.epithelial"
   ],
   "title": "Keratinized stratified squamous epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
@@ -565,6 +469,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Reticular tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.reticular-tissue",
@@ -588,6 +493,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Reticular tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.reticular-tissue",
@@ -611,6 +517,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Adipose tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.adipose-tissue",
@@ -625,15 +532,16 @@
   "from": "raw/histology/hist-12.png",
   "crop": [
    751,
-   243,
-   414,
-   673
+   290,
+   323,
+   626
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.connective.fibrous"
   ],
   "title": "Adipose tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.adipose-tissue",
@@ -657,29 +565,7 @@
    "tissue.connective.other"
   ],
   "title": "Blood",
-  "hotspots": [
-   {
-    "termId": "tissue.connective.other.blood",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.blood-2",
-  "from": "raw/histology/hist-13.png",
-  "crop": [
-   355,
-   1119,
-   819,
-   792
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.connective.other"
-  ],
-  "title": "Blood",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.other.blood",
@@ -703,6 +589,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense irregular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
@@ -726,6 +613,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense irregular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
@@ -749,6 +637,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense irregular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
@@ -772,6 +661,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense regular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
@@ -795,6 +685,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense regular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
@@ -818,6 +709,7 @@
    "tissue.connective.fibrous"
   ],
   "title": "Dense regular connective tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
@@ -841,6 +733,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple columnar epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-columnar-epithelium",
@@ -864,6 +757,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple columnar epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-columnar-epithelium",
@@ -887,6 +781,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple columnar epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-columnar-epithelium",
@@ -910,6 +805,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple cuboidal epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-cuboidal-epithelium",
@@ -933,6 +829,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple cuboidal epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-cuboidal-epithelium",
@@ -956,6 +853,7 @@
    "tissue.epithelial"
   ],
   "title": "Simple cuboidal epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.simple-cuboidal-epithelium",
@@ -979,6 +877,7 @@
    "tissue.epithelial"
   ],
   "title": "Nonkeratinized stratified squamous epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
@@ -995,39 +894,17 @@
    545,
    1211,
    605,
-   908
+   835
   ],
   "labId": "lab2",
   "groupIds": [
    "tissue.epithelial"
   ],
   "title": "Nonkeratinized stratified squamous epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.stratified-cuboidal-1",
-  "from": "raw/histology/hist-19.png",
-  "crop": [
-   378,
-   331,
-   465,
-   697
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.epithelial"
-  ],
-  "title": "Stratified cuboidal epithelium",
-  "hotspots": [
-   {
-    "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
     "shape": {
      "kind": "whole"
     }
@@ -1048,6 +925,7 @@
    "tissue.epithelial"
   ],
   "title": "Stratified cuboidal epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
@@ -1071,6 +949,7 @@
    "tissue.epithelial"
   ],
   "title": "Stratified cuboidal epithelium",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
@@ -1094,29 +973,7 @@
    "tissue.nervous"
   ],
   "title": "Nervous tissue",
-  "hotspots": [
-   {
-    "termId": "tissue.nervous.nervous-tissue",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.nervous-2",
-  "from": "raw/histology/hist-20.png",
-  "crop": [
-   967,
-   536,
-   382,
-   707
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.nervous"
-  ],
-  "title": "Nervous tissue",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.nervous.nervous-tissue",
@@ -1140,6 +997,7 @@
    "tissue.muscle"
   ],
   "title": "Smooth muscle",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.muscle.smooth-muscle",
@@ -1163,29 +1021,7 @@
    "tissue.muscle"
   ],
   "title": "Smooth muscle",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.smooth-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.smooth-muscle-3",
-  "from": "raw/histology/muscle-1.png",
-  "crop": [
-   481,
-   1071,
-   831,
-   815
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Smooth muscle",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.muscle.smooth-muscle",
@@ -1209,6 +1045,7 @@
    "tissue.muscle"
   ],
   "title": "Cardiac muscle",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.muscle.cardiac-muscle",
@@ -1232,29 +1069,7 @@
    "tissue.muscle"
   ],
   "title": "Cardiac muscle",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.cardiac-muscle",
-    "shape": {
-     "kind": "whole"
-    }
-   }
-  ]
- },
- {
-  "id": "hist.cardiac-muscle-3",
-  "from": "raw/histology/muscle-2.png",
-  "crop": [
-   305,
-   1076,
-   843,
-   901
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Cardiac muscle",
+  "view": "Slide",
   "hotspots": [
    {
     "termId": "tissue.muscle.cardiac-muscle",
@@ -1278,6 +1093,7 @@
    "skull.bones"
   ],
   "title": "Skull, right lateral view",
+  "view": "Skull, right lateral view",
   "hotspots": [
    {
     "termId": "skull.bones.temporal-bone",
@@ -1479,7 +1295,8 @@
    "skull.foramina",
    "skull.bones"
   ],
-  "title": "Skull sutures (superior) and frontal bone (anterior)",
+  "title": "Skull, superior and anterior views",
+  "view": "Skull, superior and anterior views",
   "hotspots": [
    {
     "termId": "skull.frontal-facial.glabella",
@@ -1697,6 +1514,7 @@
    "skull.ethmoid"
   ],
   "title": "Skull, lateral view and median section",
+  "view": "Skull, lateral view and median section",
   "hotspots": [
    {
     "termId": "skull.bones.frontal-bone",
@@ -1873,8 +1691,8 @@
     "termId": "skull.bones.vomer",
     "shape": {
      "kind": "point",
-     "x": 0.812,
-     "y": 0.8236,
+     "x": 0.9276,
+     "y": 0.7931,
      "r": 0.03
     }
    },
@@ -1955,7 +1773,7 @@
     "shape": {
      "kind": "point",
      "x": 0.4661,
-     "y": 0.4694,
+     "y": 0.4083,
      "r": 0.03
     }
    },
@@ -1973,7 +1791,7 @@
     "shape": {
      "kind": "point",
      "x": 0.9557,
-     "y": 0.5486,
+     "y": 0.5389,
      "r": 0.03
     }
    },
@@ -2202,10 +2020,10 @@
     "h": 0.0528
    },
    {
-    "x": 0.7604,
-    "y": 0.7903,
-    "w": 0.1031,
-    "h": 0.0667
+    "x": 0.8812,
+    "y": 0.7653,
+    "w": 0.0927,
+    "h": 0.0556
    },
    {
     "x": 0.399,
@@ -2257,7 +2075,7 @@
    },
    {
     "x": 0.4146,
-    "y": 0.4458,
+    "y": 0.3847,
     "w": 0.1031,
     "h": 0.0472
    },
@@ -2269,7 +2087,7 @@
    },
    {
     "x": 0.9042,
-    "y": 0.525,
+    "y": 0.5153,
     "w": 0.0958,
     "h": 0.0472
    },
@@ -2373,6 +2191,7 @@
    "skull.occipital"
   ],
   "title": "Cranial floor (superior) and skull base (inferior)",
+  "view": "Cranial floor (superior) and skull base (inferior)",
   "hotspots": [
    {
     "termId": "skull.bones.zygomatic-bone",
@@ -3044,6 +2863,7 @@
    "skull.foramina"
   ],
   "title": "Occipital bone: cranial floor and inferior skull",
+  "view": "Occipital bone: cranial floor and inferior skull",
   "hotspots": [
    {
     "termId": "skull.occipital.occipital-condyle",
@@ -3278,6 +3098,7 @@
    "skull.sutures"
   ],
   "title": "Right temporal bone, lateral and medial",
+  "view": "Right temporal bone, lateral and medial",
   "hotspots": [
    {
     "termId": "skull.temporal.squamous-part",
@@ -3508,6 +3329,7 @@
    "foot.tarsals"
   ],
   "title": "Right foot: dorsal, plantar, medial",
+  "view": "Right foot: dorsal, plantar, medial",
   "hotspots": [
    {
     "termId": "foot.bones.distal-phalanx",
@@ -3613,7 +3435,7 @@
     "shape": {
      "kind": "point",
      "x": 0.0895,
-     "y": 0.5513,
+     "y": 0.5295,
      "r": 0.03
     }
    },
@@ -3668,6 +3490,15 @@
      "kind": "point",
      "x": 0.9421,
      "y": 0.6231,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.navicular",
+    "shape": {
+     "kind": "point",
+     "x": 0.0789,
+     "y": 0.5628,
      "r": 0.03
     }
    }
@@ -3741,9 +3572,9 @@
    },
    {
     "x": 0.0189,
-    "y": 0.5205,
+    "y": 0.5051,
     "w": 0.1411,
-    "h": 0.0615
+    "h": 0.0487
    },
    {
     "x": 0.7621,
@@ -3780,6 +3611,12 @@
     "y": 0.591,
     "w": 0.0989,
     "h": 0.0641
+   },
+   {
+    "x": 0.0189,
+    "y": 0.5397,
+    "w": 0.12,
+    "h": 0.0462
    },
    {
     "x": 0.6947,
@@ -3839,6 +3676,7 @@
    "humerus"
   ],
   "title": "Right humerus, anterior and posterior",
+  "view": "Right humerus, anterior and posterior",
   "hotspots": [
    {
     "termId": "humerus.greater-tubercle",
@@ -4010,6 +3848,24 @@
      "y": 0.9024,
      "r": 0.03
     }
+   },
+   {
+    "termId": "humerus.greater-tubercle",
+    "shape": {
+     "kind": "point",
+     "x": 0.8281,
+     "y": 0.131,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.radial-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.1952,
+     "y": 0.7479,
+     "r": 0.03
+    }
    }
   ],
   "masks": [
@@ -4128,6 +3984,18 @@
     "h": 0.0447
    },
    {
+    "x": 0.7808,
+    "y": 0.0958,
+    "w": 0.0945,
+    "h": 0.0704
+   },
+   {
+    "x": 0.1562,
+    "y": 0.7155,
+    "w": 0.0781,
+    "h": 0.0648
+   },
+   {
     "x": 0,
     "y": 0.1972,
     "w": 0.1233,
@@ -4150,6 +4018,7 @@
    "ulna"
   ],
   "title": "Right radius and ulna, anterior and posterior",
+  "view": "Right radius and ulna, anterior and posterior",
   "hotspots": [
    {
     "termId": "radius.ulnar-notch",
@@ -4422,6 +4291,7 @@
    "fibula"
   ],
   "title": "Right tibia and fibula, anterior and posterior",
+  "view": "Right tibia and fibula, anterior and posterior",
   "hotspots": [
    {
     "termId": "tibia.intercondylar-eminence",
@@ -4604,6 +4474,7 @@
    "hand.carpals"
   ],
   "title": "Right hand, anterior view",
+  "view": "Right hand, anterior view",
   "hotspots": [
    {
     "termId": "hand.bones.distal-phalanx",
@@ -4730,6 +4601,42 @@
      "y": 0.7328,
      "r": 0.03
     }
+   },
+   {
+    "termId": "hand.bones.metacarpal-ii",
+    "shape": {
+     "kind": "point",
+     "x": 0.5814,
+     "y": 0.4875,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.metacarpal-iii",
+    "shape": {
+     "kind": "point",
+     "x": 0.5114,
+     "y": 0.4875,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.metacarpal-iv",
+    "shape": {
+     "kind": "point",
+     "x": 0.4357,
+     "y": 0.5016,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.metacarpal-v",
+    "shape": {
+     "kind": "point",
+     "x": 0.3657,
+     "y": 0.5562,
+     "r": 0.03
+    }
    }
   ],
   "masks": [
@@ -4818,6 +4725,30 @@
     "h": 0.075
    },
    {
+    "x": 0.5529,
+    "y": 0.4578,
+    "w": 0.0571,
+    "h": 0.0594
+   },
+   {
+    "x": 0.4829,
+    "y": 0.4578,
+    "w": 0.0571,
+    "h": 0.0594
+   },
+   {
+    "x": 0.4071,
+    "y": 0.4719,
+    "w": 0.0571,
+    "h": 0.0594
+   },
+   {
+    "x": 0.3371,
+    "y": 0.5266,
+    "w": 0.0571,
+    "h": 0.0594
+   },
+   {
     "x": 0,
     "y": 0.25,
     "w": 0.0714,
@@ -4828,6 +4759,18 @@
     "y": 0.2656,
     "w": 0.1714,
     "h": 0.1719
+   },
+   {
+    "x": 0.245,
+    "y": 0.7813,
+    "w": 0.15,
+    "h": 0.025
+   },
+   {
+    "x": 0.6643,
+    "y": 0.618,
+    "w": 0.0186,
+    "h": 0.0266
    },
    {
     "x": 0.0857,
@@ -4863,6 +4806,7 @@
    "hip"
   ],
   "title": "Right hip bone, medial and lateral",
+  "view": "Right hip bone, medial and lateral",
   "hotspots": [
    {
     "termId": "hip.iliac-crest",
@@ -5079,6 +5023,24 @@
      "y": 0.3971,
      "r": 0.03
     }
+   },
+   {
+    "termId": "hip.anterior-superior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.8995,
+     "y": 0.292,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.anterior-inferior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.8995,
+     "y": 0.3978,
+     "r": 0.03
+    }
    }
   ],
   "masks": [
@@ -5227,6 +5189,18 @@
     "h": 0.0667
    },
    {
+    "x": 0.8442,
+    "y": 0.2565,
+    "w": 0.1105,
+    "h": 0.071
+   },
+   {
+    "x": 0.8442,
+    "y": 0.3623,
+    "w": 0.1105,
+    "h": 0.071
+   },
+   {
     "x": 0.0421,
     "y": 0.7681,
     "w": 0.5263,
@@ -5255,6 +5229,7 @@
    "clavicle"
   ],
   "title": "Right scapula and clavicle",
+  "view": "Right scapula and clavicle",
   "hotspots": [
    {
     "termId": "scapula.acromion",
@@ -5399,6 +5374,15 @@
      "y": 0.7,
      "r": 0.03
     }
+   },
+   {
+    "termId": "scapula.acromion",
+    "shape": {
+     "kind": "point",
+     "x": 0.8711,
+     "y": 0.1857,
+     "r": 0.03
+    }
    }
   ],
   "masks": [
@@ -5499,6 +5483,12 @@
     "h": 0.0543
    },
    {
+    "x": 0.8253,
+    "y": 0.1571,
+    "w": 0.0916,
+    "h": 0.0571
+   },
+   {
     "x": 0.0211,
     "y": 0.0857,
     "w": 0.2421,
@@ -5533,7 +5523,8 @@
    "skull.foramina",
    "skull.bones"
   ],
-  "title": "Maxilla and facial bones, anterior view",
+  "title": "Facial skeleton, anterior view",
+  "view": "Facial skeleton, anterior view",
   "hotspots": [
    {
     "termId": "skull.frontal-facial.intermaxillary-suture",
@@ -5719,6 +5710,7 @@
    "skull.foramina"
   ],
   "title": "Ethmoid bone",
+  "view": "Ethmoid bone",
   "hotspots": [
    {
     "termId": "skull.ethmoid.cribriform-plate",
@@ -5829,6 +5821,7 @@
    "skull.foramina"
   ],
   "title": "Bones of the orbit",
+  "view": "Bones of the orbit",
   "hotspots": [
    {
     "termId": "skull.bones.frontal-bone",
@@ -6089,6 +6082,7 @@
    "skull.foramina"
   ],
   "title": "Mandible, lateral view",
+  "view": "Mandible, lateral view",
   "hotspots": [
    {
     "termId": "skull.mandible.condylar-process",
@@ -6276,6 +6270,7 @@
    "skull.mandible"
   ],
   "title": "Skull, anterior view",
+  "view": "Skull, anterior view",
   "hotspots": [
    {
     "termId": "skull.bones.frontal-bone",
@@ -6569,6 +6564,7 @@
  {
   "id": "skin.block",
   "whiteOutBlack": true,
+  "view": "Skin model, block section",
   "from": "raw/lab3/img-000.png",
   "labId": "lab3",
   "groupIds": [
@@ -6721,6 +6717,15 @@
      "y": 0.92,
      "r": 0.03
     }
+   },
+   {
+    "termId": "skin.receptors.free-nerve-endings",
+    "shape": {
+     "kind": "point",
+     "x": 0.06,
+     "y": 0.41,
+     "r": 0.03
+    }
    }
   ],
   "masks": [
@@ -6848,6 +6853,7 @@
  },
  {
   "id": "skin.epidermis",
+  "view": "Thick skin, photomicrograph",
   "from": "raw/lab3/img-014.png",
   "crop": [
    0,
@@ -6860,7 +6866,7 @@
    "skin.strata",
    "skin.layers"
   ],
-  "title": "Epidermis, photomicrograph",
+  "title": "Thick skin, photomicrograph",
   "hotspots": [
    {
     "termId": "skin.strata.stratum-corneum",
@@ -6915,21 +6921,13 @@
      "y": 0.9647,
      "r": 0.03
     }
-   },
-   {
-    "termId": "skin.layers.epidermis",
-    "shape": {
-     "kind": "point",
-     "x": 0.2597,
-     "y": 0.4588,
-     "r": 0.03
-    }
    }
   ],
   "masks": []
  },
  {
   "id": "skin.dermis",
+  "view": "Skin, micrograph and electron micrographs",
   "from": "raw/lab3/img-038.png",
   "labId": "lab3",
   "groupIds": [
@@ -6999,59 +6997,8 @@
   ]
  },
  {
-  "id": "hist.muscle-smooth-w",
-  "from": "raw/histology/hist-21.png",
-  "crop": [
-   785,
-   155,
-   309,
-   577
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Smooth muscle",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.smooth-muscle",
-    "shape": {
-     "kind": "whole",
-     "x": null,
-     "y": null
-    }
-   }
-  ],
-  "masks": []
- },
- {
-  "id": "hist.muscle-cardiac-w",
-  "from": "raw/histology/hist-21.png",
-  "crop": [
-   785,
-   866,
-   309,
-   533
-  ],
-  "labId": "lab2",
-  "groupIds": [
-   "tissue.muscle"
-  ],
-  "title": "Cardiac muscle",
-  "hotspots": [
-   {
-    "termId": "tissue.muscle.cardiac-muscle",
-    "shape": {
-     "kind": "whole",
-     "x": null,
-     "y": null
-    }
-   }
-  ],
-  "masks": []
- },
- {
   "id": "hist.muscle-skeletal-w",
+  "view": "Slide",
   "from": "raw/histology/hist-21.png",
   "crop": [
    768,

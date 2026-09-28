@@ -8,6 +8,7 @@
   "tissue.connective.cartilage"
  ],
  "title": "Hyaline cartilage",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.connective.cartilage.hyaline-cartilage",

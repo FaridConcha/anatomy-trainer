@@ -8,6 +8,7 @@
   "tissue.connective.other"
  ],
  "title": "Bone",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.connective.other.bone",

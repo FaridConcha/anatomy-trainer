@@ -1,116 +1,744 @@
 {
-  "lab": { "id": "lab1", "title": "Terminology", "order": 1, "blurb": "planes · directions · regions · plurals" },
+  "lab": {
+    "id": "lab1",
+    "title": "Terminology",
+    "order": 1,
+    "blurb": "planes · directions · regions · plurals"
+  },
   "groups": [
     {
-      "id": "lab1.planes", "title": "Anatomical planes", "region": "terminology", "kind": "vocab",
+      "id": "lab1.planes",
+      "title": "Anatomical planes",
+      "region": "terminology",
+      "kind": "vocab",
       "terms": [
-        { "name": "anatomical position", "facts": { "definition": "Standing upright, feet flat and slightly apart, arms at the sides, palms and face forward. Every directional term assumes this position, even when the patient is lying down." } },
-        { "name": "sagittal plane", "facts": { "definition": "A vertical plane that divides the body into left and right portions." } },
-        { "name": "median plane", "aliases": ["midsagittal plane"], "facts": { "definition": "The sagittal plane that passes exactly through the midline, dividing the body into equal left and right halves." } },
-        { "name": "frontal plane", "aliases": ["coronal plane"], "facts": { "definition": "A vertical plane that divides the body into anterior (front) and posterior (back) portions." } },
-        { "name": "transverse plane", "aliases": ["horizontal plane"], "facts": { "definition": "A horizontal plane that divides the body into superior (upper) and inferior (lower) portions." } }
+        {
+          "name": "anatomical position",
+          "facts": {
+            "definition": "Standing upright, feet flat and slightly apart, arms at the sides, palms and face forward. Every directional term assumes this position, even when the patient is lying down."
+          }
+        },
+        {
+          "name": "sagittal plane",
+          "facts": {
+            "definition": "A vertical plane running front to back that divides the body into left and right portions of any size; only one of them runs exactly down the midline."
+          }
+        },
+        {
+          "name": "median plane",
+          "aliases": [
+            "midsagittal plane"
+          ],
+          "facts": {
+            "definition": "The sagittal plane that passes exactly through the midline, dividing the body into equal left and right halves."
+          }
+        },
+        {
+          "name": "frontal plane",
+          "aliases": [
+            "coronal plane"
+          ],
+          "facts": {
+            "definition": "A vertical plane that divides the body into anterior (front) and posterior (back) portions."
+          }
+        },
+        {
+          "name": "transverse plane",
+          "aliases": [
+            "horizontal plane",
+            "cross-sectional plane",
+            "cross section"
+          ],
+          "facts": {
+            "definition": "A plane parallel to the ground that divides the body into superior and inferior portions."
+          }
+        }
       ]
     },
     {
-      "id": "lab1.directional", "title": "Directional terms", "region": "terminology", "kind": "vocab",
+      "id": "lab1.directional",
+      "title": "Directional terms",
+      "region": "terminology",
+      "kind": "vocab",
       "terms": [
-        { "name": "superior", "facts": { "definition": "Above; toward the head. The skull is superior to the chest." } },
-        { "name": "inferior", "facts": { "definition": "Below; toward the feet. The femur is inferior to the pelvis." } },
-        { "name": "anterior", "aliases": ["ventral"], "facts": { "definition": "Toward the front of the body. The sternum is anterior to the heart." } },
-        { "name": "posterior", "aliases": ["dorsal"], "facts": { "definition": "Toward the back of the body. The spine is posterior to the liver." } },
-        { "name": "medial", "facts": { "definition": "Toward the midline. The sternum is medial to the shoulder." } },
-        { "name": "lateral", "facts": { "definition": "Away from the midline. The shoulder is lateral to the sternum." } },
-        { "name": "proximal", "facts": { "definition": "Closer to the point of attachment to the trunk. The elbow is proximal to the wrist." } },
-        { "name": "distal", "facts": { "definition": "Farther from the point of attachment to the trunk. The foot is distal to the tibia." } },
-        { "name": "superficial", "facts": { "definition": "Closer to the body surface. The ribs are superficial to the heart." } },
-        { "name": "deep", "facts": { "definition": "Farther from the body surface. The heart is deep to the ribs." } },
-        { "name": "ipsilateral", "facts": { "definition": "On the same side of the body. The radius and ulna of one arm are ipsilateral." } },
-        { "name": "contralateral", "facts": { "definition": "On opposite sides of the body. The two hands are contralateral to each other." } }
+        {
+          "name": "superior",
+          "facts": {
+            "definition": "Above; toward the head. The skull is ___ to the chest."
+          }
+        },
+        {
+          "name": "inferior",
+          "facts": {
+            "definition": "Below; toward the feet. The femur is ___ to the pelvis."
+          }
+        },
+        {
+          "name": "anterior",
+          "aliases": [
+            "ventral"
+          ],
+          "facts": {
+            "definition": "Toward the front of the body. The sternum is ___ to the heart."
+          }
+        },
+        {
+          "name": "posterior",
+          "aliases": [
+            "dorsal"
+          ],
+          "facts": {
+            "definition": "Toward the back of the body. The spine is ___ to the liver."
+          }
+        },
+        {
+          "name": "medial",
+          "facts": {
+            "definition": "Toward the midline. The sternum is ___ to the shoulder."
+          }
+        },
+        {
+          "name": "lateral",
+          "facts": {
+            "definition": "Away from the midline. The shoulder is ___ to the sternum."
+          }
+        },
+        {
+          "name": "proximal",
+          "facts": {
+            "definition": "Closer to the point of attachment to the trunk. The elbow is ___ to the wrist."
+          }
+        },
+        {
+          "name": "distal",
+          "facts": {
+            "definition": "Farther from the point of attachment to the trunk. The foot is ___ to the tibia."
+          }
+        },
+        {
+          "name": "superficial",
+          "facts": {
+            "definition": "Closer to the body surface. The ribs are ___ to the heart."
+          }
+        },
+        {
+          "name": "deep",
+          "facts": {
+            "definition": "Farther from the body surface. The heart is ___ to the ribs."
+          }
+        },
+        {
+          "name": "ipsilateral",
+          "facts": {
+            "definition": "On the same side of the body. The radius and ulna of one arm are ___."
+          }
+        },
+        {
+          "name": "contralateral",
+          "facts": {
+            "definition": "On opposite sides of the body. The two hands are ___ to each other."
+          }
+        }
       ]
     },
     {
-      "id": "lab1.regions", "title": "Body regions", "region": "terminology", "kind": "vocab",
+      "id": "lab1.regions",
+      "title": "Body regions",
+      "region": "terminology",
+      "kind": "vocab",
       "terms": [
-        { "name": "cranial region", "aliases": ["cranial"], "facts": { "definition": "The head", "category": "axial" } },
-        { "name": "cervical region", "aliases": ["cervical"], "facts": { "definition": "The neck", "category": "axial" } },
-        { "name": "thoracic region", "aliases": ["thoracic"], "facts": { "definition": "The chest", "category": "axial" } },
-        { "name": "abdominal region", "aliases": ["abdominal"], "facts": { "definition": "The abdomen, between the thorax and the pelvis", "category": "axial" } },
-        { "name": "vertebral region", "aliases": ["vertebral"], "facts": { "definition": "The spinal column", "category": "axial" } },
-        { "name": "brachial region", "aliases": ["brachial"], "facts": { "definition": "The arm: shoulder to elbow, containing the humerus", "category": "appendicular" } },
-        { "name": "antebrachial region", "aliases": ["antebrachial"], "facts": { "definition": "The forearm: elbow to wrist, containing the radius and ulna", "category": "appendicular" } },
-        { "name": "carpal region", "aliases": ["carpal"], "facts": { "definition": "The wrist, containing the eight carpal bones", "category": "appendicular" } },
-        { "name": "femoral region", "aliases": ["femoral"], "facts": { "definition": "The thigh: hip to knee, containing the femur", "category": "appendicular" } },
-        { "name": "crural region", "aliases": ["crural"], "facts": { "definition": "The leg: knee to ankle, containing the tibia and fibula", "category": "appendicular" } },
-        { "name": "axial skeleton", "facts": { "definition": "The central axis: skull, auditory ossicles, hyoid, vertebral column, and thoracic cage (80 bones)", "category": "axial" } },
-        { "name": "appendicular skeleton", "facts": { "definition": "The limbs and the girdles that attach them: pectoral girdle, upper limbs, pelvic girdle, lower limbs (126 bones)", "category": "appendicular" } }
+        {
+          "name": "cephalic region",
+          "aliases": [
+            "cephalic",
+            "cranial",
+            "cranial region"
+          ],
+          "facts": {
+            "definition": "The head",
+            "category": "axial"
+          },
+          "id": "lab1.regions.cranial-region"
+        },
+        {
+          "name": "cervical region",
+          "aliases": [
+            "cervical"
+          ],
+          "facts": {
+            "definition": "The neck",
+            "category": "axial"
+          }
+        },
+        {
+          "name": "thoracic region",
+          "aliases": [
+            "thoracic"
+          ],
+          "facts": {
+            "definition": "The chest",
+            "category": "axial"
+          }
+        },
+        {
+          "name": "abdominal region",
+          "aliases": [
+            "abdominal"
+          ],
+          "facts": {
+            "definition": "The abdomen, between the thorax and the pelvis",
+            "category": "axial"
+          }
+        },
+        {
+          "name": "vertebral region",
+          "aliases": [
+            "vertebral"
+          ],
+          "facts": {
+            "definition": "The spinal column",
+            "category": "axial"
+          }
+        },
+        {
+          "name": "brachial region",
+          "aliases": [
+            "brachial"
+          ],
+          "facts": {
+            "definition": "The arm: shoulder to elbow, containing the humerus",
+            "category": "appendicular"
+          }
+        },
+        {
+          "name": "antebrachial region",
+          "aliases": [
+            "antebrachial"
+          ],
+          "facts": {
+            "definition": "The forearm: elbow to wrist, containing the radius and ulna",
+            "category": "appendicular"
+          }
+        },
+        {
+          "name": "carpal region",
+          "aliases": [
+            "carpal"
+          ],
+          "facts": {
+            "definition": "The wrist, containing eight small bones",
+            "category": "appendicular"
+          }
+        },
+        {
+          "name": "femoral region",
+          "aliases": [
+            "femoral"
+          ],
+          "facts": {
+            "definition": "The thigh: hip to knee, containing the femur",
+            "category": "appendicular"
+          }
+        },
+        {
+          "name": "crural region",
+          "aliases": [
+            "crural"
+          ],
+          "facts": {
+            "definition": "The leg: knee to ankle, containing the tibia and fibula",
+            "category": "appendicular"
+          }
+        },
+        {
+          "name": "axial skeleton",
+          "facts": {
+            "definition": "The central axis: skull, auditory ossicles, hyoid, vertebral column, and thoracic cage (80 bones)",
+            "category": "axial"
+          }
+        },
+        {
+          "name": "appendicular skeleton",
+          "facts": {
+            "definition": "The limbs and the girdles that attach them: pectoral girdle, upper limbs, pelvic girdle, lower limbs (126 bones)",
+            "category": "appendicular"
+          }
+        }
+      ],
+      "distractorPool": "skeleton-divisions"
+    },
+    {
+      "id": "lab1.wordparts",
+      "title": "Word building",
+      "region": "terminology",
+      "kind": "vocab",
+      "terms": [
+        {
+          "name": "root",
+          "aliases": [
+            "stem"
+          ],
+          "facts": {
+            "definition": "The core of a term that carries its main meaning: cardi- means heart."
+          }
+        },
+        {
+          "name": "prefix",
+          "facts": {
+            "definition": "Added before the root to modify it: hypo- means below or under, as in hypodermic."
+          }
+        },
+        {
+          "name": "suffix",
+          "facts": {
+            "definition": "Added after the root to modify it: -itis means inflammation, as in gastritis."
+          }
+        },
+        {
+          "name": "combining vowel",
+          "facts": {
+            "definition": "A vowel, usually o, inserted between word parts to make the term easier to pronounce: cardi/o/logy."
+          }
+        }
       ]
     },
     {
-      "id": "lab1.wordparts", "title": "Word building", "region": "terminology", "kind": "vocab",
+      "id": "lab1.wordroots",
+      "title": "Word roots and affixes",
+      "region": "terminology",
+      "kind": "vocab",
       "terms": [
-        { "name": "root", "aliases": ["stem"], "facts": { "definition": "The core of a term that carries its main meaning: cardi- means heart." } },
-        { "name": "prefix", "facts": { "definition": "Added before the root to modify it: hypo- means below normal, as in hypodermic." } },
-        { "name": "suffix", "facts": { "definition": "Added after the root to modify it: -itis means inflammation, as in gastritis." } },
-        { "name": "combining vowel", "facts": { "definition": "A vowel, usually o, inserted between word parts to make the term easier to pronounce: cardi/o/logy." } },
-        { "name": "histo-", "facts": { "definition": "tissue" } },
-        { "name": "-cyte", "facts": { "definition": "cell" } },
-        { "name": "-osis", "facts": { "definition": "a condition or process" } },
-        { "name": "derm-", "aliases": ["dermat-"], "facts": { "definition": "skin" } },
-        { "name": "kerat-", "facts": { "definition": "horn; keratin" } },
-        { "name": "seb-", "facts": { "definition": "sebum; oil" } }
+        {
+          "name": "histo-",
+          "facts": {
+            "definition": "tissue"
+          }
+        },
+        {
+          "name": "-cyte",
+          "facts": {
+            "definition": "cell"
+          }
+        },
+        {
+          "name": "-osis",
+          "facts": {
+            "definition": "a condition or process"
+          }
+        },
+        {
+          "name": "derm-",
+          "aliases": [
+            "dermat-"
+          ],
+          "facts": {
+            "definition": "skin"
+          }
+        },
+        {
+          "name": "kerat-",
+          "facts": {
+            "definition": "horn; keratin"
+          }
+        },
+        {
+          "name": "seb-",
+          "facts": {
+            "definition": "sebum; oil"
+          }
+        },
+        {
+          "name": "cardi-",
+          "facts": {
+            "definition": "heart"
+          }
+        },
+        {
+          "name": "-itis",
+          "facts": {
+            "definition": "inflammation"
+          }
+        },
+        {
+          "name": "hypo-",
+          "facts": {
+            "definition": "below; under"
+          }
+        },
+        {
+          "name": "-logy",
+          "facts": {
+            "definition": "the study of"
+          }
+        }
       ]
     },
     {
-      "id": "lab1.plurals", "title": "Plural forms", "region": "terminology", "kind": "wordform",
+      "id": "lab1.plurals",
+      "title": "Plural forms",
+      "region": "terminology",
+      "kind": "wordform",
       "terms": [
-        { "name": "axilla", "strict": true, "facts": { "plural": "axillae", "note": "-a → -ae" } },
-        { "name": "cortex", "strict": true, "facts": { "plural": "cortices", "note": "-ex → -ices" } },
-        { "name": "diagnosis", "strict": true, "facts": { "plural": "diagnoses", "note": "-is → -es" } },
-        { "name": "appendix", "strict": true, "facts": { "plural": "appendices", "note": "-ix → -ices" } },
-        { "name": "ganglion", "strict": true, "facts": { "plural": "ganglia", "note": "-on → -a" } },
-        { "name": "septum", "strict": true, "facts": { "plural": "septa", "note": "-um → -a" } },
-        { "name": "viscus", "strict": true, "facts": { "plural": "viscera", "note": "-us → -era" } },
-        { "name": "phalanx", "strict": true, "facts": { "plural": "phalanges", "note": "-x → -ges" } },
-        { "name": "ovary", "strict": true, "facts": { "plural": "ovaries", "note": "-y → -ies" } },
-        { "name": "calyx", "strict": true, "facts": { "plural": "calyces", "note": "-yx → -yces" } },
-        { "name": "vertebra", "strict": true, "facts": { "plural": "vertebrae", "note": "-a → -ae" } },
-        { "name": "foramen", "strict": true, "facts": { "plural": "foramina", "note": "-en → -ina" } },
-        { "name": "lumen", "strict": true, "facts": { "plural": "lumina", "note": "-en → -ina" } },
-        { "name": "epididymis", "strict": true, "facts": { "plural": "epididymides", "note": "-is → -ides" } },
-        { "name": "carcinoma", "strict": true, "facts": { "plural": "carcinomata", "note": "-ma → -mata" } },
-        { "name": "villus", "strict": true, "facts": { "plural": "villi", "note": "-us → -i" } },
-        { "name": "corpus", "strict": true, "facts": { "plural": "corpora", "note": "-us → -ora" } },
-        { "name": "ramus", "strict": true, "facts": { "plural": "rami", "note": "-us → -i" } },
-        { "name": "condyle", "strict": true, "facts": { "plural": "condyles", "note": "regular English plural" } },
-        { "name": "fossa", "strict": true, "facts": { "plural": "fossae", "note": "-a → -ae" } }
+        {
+          "name": "axilla",
+          "strict": true,
+          "facts": {
+            "plural": "axillae",
+            "note": "-a → -ae"
+          }
+        },
+        {
+          "name": "cortex",
+          "strict": true,
+          "facts": {
+            "plural": "cortices",
+            "note": "-ex → -ices"
+          }
+        },
+        {
+          "name": "diagnosis",
+          "strict": true,
+          "facts": {
+            "plural": "diagnoses",
+            "note": "-is → -es"
+          }
+        },
+        {
+          "name": "appendix",
+          "strict": true,
+          "facts": {
+            "plural": "appendices",
+            "note": "-ix → -ices",
+            "plurals": [
+              "appendixes"
+            ]
+          }
+        },
+        {
+          "name": "ganglion",
+          "strict": true,
+          "facts": {
+            "plural": "ganglia",
+            "note": "-on → -a"
+          }
+        },
+        {
+          "name": "septum",
+          "strict": true,
+          "facts": {
+            "plural": "septa",
+            "note": "-um → -a"
+          }
+        },
+        {
+          "name": "viscus",
+          "strict": true,
+          "facts": {
+            "plural": "viscera",
+            "note": "-us → -era"
+          }
+        },
+        {
+          "name": "phalanx",
+          "strict": true,
+          "facts": {
+            "plural": "phalanges",
+            "note": "-x → -ges"
+          }
+        },
+        {
+          "name": "ovary",
+          "strict": true,
+          "facts": {
+            "plural": "ovaries",
+            "note": "-y → -ies"
+          }
+        },
+        {
+          "name": "calyx",
+          "strict": true,
+          "facts": {
+            "plural": "calyces",
+            "note": "-yx → -yces",
+            "plurals": [
+              "calices"
+            ]
+          }
+        },
+        {
+          "name": "vertebra",
+          "strict": true,
+          "facts": {
+            "plural": "vertebrae",
+            "note": "-a → -ae"
+          }
+        },
+        {
+          "name": "foramen",
+          "strict": true,
+          "facts": {
+            "plural": "foramina",
+            "note": "-en → -ina"
+          }
+        },
+        {
+          "name": "lumen",
+          "strict": true,
+          "facts": {
+            "plural": "lumina",
+            "note": "-en → -ina"
+          }
+        },
+        {
+          "name": "epididymis",
+          "strict": true,
+          "facts": {
+            "plural": "epididymides",
+            "note": "-is → -ides"
+          }
+        },
+        {
+          "name": "carcinoma",
+          "strict": true,
+          "facts": {
+            "plural": "carcinomata",
+            "note": "-ma → -mata",
+            "plurals": [
+              "carcinomas"
+            ]
+          }
+        },
+        {
+          "name": "villus",
+          "strict": true,
+          "facts": {
+            "plural": "villi",
+            "note": "-us → -i"
+          }
+        },
+        {
+          "name": "corpus",
+          "strict": true,
+          "facts": {
+            "plural": "corpora",
+            "note": "-us → -ora"
+          }
+        },
+        {
+          "name": "ramus",
+          "strict": true,
+          "facts": {
+            "plural": "rami",
+            "note": "-us → -i"
+          }
+        },
+        {
+          "name": "condyle",
+          "strict": true,
+          "facts": {
+            "plural": "condyles",
+            "note": "regular English plural"
+          }
+        },
+        {
+          "name": "fossa",
+          "strict": true,
+          "facts": {
+            "plural": "fossae",
+            "note": "-a → -ae"
+          }
+        },
+        {
+          "name": "thorax",
+          "strict": true,
+          "facts": {
+            "plural": "thoraces",
+            "note": "-ax → -aces"
+          }
+        }
       ]
     },
     {
-      "id": "lab1.spelling", "title": "Spelling traps", "region": "terminology", "kind": "spelling", "distractorPool": "spelling",
+      "id": "lab1.spelling",
+      "title": "Spelling traps",
+      "region": "terminology",
+      "kind": "spelling",
+      "distractorPool": "spelling",
       "terms": [
-        { "name": "ilium", "strict": true, "facts": { "definition": "The large flaring bone of the hip (part of the os coxae)", "note": "Not ileum, the last part of the small intestine." } },
-        { "name": "ileum", "strict": true, "facts": { "definition": "The final portion of the small intestine", "note": "Not ilium, the hip bone." } },
-        { "name": "trapezius", "strict": true, "facts": { "definition": "A large muscle of the back and neck", "note": "Not trapezium, a wrist bone." } },
-        { "name": "trapezium", "strict": true, "facts": { "definition": "A carpal bone at the base of the thumb", "note": "Not trapezius, the back muscle." } },
-        { "name": "malleus", "strict": true, "facts": { "definition": "A middle-ear bone (the hammer)", "note": "Not malleolus, the ankle bump." } },
-        { "name": "malleolus", "strict": true, "facts": { "definition": "The bony bump on either side of the ankle", "note": "Not malleus, the ear ossicle." } },
-        { "name": "occipital", "strict": true, "facts": { "definition": "The bone at the back of the skull", "note": "Not occipitalis, the scalp muscle." } },
-        { "name": "occipitalis", "strict": true, "facts": { "definition": "The muscle at the back of the scalp", "note": "Not occipital, the bone." } },
-        { "name": "zygomatic", "strict": true, "facts": { "definition": "The cheekbone", "note": "Not zygomaticus, the smiling muscle." } },
-        { "name": "zygomaticus", "strict": true, "facts": { "definition": "A facial muscle that raises the corner of the mouth", "note": "Not zygomatic, the bone." } },
-        { "name": "gustation", "strict": true, "facts": { "definition": "The sense of taste", "note": "Not gestation, pregnancy." } },
-        { "name": "gestation", "strict": true, "facts": { "definition": "Pregnancy", "note": "Not gustation, taste." } }
+        {
+          "name": "ilium",
+          "strict": true,
+          "facts": {
+            "definition": "The large flaring bone of the hip (part of the os coxae)",
+            "note": "Not ileum, the last part of the small intestine."
+          }
+        },
+        {
+          "name": "ileum",
+          "strict": true,
+          "facts": {
+            "definition": "The final portion of the small intestine",
+            "note": "Not ilium, the hip bone."
+          }
+        },
+        {
+          "name": "trapezius",
+          "strict": true,
+          "facts": {
+            "definition": "A large muscle of the back and neck",
+            "note": "Not trapezium, a wrist bone."
+          }
+        },
+        {
+          "name": "trapezium",
+          "strict": true,
+          "facts": {
+            "definition": "A carpal bone at the base of the thumb",
+            "note": "Not trapezius, the back muscle."
+          }
+        },
+        {
+          "name": "malleus",
+          "strict": true,
+          "facts": {
+            "definition": "A middle-ear bone (the hammer)",
+            "note": "Not malleolus, the ankle bump."
+          }
+        },
+        {
+          "name": "malleolus",
+          "strict": true,
+          "facts": {
+            "definition": "The bony bump on either side of the ankle",
+            "note": "Not malleus, the ear ossicle."
+          }
+        },
+        {
+          "name": "occipital",
+          "strict": true,
+          "facts": {
+            "definition": "The bone at the back of the skull",
+            "note": "Not occipitalis, the scalp muscle."
+          },
+          "aliases": [
+            "occipital bone"
+          ]
+        },
+        {
+          "name": "occipitalis",
+          "strict": true,
+          "facts": {
+            "definition": "The muscle at the back of the scalp",
+            "note": "Not occipital, the bone."
+          }
+        },
+        {
+          "name": "zygomatic",
+          "strict": true,
+          "facts": {
+            "definition": "The cheekbone",
+            "note": "Not zygomaticus, the smiling muscle."
+          },
+          "aliases": [
+            "zygomatic bone"
+          ]
+        },
+        {
+          "name": "zygomaticus",
+          "strict": true,
+          "facts": {
+            "definition": "A facial muscle that raises the corner of the mouth",
+            "note": "Not zygomatic, the bone."
+          }
+        },
+        {
+          "name": "gustation",
+          "strict": true,
+          "facts": {
+            "definition": "The sense of taste",
+            "note": "Not gestation, pregnancy."
+          }
+        },
+        {
+          "name": "gestation",
+          "strict": true,
+          "facts": {
+            "definition": "Pregnancy",
+            "note": "Not gustation, taste."
+          }
+        }
       ]
     }
   ],
   "questions": [
-    { "kind": "short", "groupId": "lab1.planes", "prompt": "Define anatomical position and write one sentence describing a structure's location using at least two directional terms.", "modelAnswer": "Standing upright, feet flat, arms at the sides, palms and face forward. Example: the sternum is anterior and medial to the ribs.", "termIds": ["lab1.planes.anatomical-position"] },
-    { "kind": "short", "groupId": "lab1.planes", "prompt": "Is the median plane a sagittal, frontal, or transverse plane? What makes it 'median' specifically?", "modelAnswer": "It is a sagittal plane. It is called median because it passes exactly through the midline, dividing the body into equal left and right halves; any other sagittal plane is parasagittal.", "termIds": ["lab1.planes.median-plane"] },
-    { "kind": "short", "groupId": "lab1.planes", "prompt": "Which plane divides the body into anterior and posterior portions? Which divides it into superior and inferior portions?", "modelAnswer": "The frontal (coronal) plane divides anterior from posterior. The transverse (horizontal) plane divides superior from inferior.", "termIds": ["lab1.planes.frontal-plane", "lab1.planes.transverse-plane"] },
-    { "kind": "short", "groupId": "lab1.regions", "prompt": "In strict anatomical terminology, what is the difference between 'arm' and 'leg' versus how these words are used in everyday conversation?", "modelAnswer": "Anatomically the arm (brachium) is only shoulder to elbow, and the leg (crus) is only knee to ankle. Everyday speech uses arm for the whole upper limb and leg for the whole lower limb. The forearm is antebrachial and the thigh is femoral.", "termIds": ["lab1.regions.brachial-region", "lab1.regions.crural-region"] },
-    { "kind": "short", "groupId": "lab1.directional", "prompt": "Why do anatomists always describe the body as if it were in anatomical position, even when a patient is lying down or in an unusual posture?", "modelAnswer": "So that every directional term has one fixed meaning regardless of how the body is actually positioned. Everyone pictures the same reference frame, which prevents ambiguity." },
-    { "kind": "short", "groupId": "lab1.directional", "prompt": "Write a true sentence using proximal/distal and two structures.", "modelAnswer": "The elbow is proximal to the wrist; the wrist is distal to the elbow.", "termIds": ["lab1.directional.proximal", "lab1.directional.distal"] },
-    { "kind": "short", "groupId": "lab1.spelling", "prompt": "Explain why a single misspelled or mispronounced anatomical term could matter in a clinical setting. Give an example.", "modelAnswer": "Many terms differ by one letter and name completely different structures: ilium (hip bone) vs ileum (small intestine), malleus (ear) vs malleolus (ankle), gustation (taste) vs gestation (pregnancy). A one-letter slip can send a clinician to the wrong organ system." },
-    { "kind": "short", "groupId": "lab1.plurals", "prompt": "Give the plural of calyx and state the rule that produces it.", "modelAnswer": "calyces; the ending -yx becomes -yces.", "termIds": ["lab1.plurals.calyx"] }
+    {
+      "kind": "short",
+      "groupId": "lab1.planes",
+      "prompt": "Define anatomical position and write one sentence describing a structure's location using at least two directional terms.",
+      "modelAnswer": "Standing upright, feet flat, arms at the sides, palms and face forward. Example: the sternum is anterior to the heart and medial to the shoulders.",
+      "termIds": [
+        "lab1.planes.anatomical-position"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.planes",
+      "prompt": "Is the median plane a sagittal, frontal, or transverse plane? What makes it 'median' specifically?",
+      "modelAnswer": "It is a sagittal plane. It is called median because it passes exactly through the midline, dividing the body into equal left and right halves; any other sagittal plane is parasagittal.",
+      "termIds": [
+        "lab1.planes.median-plane"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.planes",
+      "prompt": "Which plane divides the body into anterior and posterior portions? Which divides it into superior and inferior portions?",
+      "modelAnswer": "The frontal (coronal) plane divides anterior from posterior. The transverse (horizontal) plane divides superior from inferior.",
+      "termIds": [
+        "lab1.planes.frontal-plane",
+        "lab1.planes.transverse-plane"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.regions",
+      "prompt": "In strict anatomical terminology, what is the difference between 'arm' and 'leg' versus how these words are used in everyday conversation?",
+      "modelAnswer": "Anatomically the arm (brachium) is only shoulder to elbow, and the leg (crus) is only knee to ankle. Everyday speech uses arm for the whole upper limb and leg for the whole lower limb. The forearm is antebrachial and the thigh is femoral.",
+      "termIds": [
+        "lab1.regions.brachial-region",
+        "lab1.regions.crural-region"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.directional",
+      "prompt": "Why do anatomists always describe the body as if it were in anatomical position, even when a patient is lying down or in an unusual posture?",
+      "modelAnswer": "So that every directional term has one fixed meaning regardless of how the body is actually positioned. Everyone pictures the same reference frame, which prevents ambiguity."
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.directional",
+      "prompt": "Write a true sentence using proximal/distal and two structures.",
+      "modelAnswer": "The elbow is proximal to the wrist; the wrist is distal to the elbow.",
+      "termIds": [
+        "lab1.directional.proximal",
+        "lab1.directional.distal"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.spelling",
+      "prompt": "Explain why a single misspelled or mispronounced anatomical term could matter in a clinical setting. Give an example.",
+      "modelAnswer": "Many terms differ by one letter and name completely different structures: ilium (hip bone) vs ileum (small intestine), malleus (ear) vs malleolus (ankle), gustation (taste) vs gestation (pregnancy). A one-letter slip can send a clinician to the wrong organ system."
+    },
+    {
+      "kind": "short",
+      "groupId": "lab1.plurals",
+      "prompt": "Give the plural of calyx and state the rule that produces it.",
+      "modelAnswer": "calyces; the ending -yx becomes -yces.",
+      "termIds": [
+        "lab1.plurals.calyx"
+      ]
+    }
   ]
 }

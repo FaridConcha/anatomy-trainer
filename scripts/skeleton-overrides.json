@@ -17,6 +17,26 @@
     0.34,
     0.26
    ]
+  ],
+  "add": [
+   {
+    "box": [
+     0.832,
+     0.267,
+     0.045,
+     0.032
+    ],
+    "termId": "humerus.greater-tubercle"
+   },
+   {
+    "box": [
+     0.376,
+     0.707,
+     0.033,
+     0.028
+    ],
+    "termId": "humerus.radial-fossa"
+   }
   ]
  },
  "axial-11": {
@@ -329,7 +349,7 @@
   ]
  },
  "axial-04": {
-  "title": "Skull sutures (superior) and frontal bone (anterior)",
+  "title": "Skull, superior and anterior views",
   "groups": [
    "skull.sutures",
    "skull.frontal-facial",
@@ -548,10 +568,10 @@
    },
    {
     "box": [
-     0.762,
-     0.728,
-     0.075,
-     0.03
+     0.878,
+     0.71,
+     0.065,
+     0.022
     ],
     "termId": "skull.bones.vomer"
    },
@@ -630,7 +650,7 @@
    {
     "box": [
      0.43,
-     0.48,
+     0.436,
      0.075,
      0.016
     ],
@@ -648,7 +668,7 @@
    {
     "box": [
      0.9,
-     0.537,
+     0.53,
      0.075,
      0.016
     ],
@@ -1329,9 +1349,9 @@
    {
     "box": [
      0.06,
-     0.585,
+     0.573,
      0.11,
-     0.03
+     0.02
     ],
     "termId": "foot.tarsals.lateral-cuneiform"
    },
@@ -1388,6 +1408,15 @@
      0.032
     ],
     "termId": "foot.tarsals.trochlea-of-the-talus"
+   },
+   {
+    "box": [
+     0.06,
+     0.6,
+     0.09,
+     0.018
+    ],
+    "termId": "foot.tarsals.navicular"
    }
   ],
   "maskDropped": [
@@ -1430,6 +1459,18 @@
     0.39,
     0.14,
     0.11
+   ],
+   [
+    0.4515,
+    0.72,
+    0.105,
+    0.016
+   ],
+   [
+    0.745,
+    0.6155,
+    0.013,
+    0.017
    ]
   ],
   "set": {
@@ -1480,6 +1521,42 @@
      0.03
     ],
     "termId": "hand.bones.metacarpal-i"
+   },
+   {
+    "box": [
+     0.679,
+     0.522,
+     0.016,
+     0.02
+    ],
+    "termId": "hand.bones.metacarpal-ii"
+   },
+   {
+    "box": [
+     0.63,
+     0.522,
+     0.016,
+     0.02
+    ],
+    "termId": "hand.bones.metacarpal-iii"
+   },
+   {
+    "box": [
+     0.577,
+     0.531,
+     0.016,
+     0.02
+    ],
+    "termId": "hand.bones.metacarpal-iv"
+   },
+   {
+    "box": [
+     0.528,
+     0.566,
+     0.016,
+     0.02
+    ],
+    "termId": "hand.bones.metacarpal-v"
    }
   ],
   "maskDropped": [
@@ -1665,6 +1742,24 @@
      0.028
     ],
     "termId": "hip.posterior-inferior-iliac-spine"
+   },
+   {
+    "box": [
+     0.844,
+     0.326,
+     0.081,
+     0.031
+    ],
+    "termId": "hip.anterior-superior-iliac-spine"
+   },
+   {
+    "box": [
+     0.844,
+     0.399,
+     0.081,
+     0.031
+    ],
+    "termId": "hip.anterior-inferior-iliac-spine"
    }
   ]
  },
@@ -1756,11 +1851,20 @@
      0.02
     ],
     "termId": "scapula.inferior-angle"
+   },
+   {
+    "box": [
+     0.826,
+     0.319,
+     0.063,
+     0.022
+    ],
+    "termId": "scapula.acromion"
    }
   ]
  },
  "append-07": {
-  "title": "Maxilla and facial bones, anterior view",
+  "title": "Facial skeleton, anterior view",
   "groups": [
    "skull.frontal-facial",
    "skull.foramina",

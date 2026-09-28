@@ -8,6 +8,7 @@
   "tissue.muscle"
  ],
  "title": "Cardiac muscle",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.muscle.cardiac-muscle",

@@ -2,12 +2,13 @@
  "id": "hist.hyaline-cartilage-1",
  "src": "img/hist.hyaline-cartilage-1.webp",
  "width": 622,
- "height": 715,
+ "height": 515,
  "labId": "lab2",
  "groupIds": [
   "tissue.connective.cartilage"
  ],
  "title": "Hyaline cartilage",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.connective.cartilage.hyaline-cartilage",

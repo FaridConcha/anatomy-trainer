@@ -8,6 +8,7 @@
   "tissue.muscle"
  ],
  "title": "Skeletal muscle",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.muscle.skeletal-muscle",

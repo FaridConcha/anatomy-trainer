@@ -41,7 +41,7 @@ for (const page of det) {
     return { x: +clamp(x0).toFixed(4), y: +clamp(y0).toFixed(4), w: +(clamp(x1) - clamp(x0)).toFixed(4), h: +(clamp(y1) - clamp(y0)).toFixed(4) };
   }).filter((m) => m.w > 0 && m.h > 0);
   const groups = Array.from(new Set(boxes.map((b) => groupOf[b.termId])));
-  manifest.push({ id: `skel.${page.page}`, from: page.file, crop: [Math.round(cx * W), Math.round(cy * H), Math.round(cw * W), Math.round(ch * H)], labId: labOf[groups[0]] ?? 'lab5', groupIds: groups, title: o.title, hotspots, masks });
+  manifest.push({ id: `skel.${page.page}`, from: page.file, crop: [Math.round(cx * W), Math.round(cy * H), Math.round(cw * W), Math.round(ch * H)], labId: labOf[groups[0]] ?? 'lab5', groupIds: groups, title: o.title, view: o.view ?? o.title, hotspots, masks });
   console.log(`${page.page}: ${hotspots.length} hotspots, ${masks.length} masks, groups ${groups.join(', ')}`);
 }
 if (bad) process.exit(1);

@@ -3,7 +3,7 @@ import { useContent } from '../../App';
 import { siblingsOf } from '../../content/index';
 import type { Term } from '../../content/types';
 import type { AnswerResult, Item } from '../../engine/items';
-import { gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
+import { acceptsExact, gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
 import { progressStore, useProgress } from '../../storage/local';
 import { ImageStage } from '../ImageStage';
 
@@ -71,12 +71,17 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
     if (phase === 'first') {
       setGrade(g);
       onGrade?.(g);
-      onAnswer({ itemId, ok: isCorrect(g), spelling: g.verdict === 'close', given: value, expected: term.name, progressIds: [term.id] });
+      onAnswer({ itemId, ok: isCorrect(g) || g.verdict === 'partial', spelling: g.verdict === 'close' || g.verdict === 'partial', given: value, expected: term.name, progressIds: [term.id] });
       if (g.verdict === 'correct') return finish('correct', `Correct: ${term.name}`);
       if (g.verdict === 'close') {
         setNote({ tone: 'close', text: `Close, the spelling is ${term.name}. Type it correctly once so it sticks.` });
         setValue('');
         setPhase('retype');
+        return;
+      }
+      if (g.verdict === 'partial') {
+        setNote({ tone: 'close', text: 'Which bone? A grader wants the full name. Try again with the bone included.' });
+        setPhase('retry');
         return;
       }
       setNote({ tone: 'wrong', text: `${g.verdict === 'sibling' ? `That is the ${g.siblingName}. ` : ''}Try once more. Hint: ${hintFor(term, group.title)}` });
@@ -122,7 +127,7 @@ function StickerItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, {
     <>
       <ImageStage image={image} stickers={whole ? [] : [{ hotspotIndex: item.hotspotIndex, label: 1, state }]} focus={item.hotspotIndex} zoom={zoom} onZoomToggle={setZoom} />
       <div className="prompt">{prompt}</div>
-      <TypedAnswer term={term} itemId={item.id} extra={image.title} onAnswer={onAnswer} onDone={onDone} onGrade={(g) => setState(isCorrect(g) ? 'done' : 'wrong')} />
+      <TypedAnswer term={term} itemId={item.id} extra={image.view} onAnswer={onAnswer} onDone={onDone} onGrade={(g) => setState(isCorrect(g) || g.verdict === 'partial' ? 'done' : 'wrong')} />
     </>
   );
 }
@@ -272,7 +277,7 @@ function WordformItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, 
   const submit = (e: FormEvent) => {
     e.preventDefault();
     if (phase === 'done') return;
-    const ok = normalize(value) === normalize(item.answer);
+    const ok = acceptsExact(value, [item.answer, ...(item.alts ?? [])]);
     if (phase === 'first') {
       onAnswer({ itemId: item.id, ok, given: value, expected: item.answer, progressIds: [item.termId] });
       if (ok) { setNote({ tone: 'correct', text: `Correct: ${item.answer}` }); setPhase('done'); onDone(); return; }

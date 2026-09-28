@@ -8,6 +8,7 @@
   "humerus"
  ],
  "title": "Right humerus, anterior and posterior",
+ "view": "Right humerus, anterior and posterior",
  "hotspots": [
   {
    "termId": "humerus.greater-tubercle",
@@ -179,6 +180,24 @@
     "y": 0.9024,
     "r": 0.03
    }
+  },
+  {
+   "termId": "humerus.greater-tubercle",
+   "shape": {
+    "kind": "point",
+    "x": 0.8281,
+    "y": 0.131,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.radial-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.1952,
+    "y": 0.7479,
+    "r": 0.03
+   }
   }
  ],
  "masks": [
@@ -295,6 +314,18 @@
    "y": 0.88,
    "w": 0.104,
    "h": 0.0447
+  },
+  {
+   "x": 0.7808,
+   "y": 0.0958,
+   "w": 0.0945,
+   "h": 0.0704
+  },
+  {
+   "x": 0.1562,
+   "y": 0.7155,
+   "w": 0.0781,
+   "h": 0.0648
   },
   {
    "x": 0,

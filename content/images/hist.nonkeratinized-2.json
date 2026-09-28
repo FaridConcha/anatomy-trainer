@@ -2,12 +2,13 @@
  "id": "hist.nonkeratinized-2",
  "src": "img/hist.nonkeratinized-2.webp",
  "width": 605,
- "height": 908,
+ "height": 835,
  "labId": "lab2",
  "groupIds": [
   "tissue.epithelial"
  ],
  "title": "Nonkeratinized stratified squamous epithelium",
+ "view": "Slide",
  "hotspots": [
   {
    "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",

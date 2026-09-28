@@ -1,98 +1,664 @@
 {
-  "lab": { "id": "lab2", "title": "Histology", "order": 2, "blurb": "the four tissue types under the microscope" },
+  "lab": {
+    "id": "lab2",
+    "title": "Histology",
+    "order": 2,
+    "blurb": "the four tissue types under the microscope"
+  },
   "groups": [
     {
-      "id": "tissue.epithelial", "title": "Epithelial tissue", "region": "histology", "kind": "tissue", "distractorPool": "epithelium",
+      "id": "tissue.epithelial",
+      "title": "Epithelial tissue",
+      "region": "histology",
+      "kind": "tissue",
+      "distractorPool": "epithelium",
       "terms": [
-        { "name": "simple squamous epithelium", "aliases": ["simple squamous"], "facts": { "location": "Alveoli of the lungs; lining of blood vessels (endothelium); serous membranes", "definition": "A single layer of flat, scale-like cells with flattened nuclei; allows rapid diffusion and filtration.", "category": "epithelial" } },
-        { "name": "simple cuboidal epithelium", "aliases": ["simple cuboidal"], "facts": { "location": "Kidney tubules; ducts of glands", "definition": "A single layer of cube-shaped cells with round central nuclei; absorption and secretion.", "category": "epithelial" } },
-        { "name": "simple columnar epithelium", "aliases": ["simple columnar"], "facts": { "location": "Lining of the stomach and intestines; uterus; bronchi", "definition": "A single layer of tall cells with oval nuclei near the base; often has goblet cells and microvilli.", "category": "epithelial" } },
-        { "name": "pseudostratified columnar epithelium", "aliases": ["pseudostratified columnar", "pseudostratified epithelium", "pseudostratified ciliated columnar epithelium"], "facts": { "location": "Trachea and upper respiratory tract", "definition": "A single layer whose nuclei sit at different heights, so it looks layered; every cell touches the basement membrane. Usually ciliated with goblet cells.", "category": "epithelial" } },
-        { "name": "keratinized stratified squamous epithelium", "aliases": ["stratified squamous keratinized", "keratinized stratified squamous"], "facts": { "location": "Epidermis, especially palms and soles", "definition": "Many layers; surface cells are dead, flat, and packed with keratin, so no nuclei are visible at the surface.", "category": "epithelial" } },
-        { "name": "nonkeratinized stratified squamous epithelium", "aliases": ["non-keratinized stratified squamous epithelium", "stratified squamous nonkeratinized", "nonkeratinized stratified squamous"], "facts": { "location": "Mouth, esophagus, vagina", "definition": "Many layers; surface cells are flat but alive and still have nuclei. Moist surfaces subject to abrasion.", "category": "epithelial" } },
-        { "name": "stratified cuboidal epithelium", "aliases": ["stratified cuboidal"], "facts": { "location": "Ducts of sweat and salivary glands", "definition": "Two or more layers of cube-shaped cells lining a duct.", "category": "epithelial" } },
-        { "name": "urothelium", "aliases": ["transitional epithelium"], "facts": { "location": "Urinary bladder, ureters, urinary tract", "definition": "Multilayered with rounded, dome-shaped surface cells that flatten when the organ stretches.", "category": "epithelial" } }
+        {
+          "name": "simple squamous epithelium",
+          "aliases": [
+            "simple squamous"
+          ],
+          "facts": {
+            "location": "Alveoli of the lungs; lining of blood vessels (endothelium); serous membranes",
+            "definition": "A single layer of flat, scale-like cells with flattened nuclei; allows rapid diffusion and filtration.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "simple cuboidal epithelium",
+          "aliases": [
+            "simple cuboidal"
+          ],
+          "facts": {
+            "location": "Kidney tubules; thyroid follicles; liver",
+            "definition": "A single layer of cube-shaped cells with round central nuclei; absorption and secretion.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "simple columnar epithelium",
+          "aliases": [
+            "simple columnar"
+          ],
+          "facts": {
+            "location": "Lining of the stomach, intestines, gallbladder, uterus and uterine tubes",
+            "definition": "A single layer of tall cells with oval nuclei near the base; often has goblet cells and microvilli.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "pseudostratified columnar epithelium",
+          "aliases": [
+            "pseudostratified columnar",
+            "pseudostratified epithelium",
+            "pseudostratified ciliated columnar epithelium"
+          ],
+          "facts": {
+            "location": "Trachea and upper respiratory tract",
+            "definition": "A single layer whose nuclei sit at different heights, so it looks layered; every cell touches the basement membrane. Usually ciliated with goblet cells.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "keratinized stratified squamous epithelium",
+          "aliases": [
+            "stratified squamous keratinized",
+            "keratinized stratified squamous"
+          ],
+          "facts": {
+            "location": "Epidermis, especially palms and soles",
+            "definition": "Many layers; surface cells are dead, flat, and packed with keratin, so no nuclei are visible at the surface.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "nonkeratinized stratified squamous epithelium",
+          "aliases": [
+            "non-keratinized stratified squamous epithelium",
+            "stratified squamous nonkeratinized",
+            "nonkeratinized stratified squamous"
+          ],
+          "facts": {
+            "location": "Mouth, esophagus, vagina",
+            "definition": "Many layers; surface cells are flat but alive and still have nuclei. Moist surfaces subject to abrasion.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "stratified cuboidal epithelium",
+          "aliases": [
+            "stratified cuboidal"
+          ],
+          "facts": {
+            "location": "Ducts of sweat and salivary glands",
+            "definition": "Two or more layers of cube-shaped cells lining a duct.",
+            "category": "epithelial"
+          }
+        },
+        {
+          "name": "urothelium",
+          "aliases": [
+            "transitional epithelium"
+          ],
+          "facts": {
+            "location": "Urinary bladder, ureters, urinary tract",
+            "definition": "Multilayered with rounded, dome-shaped surface cells that flatten when the organ stretches.",
+            "category": "epithelial"
+          }
+        }
       ]
     },
     {
-      "id": "tissue.connective.fibrous", "title": "Fibrous connective tissue", "region": "histology", "kind": "tissue", "distractorPool": "connective",
+      "id": "tissue.connective.fibrous",
+      "title": "Fibrous connective tissue",
+      "region": "histology",
+      "kind": "tissue",
+      "distractorPool": "connective",
       "terms": [
-        { "name": "areolar tissue", "aliases": ["areolar connective tissue", "loose connective tissue", "areolar"], "facts": { "location": "Beneath epithelia; around organs and blood vessels; subcutaneous", "definition": "Loose, random web of thin collagen and elastic fibers with scattered fibroblasts and lots of ground substance.", "category": "connective" } },
-        { "name": "reticular tissue", "aliases": ["reticular connective tissue", "reticular"], "facts": { "location": "Lymph nodes, spleen, bone marrow", "definition": "A mesh of thin, branching reticular fibers that supports blood-forming and lymphatic organs.", "category": "connective" } },
-        { "name": "dense regular connective tissue", "aliases": ["dense regular"], "facts": { "location": "Tendons and ligaments", "definition": "Parallel, tightly packed collagen bundles with rows of flattened fibroblast nuclei between them.", "category": "connective" } },
-        { "name": "dense irregular connective tissue", "aliases": ["dense irregular"], "facts": { "location": "Dermis of the skin; capsules around organs", "definition": "Thick collagen bundles running in many directions, resisting stress from any angle.", "category": "connective" } },
-        { "name": "adipose tissue", "aliases": ["adipose"], "facts": { "location": "Subcutaneous fat; around organs such as the kidneys and heart", "definition": "Large, empty-looking adipocytes with the nucleus pushed to one edge (signet-ring appearance).", "category": "connective" } }
+        {
+          "name": "areolar tissue",
+          "aliases": [
+            "areolar connective tissue",
+            "loose connective tissue",
+            "areolar"
+          ],
+          "facts": {
+            "location": "Beneath nearly every epithelium; papillary layer of the dermis; around blood vessels",
+            "definition": "Loose, random web of thin collagen and elastic fibers with scattered fibroblasts and lots of ground substance.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "reticular tissue",
+          "aliases": [
+            "reticular connective tissue",
+            "reticular"
+          ],
+          "facts": {
+            "location": "Lymph nodes, spleen, bone marrow",
+            "definition": "A mesh of thin, branching fibers that supports blood-forming and lymphatic organs.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "dense regular connective tissue",
+          "aliases": [
+            "dense regular"
+          ],
+          "facts": {
+            "location": "Tendons and ligaments",
+            "definition": "Parallel, tightly packed collagen bundles with rows of flattened fibroblast nuclei between them.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "dense irregular connective tissue",
+          "aliases": [
+            "dense irregular"
+          ],
+          "facts": {
+            "location": "Dermis of the skin; capsules around organs",
+            "definition": "Thick collagen bundles running in many directions, resisting stress from any angle.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "adipose tissue",
+          "aliases": [
+            "adipose"
+          ],
+          "facts": {
+            "location": "Subcutaneous fat; around organs such as the kidneys and heart",
+            "definition": "Large, empty-looking adipocytes with the nucleus pushed to one edge (signet-ring appearance).",
+            "category": "connective"
+          }
+        }
       ]
     },
     {
-      "id": "tissue.connective.cartilage", "title": "Cartilage", "region": "histology", "kind": "tissue", "distractorPool": "connective",
+      "id": "tissue.connective.cartilage",
+      "title": "Cartilage",
+      "region": "histology",
+      "kind": "tissue",
+      "distractorPool": "connective",
       "terms": [
-        { "name": "hyaline cartilage", "facts": { "location": "Trachea, costal cartilages, nose, articular surfaces of bones", "definition": "Glassy, smooth matrix with chondrocytes sitting in lacunae, often in pairs; no visible fibers.", "category": "connective" } },
-        { "name": "elastic cartilage", "facts": { "location": "External ear, epiglottis", "definition": "Chondrocytes in lacunae surrounded by a dense web of dark-staining elastic fibers.", "category": "connective" } },
-        { "name": "fibrocartilage", "facts": { "location": "Intervertebral discs, pubic symphysis, menisci of the knee", "definition": "Chondrocytes lined up in rows between thick, visible bundles of collagen.", "category": "connective" } }
+        {
+          "name": "hyaline cartilage",
+          "facts": {
+            "location": "Trachea, costal cartilages, nose, articular surfaces of bones",
+            "definition": "Glassy, smooth matrix with chondrocytes sitting in lacunae, often in pairs; no visible fibers.",
+            "category": "connective"
+          },
+          "aliases": [
+            "hyaline"
+          ]
+        },
+        {
+          "name": "elastic cartilage",
+          "facts": {
+            "location": "External ear, epiglottis",
+            "definition": "Chondrocytes in lacunae surrounded by a dense web of dark-staining, stretchy fibers.",
+            "category": "connective"
+          },
+          "aliases": [
+            "elastic"
+          ]
+        },
+        {
+          "name": "fibrocartilage",
+          "facts": {
+            "location": "Intervertebral discs, pubic symphysis, menisci of the knee",
+            "definition": "Chondrocytes lined up in rows between thick, visible bundles of collagen.",
+            "category": "connective"
+          },
+          "aliases": [
+            "fibrous cartilage"
+          ]
+        }
       ]
     },
     {
-      "id": "tissue.connective.other", "title": "Bone and blood", "region": "histology", "kind": "tissue", "distractorPool": "connective",
+      "id": "tissue.connective.other",
+      "title": "Bone and blood",
+      "region": "histology",
+      "kind": "tissue",
+      "distractorPool": "connective",
       "terms": [
-        { "name": "bone", "aliases": ["osseous tissue", "compact bone", "bone tissue"], "facts": { "location": "The skeleton; compact bone forms the outer shell of long bones", "definition": "Hard, calcified matrix arranged in osteons: concentric lamellae around a central canal with osteocytes in lacunae.", "category": "connective" } },
-        { "name": "spongy bone", "aliases": ["trabecular bone", "cancellous bone"], "facts": { "location": "Ends of long bones; interior of flat bones", "definition": "A lattice of thin plates (trabeculae) with marrow spaces between them; no osteons.", "category": "connective" } },
-        { "name": "blood", "facts": { "location": "Inside arteries, veins, and capillaries", "definition": "Fluid connective tissue: liquid plasma matrix with erythrocytes, leukocytes, and platelets. Classified as connective because it develops from mesenchyme and has cells scattered in an extracellular matrix.", "category": "connective" } }
+        {
+          "name": "bone",
+          "aliases": [
+            "osseous tissue",
+            "compact bone",
+            "bone tissue"
+          ],
+          "facts": {
+            "location": "The hard outer shell of the skeleton and the shafts of the long limb elements",
+            "definition": "Hard, calcified matrix arranged in osteons: concentric lamellae around a central canal with osteocytes in lacunae.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "spongy bone",
+          "aliases": [
+            "trabecular bone",
+            "cancellous bone"
+          ],
+          "facts": {
+            "location": "Ends of long bones; interior of flat bones",
+            "definition": "A lattice of thin plates (trabeculae) with marrow spaces between them; no osteons.",
+            "category": "connective"
+          }
+        },
+        {
+          "name": "blood",
+          "facts": {
+            "location": "Inside arteries, veins, and capillaries",
+            "definition": "Fluid connective tissue: liquid plasma matrix with erythrocytes, leukocytes, and platelets. Classified as connective because it develops from mesenchyme and has cells scattered in an extracellular matrix.",
+            "category": "connective"
+          }
+        }
       ]
     },
     {
-      "id": "tissue.muscle", "title": "Muscle tissue", "region": "histology", "kind": "tissue",
+      "id": "tissue.muscle",
+      "title": "Muscle tissue",
+      "region": "histology",
+      "kind": "tissue",
       "terms": [
-        { "name": "skeletal muscle", "facts": { "location": "Muscles attached to bones: limbs, head and neck, trunk", "definition": "Long, unbranched, striated fibers with many nuclei pushed to the edge of each fiber. Voluntary.", "category": "muscle" } },
-        { "name": "cardiac muscle", "facts": { "location": "Heart only", "definition": "Short, branched, striated cells with a single central nucleus, joined end to end by intercalated discs. Involuntary.", "category": "muscle" } },
-        { "name": "smooth muscle", "facts": { "location": "Walls of hollow organs: stomach, intestines, bladder, blood vessels", "definition": "Short spindle-shaped cells with one central cigar-shaped nucleus and no striations. Involuntary.", "category": "muscle" } }
+        {
+          "name": "skeletal muscle",
+          "facts": {
+            "location": "Muscles attached to bones: limbs, head and neck, trunk",
+            "definition": "Long, unbranched, striated fibers with many nuclei pushed to the edge of each fiber. Voluntary.",
+            "category": "muscle"
+          },
+          "aliases": [
+            "skeletal muscle tissue"
+          ]
+        },
+        {
+          "name": "cardiac muscle",
+          "facts": {
+            "location": "Heart only",
+            "definition": "Short, branched, striated cells with a single central nucleus, joined end to end by intercalated discs. Involuntary.",
+            "category": "muscle"
+          },
+          "aliases": [
+            "cardiac muscle tissue"
+          ]
+        },
+        {
+          "name": "smooth muscle",
+          "facts": {
+            "location": "Walls of hollow organs: stomach, intestines, bladder, blood vessels",
+            "definition": "Short spindle-shaped cells with one central cigar-shaped nucleus and no striations. Involuntary.",
+            "category": "muscle"
+          },
+          "aliases": [
+            "smooth muscle tissue",
+            "visceral muscle"
+          ]
+        }
       ]
     },
     {
-      "id": "tissue.nervous", "title": "Nervous tissue", "region": "histology", "kind": "tissue",
+      "id": "tissue.nervous",
+      "title": "Nervous tissue",
+      "region": "histology",
+      "kind": "tissue",
       "terms": [
-        { "name": "nervous tissue", "facts": { "location": "Brain, spinal cord, nerves", "definition": "Large star-shaped neurons with a prominent nucleus and nucleolus and many processes, surrounded by small glial cells.", "category": "nervous" } }
+        {
+          "name": "nervous tissue",
+          "facts": {
+            "location": "Brain, spinal cord, nerves",
+            "definition": "Large star-shaped neurons with a prominent nucleus and nucleolus and many processes, surrounded by small glial cells.",
+            "category": "nervous"
+          },
+          "aliases": [
+            "neural tissue"
+          ]
+        }
       ]
     },
     {
-      "id": "histo.structures", "title": "Structures on slides", "region": "histology", "kind": "structure",
+      "id": "histo.structures",
+      "title": "Structures on slides",
+      "region": "histology",
+      "kind": "structure",
       "terms": [
-        { "name": "goblet cell", "facts": { "definition": "A mucus-secreting cell wedged among columnar cells; looks like a pale wine glass.", "location": "Simple columnar and pseudostratified epithelia" } },
-        { "name": "cilia", "facts": { "definition": "Hair-like projections on the free surface that sweep mucus along.", "location": "Pseudostratified columnar epithelium of the trachea" } },
-        { "name": "intercalated disc", "facts": { "definition": "A dark transverse line where two cardiac muscle cells join; passes electrical signals between cells.", "location": "Cardiac muscle" } },
-        { "name": "striations", "facts": { "definition": "Alternating light and dark bands along a muscle fiber.", "location": "Skeletal and cardiac muscle, never smooth" } },
-        { "name": "lacuna", "aliases": ["lacunae"], "facts": { "definition": "A small cavity in cartilage or bone matrix that houses a cell.", "location": "Cartilage (chondrocytes) and bone (osteocytes)" } },
-        { "name": "chondrocyte", "facts": { "definition": "A mature cartilage cell sitting in a lacuna.", "location": "All three cartilages" } },
-        { "name": "osteocyte", "facts": { "definition": "A mature bone cell trapped in a lacuna between lamellae.", "location": "Bone" } },
-        { "name": "osteon", "aliases": ["haversian system"], "facts": { "definition": "The basic unit of compact bone: concentric lamellae around a central canal.", "location": "Compact bone" } },
-        { "name": "central canal", "aliases": ["haversian canal"], "facts": { "definition": "The channel at the center of an osteon carrying blood vessels and nerves.", "location": "Compact bone" } },
-        { "name": "lamellae", "aliases": ["lamella"], "facts": { "definition": "Concentric rings of calcified matrix around a central canal.", "location": "Compact bone" } },
-        { "name": "erythrocyte", "aliases": ["red blood cell"], "facts": { "definition": "A biconcave disc with no nucleus that carries oxygen.", "location": "Blood" } },
-        { "name": "leukocyte", "aliases": ["white blood cell"], "facts": { "definition": "A nucleated blood cell of the immune system; a neutrophil has a multilobed nucleus.", "location": "Blood" } },
-        { "name": "platelets", "aliases": ["platelet"], "facts": { "definition": "Small cell fragments that clump together to begin clotting.", "location": "Blood" } },
-        { "name": "adipocyte", "facts": { "definition": "A fat cell: one large lipid droplet with the nucleus flattened against the membrane.", "location": "Adipose tissue" } },
-        { "name": "fibroblast", "facts": { "definition": "The spindle-shaped cell that makes the fibers and ground substance of connective tissue.", "location": "Fibrous connective tissues" } },
-        { "name": "collagen fibers", "aliases": ["collagen fiber", "collagen"], "facts": { "definition": "Thick, tough, pink-staining protein fibers that resist tension.", "location": "Dense regular and irregular connective tissue" } },
-        { "name": "neuron", "aliases": ["nerve cell"], "facts": { "definition": "The signal-conducting cell of nervous tissue: cell body, dendrites, and one axon.", "location": "Nervous tissue" } },
-        { "name": "glial cells", "aliases": ["glial cell", "neuroglia"], "facts": { "definition": "Small supporting cells that protect and nourish neurons but do not conduct long-distance signals.", "location": "Nervous tissue" } },
-        { "name": "basement membrane", "facts": { "definition": "The thin layer anchoring an epithelium to the connective tissue beneath it.", "location": "Base of every epithelium" } },
-        { "name": "keratin layer", "aliases": ["stratum corneum"], "facts": { "definition": "The dead, anucleate surface layer of keratinized stratified squamous epithelium.", "location": "Epidermis" } }
+        {
+          "name": "goblet cell",
+          "facts": {
+            "definition": "A mucus-secreting cell wedged among columnar cells; looks like a pale wine glass.",
+            "location": "Simple columnar and pseudostratified epithelia"
+          },
+          "aliases": [
+            "goblet cells"
+          ]
+        },
+        {
+          "name": "cilia",
+          "facts": {
+            "definition": "Hair-like projections on the free surface that sweep mucus along.",
+            "location": "Pseudostratified columnar epithelium of the trachea"
+          }
+        },
+        {
+          "name": "intercalated disc",
+          "facts": {
+            "definition": "A dark transverse line where two cardiac muscle cells join; passes electrical signals between cells.",
+            "location": "Cardiac muscle"
+          },
+          "aliases": [
+            "intercalated discs",
+            "intercalated disk"
+          ]
+        },
+        {
+          "name": "striations",
+          "facts": {
+            "definition": "Alternating light and dark bands along a muscle fiber.",
+            "location": "Skeletal and cardiac muscle, never smooth"
+          },
+          "aliases": [
+            "striation"
+          ]
+        },
+        {
+          "name": "lacuna",
+          "aliases": [
+            "lacunae"
+          ],
+          "facts": {
+            "definition": "A small cavity in cartilage or bone matrix that houses a cell.",
+            "location": "Cartilage and bone matrix"
+          }
+        },
+        {
+          "name": "chondrocyte",
+          "facts": {
+            "definition": "A mature cartilage cell sitting in a lacuna.",
+            "location": "All three cartilages"
+          },
+          "aliases": [
+            "chondrocytes"
+          ]
+        },
+        {
+          "name": "osteocyte",
+          "facts": {
+            "definition": "A mature bone cell trapped in a lacuna between lamellae.",
+            "location": "Bone"
+          },
+          "aliases": [
+            "osteocytes"
+          ]
+        },
+        {
+          "name": "osteon",
+          "aliases": [
+            "haversian system"
+          ],
+          "facts": {
+            "definition": "The basic unit of compact bone: concentric lamellae around a central canal."
+          }
+        },
+        {
+          "name": "central canal",
+          "aliases": [
+            "haversian canal",
+            "osteonic canal"
+          ],
+          "facts": {
+            "definition": "The channel at the center of an osteon carrying blood vessels and nerves."
+          }
+        },
+        {
+          "name": "lamellae",
+          "aliases": [
+            "lamella"
+          ],
+          "facts": {
+            "definition": "Concentric rings of calcified matrix around a central canal."
+          }
+        },
+        {
+          "name": "erythrocyte",
+          "aliases": [
+            "red blood cell",
+            "rbc",
+            "red blood cells"
+          ],
+          "facts": {
+            "definition": "A biconcave disc with no nucleus that carries oxygen."
+          }
+        },
+        {
+          "name": "leukocyte",
+          "aliases": [
+            "white blood cell",
+            "wbc",
+            "white blood cells"
+          ],
+          "facts": {
+            "definition": "A nucleated blood cell of the immune system; a neutrophil has a multilobed nucleus."
+          }
+        },
+        {
+          "name": "platelets",
+          "aliases": [
+            "platelet",
+            "thrombocytes"
+          ],
+          "facts": {
+            "definition": "Small cell fragments that clump together to begin clotting."
+          }
+        },
+        {
+          "name": "adipocyte",
+          "facts": {
+            "definition": "One large lipid droplet with the nucleus flattened against the cell membrane (signet-ring look).",
+            "location": "Adipose tissue"
+          },
+          "aliases": [
+            "fat cell",
+            "adipocytes"
+          ]
+        },
+        {
+          "name": "fibroblast",
+          "facts": {
+            "definition": "The spindle-shaped cell that makes the fibers and ground substance of connective tissue.",
+            "location": "Fibrous connective tissues"
+          },
+          "aliases": [
+            "fibroblasts"
+          ]
+        },
+        {
+          "name": "collagen fibers",
+          "aliases": [
+            "collagen fiber",
+            "collagen"
+          ],
+          "facts": {
+            "definition": "Thick, tough, pink-staining protein fibers that resist tension.",
+            "location": "Tendons (parallel bundles) and the dermis (random bundles)"
+          }
+        },
+        {
+          "name": "neuron",
+          "aliases": [
+            "nerve cell",
+            "neurons"
+          ],
+          "facts": {
+            "definition": "The signal-conducting cell of nervous tissue: cell body, dendrites, and one axon."
+          }
+        },
+        {
+          "name": "glial cells",
+          "aliases": [
+            "glial cell",
+            "neuroglia"
+          ],
+          "facts": {
+            "definition": "Small supporting cells that protect and nourish neurons but do not conduct long-distance signals."
+          }
+        },
+        {
+          "name": "basement membrane",
+          "facts": {
+            "definition": "The thin layer anchoring an epithelium to the connective tissue beneath it.",
+            "location": "Base of every epithelium"
+          }
+        }
       ]
     }
   ],
   "questions": [
-    { "kind": "mc", "groupId": "tissue.epithelial", "prompt": "Which criterion distinguishes simple epithelium from stratified epithelium?", "options": ["The number of cell layers", "The shape of the cells", "The presence or absence of a basement membrane", "The type of fiber in the matrix"], "answerIndex": 0 },
-    { "kind": "mc", "groupId": "tissue.connective.fibrous", "prompt": "Which connective tissue subtype is found in tendons and ligaments, and is characterized by parallel collagen fibers?", "options": ["Reticular tissue", "Dense regular connective tissue", "Dense irregular connective tissue", "Areolar (loose) connective tissue"], "answerIndex": 1, "termIds": ["tissue.connective.fibrous.dense-regular-connective-tissue"] },
-    { "kind": "mc", "groupId": "tissue.epithelial", "prompt": "A tissue sample shows a single layer of cells, but the nuclei appear at different levels, giving a false impression of multiple layers. What is the tissue type?", "options": ["Simple cuboidal epithelium", "Urothelium", "Stratified squamous epithelium", "Pseudostratified columnar epithelium"], "answerIndex": 3, "termIds": ["tissue.epithelial.pseudostratified-columnar-epithelium"] },
-    { "kind": "mc", "groupId": "tissue.muscle", "prompt": "What muscle tissue type is involuntary, has branched striated cells with a single central nucleus, and uses intercalated discs to pass electrical signals between cells?", "options": ["Skeletal muscle", "Fibrous connective tissue", "Smooth muscle", "Cardiac muscle"], "answerIndex": 3, "termIds": ["tissue.muscle.cardiac-muscle"] },
-    { "kind": "mc", "groupId": "tissue.nervous", "prompt": "Which two cell types make up nervous tissue, and what distinguishes their roles?", "options": ["Cardiomyocytes and neurons; both transmit electrical signals equally", "Neurons and erythrocytes; neurons signal, erythrocytes carry oxygen", "Neurons and glial cells; neurons transmit signals, glial cells support and protect but don't transmit long-distance signals", "Adipocytes and osteocytes; adipocytes store energy, osteocytes provide structure"], "answerIndex": 2 },
-    { "kind": "short", "groupId": "tissue.epithelial", "prompt": "Why is pseudostratified columnar epithelium classified as simple rather than stratified, despite its appearance?", "modelAnswer": "Every cell touches the basement membrane, so there is only one true layer. The nuclei sit at different heights because the cells are different heights, which fakes the look of layers.", "termIds": ["tissue.epithelial.pseudostratified-columnar-epithelium"] },
-    { "kind": "short", "groupId": "tissue.epithelial", "prompt": "What is the key structural difference between keratinized and nonkeratinized stratified squamous epithelium, and how does it relate to where each is found?", "modelAnswer": "Keratinized: the surface layers are dead, flattened, and filled with keratin with no nuclei; found on dry, abraded surfaces such as the epidermis (palms, soles). Nonkeratinized: surface cells are alive and still have nuclei; found on moist internal surfaces such as the mouth, esophagus, and vagina.", "termIds": ["tissue.epithelial.keratinized-stratified-squamous-epithelium", "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium"] },
-    { "kind": "short", "groupId": "tissue.connective.fibrous", "prompt": "Name one structural feature that distinguishes dense regular connective tissue from dense irregular connective tissue.", "modelAnswer": "In dense regular tissue the collagen bundles run parallel in one direction (tendons pull one way); in dense irregular tissue the bundles run in many directions (dermis resists stress from any angle).", "termIds": ["tissue.connective.fibrous.dense-regular-connective-tissue", "tissue.connective.fibrous.dense-irregular-connective-tissue"] },
-    { "kind": "short", "groupId": "tissue.muscle", "prompt": "What structure would you look for to confirm you are viewing cardiac muscle rather than skeletal muscle?", "modelAnswer": "Intercalated discs: dark transverse lines between cells. Also branching fibers and a single central nucleus, versus skeletal muscle's long unbranched fibers with many peripheral nuclei.", "termIds": ["histo.structures.intercalated-disc", "tissue.muscle.cardiac-muscle"] },
-    { "kind": "short", "groupId": "tissue.epithelial", "prompt": "Cheek cells swabbed onto a slide look like simple squamous epithelium, yet the cheek lining is stratified squamous (nonkeratinized). Why might the swabbed cells appear as a single scattered layer?", "modelAnswer": "The swab only scrapes off the loose surface cells, which spread out individually on the slide. The deeper layers stay attached in the cheek, so the slide shows single flat cells rather than the intact multilayered tissue.", "termIds": ["tissue.epithelial.nonkeratinized-stratified-squamous-epithelium"] },
-    { "kind": "short", "groupId": "tissue.connective.other", "prompt": "Explain why blood is classified as a connective tissue even though it doesn't look like the other connective tissues.", "modelAnswer": "Like all connective tissues it consists of cells scattered in an abundant extracellular matrix (plasma) and develops from embryonic mesenchyme. Its matrix is liquid and its fibers (fibrin) only appear during clotting, which is why it looks different.", "termIds": ["tissue.connective.other.blood"] },
-    { "kind": "short", "groupId": "tissue.connective.cartilage", "prompt": "How do you tell hyaline cartilage, elastic cartilage, and fibrocartilage apart on a slide?", "modelAnswer": "Hyaline: smooth glassy matrix with no visible fibers, chondrocytes in lacunae. Elastic: dark web of elastic fibers around the lacunae. Fibrocartilage: thick visible collagen bundles with chondrocytes lined up in rows between them.", "termIds": ["tissue.connective.cartilage.hyaline-cartilage", "tissue.connective.cartilage.elastic-cartilage", "tissue.connective.cartilage.fibrocartilage"] },
-    { "kind": "short", "groupId": "tissue.nervous", "prompt": "What do muscle tissue and nervous tissue have in common?", "modelAnswer": "Both are excitable: they can sense and react to electrochemical stimuli by changing their membrane potential." }
+    {
+      "kind": "mc",
+      "groupId": "tissue.epithelial",
+      "prompt": "Which criterion distinguishes simple epithelium from stratified epithelium?",
+      "options": [
+        "The number of cell layers",
+        "The shape of the cells",
+        "The presence or absence of a basement membrane",
+        "The type of fiber in the matrix"
+      ],
+      "answerIndex": 0
+    },
+    {
+      "kind": "mc",
+      "groupId": "tissue.connective.fibrous",
+      "prompt": "Which connective tissue subtype is found in tendons and ligaments, and is characterized by parallel collagen fibers?",
+      "options": [
+        "Reticular tissue",
+        "Dense regular connective tissue",
+        "Dense irregular connective tissue",
+        "Areolar (loose) connective tissue"
+      ],
+      "answerIndex": 1,
+      "termIds": [
+        "tissue.connective.fibrous.dense-regular-connective-tissue"
+      ]
+    },
+    {
+      "kind": "mc",
+      "groupId": "tissue.epithelial",
+      "prompt": "A tissue sample shows a single layer of cells, but the nuclei appear at different levels, giving a false impression of multiple layers. What is the tissue type?",
+      "options": [
+        "Simple cuboidal epithelium",
+        "Urothelium",
+        "Stratified squamous epithelium",
+        "Pseudostratified columnar epithelium"
+      ],
+      "answerIndex": 3,
+      "termIds": [
+        "tissue.epithelial.pseudostratified-columnar-epithelium"
+      ]
+    },
+    {
+      "kind": "mc",
+      "groupId": "tissue.muscle",
+      "prompt": "What muscle tissue type is involuntary, has branched striated cells with a single central nucleus, and uses intercalated discs to pass electrical signals between cells?",
+      "options": [
+        "Skeletal muscle",
+        "Fibrous connective tissue",
+        "Smooth muscle",
+        "Cardiac muscle"
+      ],
+      "answerIndex": 3,
+      "termIds": [
+        "tissue.muscle.cardiac-muscle"
+      ]
+    },
+    {
+      "kind": "mc",
+      "groupId": "tissue.nervous",
+      "prompt": "Which two cell types make up nervous tissue, and what distinguishes their roles?",
+      "options": [
+        "Cardiomyocytes and neurons; both transmit electrical signals equally",
+        "Neurons and erythrocytes; neurons signal, erythrocytes carry oxygen",
+        "Neurons and glial cells; neurons transmit signals, glial cells support and protect but don't transmit long-distance signals",
+        "Adipocytes and osteocytes; adipocytes store energy, osteocytes provide structure"
+      ],
+      "answerIndex": 2
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.epithelial",
+      "prompt": "Why is pseudostratified columnar epithelium classified as simple rather than stratified, despite its appearance?",
+      "modelAnswer": "Every cell touches the basement membrane, so there is only one true layer. The nuclei sit at different heights because the cells are different heights, which fakes the look of layers.",
+      "termIds": [
+        "tissue.epithelial.pseudostratified-columnar-epithelium"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.epithelial",
+      "prompt": "What is the key structural difference between keratinized and nonkeratinized stratified squamous epithelium, and how does it relate to where each is found?",
+      "modelAnswer": "Keratinized: the surface layers are dead, flattened, and filled with keratin with no nuclei; found on dry, abraded surfaces such as the epidermis (palms, soles). Nonkeratinized: surface cells are alive and still have nuclei; found on moist internal surfaces such as the mouth, esophagus, and vagina.",
+      "termIds": [
+        "tissue.epithelial.keratinized-stratified-squamous-epithelium",
+        "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.connective.fibrous",
+      "prompt": "Name one structural feature that distinguishes dense regular connective tissue from dense irregular connective tissue.",
+      "modelAnswer": "In dense regular tissue the collagen bundles run parallel in one direction (tendons pull one way); in dense irregular tissue the bundles run in many directions (dermis resists stress from any angle).",
+      "termIds": [
+        "tissue.connective.fibrous.dense-regular-connective-tissue",
+        "tissue.connective.fibrous.dense-irregular-connective-tissue"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.muscle",
+      "prompt": "What structure would you look for to confirm you are viewing cardiac muscle rather than skeletal muscle?",
+      "modelAnswer": "Intercalated discs: dark transverse lines between cells. Also branching fibers and a single central nucleus, versus skeletal muscle's long unbranched fibers with many peripheral nuclei.",
+      "termIds": [
+        "histo.structures.intercalated-disc",
+        "tissue.muscle.cardiac-muscle"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.epithelial",
+      "prompt": "Cheek cells swabbed onto a slide look like simple squamous epithelium, yet the cheek lining is stratified squamous (nonkeratinized). Why might the swabbed cells appear as a single scattered layer?",
+      "modelAnswer": "The swab only scrapes off the loose surface cells, which spread out individually on the slide. The deeper layers stay attached in the cheek, so the slide shows single flat cells rather than the intact multilayered tissue.",
+      "termIds": [
+        "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.connective.other",
+      "prompt": "Explain why blood is classified as a connective tissue even though it doesn't look like the other connective tissues.",
+      "modelAnswer": "Like all connective tissues it consists of cells scattered in an abundant extracellular matrix (plasma) and develops from embryonic mesenchyme. Its matrix is liquid and its fibers (fibrin) only appear during clotting, which is why it looks different.",
+      "termIds": [
+        "tissue.connective.other.blood"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.connective.cartilage",
+      "prompt": "How do you tell hyaline cartilage, elastic cartilage, and fibrocartilage apart on a slide?",
+      "modelAnswer": "Hyaline: smooth glassy matrix with no visible fibers, chondrocytes in lacunae. Elastic: dark web of elastic fibers around the lacunae. Fibrocartilage: thick visible collagen bundles with chondrocytes lined up in rows between them.",
+      "termIds": [
+        "tissue.connective.cartilage.hyaline-cartilage",
+        "tissue.connective.cartilage.elastic-cartilage",
+        "tissue.connective.cartilage.fibrocartilage"
+      ]
+    },
+    {
+      "kind": "short",
+      "groupId": "tissue.nervous",
+      "prompt": "What do muscle tissue and nervous tissue have in common?",
+      "modelAnswer": "Both are excitable: they can sense and react to electrochemical stimuli by changing their membrane potential."
+    }
   ]
 }

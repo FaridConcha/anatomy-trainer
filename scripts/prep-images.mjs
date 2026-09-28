@@ -27,7 +27,7 @@ for (const m of manifest) {
   writeFileSync(join(root, 'public', src), out);
   const jsonPath = join(root, 'content/images', `${m.id}.json`);
   const existing = existsSync(jsonPath) ? JSON.parse(readFileSync(jsonPath, 'utf8')) : null;
-  const rec = existing ?? { id: m.id, src, width: meta.width, height: meta.height, labId: m.labId, groupIds: m.groupIds, title: m.title, hotspots: m.hotspots ?? [], masks: m.masks ?? [] };
+  const rec = existing ?? { id: m.id, src, width: meta.width, height: meta.height, labId: m.labId, groupIds: m.groupIds, title: m.title, view: m.view ?? m.title, hotspots: m.hotspots ?? [], masks: m.masks ?? [] };
   Object.assign(rec, { src, width: meta.width, height: meta.height });
   writeFileSync(jsonPath, JSON.stringify(rec, null, 1));
   console.log(`${m.id}: ${meta.width}x${meta.height} ${(out.length / 1024).toFixed(0)} KB`);

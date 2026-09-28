@@ -34,13 +34,23 @@ const replace = {
   'hist-12.png': [[58, 47, 77, 130], [145, 47, 80, 130]],
   'hist-19.png': [[65, 57, 80, 120], [150, 57, 62, 120], [65, 182, 148, 155]],
 };
+// Duplicates, blurry probe photos, and crops with a neighbouring photo or pen marks (image audit 2026-09-28).
+const DROP = new Set(['hist.keratinized-1', 'hist.stratified-cuboidal-1', 'hist.nervous-2', 'hist.fibrocartilage-2', 'hist.simple-squamous-1', 'hist.smooth-muscle-3', 'hist.urothelium-3', 'hist.blood-2', 'hist.cardiac-muscle-3', 'hist.pseudostratified-3']);
+// Fractions [x0, y0, x1, y1] of the detected crop to keep.
+const TRIM = { 'hist.elastic-cartilage-3': [0, 0, 0.94, 1], 'hist.adipose-2': [0, 0.07, 0.78, 1], 'hist.hyaline-cartilage-1': [0, 0.06, 1, 0.78], 'hist.pseudostratified-1': [0.42, 0, 1, 1], 'hist.nonkeratinized-2': [0, 0, 1, 0.92], 'hist.elastic-cartilage-2': [0.1, 0, 1, 1], 'hist.bone-3': [0.25, 0.08, 1, 1], 'hist.fibrocartilage-1': [0, 0, 1, 0.92], 'hist.simple-squamous-2': [0, 0, 1, 0.8] };
 const manifest = existsSync('scripts/images.manifest.json') ? JSON.parse(readFileSync('scripts/images.manifest.json', 'utf8')).filter(m => !m.id.startsWith('hist.')) : [];
 for (const [file, [slug, groupId, termId, title]] of Object.entries(pages)) {
   const d = byFile[file]; const k = d.width / 300;
   const boxes = replace[file] ? [] : d.boxes.map(b => [b.x, b.y, b.w, b.h]);
   for (const e of [...(extra[file] ?? []), ...(replace[file] ?? [])]) boxes.push(e.map(v => Math.round(v * k)));
   boxes.sort((a, b) => a[1] - b[1] || a[0] - b[0]);
-  boxes.forEach((crop, i) => manifest.push({ id: `hist.${slug}-${i + 1}`, from: `raw/histology/${file}`, crop, labId: 'lab2', groupIds: [groupId], title, hotspots: [{ termId, shape: { kind: 'whole' } }] }));
+  boxes.forEach((crop, i) => {
+    const id = `hist.${slug}-${i + 1}`;
+    if (DROP.has(id)) return;
+    const t = TRIM[id];
+    if (t) crop = [Math.round(crop[0] + t[0] * crop[2]), Math.round(crop[1] + t[1] * crop[3]), Math.round((t[2] - t[0]) * crop[2]), Math.round((t[3] - t[1]) * crop[3])];
+    manifest.push({ id, from: `raw/histology/${file}`, crop, labId: 'lab2', groupIds: [groupId], title, view: 'Slide', hotspots: [{ termId, shape: { kind: 'whole' } }] });
+  });
 }
 writeFileSync('scripts/images.manifest.json', JSON.stringify(manifest, null, 1));
 console.log(manifest.filter(m => m.id.startsWith('hist.')).length, 'histology images');

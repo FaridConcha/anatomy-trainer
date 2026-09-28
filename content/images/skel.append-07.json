@@ -9,7 +9,8 @@
   "skull.foramina",
   "skull.bones"
  ],
- "title": "Maxilla and facial bones, anterior view",
+ "title": "Facial skeleton, anterior view",
+ "view": "Facial skeleton, anterior view",
  "hotspots": [
   {
    "termId": "skull.frontal-facial.intermaxillary-suture",

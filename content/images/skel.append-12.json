@@ -11,6 +11,7 @@
   "skull.mandible"
  ],
  "title": "Skull, anterior view",
+ "view": "Skull, anterior view",
  "hotspots": [
   {
    "termId": "skull.bones.frontal-bone",

@@ -12,7 +12,7 @@ import { buildSession, dueTerms, poolSize } from './session';
 const content = JSON.parse(readFileSync(new URL('../../public/content.json', import.meta.url), 'utf8')) as Content;
 const idx = buildIndexes(content);
 const fresh = defaultProgress();
-const modes: Mode[] = ['study', 'short', 'practical'];
+const modes: Mode[] = ['study', 'practical'];
 const deck = (id: string) => allDecks(idx).find((d) => d.id === id)!;
 
 function known(ids: string[], times = 2): ProgressState {
@@ -25,10 +25,9 @@ describe('content', () => {
   it('has every hotspot pointing at a known term', () => {
     for (const img of content.images) for (const h of img.hotspots) expect(idx.termsById.has(h.termId), `${img.id} → ${h.termId}`).toBe(true);
   });
-  it('gives every deck a non-empty study and stations pool, and practical pools where images exist', () => {
+  it('gives every deck a non-empty study pool, and practical pools where images exist', () => {
     for (const d of allDecks(idx)) {
       expect(poolSize(idx, { deck: d, mode: 'study', count: 0 }), `${d.id} study`).toBeGreaterThan(0);
-      expect(poolSize(idx, { deck: d, mode: 'short', count: 0 }), `${d.id} short`).toBeGreaterThan(0);
       if (d.id !== 'lab1') expect(poolSize(idx, { deck: d, mode: 'practical', count: 0 }), `${d.id} practical`).toBeGreaterThan(0);
     }
   });
@@ -46,10 +45,12 @@ describe('buildSession', () => {
       }
     }
   });
-  it('asks fresh terms by recognition only', () => {
+  it('asks fresh terms by recognition only and mixes in written stations', () => {
     const items = buildSession(idx, fresh, { deck: deck('lab5'), mode: 'study', count: 30, seed: 3 });
-    expect(items.every((i) => i.kind === 'mc')).toBe(true);
+    expect(items.every((i) => i.kind === 'mc' || i.kind === 'short')).toBe(true);
     expect(items.some((i) => i.kind === 'mc' && i.imageId)).toBe(true);
+    expect(items.filter((i) => i.kind === 'short').length).toBeGreaterThanOrEqual(3);
+    expect(items.filter((i) => i.kind === 'short').length).toBeLessThanOrEqual(5);
   });
   it('switches a term to recall once it is known', () => {
     const humerus = idx.termsByGroup.get('humerus')!.map((t) => t.id);
@@ -86,7 +87,7 @@ describe('buildSession', () => {
     p = recordAnswer(p, 'humerus.trochlea', false, 'sticker');
     expect(dueTerms(idx, p).map((t) => t.id).sort()).toEqual(['humerus.capitulum', 'humerus.trochlea']);
     const items = buildSession(idx, p, { deck: deck('exam1'), mode: 'study', count: 10, seed: 6, dueOnly: true });
-    const termItems = items.filter((i) => i.kind !== 'mc' || i.termId);
+    const termItems = items.filter((i) => i.kind !== 'short' && (i.kind !== 'mc' || i.termId));
     for (const i of termItems) expect(['humerus.capitulum', 'humerus.trochlea']).toContain((i as { termId: string }).termId);
     expect(p.terms['humerus.capitulum'].due).toBe(today());
   });

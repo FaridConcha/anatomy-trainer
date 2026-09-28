@@ -106,8 +106,11 @@ export function askable(idx: Indexes, term: Term): boolean {
 
 // One item per sampled term, chosen by how well the term is known: recognition first, recall once it sticks.
 export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[], questions: Question[], count: number, rng: Rng): Item[] {
+  const shorts = shortItems(questions);
+  const shortWeight = (i: Item) => (i.kind === 'short' ? (i.termIds.length ? i.termIds : [i.questionId]).reduce((s, id) => s + weightFor(progress.terms[id]), 0) / Math.max(1, i.termIds.length) : 0);
+  const pickedShorts = weightedSample(shorts, shortWeight, Math.min(shorts.length, Math.round(count * 0.15)), rng);
   const pool = terms.filter((t) => askable(idx, t));
-  const sampled = weightedSample(pool, (t) => weightFor(progress.terms[t.id]), count, rng);
+  const sampled = weightedSample(pool, (t) => weightFor(progress.terms[t.id]), count - pickedShorts.length, rng);
   const items: Item[] = [];
   const stickerByImage = new Map<string, { hotspotIndex: number; termId: string }[]>();
   for (const term of sampled) {
@@ -147,5 +150,5 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
     out.push({ kind: 'match', id: `match:${imageId}`, imageId, hotspotIndexes: distinct.slice(0, 6) });
   }
   const bank = shuffle(bankMcItems(questions), rng).slice(0, Math.max(0, Math.round(count * 0.1)));
-  return shuffle([...out, ...bank], rng);
+  return shuffle([...out, ...bank, ...pickedShorts], rng);
 }

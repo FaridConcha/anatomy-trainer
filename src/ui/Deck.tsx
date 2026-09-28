@@ -6,7 +6,7 @@ import { poolSize } from '../engine/session';
 import { navigate } from '../router';
 import { progressStore, useProgress } from '../storage/local';
 
-const modes: Mode[] = ['study', 'short', 'practical'];
+const modes: Mode[] = ['study', 'practical'];
 
 export function DeckScreen({ deckId }: { deckId: string }) {
   const idx = useContent();
@@ -33,7 +33,7 @@ export function DeckScreen({ deckId }: { deckId: string }) {
       <div className="opts">
         {modes.map((m) => {
           const n = poolSize(idx, { deck, mode: m, groupIds: sel, count: 0 });
-          const unit = m === 'study' ? 'terms' : m === 'short' ? 'questions' : 'stations';
+          const unit = m === 'study' ? 'items' : 'stations';
           return (
             <button key={m} className="opt mode" disabled={n === 0} onClick={() => navigate(`play/${deck.id}/${m}`)}>
               <span className="grow">

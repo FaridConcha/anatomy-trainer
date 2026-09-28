@@ -3,8 +3,8 @@ import { deckImages, deckQuestions, deckTerms, selectedGroups, type Deck } from 
 import type { Term } from '../content/types';
 import { askable, mcItems, shortItems, stickerItems, studyItems } from './generate';
 import type { Item, Mode } from './items';
-import { today, weightFor, type ProgressState } from './progress';
-import { seededRng, shuffle, weightedSample, type Rng } from './rng';
+import { today, type ProgressState } from './progress';
+import { seededRng, shuffle, type Rng } from './rng';
 
 export interface SessionSpec {
   deck: Deck;
@@ -28,12 +28,6 @@ export function progressIds(item: Item): string[] {
     case 'match':
       return [];
   }
-}
-
-export function itemWeight(item: Item, progress: ProgressState): number {
-  const ids = progressIds(item);
-  if (!ids.length) return 3;
-  return ids.reduce((s, id) => s + weightFor(progress.terms[id]), 0) / ids.length;
 }
 
 export function isDue(progress: ProgressState, termId: string, day = today()): boolean {
@@ -79,17 +73,18 @@ export function buildSession(idx: Indexes, progress: ProgressState, spec: Sessio
   switch (spec.mode) {
     case 'practical':
       return practicalItems(idx, spec, rng);
-    case 'short': {
-      const pool = shortItems(deckQuestions(idx, spec.deck, groups));
-      return weightedSample(pool, (i) => itemWeight(i, progress), Math.min(spec.count, pool.length), rng);
-    }
     case 'study': {
       let terms = deckTerms(idx, groups);
+      let questions = deckQuestions(idx, spec.deck, groups);
       if (spec.dueOnly) {
         const due = terms.filter((t) => isDue(progress, t.id));
-        if (due.length) terms = due;
+        if (due.length) {
+          terms = due;
+          const dueIds = new Set(due.map((t) => t.id));
+          questions = questions.filter((q) => q.termIds?.some((id) => dueIds.has(id)));
+        }
       }
-      return studyItems(idx, progress, terms, deckQuestions(idx, spec.deck, groups), spec.count, rng);
+      return studyItems(idx, progress, terms, questions, spec.count, rng);
     }
   }
 }
@@ -98,9 +93,7 @@ export function poolSize(idx: Indexes, spec: SessionSpec): number {
   const groups = selectedGroups(idx, spec.deck, spec.groupIds);
   switch (spec.mode) {
     case 'study':
-      return deckTerms(idx, groups).filter((t) => askable(idx, t)).length;
-    case 'short':
-      return shortItems(deckQuestions(idx, spec.deck, groups)).length;
+      return deckTerms(idx, groups).filter((t) => askable(idx, t)).length + shortItems(deckQuestions(idx, spec.deck, groups)).length;
     case 'practical': {
       const termIds = new Set(deckTerms(idx, groups).map((t) => t.id));
       return dedupeByTerm(stickerItems(deckImages(idx, groups), termIds)).length + shortItems(deckQuestions(idx, spec.deck, groups)).length;

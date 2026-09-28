@@ -38,3 +38,5 @@ Manifest builders:
 ## Progress
 
 Stored in `localStorage` (Leitner boxes per term) with student photos in IndexedDB. Settings → Export writes a single JSON backup including photos.
+
+`node scripts/leak-scan.mjs` lists OCR words on the skeleton pages that match a term name and sit outside a mask. Words that land on the illustration itself are ghost text from the reverse side of the scan and can be ignored; words on a printed label are real leaks.

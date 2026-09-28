@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useContent } from '../App';
 import { deckById, deckGroups, deckTerms } from '../content/decks';
 import { modeInfo, type Mode } from '../engine/items';
-import { poolSize } from '../engine/session';
+import { poolBreakdown } from '../engine/session';
 import { navigate } from '../router';
 import { progressStore, useProgress } from '../storage/local';
 
@@ -32,15 +32,16 @@ export function DeckScreen({ deckId }: { deckId: string }) {
       </div>
       <div className="opts">
         {modes.map((m) => {
-          const n = poolSize(idx, { deck, mode: m, groupIds: sel, count: 0 });
-          const unit = m === 'study' ? 'items' : 'stations';
+          const b = poolBreakdown(idx, { deck, mode: m, groupIds: sel, count: 0 });
+          const n = b.terms + b.written;
+          const label = [b.terms ? `${b.terms} ${m === 'study' ? 'terms' : 'stickers'}` : '', b.written ? `${b.written} written` : ''].filter(Boolean).join(' · ');
           return (
             <button key={m} className="opt mode" disabled={n === 0} onClick={() => navigate(`play/${deck.id}/${m}`)}>
               <span className="grow">
                 <div style={{ fontWeight: 600, fontSize: 17 }}>{modeInfo[m].title}</div>
                 <div className="hint">{n === 0 ? 'Nothing here for the chosen groups.' : modeInfo[m].blurb}</div>
               </span>
-              <span className="key" style={{ width: 'auto', textAlign: 'right' }}>{n} {unit}</span>
+              <span className="key" style={{ width: 'auto', textAlign: 'right', whiteSpace: 'nowrap' }}>{label}</span>
             </button>
           );
         })}

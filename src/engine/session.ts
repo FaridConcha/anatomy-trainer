@@ -89,14 +89,16 @@ export function buildSession(idx: Indexes, progress: ProgressState, spec: Sessio
   }
 }
 
-export function poolSize(idx: Indexes, spec: SessionSpec): number {
+// What a mode can draw from: distinct terms (or stickered structures) and written questions.
+export function poolBreakdown(idx: Indexes, spec: SessionSpec): { terms: number; written: number } {
   const groups = selectedGroups(idx, spec.deck, spec.groupIds);
-  switch (spec.mode) {
-    case 'study':
-      return deckTerms(idx, groups).filter((t) => askable(idx, t)).length + shortItems(deckQuestions(idx, spec.deck, groups)).length;
-    case 'practical': {
-      const termIds = new Set(deckTerms(idx, groups).map((t) => t.id));
-      return dedupeByTerm(stickerItems(deckImages(idx, groups), termIds)).length + shortItems(deckQuestions(idx, spec.deck, groups)).length;
-    }
-  }
+  const written = shortItems(deckQuestions(idx, spec.deck, groups)).length;
+  if (spec.mode === 'study') return { terms: deckTerms(idx, groups).filter((t) => askable(idx, t)).length, written };
+  const termIds = new Set(deckTerms(idx, groups).map((t) => t.id));
+  return { terms: dedupeByTerm(stickerItems(deckImages(idx, groups), termIds)).length, written };
+}
+
+export function poolSize(idx: Indexes, spec: SessionSpec): number {
+  const b = poolBreakdown(idx, spec);
+  return b.terms + b.written;
 }

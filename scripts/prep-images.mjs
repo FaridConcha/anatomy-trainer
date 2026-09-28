@@ -3,6 +3,7 @@
 import sharp from 'sharp';
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
+import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const manifest = JSON.parse(readFileSync(join(root, 'scripts/images.manifest.json'), 'utf8'));
@@ -23,11 +24,11 @@ for (const m of manifest) {
   }
   const out = await sharp(buf).resize({ width: MAX, height: MAX, fit: 'inside', withoutEnlargement: true }).webp({ quality: 82 }).toBuffer();
   const meta = await sharp(out).metadata();
-  const src = `img/${m.id}.webp`;
+  const src = `img/${createHash('sha1').update(m.id).digest('hex').slice(0, 12)}.webp`;
   writeFileSync(join(root, 'public', src), out);
   const jsonPath = join(root, 'content/images', `${m.id}.json`);
   const existing = existsSync(jsonPath) ? JSON.parse(readFileSync(jsonPath, 'utf8')) : null;
-  const rec = existing ?? { id: m.id, src, width: meta.width, height: meta.height, labId: m.labId, groupIds: m.groupIds, title: m.title, view: m.view ?? m.title, hotspots: m.hotspots ?? [], masks: m.masks ?? [] };
+  const rec = existing ?? { id: m.id, src, width: meta.width, height: meta.height, labId: m.labId, groupIds: m.groupIds, title: m.title, view: m.view ?? m.title, zoom: m.zoom, hotspots: m.hotspots ?? [], masks: m.masks ?? [] };
   Object.assign(rec, { src, width: meta.width, height: meta.height });
   writeFileSync(jsonPath, JSON.stringify(rec, null, 1));
   console.log(`${m.id}: ${meta.width}x${meta.height} ${(out.length / 1024).toFixed(0)} KB`);

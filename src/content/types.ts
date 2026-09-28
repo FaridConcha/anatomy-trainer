@@ -66,6 +66,7 @@ export interface Image {
   groupIds: string[];
   title?: string;
   view?: string;
+  zoom?: boolean;
   hotspots: Hotspot[];
   masks: Mask[];
   source: 'content' | 'user';

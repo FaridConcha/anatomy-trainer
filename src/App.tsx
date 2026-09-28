@@ -52,6 +52,7 @@ export function App() {
   if (!idx) return <div className="app"><div className="screen"><div className="hint">Loading…</div></div></div>;
 
   const [head, a, b] = route.path;
+  const routeKey = route.path.join('/') + '?' + route.query.toString();
   let screen;
   if (head === 'deck' && a) screen = <DeckScreen deckId={a} />;
   else if (head === 'play' && a && b) screen = <SessionScreen deckId={a} mode={b} />;
@@ -64,7 +65,7 @@ export function App() {
 
   return (
     <ContentCtx.Provider value={{ idx, refreshUserImages }}>
-      <div className="app">
+      <div className="app" key={routeKey}>
         {screen}
         <TabBar current={head ?? ''} />
       </div>

@@ -329,8 +329,7 @@
         {
           "name": "goblet cell",
           "facts": {
-            "definition": "A mucus-secreting cell wedged among columnar cells; looks like a pale wine glass.",
-            "location": "Simple columnar and pseudostratified epithelia"
+            "definition": "A mucus-secreting cell wedged among columnar cells; looks like a pale wine glass."
           },
           "aliases": [
             "goblet cells"
@@ -339,15 +338,13 @@
         {
           "name": "cilia",
           "facts": {
-            "definition": "Hair-like projections on the free surface that sweep mucus along.",
-            "location": "Pseudostratified columnar epithelium of the trachea"
+            "definition": "Hair-like projections on the free surface that sweep mucus along."
           }
         },
         {
           "name": "intercalated disc",
           "facts": {
-            "definition": "A dark transverse line where two cardiac muscle cells join; passes electrical signals between cells.",
-            "location": "Cardiac muscle"
+            "definition": "A dark transverse line where two cardiac muscle cells join; passes electrical signals between cells."
           },
           "aliases": [
             "intercalated discs",
@@ -357,8 +354,7 @@
         {
           "name": "striations",
           "facts": {
-            "definition": "Alternating light and dark bands along a muscle fiber.",
-            "location": "Skeletal and cardiac muscle, never smooth"
+            "definition": "Alternating light and dark bands along a muscle fiber."
           },
           "aliases": [
             "striation"
@@ -370,15 +366,13 @@
             "lacunae"
           ],
           "facts": {
-            "definition": "A small cavity in cartilage or bone matrix that houses a cell.",
-            "location": "Cartilage and bone matrix"
+            "definition": "A small cavity in cartilage or bone matrix that houses a cell."
           }
         },
         {
           "name": "chondrocyte",
           "facts": {
-            "definition": "A mature cartilage cell sitting in a lacuna.",
-            "location": "All three cartilages"
+            "definition": "A mature cartilage cell sitting in a lacuna."
           },
           "aliases": [
             "chondrocytes"
@@ -387,8 +381,7 @@
         {
           "name": "osteocyte",
           "facts": {
-            "definition": "A mature bone cell trapped in a lacuna between lamellae.",
-            "location": "Bone"
+            "definition": "A mature bone cell trapped in a lacuna between lamellae."
           },
           "aliases": [
             "osteocytes"
@@ -457,8 +450,7 @@
         {
           "name": "adipocyte",
           "facts": {
-            "definition": "One large lipid droplet with the nucleus flattened against the cell membrane (signet-ring look).",
-            "location": "Adipose tissue"
+            "definition": "One large lipid droplet with the nucleus flattened against the cell membrane (signet-ring look)."
           },
           "aliases": [
             "fat cell",
@@ -468,8 +460,7 @@
         {
           "name": "fibroblast",
           "facts": {
-            "definition": "The spindle-shaped cell that makes the fibers and ground substance of connective tissue.",
-            "location": "Fibrous connective tissues"
+            "definition": "The spindle-shaped cell that makes the fibers and ground substance of connective tissue."
           },
           "aliases": [
             "fibroblasts"
@@ -482,8 +473,7 @@
             "collagen"
           ],
           "facts": {
-            "definition": "Thick, tough, pink-staining protein fibers that resist tension.",
-            "location": "Tendons (parallel bundles) and the dermis (random bundles)"
+            "definition": "Thick, tough, pink-staining protein fibers that resist tension."
           }
         },
         {
@@ -509,8 +499,7 @@
         {
           "name": "basement membrane",
           "facts": {
-            "definition": "The thin layer anchoring an epithelium to the connective tissue beneath it.",
-            "location": "Base of every epithelium"
+            "definition": "The thin layer anchoring an epithelium to the connective tissue beneath it."
           }
         }
       ]

@@ -72,12 +72,12 @@ export function recordAnswer(state: ProgressState, id: string, ok: boolean, kind
     next.streak += 1;
     next.box = Math.min(5, next.box + 1) as TermProgress['box'];
     next.due = today() + intervals[next.box - 1];
-    if (spelling) next.spellingMisses += 1;
   } else {
     next.streak = 0;
     next.box = 1;
     next.due = today();
   }
+  if (spelling) next.spellingMisses += 1;
   let confidentMisses = state.confidentMisses;
   if (!ok && confident) confidentMisses = { ...confidentMisses, [id]: (confidentMisses[id] ?? 0) + 1 };
   else if (ok && confidentMisses[id]) {

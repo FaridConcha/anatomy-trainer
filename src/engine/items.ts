@@ -34,5 +34,5 @@ export interface AnswerResult {
 
 export const modeInfo: Record<Mode, { title: string; blurb: string }> = {
   study: { title: 'Study', blurb: 'New terms come as multiple choice, known terms you type, and written station questions are mixed in. The app picks, you answer.' },
-  practical: { title: 'Practical', blurb: 'Timed stations, no feedback until the end, then a report by region.' },
+  practical: { title: 'Practical', blurb: 'Timed stations in exam order with the same feedback as Study, then a report by region.' },
 };

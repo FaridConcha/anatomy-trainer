@@ -3,7 +3,7 @@ import { useContent } from '../../App';
 import { siblingsOf } from '../../content/index';
 import type { Term } from '../../content/types';
 import type { AnswerResult, Item } from '../../engine/items';
-import { acceptsExact, gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
+import { acceptsExact, gradeAnswer, isCorrect, levenshtein, normalize, tolerance, type Grade } from '../../engine/match';
 import { progressStore, useProgress } from '../../storage/local';
 import { recordConfusion } from '../../engine/progress';
 import { ImageStage } from '../ImageStage';
@@ -128,7 +128,7 @@ function StickerItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, {
   const term = idx.termsById.get(item.termId)!;
   const hotspot = image.hotspots[item.hotspotIndex];
   const whole = hotspot.shape.kind === 'whole';
-  const [zoom, setZoom] = useState(progress.settings.zoomDefault);
+  const [zoom, setZoom] = useState(image.zoom ?? progress.settings.zoomDefault);
   const [state, setState] = useState<'done' | 'wrong' | undefined>();
   const groupTitle = idx.groupsById.get(term.groupId)?.title;
   const prompt = hotspot.prompt ?? (whole ? 'What tissue is this?' : <>What structure is sticker <b>1</b> on? <span className="hint">({groupTitle})</span></>);
@@ -160,8 +160,8 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
   const progress = useProgress();
   const [picks, setPicks] = useState<number[]>([]);
   const [unsure, setUnsure] = useState(false);
-  const [zoom, setZoom] = useState(progress.settings.zoomDefault);
   const image = item.imageId ? idx.imagesById.get(item.imageId) : undefined;
+  const [zoom, setZoom] = useState(image?.zoom ?? progress.settings.zoomDefault);
   const done = picks.includes(item.answerIndex) || picks.length >= 2;
   const choose = (k: number) => {
     if (done || picks.includes(k)) return;
@@ -252,10 +252,13 @@ function ShortItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { k
   const idx = useContent();
   const [value, setValue] = useState('');
   const [revealed, setRevealed] = useState(false);
+  const [marked, setMarked] = useState<boolean | null>(null);
   const q = idx.content.questions.find((x) => x.id === item.questionId);
   const group = q?.groupId ? idx.groupsById.get(q.groupId) : undefined;
   const ids = item.termIds.length ? item.termIds : [item.questionId];
   const mark = (ok: boolean) => {
+    if (marked !== null) return;
+    setMarked(ok);
     onAnswer({ itemId: item.id, ok, given: value, expected: item.modelAnswer, progressIds: ids });
     onDone();
   };
@@ -270,8 +273,8 @@ function ShortItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { k
         <>
           <div className="model"><b>Model answer.</b> {item.modelAnswer}</div>
           <div className="row">
-            <button className="btn secondary grow" onClick={() => mark(false)}>I missed it</button>
-            <button className="btn grow" onClick={() => mark(true)}>I had it</button>
+            <button className={`btn grow ${marked === false ? 'accent' : 'secondary'}`} disabled={marked !== null} onClick={() => mark(false)}>{marked === false ? 'Marked: missed' : 'I missed it'}</button>
+            <button className={`btn grow ${marked === true ? 'accent' : ''}`} disabled={marked !== null} onClick={() => mark(true)}>{marked === true ? 'Marked: had it' : 'I had it'}</button>
           </div>
         </>
       ) : (
@@ -292,9 +295,10 @@ function WordformItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, 
     if (phase === 'done') return;
     const ok = acceptsExact(value, [item.answer, ...(item.alts ?? [])]);
     if (phase === 'first') {
-      onAnswer({ itemId: item.id, ok, given: value, expected: item.answer, progressIds: [item.termId] });
+      const near = !ok && levenshtein(normalize(value), normalize(item.answer)) <= tolerance(item.answer.length);
+      onAnswer({ itemId: item.id, ok, spelling: near, given: value, expected: item.answer, progressIds: [item.termId] });
       if (ok) { setNote({ tone: 'correct', text: `Correct: ${item.answer}` }); setPhase('done'); onDone(); return; }
-      setNote({ tone: 'wrong', text: `It is ${item.answer}${item.note ? ` (${item.note})` : ''}. Type it correctly to move on.` });
+      setNote({ tone: near ? 'close' : 'wrong', text: `${near ? 'One letter off, and here spelling is the whole point. ' : ''}It is ${item.answer}${item.note ? ` (${item.note})` : ''}. Type it correctly to move on.` });
       setValue('');
       setPhase('retype');
       return;

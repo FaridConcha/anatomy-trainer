@@ -10,8 +10,8 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
   const progress = useProgress();
   const asked = new Set(results.flatMap((r) => r.progressIds));
   const pairs = topConfusions(progress, 20).filter((p) => asked.has(p.termId)).slice(0, 5);
-  const correct = results.filter((r) => r.ok).length;
   const spelling = results.filter((r) => r.ok && r.spelling).length;
+  const correct = results.filter((r) => r.ok).length - spelling;
   const missed = results.filter((r) => !r.ok);
 
   const rows = new Map<string, { title: string; ok: number; n: number; subs: Map<string, { title: string; ok: number; n: number }> }>();
@@ -55,7 +55,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
       </div>
       <div className="score">
         <div className="card"><div className="v">{correct}</div><div className="l">correct</div></div>
-        <div className="card"><div className="v">{spelling}</div><div className="l">spelling</div></div>
+        <div className="card"><div className="v">{spelling}</div><div className="l">right, spelling slip</div></div>
         <div className="card"><div className="v">{missed.length}</div><div className="l">missed</div></div>
       </div>
       <div className="rows">
@@ -100,7 +100,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
         </>
       )}
       <div className="row">
-        {missed.length > 0 && <button className="btn accent grow" onClick={reviewMisses}>{mode === 'review' ? `Again: ${missed.length} still missed` : `Review the ${missed.length} misses`}</button>}
+        {missed.length > 0 && <button className="btn accent grow" onClick={reviewMisses}>{mode === 'review' ? `Again: ${missed.length} still missed` : `Review the ${missed.length} ${missed.length === 1 ? 'miss' : 'misses'}`}</button>}
         <button className="btn secondary grow" onClick={() => navigate(`deck/${deckId}`)}>Done</button>
       </div>
     </div>

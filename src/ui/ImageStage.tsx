@@ -53,13 +53,13 @@ export function ImageStage({ image, stickers = [], focus, zoom = false, onZoomTo
 
   let vx = 0, vy = 0, vw = W, vh = H;
   const focusHs = focus !== undefined ? image.hotspots[focus] : undefined;
-  const canZoom = !!focusHs && focusHs.shape.kind !== 'whole';
+  const canZoom = !!focusHs;
   if (zoom && focusHs && canZoom) {
     const m = markerOf(focusHs);
     const s = focusHs.shape;
     const cx = s.kind === 'point' ? s.x : m.x;
     const cy = s.kind === 'point' ? s.y : m.y;
-    vw = W * 0.45;
+    vw = W * (s.kind === 'whole' ? 0.6 : 0.45);
     vh = vw * 0.9;
     vx = Math.max(0, Math.min(W - vw, cx * W - vw / 2));
     vy = Math.max(0, Math.min(H - vh, cy * H - vh / 2));
@@ -73,6 +73,7 @@ export function ImageStage({ image, stickers = [], focus, zoom = false, onZoomTo
   };
 
   return (
+    <>
     <div className="imgstage">
       <svg
         ref={svgRef}
@@ -100,6 +101,8 @@ export function ImageStage({ image, stickers = [], focus, zoom = false, onZoomTo
           );
         })}
       </svg>
+    </div>
+    {(tools || (onZoomToggle && canZoom)) && (
       <div className="tools">
         {tools}
         {onZoomToggle && canZoom && (
@@ -109,6 +112,7 @@ export function ImageStage({ image, stickers = [], focus, zoom = false, onZoomTo
           </>
         )}
       </div>
-    </div>
+    )}
+    </>
   );
 }

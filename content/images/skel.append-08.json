@@ -1,0 +1,106 @@
+{
+ "id": "skel.append-08",
+ "src": "img/skel.append-08.webp",
+ "width": 1507,
+ "height": 708,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.ethmoid",
+  "skull.foramina"
+ ],
+ "title": "Ethmoid bone",
+ "hotspots": [
+  {
+   "termId": "skull.ethmoid.cribriform-plate",
+   "shape": {
+    "kind": "point",
+    "x": 0.1896,
+    "y": 0.1106,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.ethmoid.crista-galli",
+   "shape": {
+    "kind": "point",
+    "x": 0.1441,
+    "y": 0.2631,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.ethmoid.middle-nasal-concha",
+   "shape": {
+    "kind": "point",
+    "x": 0.7898,
+    "y": 0.876,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.ethmoid.perpendicular-plate",
+   "shape": {
+    "kind": "point",
+    "x": 0.2151,
+    "y": 0.9014,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.cribriform-foramina",
+   "shape": {
+    "kind": "point",
+    "x": 0.1581,
+    "y": 0.3988,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.ethmoid.superior-nasal-concha",
+   "shape": {
+    "kind": "point",
+    "x": 0.7941,
+    "y": 0.7321,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.094,
+   "y": 0.0701,
+   "w": 0.1912,
+   "h": 0.081
+  },
+  {
+   "x": 0.0794,
+   "y": 0.2198,
+   "w": 0.1295,
+   "h": 0.0866
+  },
+  {
+   "x": 0.6707,
+   "y": 0.8327,
+   "w": 0.2384,
+   "h": 0.0866
+  },
+  {
+   "x": 0.1033,
+   "y": 0.8581,
+   "w": 0.2238,
+   "h": 0.0866
+  },
+  {
+   "x": 0.0853,
+   "y": 0.3357,
+   "w": 0.1456,
+   "h": 0.1262
+  },
+  {
+   "x": 0.7029,
+   "y": 0.669,
+   "w": 0.1824,
+   "h": 0.1262
+  }
+ ]
+}

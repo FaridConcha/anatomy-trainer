@@ -1,0 +1,303 @@
+{
+ "id": "skel.append-12",
+ "src": "img/skel.append-12.webp",
+ "width": 1282,
+ "height": 985,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.bones",
+  "skull.frontal-facial",
+  "skull.foramina",
+  "skull.mandible"
+ ],
+ "title": "Skull, anterior view",
+ "hotspots": [
+  {
+   "termId": "skull.bones.frontal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.2036,
+    "y": 0.0864,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.parietal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8922,
+    "y": 0.2122,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.temporal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.9195,
+    "y": 0.3178,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.sphenoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.163,
+    "y": 0.3442,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.nasal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.1306,
+    "y": 0.4477,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.ethmoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8739,
+    "y": 0.5036,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.vomer",
+   "shape": {
+    "kind": "point",
+    "x": 0.8727,
+    "y": 0.5645,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.zygomatic-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.1626,
+    "y": 0.6314,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.maxilla",
+   "shape": {
+    "kind": "point",
+    "x": 0.8696,
+    "y": 0.6365,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.mandible",
+   "shape": {
+    "kind": "point",
+    "x": 0.1193,
+    "y": 0.735,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.frontal-facial.glabella",
+   "shape": {
+    "kind": "point",
+    "x": 0.1887,
+    "y": 0.1567,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.supraorbital-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.2048,
+    "y": 0.2092,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.frontal-facial.supraorbital-margin",
+   "shape": {
+    "kind": "point",
+    "x": 0.2048,
+    "y": 0.285,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.inferior-nasal-concha",
+   "shape": {
+    "kind": "point",
+    "x": 0.1895,
+    "y": 0.5458,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.frontal-facial.orbit",
+   "shape": {
+    "kind": "point",
+    "x": 0.8145,
+    "y": 0.4217,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.frontal-facial.intermaxillary-suture",
+   "shape": {
+    "kind": "point",
+    "x": 0.8911,
+    "y": 0.71,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.infraorbital-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.8871,
+    "y": 0.755,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.mental-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.221,
+    "y": 0.805,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.mental-protuberance",
+   "shape": {
+    "kind": "point",
+    "x": 0.2371,
+    "y": 0.8633,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.1163,
+   "y": 0.0587,
+   "w": 0.1745,
+   "h": 0.0554
+  },
+  {
+   "x": 0.81,
+   "y": 0.1886,
+   "w": 0.1643,
+   "h": 0.0473
+  },
+  {
+   "x": 0.8646,
+   "y": 0.2942,
+   "w": 0.1097,
+   "h": 0.0473
+  },
+  {
+   "x": 0.0679,
+   "y": 0.3145,
+   "w": 0.1901,
+   "h": 0.0594
+  },
+  {
+   "x": 0.0516,
+   "y": 0.42,
+   "w": 0.1581,
+   "h": 0.0554
+  },
+  {
+   "x": 0.7804,
+   "y": 0.4779,
+   "w": 0.187,
+   "h": 0.0513
+  },
+  {
+   "x": 0.8194,
+   "y": 0.5408,
+   "w": 0.1066,
+   "h": 0.0473
+  },
+  {
+   "x": 0.0578,
+   "y": 0.5997,
+   "w": 0.2096,
+   "h": 0.0635
+  },
+  {
+   "x": 0.8131,
+   "y": 0.6088,
+   "w": 0.1128,
+   "h": 0.0554
+  },
+  {
+   "x": 0.0516,
+   "y": 0.7053,
+   "w": 0.1355,
+   "h": 0.0594
+  },
+  {
+   "x": 0.129,
+   "y": 0.125,
+   "w": 0.1194,
+   "h": 0.0633
+  },
+  {
+   "x": 0.129,
+   "y": 0.165,
+   "w": 0.1516,
+   "h": 0.0883
+  },
+  {
+   "x": 0.129,
+   "y": 0.2433,
+   "w": 0.1516,
+   "h": 0.0833
+  },
+  {
+   "x": 0.1097,
+   "y": 0.5017,
+   "w": 0.1597,
+   "h": 0.0883
+  },
+  {
+   "x": 0.7629,
+   "y": 0.39,
+   "w": 0.1032,
+   "h": 0.0633
+  },
+  {
+   "x": 0.779,
+   "y": 0.6783,
+   "w": 0.221,
+   "h": 0.0633
+  },
+  {
+   "x": 0.779,
+   "y": 0.7233,
+   "w": 0.2161,
+   "h": 0.0633
+  },
+  {
+   "x": 0.129,
+   "y": 0.7733,
+   "w": 0.1839,
+   "h": 0.0633
+  },
+  {
+   "x": 0.129,
+   "y": 0.8317,
+   "w": 0.2161,
+   "h": 0.0633
+  }
+ ]
+}

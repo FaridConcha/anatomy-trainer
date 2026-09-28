@@ -1,0 +1,178 @@
+{
+ "id": "skel.axial-12",
+ "src": "img/skel.axial-12.webp",
+ "width": 1600,
+ "height": 1511,
+ "labId": "lab5",
+ "groupIds": [
+  "tibia",
+  "fibula"
+ ],
+ "title": "Right tibia and fibula, anterior and posterior",
+ "hotspots": [
+  {
+   "termId": "tibia.intercondylar-eminence",
+   "shape": {
+    "kind": "point",
+    "x": 0.1311,
+    "y": 0.0586,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "tibia.medial-condyle-of-the-tibia",
+   "shape": {
+    "kind": "point",
+    "x": 0.5119,
+    "y": 0.0824,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "tibia.lateral-condyle-of-the-tibia",
+   "shape": {
+    "kind": "point",
+    "x": 0.8793,
+    "y": 0.0618,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "tibia.medial-malleolus",
+   "shape": {
+    "kind": "point",
+    "x": 0.5244,
+    "y": 0.8561,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "tibia.tibial-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.5552,
+    "y": 0.1799,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "fibula.head-of-the-fibula",
+   "shape": {
+    "kind": "point",
+    "x": 0.8621,
+    "y": 0.1493,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "fibula.apex",
+   "shape": {
+    "kind": "point",
+    "x": 0.8147,
+    "y": 0.0972,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "fibula.lateral-malleolus",
+   "shape": {
+    "kind": "point",
+    "x": 0.1379,
+    "y": 0.8958,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "fibula.lateral-malleolus",
+   "shape": {
+    "kind": "point",
+    "x": 0.8707,
+    "y": 0.8681,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "tibia.anterior-border",
+   "shape": {
+    "kind": "point",
+    "x": 0.5259,
+    "y": 0.4236,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0,
+   "y": 0.037,
+   "w": 0.269,
+   "h": 0.043
+  },
+  {
+   "x": 0.4103,
+   "y": 0.037,
+   "w": 0.2033,
+   "h": 0.0907
+  },
+  {
+   "x": 0.7829,
+   "y": 0.0403,
+   "w": 0.193,
+   "h": 0.043
+  },
+  {
+   "x": 0.4036,
+   "y": 0.8182,
+   "w": 0.2417,
+   "h": 0.0759
+  },
+  {
+   "x": 0.4517,
+   "y": 0.1361,
+   "w": 0.2069,
+   "h": 0.0875
+  },
+  {
+   "x": 0.7724,
+   "y": 0.1056,
+   "w": 0.1793,
+   "h": 0.0875
+  },
+  {
+   "x": 0.7638,
+   "y": 0.0708,
+   "w": 0.1017,
+   "h": 0.0528
+  },
+  {
+   "x": 0.031,
+   "y": 0.8486,
+   "w": 0.2138,
+   "h": 0.0944
+  },
+  {
+   "x": 0.7724,
+   "y": 0.8208,
+   "w": 0.1966,
+   "h": 0.0944
+  },
+  {
+   "x": 0.4276,
+   "y": 0.3972,
+   "w": 0.1966,
+   "h": 0.0528
+  },
+  {
+   "x": 0.4397,
+   "y": 0.4694,
+   "w": 0.1293,
+   "h": 0.0528
+  },
+  {
+   "x": 0.4397,
+   "y": 0.5583,
+   "w": 0.1293,
+   "h": 0.0528
+  }
+ ]
+}

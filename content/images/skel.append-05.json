@@ -1,0 +1,274 @@
+{
+ "id": "skel.append-05",
+ "src": "img/skel.append-05.webp",
+ "width": 1600,
+ "height": 870,
+ "labId": "lab5",
+ "groupIds": [
+  "scapula",
+  "clavicle"
+ ],
+ "title": "Right scapula and clavicle",
+ "hotspots": [
+  {
+   "termId": "scapula.acromion",
+   "shape": {
+    "kind": "point",
+    "x": 0.4083,
+    "y": 0.2114,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.supraspinous-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.696,
+    "y": 0.2508,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.coracoid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.4061,
+    "y": 0.2737,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.glenoid-cavity",
+   "shape": {
+    "kind": "point",
+    "x": 0.4031,
+    "y": 0.3319,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.spine-of-the-scapula",
+   "shape": {
+    "kind": "point",
+    "x": 0.6967,
+    "y": 0.3397,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.subscapular-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.4516,
+    "y": 0.446,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.infraspinous-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.905,
+    "y": 0.4616,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "clavicle.sternal-end",
+   "shape": {
+    "kind": "point",
+    "x": 0.0666,
+    "y": 0.6897,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "clavicle.acromial-end",
+   "shape": {
+    "kind": "point",
+    "x": 0.3864,
+    "y": 0.7035,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "clavicle.conoid-tubercle",
+   "shape": {
+    "kind": "point",
+    "x": 0.2085,
+    "y": 0.8125,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "clavicle.sternal-end",
+   "shape": {
+    "kind": "point",
+    "x": 0.0862,
+    "y": 0.8744,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "clavicle.acromial-end",
+   "shape": {
+    "kind": "point",
+    "x": 0.3959,
+    "y": 0.8858,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.suprascapular-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.4342,
+    "y": 0.1814,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.lateral-border",
+   "shape": {
+    "kind": "point",
+    "x": 0.4316,
+    "y": 0.5643,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.medial-border",
+   "shape": {
+    "kind": "point",
+    "x": 0.6711,
+    "y": 0.5743,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "scapula.inferior-angle",
+   "shape": {
+    "kind": "point",
+    "x": 0.8,
+    "y": 0.7,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.3683,
+   "y": 0.1889,
+   "w": 0.0801,
+   "h": 0.045
+  },
+  {
+   "x": 0.6423,
+   "y": 0.2091,
+   "w": 0.1075,
+   "h": 0.0834
+  },
+  {
+   "x": 0.3683,
+   "y": 0.2357,
+   "w": 0.0756,
+   "h": 0.0761
+  },
+  {
+   "x": 0.3493,
+   "y": 0.3053,
+   "w": 0.1075,
+   "h": 0.0532
+  },
+  {
+   "x": 0.6672,
+   "y": 0.3172,
+   "w": 0.0591,
+   "h": 0.045
+  },
+  {
+   "x": 0.4021,
+   "y": 0.4061,
+   "w": 0.099,
+   "h": 0.0798
+  },
+  {
+   "x": 0.8356,
+   "y": 0.4217,
+   "w": 0.1388,
+   "h": 0.0798
+  },
+  {
+   "x": 0.0171,
+   "y": 0.6654,
+   "w": 0.099,
+   "h": 0.0486
+  },
+  {
+   "x": 0.3349,
+   "y": 0.681,
+   "w": 0.103,
+   "h": 0.045
+  },
+  {
+   "x": 0.1496,
+   "y": 0.79,
+   "w": 0.1179,
+   "h": 0.045
+  },
+  {
+   "x": 0.021,
+   "y": 0.8478,
+   "w": 0.1304,
+   "h": 0.0532
+  },
+  {
+   "x": 0.3454,
+   "y": 0.8633,
+   "w": 0.101,
+   "h": 0.045
+  },
+  {
+   "x": 0.3821,
+   "y": 0.1471,
+   "w": 0.1042,
+   "h": 0.0686
+  },
+  {
+   "x": 0.3926,
+   "y": 0.53,
+   "w": 0.0779,
+   "h": 0.0686
+  },
+  {
+   "x": 0.6295,
+   "y": 0.5414,
+   "w": 0.0832,
+   "h": 0.0657
+  },
+  {
+   "x": 0.7558,
+   "y": 0.6729,
+   "w": 0.0884,
+   "h": 0.0543
+  },
+  {
+   "x": 0.0211,
+   "y": 0.0857,
+   "w": 0.2421,
+   "h": 0.2143
+  },
+  {
+   "x": 0.0211,
+   "y": 0.4571,
+   "w": 0.3368,
+   "h": 0.1571
+  },
+  {
+   "x": 0.5684,
+   "y": 0.7571,
+   "w": 0.3789,
+   "h": 0.2143
+  }
+ ]
+}

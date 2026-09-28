@@ -1,0 +1,306 @@
+{
+ "id": "skel.axial-10",
+ "src": "img/skel.axial-10.webp",
+ "width": 1600,
+ "height": 1148,
+ "labId": "lab5",
+ "groupIds": [
+  "humerus"
+ ],
+ "title": "Right humerus, anterior and posterior",
+ "hotspots": [
+  {
+   "termId": "humerus.greater-tubercle",
+   "shape": {
+    "kind": "point",
+    "x": 0.1657,
+    "y": 0.118,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.head-of-the-humerus",
+   "shape": {
+    "kind": "point",
+    "x": 0.396,
+    "y": 0.1329,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.head-of-the-humerus",
+   "shape": {
+    "kind": "point",
+    "x": 0.6166,
+    "y": 0.137,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.lesser-tubercle",
+   "shape": {
+    "kind": "point",
+    "x": 0.171,
+    "y": 0.1903,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.anatomical-neck",
+   "shape": {
+    "kind": "point",
+    "x": 0.86,
+    "y": 0.1926,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.surgical-neck",
+   "shape": {
+    "kind": "point",
+    "x": 0.6177,
+    "y": 0.2362,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.surgical-neck",
+   "shape": {
+    "kind": "point",
+    "x": 0.3957,
+    "y": 0.2436,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.intertubercular-sulcus",
+   "shape": {
+    "kind": "point",
+    "x": 0.1563,
+    "y": 0.2917,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.deltoid-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.1454,
+    "y": 0.3912,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.deltoid-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.8808,
+    "y": 0.4172,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.coronoid-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.1876,
+    "y": 0.6695,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.lateral-epicondyle",
+   "shape": {
+    "kind": "point",
+    "x": 0.1614,
+    "y": 0.807,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.medial-epicondyle",
+   "shape": {
+    "kind": "point",
+    "x": 0.6203,
+    "y": 0.8379,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.medial-epicondyle",
+   "shape": {
+    "kind": "point",
+    "x": 0.4342,
+    "y": 0.8435,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.lateral-epicondyle",
+   "shape": {
+    "kind": "point",
+    "x": 0.8988,
+    "y": 0.8469,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.capitulum",
+   "shape": {
+    "kind": "point",
+    "x": 0.197,
+    "y": 0.8569,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.olecranon-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.8784,
+    "y": 0.9065,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.trochlea",
+   "shape": {
+    "kind": "point",
+    "x": 0.4123,
+    "y": 0.9042,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "humerus.trochlea",
+   "shape": {
+    "kind": "point",
+    "x": 0.6244,
+    "y": 0.9024,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.1177,
+   "y": 0.0826,
+   "w": 0.096,
+   "h": 0.0708
+  },
+  {
+   "x": 0.3589,
+   "y": 0.1087,
+   "w": 0.0741,
+   "h": 0.0485
+  },
+  {
+   "x": 0.5782,
+   "y": 0.1169,
+   "w": 0.0767,
+   "h": 0.0403
+  },
+  {
+   "x": 0.123,
+   "y": 0.1549,
+   "w": 0.096,
+   "h": 0.0708
+  },
+  {
+   "x": 0.797,
+   "y": 0.1549,
+   "w": 0.1259,
+   "h": 0.0753
+  },
+  {
+   "x": 0.5697,
+   "y": 0.1967,
+   "w": 0.096,
+   "h": 0.079
+  },
+  {
+   "x": 0.3477,
+   "y": 0.2041,
+   "w": 0.096,
+   "h": 0.079
+  },
+  {
+   "x": 0.0193,
+   "y": 0.2503,
+   "w": 0.2741,
+   "h": 0.0827
+  },
+  {
+   "x": 0.0578,
+   "y": 0.3688,
+   "w": 0.1752,
+   "h": 0.0447
+  },
+  {
+   "x": 0.789,
+   "y": 0.3912,
+   "w": 0.1837,
+   "h": 0.0522
+  },
+  {
+   "x": 0.1396,
+   "y": 0.6319,
+   "w": 0.096,
+   "h": 0.0753
+  },
+  {
+   "x": 0.0765,
+   "y": 0.7846,
+   "w": 0.1698,
+   "h": 0.0447
+  },
+  {
+   "x": 0.567,
+   "y": 0.8003,
+   "w": 0.1067,
+   "h": 0.0753
+  },
+  {
+   "x": 0.3809,
+   "y": 0.804,
+   "w": 0.1067,
+   "h": 0.079
+  },
+  {
+   "x": 0.8082,
+   "y": 0.8226,
+   "w": 0.181,
+   "h": 0.0485
+  },
+  {
+   "x": 0.1423,
+   "y": 0.8346,
+   "w": 0.1094,
+   "h": 0.0447
+  },
+  {
+   "x": 0.8221,
+   "y": 0.8651,
+   "w": 0.1126,
+   "h": 0.0827
+  },
+  {
+   "x": 0.3616,
+   "y": 0.88,
+   "w": 0.1013,
+   "h": 0.0485
+  },
+  {
+   "x": 0.5723,
+   "y": 0.88,
+   "w": 0.104,
+   "h": 0.0447
+  },
+  {
+   "x": 0,
+   "y": 0.1972,
+   "w": 0.1233,
+   "h": 0.3662
+  }
+ ]
+}

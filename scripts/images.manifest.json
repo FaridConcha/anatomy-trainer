@@ -1263,5 +1263,5307 @@
     }
    }
   ]
+ },
+ {
+  "id": "skel.axial-03",
+  "from": "raw/skeleton/axial-03.png",
+  "crop": [
+   816,
+   327,
+   1468,
+   1251
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.bones"
+  ],
+  "title": "Skull, right lateral view",
+  "hotspots": [
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1461,
+     "y": 0.5413,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9078,
+     "y": 0.6064,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.4796,
+     "y": 0.6284,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.lacrimal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8921,
+     "y": 0.6807,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.vomer",
+    "shape": {
+     "kind": "point",
+     "x": 0.3774,
+     "y": 0.6939,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.8843,
+     "y": 0.7518,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.mandible",
+    "shape": {
+     "kind": "point",
+     "x": 0.3985,
+     "y": 0.811,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1183,
+     "y": 0.2269,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8333,
+     "y": 0.2269,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.occipital-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1397,
+     "y": 0.4485,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8413,
+     "y": 0.3885,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.ethmoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8413,
+     "y": 0.4731,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.0508,
+    "y": 0.5142,
+    "w": 0.1907,
+    "h": 0.0541
+   },
+   {
+    "x": 0.8315,
+    "y": 0.5814,
+    "w": 0.1525,
+    "h": 0.0501
+   },
+   {
+    "x": 0.3812,
+    "y": 0.5997,
+    "w": 0.1968,
+    "h": 0.0573
+   },
+   {
+    "x": 0.8001,
+    "y": 0.6557,
+    "w": 0.1839,
+    "h": 0.0501
+   },
+   {
+    "x": 0.3267,
+    "y": 0.6709,
+    "w": 0.1015,
+    "h": 0.0461
+   },
+   {
+    "x": 0.8288,
+    "y": 0.7268,
+    "w": 0.111,
+    "h": 0.0501
+   },
+   {
+    "x": 0.3335,
+    "y": 0.786,
+    "w": 0.1301,
+    "h": 0.0501
+   },
+   {
+    "x": 0,
+    "y": 0.1769,
+    "w": 0.2365,
+    "h": 0.1
+   },
+   {
+    "x": 0.7111,
+    "y": 0.1769,
+    "w": 0.2444,
+    "h": 0.1
+   },
+   {
+    "x": 0.0175,
+    "y": 0.4046,
+    "w": 0.2444,
+    "h": 0.0877
+   },
+   {
+    "x": 0.719,
+    "y": 0.3446,
+    "w": 0.2444,
+    "h": 0.0877
+   },
+   {
+    "x": 0.719,
+    "y": 0.4292,
+    "w": 0.2444,
+    "h": 0.0877
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-04",
+  "from": "raw/skeleton/axial-04.png",
+  "crop": [
+   46,
+   386,
+   2231,
+   1053
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.frontal-facial",
+   "skull.sutures",
+   "skull.foramina",
+   "skull.bones"
+  ],
+  "title": "Skull sutures (superior) and frontal bone (anterior)",
+  "hotspots": [
+   {
+    "termId": "skull.frontal-facial.glabella",
+    "shape": {
+     "kind": "point",
+     "x": 0.5616,
+     "y": 0.4985,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.coronal-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.099,
+     "y": 0.1883,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.sagittal-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.0885,
+     "y": 0.3683,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.lambdoid-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.1094,
+     "y": 0.5783,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.supraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.5552,
+     "y": 0.56,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.supraorbital-margin",
+    "shape": {
+     "kind": "point",
+     "x": 0.5635,
+     "y": 0.6383,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1094,
+     "y": 0.1117,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1089,
+     "y": 0.2833,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.occipital-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1115,
+     "y": 0.66,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5839,
+     "y": 0.4517,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5891,
+     "y": 0.7083,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.576,
+     "y": 0.8467,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.5252,
+    "y": 0.4702,
+    "w": 0.073,
+    "h": 0.0566
+   },
+   {
+    "x": 0.0188,
+    "y": 0.14,
+    "w": 0.1604,
+    "h": 0.0967
+   },
+   {
+    "x": 0.0083,
+    "y": 0.32,
+    "w": 0.1604,
+    "h": 0.0967
+   },
+   {
+    "x": 0.0292,
+    "y": 0.53,
+    "w": 0.1604,
+    "h": 0.0967
+   },
+   {
+    "x": 0.4542,
+    "y": 0.5183,
+    "w": 0.2021,
+    "h": 0.0833
+   },
+   {
+    "x": 0.4719,
+    "y": 0.5967,
+    "w": 0.1833,
+    "h": 0.0833
+   },
+   {
+    "x": 0.0604,
+    "y": 0.0817,
+    "w": 0.0979,
+    "h": 0.06
+   },
+   {
+    "x": 0.0625,
+    "y": 0.2533,
+    "w": 0.0927,
+    "h": 0.06
+   },
+   {
+    "x": 0.0625,
+    "y": 0.63,
+    "w": 0.0979,
+    "h": 0.06
+   },
+   {
+    "x": 0.5323,
+    "y": 0.4217,
+    "w": 0.1031,
+    "h": 0.06
+   },
+   {
+    "x": 0.5323,
+    "y": 0.6783,
+    "w": 0.1135,
+    "h": 0.06
+   },
+   {
+    "x": 0.5323,
+    "y": 0.8167,
+    "w": 0.0875,
+    "h": 0.06
+   },
+   {
+    "x": 0.0833,
+    "y": 0.7833,
+    "w": 0.375,
+    "h": 0.2
+   },
+   {
+    "x": 0.5313,
+    "y": 0.0667,
+    "w": 0.4375,
+    "h": 0.25
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-05",
+  "from": "raw/skeleton/axial-05.png",
+  "crop": [
+   49,
+   268,
+   2374,
+   1287
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.bones",
+   "skull.sutures",
+   "skull.temporal",
+   "skull.foramina",
+   "skull.sphenoid",
+   "skull.frontal-facial",
+   "skull.ethmoid"
+  ],
+  "title": "Skull, lateral view and median section",
+  "hotspots": [
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.4427,
+     "y": 0.0878,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.ethmoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.4564,
+     "y": 0.197,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.lacrimal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.4602,
+     "y": 0.2494,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.452,
+     "y": 0.2992,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.4366,
+     "y": 0.3509,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.445,
+     "y": 0.4469,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5552,
+     "y": 0.4647,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9427,
+     "y": 0.4686,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.mandible",
+    "shape": {
+     "kind": "point",
+     "x": 0.0428,
+     "y": 0.5662,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9406,
+     "y": 0.5662,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5156,
+     "y": 0.6276,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9419,
+     "y": 0.6451,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.occipital-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5135,
+     "y": 0.7931,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.9366,
+     "y": 0.8261,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.mandible",
+    "shape": {
+     "kind": "point",
+     "x": 0.9324,
+     "y": 0.9159,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0599,
+     "y": 0.0785,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0573,
+     "y": 0.1264,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.occipital-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0391,
+     "y": 0.2917,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0391,
+     "y": 0.3486,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.vomer",
+    "shape": {
+     "kind": "point",
+     "x": 0.812,
+     "y": 0.8236,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.coronal-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.4427,
+     "y": 0.1292,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.squamous-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.0448,
+     "y": 0.1681,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.lambdoid-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.0417,
+     "y": 0.2444,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.zygomatic-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.0521,
+     "y": 0.3986,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.external-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.0448,
+     "y": 0.4528,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mastoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.0448,
+     "y": 0.4972,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.styloid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.0573,
+     "y": 0.5361,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.zygomatic-arch",
+    "shape": {
+     "kind": "point",
+     "x": 0.4531,
+     "y": 0.5569,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.infraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.4661,
+     "y": 0.4694,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sphenoid.sella-turcica",
+    "shape": {
+     "kind": "point",
+     "x": 0.9531,
+     "y": 0.5194,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sphenoid.sphenoidal-sinus",
+    "shape": {
+     "kind": "point",
+     "x": 0.9557,
+     "y": 0.5486,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.frontal-sinus",
+    "shape": {
+     "kind": "point",
+     "x": 0.9479,
+     "y": 0.6014,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.crista-galli",
+    "shape": {
+     "kind": "point",
+     "x": 0.9479,
+     "y": 0.7208,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.cribriform-plate",
+    "shape": {
+     "kind": "point",
+     "x": 0.9531,
+     "y": 0.7458,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.perpendicular-plate",
+    "shape": {
+     "kind": "point",
+     "x": 0.9557,
+     "y": 0.7722,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.squamous-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.5365,
+     "y": 0.5292,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.lambdoid-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.5365,
+     "y": 0.5792,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.internal-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.5443,
+     "y": 0.6833,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.jugular-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.5365,
+     "y": 0.7472,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.hypoglossal-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.5443,
+     "y": 0.8306,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.incisive-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.9479,
+     "y": 0.8611,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.palatine-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.9531,
+     "y": 0.8861,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.mandibular-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.9583,
+     "y": 0.9556,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.398,
+    "y": 0.0675,
+    "w": 0.0894,
+    "h": 0.0405
+   },
+   {
+    "x": 0.4085,
+    "y": 0.1748,
+    "w": 0.0958,
+    "h": 0.0444
+   },
+   {
+    "x": 0.4123,
+    "y": 0.2292,
+    "w": 0.0958,
+    "h": 0.0405
+   },
+   {
+    "x": 0.4123,
+    "y": 0.2789,
+    "w": 0.0793,
+    "h": 0.0405
+   },
+   {
+    "x": 0.4064,
+    "y": 0.3287,
+    "w": 0.0604,
+    "h": 0.0444
+   },
+   {
+    "x": 0.4064,
+    "y": 0.4134,
+    "w": 0.0772,
+    "h": 0.067
+   },
+   {
+    "x": 0.5084,
+    "y": 0.4445,
+    "w": 0.0937,
+    "h": 0.0405
+   },
+   {
+    "x": 0.8938,
+    "y": 0.4484,
+    "w": 0.0979,
+    "h": 0.0405
+   },
+   {
+    "x": 0.0063,
+    "y": 0.5439,
+    "w": 0.073,
+    "h": 0.0444
+   },
+   {
+    "x": 0.8959,
+    "y": 0.5439,
+    "w": 0.0894,
+    "h": 0.0444
+   },
+   {
+    "x": 0.4666,
+    "y": 0.6053,
+    "w": 0.0979,
+    "h": 0.0444
+   },
+   {
+    "x": 0.9022,
+    "y": 0.6248,
+    "w": 0.0793,
+    "h": 0.0405
+   },
+   {
+    "x": 0.4666,
+    "y": 0.7709,
+    "w": 0.0937,
+    "h": 0.0444
+   },
+   {
+    "x": 0.9064,
+    "y": 0.8059,
+    "w": 0.0604,
+    "h": 0.0405
+   },
+   {
+    "x": 0.898,
+    "y": 0.8937,
+    "w": 0.0688,
+    "h": 0.0444
+   },
+   {
+    "x": 0,
+    "y": 0.0542,
+    "w": 0.1219,
+    "h": 0.0486
+   },
+   {
+    "x": 0,
+    "y": 0.1014,
+    "w": 0.1167,
+    "h": 0.05
+   },
+   {
+    "x": 0,
+    "y": 0.2514,
+    "w": 0.0854,
+    "h": 0.0806
+   },
+   {
+    "x": 0,
+    "y": 0.3222,
+    "w": 0.0854,
+    "h": 0.0528
+   },
+   {
+    "x": 0.7604,
+    "y": 0.7903,
+    "w": 0.1031,
+    "h": 0.0667
+   },
+   {
+    "x": 0.399,
+    "y": 0.1056,
+    "w": 0.0875,
+    "h": 0.0472
+   },
+   {
+    "x": 0,
+    "y": 0.1444,
+    "w": 0.0938,
+    "h": 0.0472
+   },
+   {
+    "x": 0,
+    "y": 0.2208,
+    "w": 0.0906,
+    "h": 0.0472
+   },
+   {
+    "x": 0.0031,
+    "y": 0.375,
+    "w": 0.0979,
+    "h": 0.0472
+   },
+   {
+    "x": 0,
+    "y": 0.4222,
+    "w": 0.0938,
+    "h": 0.0611
+   },
+   {
+    "x": 0,
+    "y": 0.4736,
+    "w": 0.0938,
+    "h": 0.0472
+   },
+   {
+    "x": 0.0135,
+    "y": 0.5125,
+    "w": 0.0875,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4042,
+    "y": 0.5333,
+    "w": 0.0979,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4146,
+    "y": 0.4458,
+    "w": 0.1031,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.4958,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.525,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.5778,
+    "w": 0.0875,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.6972,
+    "w": 0.0875,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.7222,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.7486,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4875,
+    "y": 0.5056,
+    "w": 0.0979,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4875,
+    "y": 0.5556,
+    "w": 0.0979,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4927,
+    "y": 0.6528,
+    "w": 0.1031,
+    "h": 0.0611
+   },
+   {
+    "x": 0.4875,
+    "y": 0.7236,
+    "w": 0.0979,
+    "h": 0.0472
+   },
+   {
+    "x": 0.4927,
+    "y": 0.8069,
+    "w": 0.1031,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.8375,
+    "w": 0.0875,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.8625,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.9042,
+    "y": 0.9319,
+    "w": 0.0958,
+    "h": 0.0472
+   },
+   {
+    "x": 0.5521,
+    "y": 0.0278,
+    "w": 0.4167,
+    "h": 0.3611
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-06",
+  "from": "raw/skeleton/axial-06.png",
+  "crop": [
+   75,
+   325,
+   2386,
+   1299
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.bones",
+   "skull.foramina",
+   "skull.sphenoid",
+   "skull.ethmoid",
+   "skull.temporal",
+   "skull.frontal-facial",
+   "skull.occipital"
+  ],
+  "title": "Cranial floor (superior) and skull base (inferior)",
+  "hotspots": [
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9094,
+     "y": 0.1267,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.palatine-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5128,
+     "y": 0.1594,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.vomer",
+    "shape": {
+     "kind": "point",
+     "x": 0.5293,
+     "y": 0.2237,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9261,
+     "y": 0.2371,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.5201,
+     "y": 0.2583,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.occipital-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9276,
+     "y": 0.4572,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.078,
+     "y": 0.4965,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.518,
+     "y": 0.5388,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0822,
+     "y": 0.5503,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.3974,
+     "y": 0.6471,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.3921,
+     "y": 0.85,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.optic-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.0847,
+     "y": 0.5926,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sphenoid.sella-turcica",
+    "shape": {
+     "kind": "point",
+     "x": 0.0874,
+     "y": 0.6441,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-rotundum",
+    "shape": {
+     "kind": "point",
+     "x": 0.0874,
+     "y": 0.6882,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-spinosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.0874,
+     "y": 0.7471,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-ovale",
+    "shape": {
+     "kind": "point",
+     "x": 0.0874,
+     "y": 0.8044,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.hypoglossal-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.0874,
+     "y": 0.8897,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.crista-galli",
+    "shape": {
+     "kind": "point",
+     "x": 0.3953,
+     "y": 0.475,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.cribriform-plate",
+    "shape": {
+     "kind": "point",
+     "x": 0.3979,
+     "y": 0.5471,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.petrous-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.3926,
+     "y": 0.6853,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.internal-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.3953,
+     "y": 0.7235,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.jugular-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.3926,
+     "y": 0.7765,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.incisive-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.5316,
+     "y": 0.0618,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.palatine-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.5316,
+     "y": 0.0926,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.intermaxillary-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.5395,
+     "y": 0.1265,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mandibular-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.5342,
+     "y": 0.2941,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.styloid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.5316,
+     "y": 0.3176,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.carotid-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.5289,
+     "y": 0.3412,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.external-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.5342,
+     "y": 0.3721,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.stylomastoid-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.5421,
+     "y": 0.4088,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mastoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.5342,
+     "y": 0.4338,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.jugular-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.5316,
+     "y": 0.4809,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.zygomatic-arch",
+    "shape": {
+     "kind": "point",
+     "x": 0.9237,
+     "y": 0.1721,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sphenoid.pterygoid-processes",
+    "shape": {
+     "kind": "point",
+     "x": 0.9316,
+     "y": 0.2853,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-ovale",
+    "shape": {
+     "kind": "point",
+     "x": 0.9158,
+     "y": 0.3353,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-spinosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9237,
+     "y": 0.3588,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-lacerum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9211,
+     "y": 0.3853,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.occipital-condyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.9237,
+     "y": 0.4853,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.basilar-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.9105,
+     "y": 0.5368,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-magnum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9211,
+     "y": 0.5632,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.inferior-nuchal-line",
+    "shape": {
+     "kind": "point",
+     "x": 0.9263,
+     "y": 0.5897,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.superior-nuchal-line",
+    "shape": {
+     "kind": "point",
+     "x": 0.9263,
+     "y": 0.6176,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.external-occipital-protuberance",
+    "shape": {
+     "kind": "point",
+     "x": 0.9263,
+     "y": 0.6515,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.8546,
+    "y": 0.1038,
+    "w": 0.1095,
+    "h": 0.0457
+   },
+   {
+    "x": 0.4653,
+    "y": 0.1385,
+    "w": 0.0948,
+    "h": 0.0419
+   },
+   {
+    "x": 0.5031,
+    "y": 0.2046,
+    "w": 0.0525,
+    "h": 0.038
+   },
+   {
+    "x": 0.8756,
+    "y": 0.2162,
+    "w": 0.1011,
+    "h": 0.0419
+   },
+   {
+    "x": 0.4695,
+    "y": 0.2354,
+    "w": 0.1011,
+    "h": 0.0457
+   },
+   {
+    "x": 0.8781,
+    "y": 0.4363,
+    "w": 0.099,
+    "h": 0.0419
+   },
+   {
+    "x": 0.0337,
+    "y": 0.4755,
+    "w": 0.0885,
+    "h": 0.0419
+   },
+   {
+    "x": 0.4716,
+    "y": 0.5178,
+    "w": 0.0927,
+    "h": 0.0419
+   },
+   {
+    "x": 0.0337,
+    "y": 0.5294,
+    "w": 0.0969,
+    "h": 0.0419
+   },
+   {
+    "x": 0.3347,
+    "y": 0.6147,
+    "w": 0.1253,
+    "h": 0.0647
+   },
+   {
+    "x": 0.3295,
+    "y": 0.8176,
+    "w": 0.1253,
+    "h": 0.0647
+   },
+   {
+    "x": 0.0484,
+    "y": 0.5676,
+    "w": 0.0726,
+    "h": 0.05
+   },
+   {
+    "x": 0.0484,
+    "y": 0.6191,
+    "w": 0.0779,
+    "h": 0.05
+   },
+   {
+    "x": 0.0484,
+    "y": 0.6559,
+    "w": 0.0779,
+    "h": 0.0647
+   },
+   {
+    "x": 0.0484,
+    "y": 0.7147,
+    "w": 0.0779,
+    "h": 0.0647
+   },
+   {
+    "x": 0.0484,
+    "y": 0.7794,
+    "w": 0.0779,
+    "h": 0.05
+   },
+   {
+    "x": 0.0484,
+    "y": 0.8574,
+    "w": 0.0779,
+    "h": 0.0647
+   },
+   {
+    "x": 0.3537,
+    "y": 0.4485,
+    "w": 0.0832,
+    "h": 0.0529
+   },
+   {
+    "x": 0.3537,
+    "y": 0.5132,
+    "w": 0.0884,
+    "h": 0.0676
+   },
+   {
+    "x": 0.3537,
+    "y": 0.6603,
+    "w": 0.0779,
+    "h": 0.05
+   },
+   {
+    "x": 0.3537,
+    "y": 0.6897,
+    "w": 0.0832,
+    "h": 0.0676
+   },
+   {
+    "x": 0.3537,
+    "y": 0.7426,
+    "w": 0.0779,
+    "h": 0.0676
+   },
+   {
+    "x": 0.4874,
+    "y": 0.0368,
+    "w": 0.0884,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.0676,
+    "w": 0.0884,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.1015,
+    "w": 0.1042,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.2691,
+    "w": 0.0937,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.2926,
+    "w": 0.0884,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.3162,
+    "w": 0.0832,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.3397,
+    "w": 0.0937,
+    "h": 0.0647
+   },
+   {
+    "x": 0.4874,
+    "y": 0.3838,
+    "w": 0.1095,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.4088,
+    "w": 0.0937,
+    "h": 0.05
+   },
+   {
+    "x": 0.4874,
+    "y": 0.4559,
+    "w": 0.0884,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.1471,
+    "w": 0.1042,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.2485,
+    "w": 0.12,
+    "h": 0.0735
+   },
+   {
+    "x": 0.8716,
+    "y": 0.3103,
+    "w": 0.0884,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.3338,
+    "w": 0.1042,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.3603,
+    "w": 0.0989,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.4603,
+    "w": 0.1042,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.5118,
+    "w": 0.0779,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.5382,
+    "w": 0.0989,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.5647,
+    "w": 0.1095,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.5926,
+    "w": 0.1095,
+    "h": 0.05
+   },
+   {
+    "x": 0.8716,
+    "y": 0.6191,
+    "w": 0.1095,
+    "h": 0.0647
+   },
+   {
+    "x": 0.0211,
+    "y": 0.0441,
+    "w": 0.4421,
+    "h": 0.2794
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-07",
+  "from": "raw/skeleton/axial-07.png",
+  "crop": [
+   71,
+   308,
+   2256,
+   1194
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.occipital",
+   "skull.foramina"
+  ],
+  "title": "Occipital bone: cranial floor and inferior skull",
+  "hotspots": [
+   {
+    "termId": "skull.occipital.occipital-condyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.8972,
+     "y": 0.3548,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.basilar-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.8591,
+     "y": 0.4545,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-magnum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9023,
+     "y": 0.5124,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.external-occipital-protuberance",
+    "shape": {
+     "kind": "point",
+     "x": 0.9003,
+     "y": 0.6816,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.hypoglossal-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.0842,
+     "y": 0.9,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-ovale",
+    "shape": {
+     "kind": "point",
+     "x": 0.8895,
+     "y": 0.1097,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-spinosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9,
+     "y": 0.1565,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-lacerum",
+    "shape": {
+     "kind": "point",
+     "x": 0.9,
+     "y": 0.2016,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.inferior-nuchal-line",
+    "shape": {
+     "kind": "point",
+     "x": 0.9,
+     "y": 0.5661,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.occipital.superior-nuchal-line",
+    "shape": {
+     "kind": "point",
+     "x": 0.9053,
+     "y": 0.6145,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-rotundum",
+    "shape": {
+     "kind": "point",
+     "x": 0.0474,
+     "y": 0.5806,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-spinosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.0474,
+     "y": 0.6774,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.foramen-ovale",
+    "shape": {
+     "kind": "point",
+     "x": 0.0526,
+     "y": 0.7629,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.836,
+    "y": 0.3282,
+    "w": 0.1223,
+    "h": 0.0533
+   },
+   {
+    "x": 0.8085,
+    "y": 0.4279,
+    "w": 0.1011,
+    "h": 0.0533
+   },
+   {
+    "x": 0.836,
+    "y": 0.484,
+    "w": 0.1325,
+    "h": 0.0567
+   },
+   {
+    "x": 0.836,
+    "y": 0.639,
+    "w": 0.1285,
+    "h": 0.0852
+   },
+   {
+    "x": 0.0032,
+    "y": 0.8613,
+    "w": 0.1621,
+    "h": 0.0774
+   },
+   {
+    "x": 0.8295,
+    "y": 0.0823,
+    "w": 0.12,
+    "h": 0.0548
+   },
+   {
+    "x": 0.8295,
+    "y": 0.129,
+    "w": 0.1411,
+    "h": 0.0548
+   },
+   {
+    "x": 0.8295,
+    "y": 0.1742,
+    "w": 0.1411,
+    "h": 0.0548
+   },
+   {
+    "x": 0.8295,
+    "y": 0.5387,
+    "w": 0.1411,
+    "h": 0.0548
+   },
+   {
+    "x": 0.8295,
+    "y": 0.5871,
+    "w": 0.1516,
+    "h": 0.0548
+   },
+   {
+    "x": 0.0032,
+    "y": 0.5419,
+    "w": 0.0884,
+    "h": 0.0774
+   },
+   {
+    "x": 0.0032,
+    "y": 0.6387,
+    "w": 0.0884,
+    "h": 0.0774
+   },
+   {
+    "x": 0.0032,
+    "y": 0.7355,
+    "w": 0.0989,
+    "h": 0.0548
+   },
+   {
+    "x": 0.0211,
+    "y": 0.129,
+    "w": 0.4211,
+    "h": 0.3226
+   },
+   {
+    "x": 0.4737,
+    "y": 0.8065,
+    "w": 0.5263,
+    "h": 0.1935
+   },
+   {
+    "x": 0.8546,
+    "y": 0.3843,
+    "w": 0.1095,
+    "h": 0.0491
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-08",
+  "from": "raw/skeleton/axial-08.png",
+  "crop": [
+   77,
+   750,
+   2443,
+   869
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.temporal",
+   "skull.foramina",
+   "skull.sutures"
+  ],
+  "title": "Right temporal bone, lateral and medial",
+  "hotspots": [
+   {
+    "termId": "skull.temporal.squamous-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.4317,
+     "y": 0.199,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.squamous-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.5883,
+     "y": 0.229,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mandibular-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.4389,
+     "y": 0.2647,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.petrous-part",
+    "shape": {
+     "kind": "point",
+     "x": 0.9286,
+     "y": 0.3717,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.internal-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.9378,
+     "y": 0.4754,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.zygomatic-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.4399,
+     "y": 0.4633,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.zygomatic-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.5674,
+     "y": 0.4955,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mastoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.0791,
+     "y": 0.5404,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.mastoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.9347,
+     "y": 0.6976,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.external-acoustic-meatus",
+    "shape": {
+     "kind": "point",
+     "x": 0.4178,
+     "y": 0.7206,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.styloid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.5854,
+     "y": 0.7563,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.temporal.styloid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.4274,
+     "y": 0.8334,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.squamous-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.4368,
+     "y": 0.3455,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.sutures.squamous-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.5789,
+     "y": 0.3091,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.3728,
+    "y": 0.1636,
+    "w": 0.1178,
+    "h": 0.0708
+   },
+   {
+    "x": 0.5304,
+    "y": 0.1936,
+    "w": 0.1157,
+    "h": 0.0708
+   },
+   {
+    "x": 0.381,
+    "y": 0.2292,
+    "w": 0.1157,
+    "h": 0.0708
+   },
+   {
+    "x": 0.8738,
+    "y": 0.3363,
+    "w": 0.1096,
+    "h": 0.0708
+   },
+   {
+    "x": 0.8779,
+    "y": 0.4192,
+    "w": 0.1198,
+    "h": 0.1123
+   },
+   {
+    "x": 0.381,
+    "y": 0.425,
+    "w": 0.1178,
+    "h": 0.0766
+   },
+   {
+    "x": 0.5284,
+    "y": 0.4422,
+    "w": 0.0781,
+    "h": 0.1065
+   },
+   {
+    "x": 0.0233,
+    "y": 0.5079,
+    "w": 0.1116,
+    "h": 0.0651
+   },
+   {
+    "x": 0.8779,
+    "y": 0.6621,
+    "w": 0.1137,
+    "h": 0.0708
+   },
+   {
+    "x": 0.3389,
+    "y": 0.6852,
+    "w": 0.1579,
+    "h": 0.0708
+   },
+   {
+    "x": 0.5349,
+    "y": 0.7209,
+    "w": 0.101,
+    "h": 0.0708
+   },
+   {
+    "x": 0.3769,
+    "y": 0.798,
+    "w": 0.101,
+    "h": 0.0708
+   },
+   {
+    "x": 0.3768,
+    "y": 0.3068,
+    "w": 0.12,
+    "h": 0.0773
+   },
+   {
+    "x": 0.5189,
+    "y": 0.2705,
+    "w": 0.12,
+    "h": 0.0773
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-09",
+  "from": "raw/skeleton/axial-09.png",
+  "crop": [
+   71,
+   271,
+   2239,
+   1245
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "foot.bones",
+   "foot.tarsals"
+  ],
+  "title": "Right foot: dorsal, plantar, medial",
+  "hotspots": [
+   {
+    "termId": "foot.bones.distal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.1149,
+     "y": 0.1572,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.bones.distal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.3547,
+     "y": 0.1909,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.bones.proximal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.0894,
+     "y": 0.2311,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.bones.middle-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.3567,
+     "y": 0.2877,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.medial-cuneiform",
+    "shape": {
+     "kind": "point",
+     "x": 0.0872,
+     "y": 0.456,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.cuboid",
+    "shape": {
+     "kind": "point",
+     "x": 0.3536,
+     "y": 0.5564,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.talus",
+    "shape": {
+     "kind": "point",
+     "x": 0.06,
+     "y": 0.6078,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.calcaneus",
+    "shape": {
+     "kind": "point",
+     "x": 0.3538,
+     "y": 0.6247,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.calcaneus",
+    "shape": {
+     "kind": "point",
+     "x": 0.9043,
+     "y": 0.9316,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.bones.proximal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.3547,
+     "y": 0.375,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.intermediate-cuneiform",
+    "shape": {
+     "kind": "point",
+     "x": 0.0968,
+     "y": 0.5051,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.lateral-cuneiform",
+    "shape": {
+     "kind": "point",
+     "x": 0.0895,
+     "y": 0.5513,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.navicular",
+    "shape": {
+     "kind": "point",
+     "x": 0.8063,
+     "y": 0.6474,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.talus",
+    "shape": {
+     "kind": "point",
+     "x": 0.8721,
+     "y": 0.6474,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.trochlea-of-the-talus",
+    "shape": {
+     "kind": "point",
+     "x": 0.0789,
+     "y": 0.6891,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.calcaneal-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.3474,
+     "y": 0.7756,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.bones.sesamoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7105,
+     "y": 0.9295,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "foot.tarsals.trochlea-of-the-talus",
+    "shape": {
+     "kind": "point",
+     "x": 0.9421,
+     "y": 0.6231,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.0402,
+    "y": 0.1344,
+    "w": 0.1494,
+    "h": 0.0456
+   },
+   {
+    "x": 0.318,
+    "y": 0.1529,
+    "w": 0.0735,
+    "h": 0.0761
+   },
+   {
+    "x": 0.0232,
+    "y": 0.2099,
+    "w": 0.1324,
+    "h": 0.0424
+   },
+   {
+    "x": 0.2778,
+    "y": 0.2517,
+    "w": 0.1579,
+    "h": 0.0721
+   },
+   {
+    "x": 0.021,
+    "y": 0.4332,
+    "w": 0.1324,
+    "h": 0.0456
+   },
+   {
+    "x": 0.322,
+    "y": 0.5352,
+    "w": 0.0632,
+    "h": 0.0424
+   },
+   {
+    "x": 0.0295,
+    "y": 0.585,
+    "w": 0.061,
+    "h": 0.0456
+   },
+   {
+    "x": 0.3117,
+    "y": 0.6035,
+    "w": 0.0842,
+    "h": 0.0424
+   },
+   {
+    "x": 0.8633,
+    "y": 0.9104,
+    "w": 0.082,
+    "h": 0.0424
+   },
+   {
+    "x": 0.3158,
+    "y": 0.3346,
+    "w": 0.0779,
+    "h": 0.0808
+   },
+   {
+    "x": 0.0168,
+    "y": 0.4744,
+    "w": 0.16,
+    "h": 0.0615
+   },
+   {
+    "x": 0.0189,
+    "y": 0.5205,
+    "w": 0.1411,
+    "h": 0.0615
+   },
+   {
+    "x": 0.7621,
+    "y": 0.6231,
+    "w": 0.0884,
+    "h": 0.0487
+   },
+   {
+    "x": 0.8358,
+    "y": 0.6231,
+    "w": 0.0726,
+    "h": 0.0487
+   },
+   {
+    "x": 0.0189,
+    "y": 0.6551,
+    "w": 0.12,
+    "h": 0.0679
+   },
+   {
+    "x": 0.2716,
+    "y": 0.7513,
+    "w": 0.1516,
+    "h": 0.0487
+   },
+   {
+    "x": 0.6611,
+    "y": 0.9051,
+    "w": 0.0989,
+    "h": 0.0487
+   },
+   {
+    "x": 0.8926,
+    "y": 0.591,
+    "w": 0.0989,
+    "h": 0.0641
+   },
+   {
+    "x": 0.6947,
+    "y": 0.0256,
+    "w": 0.3053,
+    "h": 0.5256
+   },
+   {
+    "x": 0.6042,
+    "y": 0.1987,
+    "w": 0.0882,
+    "h": 0.0456
+   },
+   {
+    "x": 0.0335,
+    "y": 0.3272,
+    "w": 0.1074,
+    "h": 0.0424
+   },
+   {
+    "x": 0.5998,
+    "y": 0.373,
+    "w": 0.103,
+    "h": 0.0456
+   },
+   {
+    "x": 0.6127,
+    "y": 0.6075,
+    "w": 0.0717,
+    "h": 0.0456
+   },
+   {
+    "x": 0.6654,
+    "y": 0.6718,
+    "w": 0.103,
+    "h": 0.0456
+   },
+   {
+    "x": 0.6105,
+    "y": 0.7666,
+    "w": 0.0882,
+    "h": 0.0456
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-10",
+  "from": "raw/skeleton/axial-10.png",
+  "crop": [
+   640,
+   359,
+   1870,
+   1342
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "humerus"
+  ],
+  "title": "Right humerus, anterior and posterior",
+  "hotspots": [
+   {
+    "termId": "humerus.greater-tubercle",
+    "shape": {
+     "kind": "point",
+     "x": 0.1657,
+     "y": 0.118,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.head-of-the-humerus",
+    "shape": {
+     "kind": "point",
+     "x": 0.396,
+     "y": 0.1329,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.head-of-the-humerus",
+    "shape": {
+     "kind": "point",
+     "x": 0.6166,
+     "y": 0.137,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.lesser-tubercle",
+    "shape": {
+     "kind": "point",
+     "x": 0.171,
+     "y": 0.1903,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.anatomical-neck",
+    "shape": {
+     "kind": "point",
+     "x": 0.86,
+     "y": 0.1926,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.surgical-neck",
+    "shape": {
+     "kind": "point",
+     "x": 0.6177,
+     "y": 0.2362,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.surgical-neck",
+    "shape": {
+     "kind": "point",
+     "x": 0.3957,
+     "y": 0.2436,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.intertubercular-sulcus",
+    "shape": {
+     "kind": "point",
+     "x": 0.1563,
+     "y": 0.2917,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.deltoid-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.1454,
+     "y": 0.3912,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.deltoid-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.8808,
+     "y": 0.4172,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.coronoid-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.1876,
+     "y": 0.6695,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.lateral-epicondyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.1614,
+     "y": 0.807,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.medial-epicondyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.6203,
+     "y": 0.8379,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.medial-epicondyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.4342,
+     "y": 0.8435,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.lateral-epicondyle",
+    "shape": {
+     "kind": "point",
+     "x": 0.8988,
+     "y": 0.8469,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.capitulum",
+    "shape": {
+     "kind": "point",
+     "x": 0.197,
+     "y": 0.8569,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.olecranon-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.8784,
+     "y": 0.9065,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.trochlea",
+    "shape": {
+     "kind": "point",
+     "x": 0.4123,
+     "y": 0.9042,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "humerus.trochlea",
+    "shape": {
+     "kind": "point",
+     "x": 0.6244,
+     "y": 0.9024,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.1177,
+    "y": 0.0826,
+    "w": 0.096,
+    "h": 0.0708
+   },
+   {
+    "x": 0.3589,
+    "y": 0.1087,
+    "w": 0.0741,
+    "h": 0.0485
+   },
+   {
+    "x": 0.5782,
+    "y": 0.1169,
+    "w": 0.0767,
+    "h": 0.0403
+   },
+   {
+    "x": 0.123,
+    "y": 0.1549,
+    "w": 0.096,
+    "h": 0.0708
+   },
+   {
+    "x": 0.797,
+    "y": 0.1549,
+    "w": 0.1259,
+    "h": 0.0753
+   },
+   {
+    "x": 0.5697,
+    "y": 0.1967,
+    "w": 0.096,
+    "h": 0.079
+   },
+   {
+    "x": 0.3477,
+    "y": 0.2041,
+    "w": 0.096,
+    "h": 0.079
+   },
+   {
+    "x": 0.0193,
+    "y": 0.2503,
+    "w": 0.2741,
+    "h": 0.0827
+   },
+   {
+    "x": 0.0578,
+    "y": 0.3688,
+    "w": 0.1752,
+    "h": 0.0447
+   },
+   {
+    "x": 0.789,
+    "y": 0.3912,
+    "w": 0.1837,
+    "h": 0.0522
+   },
+   {
+    "x": 0.1396,
+    "y": 0.6319,
+    "w": 0.096,
+    "h": 0.0753
+   },
+   {
+    "x": 0.0765,
+    "y": 0.7846,
+    "w": 0.1698,
+    "h": 0.0447
+   },
+   {
+    "x": 0.567,
+    "y": 0.8003,
+    "w": 0.1067,
+    "h": 0.0753
+   },
+   {
+    "x": 0.3809,
+    "y": 0.804,
+    "w": 0.1067,
+    "h": 0.079
+   },
+   {
+    "x": 0.8082,
+    "y": 0.8226,
+    "w": 0.181,
+    "h": 0.0485
+   },
+   {
+    "x": 0.1423,
+    "y": 0.8346,
+    "w": 0.1094,
+    "h": 0.0447
+   },
+   {
+    "x": 0.8221,
+    "y": 0.8651,
+    "w": 0.1126,
+    "h": 0.0827
+   },
+   {
+    "x": 0.3616,
+    "y": 0.88,
+    "w": 0.1013,
+    "h": 0.0485
+   },
+   {
+    "x": 0.5723,
+    "y": 0.88,
+    "w": 0.104,
+    "h": 0.0447
+   },
+   {
+    "x": 0,
+    "y": 0.1972,
+    "w": 0.1233,
+    "h": 0.3662
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-11",
+  "from": "raw/skeleton/axial-11.png",
+  "crop": [
+   1141,
+   351,
+   1426,
+   1310
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "radius",
+   "ulna"
+  ],
+  "title": "Right radius and ulna, anterior and posterior",
+  "hotspots": [
+   {
+    "termId": "radius.ulnar-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.4874,
+     "y": 0.7695,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.styloid-process-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.209,
+     "y": 0.8847,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.styloid-process-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.8488,
+     "y": 0.9046,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.radial-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.1591,
+     "y": 0.162,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.head-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.1409,
+     "y": 0.2113,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.neck-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.1818,
+     "y": 0.2676,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.radial-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.1636,
+     "y": 0.338,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.head-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.8091,
+     "y": 0.1972,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "radius.neck-of-the-radius",
+    "shape": {
+     "kind": "point",
+     "x": 0.7545,
+     "y": 0.2606,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.olecranon",
+    "shape": {
+     "kind": "point",
+     "x": 0.1909,
+     "y": 0.0951,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.trochlear-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.4636,
+     "y": 0.1232,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.coronoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.4727,
+     "y": 0.2183,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.head-of-the-ulna",
+    "shape": {
+     "kind": "point",
+     "x": 0.4955,
+     "y": 0.8204,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.olecranon",
+    "shape": {
+     "kind": "point",
+     "x": 0.7591,
+     "y": 0.0951,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.ulnar-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.4591,
+     "y": 0.2866,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "ulna.styloid-process-of-the-ulna",
+    "shape": {
+     "kind": "point",
+     "x": 0.4864,
+     "y": 0.8592,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.4039,
+    "y": 0.7449,
+    "w": 0.167,
+    "h": 0.049
+   },
+   {
+    "x": 0.1199,
+    "y": 0.8442,
+    "w": 0.1783,
+    "h": 0.0811
+   },
+   {
+    "x": 0.7488,
+    "y": 0.8839,
+    "w": 0.2,
+    "h": 0.0414
+   },
+   {
+    "x": 0.0418,
+    "y": 0.1282,
+    "w": 0.2345,
+    "h": 0.0676
+   },
+   {
+    "x": 0.0236,
+    "y": 0.1775,
+    "w": 0.2345,
+    "h": 0.0676
+   },
+   {
+    "x": 0.1055,
+    "y": 0.2338,
+    "w": 0.1527,
+    "h": 0.0676
+   },
+   {
+    "x": 0.06,
+    "y": 0.2901,
+    "w": 0.2073,
+    "h": 0.0958
+   },
+   {
+    "x": 0.6782,
+    "y": 0.1634,
+    "w": 0.2618,
+    "h": 0.0676
+   },
+   {
+    "x": 0.6782,
+    "y": 0.2268,
+    "w": 0.1527,
+    "h": 0.0676
+   },
+   {
+    "x": 0.1055,
+    "y": 0.0648,
+    "w": 0.1709,
+    "h": 0.0606
+   },
+   {
+    "x": 0.3782,
+    "y": 0.0789,
+    "w": 0.1709,
+    "h": 0.0887
+   },
+   {
+    "x": 0.3691,
+    "y": 0.1775,
+    "w": 0.2073,
+    "h": 0.0817
+   },
+   {
+    "x": 0.3873,
+    "y": 0.7901,
+    "w": 0.2164,
+    "h": 0.0606
+   },
+   {
+    "x": 0.6782,
+    "y": 0.0648,
+    "w": 0.1618,
+    "h": 0.0606
+   },
+   {
+    "x": 0.3691,
+    "y": 0.262,
+    "w": 0.18,
+    "h": 0.0493
+   },
+   {
+    "x": 0.3691,
+    "y": 0.8324,
+    "w": 0.2345,
+    "h": 0.0535
+   },
+   {
+    "x": 0.3909,
+    "y": 0.3732,
+    "w": 0.1545,
+    "h": 0.0563
+   },
+   {
+    "x": 0.4091,
+    "y": 0.4479,
+    "w": 0.1455,
+    "h": 0.0563
+   }
+  ]
+ },
+ {
+  "id": "skel.axial-12",
+  "from": "raw/skeleton/axial-12.png",
+  "crop": [
+   1161,
+   280,
+   1643,
+   1552
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "tibia",
+   "fibula"
+  ],
+  "title": "Right tibia and fibula, anterior and posterior",
+  "hotspots": [
+   {
+    "termId": "tibia.intercondylar-eminence",
+    "shape": {
+     "kind": "point",
+     "x": 0.1311,
+     "y": 0.0586,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "tibia.medial-condyle-of-the-tibia",
+    "shape": {
+     "kind": "point",
+     "x": 0.5119,
+     "y": 0.0824,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "tibia.lateral-condyle-of-the-tibia",
+    "shape": {
+     "kind": "point",
+     "x": 0.8793,
+     "y": 0.0618,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "tibia.medial-malleolus",
+    "shape": {
+     "kind": "point",
+     "x": 0.5244,
+     "y": 0.8561,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "tibia.tibial-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.5552,
+     "y": 0.1799,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "fibula.head-of-the-fibula",
+    "shape": {
+     "kind": "point",
+     "x": 0.8621,
+     "y": 0.1493,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "fibula.apex",
+    "shape": {
+     "kind": "point",
+     "x": 0.8147,
+     "y": 0.0972,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "fibula.lateral-malleolus",
+    "shape": {
+     "kind": "point",
+     "x": 0.1379,
+     "y": 0.8958,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "fibula.lateral-malleolus",
+    "shape": {
+     "kind": "point",
+     "x": 0.8707,
+     "y": 0.8681,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "tibia.anterior-border",
+    "shape": {
+     "kind": "point",
+     "x": 0.5259,
+     "y": 0.4236,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0,
+    "y": 0.037,
+    "w": 0.269,
+    "h": 0.043
+   },
+   {
+    "x": 0.4103,
+    "y": 0.037,
+    "w": 0.2033,
+    "h": 0.0907
+   },
+   {
+    "x": 0.7829,
+    "y": 0.0403,
+    "w": 0.193,
+    "h": 0.043
+   },
+   {
+    "x": 0.4036,
+    "y": 0.8182,
+    "w": 0.2417,
+    "h": 0.0759
+   },
+   {
+    "x": 0.4517,
+    "y": 0.1361,
+    "w": 0.2069,
+    "h": 0.0875
+   },
+   {
+    "x": 0.7724,
+    "y": 0.1056,
+    "w": 0.1793,
+    "h": 0.0875
+   },
+   {
+    "x": 0.7638,
+    "y": 0.0708,
+    "w": 0.1017,
+    "h": 0.0528
+   },
+   {
+    "x": 0.031,
+    "y": 0.8486,
+    "w": 0.2138,
+    "h": 0.0944
+   },
+   {
+    "x": 0.7724,
+    "y": 0.8208,
+    "w": 0.1966,
+    "h": 0.0944
+   },
+   {
+    "x": 0.4276,
+    "y": 0.3972,
+    "w": 0.1966,
+    "h": 0.0528
+   },
+   {
+    "x": 0.4397,
+    "y": 0.4694,
+    "w": 0.1293,
+    "h": 0.0528
+   },
+   {
+    "x": 0.4397,
+    "y": 0.5583,
+    "w": 0.1293,
+    "h": 0.0528
+   }
+  ]
+ },
+ {
+  "id": "skel.append-03",
+  "from": "raw/skeleton/append-03.png",
+  "crop": [
+   630,
+   431,
+   1575,
+   1255
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "hand.bones",
+   "hand.carpals"
+  ],
+  "title": "Right hand, anterior view",
+  "hotspots": [
+   {
+    "termId": "hand.bones.distal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.7387,
+     "y": 0.2319,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.middle-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.7346,
+     "y": 0.3236,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.proximal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.733,
+     "y": 0.4056,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.distal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.8289,
+     "y": 0.506,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.proximal-phalanx",
+    "shape": {
+     "kind": "point",
+     "x": 0.8219,
+     "y": 0.6064,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.trapezoid",
+    "shape": {
+     "kind": "point",
+     "x": 0.7387,
+     "y": 0.8024,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.trapezium",
+    "shape": {
+     "kind": "point",
+     "x": 0.7733,
+     "y": 0.8415,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.capitate",
+    "shape": {
+     "kind": "point",
+     "x": 0.7971,
+     "y": 0.8793,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.scaphoid",
+    "shape": {
+     "kind": "point",
+     "x": 0.7343,
+     "y": 0.9132,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.lunate",
+    "shape": {
+     "kind": "point",
+     "x": 0.3044,
+     "y": 0.9136,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.hamate",
+    "shape": {
+     "kind": "point",
+     "x": 0.3071,
+     "y": 0.825,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.pisiform",
+    "shape": {
+     "kind": "point",
+     "x": 0.3071,
+     "y": 0.85,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.carpals.triquetrum",
+    "shape": {
+     "kind": "point",
+     "x": 0.3071,
+     "y": 0.875,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hand.bones.metacarpal-i",
+    "shape": {
+     "kind": "point",
+     "x": 0.7714,
+     "y": 0.7328,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.6629,
+    "y": 0.2087,
+    "w": 0.1517,
+    "h": 0.0465
+   },
+   {
+    "x": 0.6489,
+    "y": 0.2844,
+    "w": 0.1714,
+    "h": 0.0783
+   },
+   {
+    "x": 0.6457,
+    "y": 0.3808,
+    "w": 0.1746,
+    "h": 0.0496
+   },
+   {
+    "x": 0.7517,
+    "y": 0.4812,
+    "w": 0.1543,
+    "h": 0.0496
+   },
+   {
+    "x": 0.7346,
+    "y": 0.5816,
+    "w": 0.1746,
+    "h": 0.0496
+   },
+   {
+    "x": 0.6857,
+    "y": 0.7792,
+    "w": 0.106,
+    "h": 0.0465
+   },
+   {
+    "x": 0.7175,
+    "y": 0.8182,
+    "w": 0.1117,
+    "h": 0.0465
+   },
+   {
+    "x": 0.7486,
+    "y": 0.8581,
+    "w": 0.0971,
+    "h": 0.0425
+   },
+   {
+    "x": 0.6857,
+    "y": 0.89,
+    "w": 0.0971,
+    "h": 0.0465
+   },
+   {
+    "x": 0.2629,
+    "y": 0.8939,
+    "w": 0.0832,
+    "h": 0.0393
+   },
+   {
+    "x": 0.2471,
+    "y": 0.8,
+    "w": 0.12,
+    "h": 0.05
+   },
+   {
+    "x": 0.2471,
+    "y": 0.825,
+    "w": 0.12,
+    "h": 0.05
+   },
+   {
+    "x": 0.2471,
+    "y": 0.85,
+    "w": 0.12,
+    "h": 0.05
+   },
+   {
+    "x": 0.7114,
+    "y": 0.6953,
+    "w": 0.12,
+    "h": 0.075
+   },
+   {
+    "x": 0,
+    "y": 0.25,
+    "w": 0.0714,
+    "h": 0.625
+   },
+   {
+    "x": 0.8286,
+    "y": 0.2656,
+    "w": 0.1714,
+    "h": 0.1719
+   },
+   {
+    "x": 0.0857,
+    "y": 0.5314,
+    "w": 0.12,
+    "h": 0.0536
+   },
+   {
+    "x": 0.0286,
+    "y": 0.6748,
+    "w": 0.186,
+    "h": 0.0465
+   },
+   {
+    "x": 0.066,
+    "y": 0.8294,
+    "w": 0.1429,
+    "h": 0.0465
+   }
+  ]
+ },
+ {
+  "id": "skel.append-04",
+  "from": "raw/skeleton/append-04.png",
+  "crop": [
+   72,
+   261,
+   2290,
+   1288
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "hip"
+  ],
+  "title": "Right hip bone, medial and lateral",
+  "hotspots": [
+   {
+    "termId": "hip.iliac-crest",
+    "shape": {
+     "kind": "point",
+     "x": 0.8829,
+     "y": 0.1356,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.auricular-surface",
+    "shape": {
+     "kind": "point",
+     "x": 0.421,
+     "y": 0.3459,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.greater-sciatic-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.4137,
+     "y": 0.4243,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.obturator-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.4124,
+     "y": 0.5683,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.ischial-tuberosity",
+    "shape": {
+     "kind": "point",
+     "x": 0.5746,
+     "y": 0.6114,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.obturator-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.8997,
+     "y": 0.6184,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.ilium",
+    "shape": {
+     "kind": "point",
+     "x": 0.7095,
+     "y": 0.9464,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.ischium",
+    "shape": {
+     "kind": "point",
+     "x": 0.7897,
+     "y": 0.9502,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.pubis",
+    "shape": {
+     "kind": "point",
+     "x": 0.8693,
+     "y": 0.9553,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.greater-sciatic-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.5968,
+     "y": 0.4304,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.acetabulum",
+    "shape": {
+     "kind": "point",
+     "x": 0.5874,
+     "y": 0.4652,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.pubic-symphysis",
+    "shape": {
+     "kind": "point",
+     "x": 0.0942,
+     "y": 0.5312,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.iliac-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.0916,
+     "y": 0.2029,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.iliac-crest",
+    "shape": {
+     "kind": "point",
+     "x": 0.41,
+     "y": 0.1246,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.anterior-superior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.1053,
+     "y": 0.2797,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.arcuate-line",
+    "shape": {
+     "kind": "point",
+     "x": 0.1,
+     "y": 0.3261,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.anterior-inferior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.1053,
+     "y": 0.3587,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.posterior-superior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.4284,
+     "y": 0.3188,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.posterior-inferior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.4284,
+     "y": 0.387,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.ischial-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.4179,
+     "y": 0.4667,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.ischial-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.5716,
+     "y": 0.5159,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.lesser-sciatic-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.5821,
+     "y": 0.5507,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.posterior-superior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.5768,
+     "y": 0.3536,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "hip.posterior-inferior-iliac-spine",
+    "shape": {
+     "kind": "point",
+     "x": 0.5768,
+     "y": 0.3971,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.8377,
+    "y": 0.1132,
+    "w": 0.0903,
+    "h": 0.0447
+   },
+   {
+    "x": 0.3409,
+    "y": 0.3197,
+    "w": 0.1602,
+    "h": 0.0525
+   },
+   {
+    "x": 0.3369,
+    "y": 0.3981,
+    "w": 0.1536,
+    "h": 0.0525
+   },
+   {
+    "x": 0.3409,
+    "y": 0.544,
+    "w": 0.1431,
+    "h": 0.0486
+   },
+   {
+    "x": 0.5072,
+    "y": 0.589,
+    "w": 0.1348,
+    "h": 0.0447
+   },
+   {
+    "x": 0.8251,
+    "y": 0.596,
+    "w": 0.1493,
+    "h": 0.0447
+   },
+   {
+    "x": 0.6801,
+    "y": 0.9221,
+    "w": 0.0589,
+    "h": 0.0486
+   },
+   {
+    "x": 0.7517,
+    "y": 0.9259,
+    "w": 0.0759,
+    "h": 0.0486
+   },
+   {
+    "x": 0.8399,
+    "y": 0.9329,
+    "w": 0.0589,
+    "h": 0.0447
+   },
+   {
+    "x": 0.5158,
+    "y": 0.4043,
+    "w": 0.1621,
+    "h": 0.0522
+   },
+   {
+    "x": 0.5326,
+    "y": 0.4391,
+    "w": 0.1095,
+    "h": 0.0522
+   },
+   {
+    "x": 0.0316,
+    "y": 0.4855,
+    "w": 0.1253,
+    "h": 0.0913
+   },
+   {
+    "x": 0.0211,
+    "y": 0.1725,
+    "w": 0.1411,
+    "h": 0.0609
+   },
+   {
+    "x": 0.3263,
+    "y": 0.0957,
+    "w": 0.1674,
+    "h": 0.058
+   },
+   {
+    "x": 0.0505,
+    "y": 0.2449,
+    "w": 0.1095,
+    "h": 0.0696
+   },
+   {
+    "x": 0.0505,
+    "y": 0.2986,
+    "w": 0.0989,
+    "h": 0.0551
+   },
+   {
+    "x": 0.0505,
+    "y": 0.3275,
+    "w": 0.1095,
+    "h": 0.0623
+   },
+   {
+    "x": 0.3684,
+    "y": 0.2841,
+    "w": 0.12,
+    "h": 0.0696
+   },
+   {
+    "x": 0.3684,
+    "y": 0.3522,
+    "w": 0.12,
+    "h": 0.0696
+   },
+   {
+    "x": 0.3684,
+    "y": 0.4391,
+    "w": 0.0989,
+    "h": 0.0551
+   },
+   {
+    "x": 0.5274,
+    "y": 0.4884,
+    "w": 0.0884,
+    "h": 0.0551
+   },
+   {
+    "x": 0.5274,
+    "y": 0.5232,
+    "w": 0.1095,
+    "h": 0.0551
+   },
+   {
+    "x": 0.5274,
+    "y": 0.3203,
+    "w": 0.0989,
+    "h": 0.0667
+   },
+   {
+    "x": 0.5274,
+    "y": 0.3638,
+    "w": 0.0989,
+    "h": 0.0667
+   },
+   {
+    "x": 0.0421,
+    "y": 0.7681,
+    "w": 0.5263,
+    "h": 0.1884
+   },
+   {
+    "x": 0.0316,
+    "y": 0.6377,
+    "w": 0.1684,
+    "h": 0.0507
+   }
+  ]
+ },
+ {
+  "id": "skel.append-05",
+  "from": "raw/skeleton/append-05.png",
+  "crop": [
+   63,
+   312,
+   2007,
+   1091
+  ],
+  "labId": "lab5",
+  "groupIds": [
+   "scapula",
+   "clavicle"
+  ],
+  "title": "Right scapula and clavicle",
+  "hotspots": [
+   {
+    "termId": "scapula.acromion",
+    "shape": {
+     "kind": "point",
+     "x": 0.4083,
+     "y": 0.2114,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.supraspinous-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.696,
+     "y": 0.2508,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.coracoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.4061,
+     "y": 0.2737,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.glenoid-cavity",
+    "shape": {
+     "kind": "point",
+     "x": 0.4031,
+     "y": 0.3319,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.spine-of-the-scapula",
+    "shape": {
+     "kind": "point",
+     "x": 0.6967,
+     "y": 0.3397,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.subscapular-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.4516,
+     "y": 0.446,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.infraspinous-fossa",
+    "shape": {
+     "kind": "point",
+     "x": 0.905,
+     "y": 0.4616,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "clavicle.sternal-end",
+    "shape": {
+     "kind": "point",
+     "x": 0.0666,
+     "y": 0.6897,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "clavicle.acromial-end",
+    "shape": {
+     "kind": "point",
+     "x": 0.3864,
+     "y": 0.7035,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "clavicle.conoid-tubercle",
+    "shape": {
+     "kind": "point",
+     "x": 0.2085,
+     "y": 0.8125,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "clavicle.sternal-end",
+    "shape": {
+     "kind": "point",
+     "x": 0.0862,
+     "y": 0.8744,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "clavicle.acromial-end",
+    "shape": {
+     "kind": "point",
+     "x": 0.3959,
+     "y": 0.8858,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.suprascapular-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.4342,
+     "y": 0.1814,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.lateral-border",
+    "shape": {
+     "kind": "point",
+     "x": 0.4316,
+     "y": 0.5643,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.medial-border",
+    "shape": {
+     "kind": "point",
+     "x": 0.6711,
+     "y": 0.5743,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "scapula.inferior-angle",
+    "shape": {
+     "kind": "point",
+     "x": 0.8,
+     "y": 0.7,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.3683,
+    "y": 0.1889,
+    "w": 0.0801,
+    "h": 0.045
+   },
+   {
+    "x": 0.6423,
+    "y": 0.2091,
+    "w": 0.1075,
+    "h": 0.0834
+   },
+   {
+    "x": 0.3683,
+    "y": 0.2357,
+    "w": 0.0756,
+    "h": 0.0761
+   },
+   {
+    "x": 0.3493,
+    "y": 0.3053,
+    "w": 0.1075,
+    "h": 0.0532
+   },
+   {
+    "x": 0.6672,
+    "y": 0.3172,
+    "w": 0.0591,
+    "h": 0.045
+   },
+   {
+    "x": 0.4021,
+    "y": 0.4061,
+    "w": 0.099,
+    "h": 0.0798
+   },
+   {
+    "x": 0.8356,
+    "y": 0.4217,
+    "w": 0.1388,
+    "h": 0.0798
+   },
+   {
+    "x": 0.0171,
+    "y": 0.6654,
+    "w": 0.099,
+    "h": 0.0486
+   },
+   {
+    "x": 0.3349,
+    "y": 0.681,
+    "w": 0.103,
+    "h": 0.045
+   },
+   {
+    "x": 0.1496,
+    "y": 0.79,
+    "w": 0.1179,
+    "h": 0.045
+   },
+   {
+    "x": 0.021,
+    "y": 0.8478,
+    "w": 0.1304,
+    "h": 0.0532
+   },
+   {
+    "x": 0.3454,
+    "y": 0.8633,
+    "w": 0.101,
+    "h": 0.045
+   },
+   {
+    "x": 0.3821,
+    "y": 0.1471,
+    "w": 0.1042,
+    "h": 0.0686
+   },
+   {
+    "x": 0.3926,
+    "y": 0.53,
+    "w": 0.0779,
+    "h": 0.0686
+   },
+   {
+    "x": 0.6295,
+    "y": 0.5414,
+    "w": 0.0832,
+    "h": 0.0657
+   },
+   {
+    "x": 0.7558,
+    "y": 0.6729,
+    "w": 0.0884,
+    "h": 0.0543
+   },
+   {
+    "x": 0.0211,
+    "y": 0.0857,
+    "w": 0.2421,
+    "h": 0.2143
+   },
+   {
+    "x": 0.0211,
+    "y": 0.4571,
+    "w": 0.3368,
+    "h": 0.1571
+   },
+   {
+    "x": 0.5684,
+    "y": 0.7571,
+    "w": 0.3789,
+    "h": 0.2143
+   }
+  ]
+ },
+ {
+  "id": "skel.append-07",
+  "from": "raw/skeleton/append-07.png",
+  "crop": [
+   442,
+   786,
+   1890,
+   747
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.frontal-facial",
+   "skull.foramina",
+   "skull.bones"
+  ],
+  "title": "Maxilla and facial bones, anterior view",
+  "hotspots": [
+   {
+    "termId": "skull.frontal-facial.intermaxillary-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.8364,
+     "y": 0.7216,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.infraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.8404,
+     "y": 0.834,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.0935,
+     "y": 0.2237,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.inferior-nasal-concha",
+    "shape": {
+     "kind": "point",
+     "x": 0.0974,
+     "y": 0.3487,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1104,
+     "y": 0.5342,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.mandible",
+    "shape": {
+     "kind": "point",
+     "x": 0.0812,
+     "y": 0.8158,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.orbit",
+    "shape": {
+     "kind": "point",
+     "x": 0.7468,
+     "y": 0.1316,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.ethmoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7994,
+     "y": 0.3684,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.vomer",
+    "shape": {
+     "kind": "point",
+     "x": 0.7701,
+     "y": 0.4368,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.7532,
+     "y": 0.6421,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.nasal-septum",
+    "shape": {
+     "kind": "point",
+     "x": 0.7825,
+     "y": 0.3026,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.7272,
+    "y": 0.6785,
+    "w": 0.2184,
+    "h": 0.0862
+   },
+   {
+    "x": 0.7325,
+    "y": 0.7843,
+    "w": 0.2158,
+    "h": 0.0996
+   },
+   {
+    "x": 0.026,
+    "y": 0.1737,
+    "w": 0.1351,
+    "h": 0.1
+   },
+   {
+    "x": 0.0234,
+    "y": 0.2789,
+    "w": 0.1481,
+    "h": 0.1395
+   },
+   {
+    "x": 0.0234,
+    "y": 0.4842,
+    "w": 0.174,
+    "h": 0.1
+   },
+   {
+    "x": 0.0234,
+    "y": 0.7658,
+    "w": 0.1156,
+    "h": 0.1
+   },
+   {
+    "x": 0.7052,
+    "y": 0.0816,
+    "w": 0.0831,
+    "h": 0.1
+   },
+   {
+    "x": 0.7221,
+    "y": 0.3184,
+    "w": 0.1545,
+    "h": 0.1
+   },
+   {
+    "x": 0.7221,
+    "y": 0.3868,
+    "w": 0.0961,
+    "h": 0.1
+   },
+   {
+    "x": 0.7052,
+    "y": 0.5921,
+    "w": 0.0961,
+    "h": 0.1
+   },
+   {
+    "x": 0.7052,
+    "y": 0.2526,
+    "w": 0.1545,
+    "h": 0.1
+   }
+  ]
+ },
+ {
+  "id": "skel.append-08",
+  "from": "raw/skeleton/append-08.png",
+  "crop": [
+   665,
+   219,
+   1507,
+   708
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.ethmoid",
+   "skull.foramina"
+  ],
+  "title": "Ethmoid bone",
+  "hotspots": [
+   {
+    "termId": "skull.ethmoid.cribriform-plate",
+    "shape": {
+     "kind": "point",
+     "x": 0.1896,
+     "y": 0.1106,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.crista-galli",
+    "shape": {
+     "kind": "point",
+     "x": 0.1441,
+     "y": 0.2631,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.middle-nasal-concha",
+    "shape": {
+     "kind": "point",
+     "x": 0.7898,
+     "y": 0.876,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.perpendicular-plate",
+    "shape": {
+     "kind": "point",
+     "x": 0.2151,
+     "y": 0.9014,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.cribriform-foramina",
+    "shape": {
+     "kind": "point",
+     "x": 0.1581,
+     "y": 0.3988,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.ethmoid.superior-nasal-concha",
+    "shape": {
+     "kind": "point",
+     "x": 0.7941,
+     "y": 0.7321,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.094,
+    "y": 0.0701,
+    "w": 0.1912,
+    "h": 0.081
+   },
+   {
+    "x": 0.0794,
+    "y": 0.2198,
+    "w": 0.1295,
+    "h": 0.0866
+   },
+   {
+    "x": 0.6707,
+    "y": 0.8327,
+    "w": 0.2384,
+    "h": 0.0866
+   },
+   {
+    "x": 0.1033,
+    "y": 0.8581,
+    "w": 0.2238,
+    "h": 0.0866
+   },
+   {
+    "x": 0.0853,
+    "y": 0.3357,
+    "w": 0.1456,
+    "h": 0.1262
+   },
+   {
+    "x": 0.7029,
+    "y": 0.669,
+    "w": 0.1824,
+    "h": 0.1262
+   }
+  ]
+ },
+ {
+  "id": "skel.append-09",
+  "from": "raw/skeleton/append-09.png",
+  "crop": [
+   46,
+   431,
+   2223,
+   825
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.bones",
+   "skull.foramina"
+  ],
+  "title": "Bones of the orbit",
+  "hotspots": [
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.2344,
+     "y": 0.2109,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.2344,
+     "y": 0.2804,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.ethmoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.2344,
+     "y": 0.5174,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.lacrimal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1385,
+     "y": 0.5848,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.2469,
+     "y": 0.6457,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.palatine-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.149,
+     "y": 0.8348,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.1464,
+     "y": 0.9283,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7917,
+     "y": 0.2739,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7917,
+     "y": 0.3913,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7917,
+     "y": 0.5043,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.supraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.1406,
+     "y": 0.1326,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.optic-canal",
+    "shape": {
+     "kind": "point",
+     "x": 0.1172,
+     "y": 0.4065,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.7682,
+     "y": 0.1,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.superior-orbital-fissure",
+    "shape": {
+     "kind": "point",
+     "x": 0.8042,
+     "y": 0.5609,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.inferior-orbital-fissure",
+    "shape": {
+     "kind": "point",
+     "x": 0.7625,
+     "y": 0.662,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.infraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.7625,
+     "y": 0.8011,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.175,
+    "y": 0.1652,
+    "w": 0.1187,
+    "h": 0.0913
+   },
+   {
+    "x": 0.175,
+    "y": 0.2348,
+    "w": 0.1187,
+    "h": 0.0913
+   },
+   {
+    "x": 0.175,
+    "y": 0.4717,
+    "w": 0.1187,
+    "h": 0.0913
+   },
+   {
+    "x": 0.0792,
+    "y": 0.537,
+    "w": 0.1188,
+    "h": 0.0957
+   },
+   {
+    "x": 0.1979,
+    "y": 0.6,
+    "w": 0.0979,
+    "h": 0.0913
+   },
+   {
+    "x": 0.0896,
+    "y": 0.7891,
+    "w": 0.1187,
+    "h": 0.0913
+   },
+   {
+    "x": 0.0896,
+    "y": 0.8826,
+    "w": 0.1135,
+    "h": 0.0913
+   },
+   {
+    "x": 0.7323,
+    "y": 0.2283,
+    "w": 0.1188,
+    "h": 0.0913
+   },
+   {
+    "x": 0.7323,
+    "y": 0.3457,
+    "w": 0.1188,
+    "h": 0.0913
+   },
+   {
+    "x": 0.7323,
+    "y": 0.4587,
+    "w": 0.1188,
+    "h": 0.0913
+   },
+   {
+    "x": 0.0604,
+    "y": 0.0891,
+    "w": 0.1604,
+    "h": 0.087
+   },
+   {
+    "x": 0.0656,
+    "y": 0.363,
+    "w": 0.1031,
+    "h": 0.087
+   },
+   {
+    "x": 0.701,
+    "y": 0.0565,
+    "w": 0.1344,
+    "h": 0.087
+   },
+   {
+    "x": 0.7083,
+    "y": 0.5174,
+    "w": 0.1917,
+    "h": 0.087
+   },
+   {
+    "x": 0.7083,
+    "y": 0.5935,
+    "w": 0.1083,
+    "h": 0.137
+   },
+   {
+    "x": 0.7083,
+    "y": 0.7326,
+    "w": 0.1083,
+    "h": 0.137
+   }
+  ]
+ },
+ {
+  "id": "skel.append-10",
+  "from": "raw/skeleton/append-10.png",
+  "crop": [
+   70,
+   325,
+   1527,
+   1244
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.mandible",
+   "skull.foramina"
+  ],
+  "title": "Mandible, lateral view",
+  "hotspots": [
+   {
+    "termId": "skull.mandible.condylar-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.7617,
+     "y": 0.1613,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.coronoid-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.2263,
+     "y": 0.2674,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.mandibular-notch",
+    "shape": {
+     "kind": "point",
+     "x": 0.2292,
+     "y": 0.3501,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.mandibular-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.2365,
+     "y": 0.4217,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.alveolar-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.1372,
+     "y": 0.5543,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.ramus",
+    "shape": {
+     "kind": "point",
+     "x": 0.8862,
+     "y": 0.5615,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.mental-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.1556,
+     "y": 0.6451,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.mental-protuberance",
+    "shape": {
+     "kind": "point",
+     "x": 0.151,
+     "y": 0.7412,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.angle",
+    "shape": {
+     "kind": "point",
+     "x": 0.8154,
+     "y": 0.7866,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.body",
+    "shape": {
+     "kind": "point",
+     "x": 0.4984,
+     "y": 0.8505,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.condylar-process",
+    "shape": {
+     "kind": "point",
+     "x": 0.2346,
+     "y": 0.2,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.6434,
+    "y": 0.1321,
+    "w": 0.2367,
+    "h": 0.0582
+   },
+   {
+    "x": 0.1234,
+    "y": 0.2423,
+    "w": 0.2059,
+    "h": 0.0502
+   },
+   {
+    "x": 0.1201,
+    "y": 0.325,
+    "w": 0.2183,
+    "h": 0.0502
+   },
+   {
+    "x": 0.1135,
+    "y": 0.3966,
+    "w": 0.2458,
+    "h": 0.0502
+   },
+   {
+    "x": 0.031,
+    "y": 0.5292,
+    "w": 0.2124,
+    "h": 0.0502
+   },
+   {
+    "x": 0.8307,
+    "y": 0.5364,
+    "w": 0.1109,
+    "h": 0.0502
+   },
+   {
+    "x": 0.0526,
+    "y": 0.616,
+    "w": 0.2059,
+    "h": 0.0582
+   },
+   {
+    "x": 0.0218,
+    "y": 0.7141,
+    "w": 0.2583,
+    "h": 0.0542
+   },
+   {
+    "x": 0.7691,
+    "y": 0.7559,
+    "w": 0.0926,
+    "h": 0.0615
+   },
+   {
+    "x": 0.4554,
+    "y": 0.8234,
+    "w": 0.086,
+    "h": 0.0542
+   },
+   {
+    "x": 0.12,
+    "y": 0.1708,
+    "w": 0.2292,
+    "h": 0.0585
+   }
+  ]
+ },
+ {
+  "id": "skel.append-12",
+  "from": "raw/skeleton/append-12.png",
+  "crop": [
+   744,
+   328,
+   1282,
+   985
+  ],
+  "labId": "lab4",
+  "groupIds": [
+   "skull.bones",
+   "skull.frontal-facial",
+   "skull.foramina",
+   "skull.mandible"
+  ],
+  "title": "Skull, anterior view",
+  "hotspots": [
+   {
+    "termId": "skull.bones.frontal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.2036,
+     "y": 0.0864,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.parietal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8922,
+     "y": 0.2122,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.temporal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.9195,
+     "y": 0.3178,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.sphenoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.163,
+     "y": 0.3442,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.nasal-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1306,
+     "y": 0.4477,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.ethmoid-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.8739,
+     "y": 0.5036,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.vomer",
+    "shape": {
+     "kind": "point",
+     "x": 0.8727,
+     "y": 0.5645,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.zygomatic-bone",
+    "shape": {
+     "kind": "point",
+     "x": 0.1626,
+     "y": 0.6314,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.maxilla",
+    "shape": {
+     "kind": "point",
+     "x": 0.8696,
+     "y": 0.6365,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.mandible",
+    "shape": {
+     "kind": "point",
+     "x": 0.1193,
+     "y": 0.735,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.glabella",
+    "shape": {
+     "kind": "point",
+     "x": 0.1887,
+     "y": 0.1567,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.supraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.2048,
+     "y": 0.2092,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.supraorbital-margin",
+    "shape": {
+     "kind": "point",
+     "x": 0.2048,
+     "y": 0.285,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.bones.inferior-nasal-concha",
+    "shape": {
+     "kind": "point",
+     "x": 0.1895,
+     "y": 0.5458,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.orbit",
+    "shape": {
+     "kind": "point",
+     "x": 0.8145,
+     "y": 0.4217,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.frontal-facial.intermaxillary-suture",
+    "shape": {
+     "kind": "point",
+     "x": 0.8911,
+     "y": 0.71,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.infraorbital-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.8871,
+     "y": 0.755,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.foramina.mental-foramen",
+    "shape": {
+     "kind": "point",
+     "x": 0.221,
+     "y": 0.805,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skull.mandible.mental-protuberance",
+    "shape": {
+     "kind": "point",
+     "x": 0.2371,
+     "y": 0.8633,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.1163,
+    "y": 0.0587,
+    "w": 0.1745,
+    "h": 0.0554
+   },
+   {
+    "x": 0.81,
+    "y": 0.1886,
+    "w": 0.1643,
+    "h": 0.0473
+   },
+   {
+    "x": 0.8646,
+    "y": 0.2942,
+    "w": 0.1097,
+    "h": 0.0473
+   },
+   {
+    "x": 0.0679,
+    "y": 0.3145,
+    "w": 0.1901,
+    "h": 0.0594
+   },
+   {
+    "x": 0.0516,
+    "y": 0.42,
+    "w": 0.1581,
+    "h": 0.0554
+   },
+   {
+    "x": 0.7804,
+    "y": 0.4779,
+    "w": 0.187,
+    "h": 0.0513
+   },
+   {
+    "x": 0.8194,
+    "y": 0.5408,
+    "w": 0.1066,
+    "h": 0.0473
+   },
+   {
+    "x": 0.0578,
+    "y": 0.5997,
+    "w": 0.2096,
+    "h": 0.0635
+   },
+   {
+    "x": 0.8131,
+    "y": 0.6088,
+    "w": 0.1128,
+    "h": 0.0554
+   },
+   {
+    "x": 0.0516,
+    "y": 0.7053,
+    "w": 0.1355,
+    "h": 0.0594
+   },
+   {
+    "x": 0.129,
+    "y": 0.125,
+    "w": 0.1194,
+    "h": 0.0633
+   },
+   {
+    "x": 0.129,
+    "y": 0.165,
+    "w": 0.1516,
+    "h": 0.0883
+   },
+   {
+    "x": 0.129,
+    "y": 0.2433,
+    "w": 0.1516,
+    "h": 0.0833
+   },
+   {
+    "x": 0.1097,
+    "y": 0.5017,
+    "w": 0.1597,
+    "h": 0.0883
+   },
+   {
+    "x": 0.7629,
+    "y": 0.39,
+    "w": 0.1032,
+    "h": 0.0633
+   },
+   {
+    "x": 0.779,
+    "y": 0.6783,
+    "w": 0.221,
+    "h": 0.0633
+   },
+   {
+    "x": 0.779,
+    "y": 0.7233,
+    "w": 0.2161,
+    "h": 0.0633
+   },
+   {
+    "x": 0.129,
+    "y": 0.7733,
+    "w": 0.1839,
+    "h": 0.0633
+   },
+   {
+    "x": 0.129,
+    "y": 0.8317,
+    "w": 0.2161,
+    "h": 0.0633
+   }
+  ]
  }
 ]

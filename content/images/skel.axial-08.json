@@ -1,0 +1,227 @@
+{
+ "id": "skel.axial-08",
+ "src": "img/skel.axial-08.webp",
+ "width": 1600,
+ "height": 569,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.temporal",
+  "skull.foramina",
+  "skull.sutures"
+ ],
+ "title": "Right temporal bone, lateral and medial",
+ "hotspots": [
+  {
+   "termId": "skull.temporal.squamous-part",
+   "shape": {
+    "kind": "point",
+    "x": 0.4317,
+    "y": 0.199,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.squamous-part",
+   "shape": {
+    "kind": "point",
+    "x": 0.5883,
+    "y": 0.229,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.mandibular-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.4389,
+    "y": 0.2647,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.petrous-part",
+   "shape": {
+    "kind": "point",
+    "x": 0.9286,
+    "y": 0.3717,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.internal-acoustic-meatus",
+   "shape": {
+    "kind": "point",
+    "x": 0.9378,
+    "y": 0.4754,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.zygomatic-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.4399,
+    "y": 0.4633,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.zygomatic-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.5674,
+    "y": 0.4955,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.mastoid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.0791,
+    "y": 0.5404,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.mastoid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.9347,
+    "y": 0.6976,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.external-acoustic-meatus",
+   "shape": {
+    "kind": "point",
+    "x": 0.4178,
+    "y": 0.7206,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.styloid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.5854,
+    "y": 0.7563,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.temporal.styloid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.4274,
+    "y": 0.8334,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.sutures.squamous-suture",
+   "shape": {
+    "kind": "point",
+    "x": 0.4368,
+    "y": 0.3455,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.sutures.squamous-suture",
+   "shape": {
+    "kind": "point",
+    "x": 0.5789,
+    "y": 0.3091,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.3728,
+   "y": 0.1636,
+   "w": 0.1178,
+   "h": 0.0708
+  },
+  {
+   "x": 0.5304,
+   "y": 0.1936,
+   "w": 0.1157,
+   "h": 0.0708
+  },
+  {
+   "x": 0.381,
+   "y": 0.2292,
+   "w": 0.1157,
+   "h": 0.0708
+  },
+  {
+   "x": 0.8738,
+   "y": 0.3363,
+   "w": 0.1096,
+   "h": 0.0708
+  },
+  {
+   "x": 0.8779,
+   "y": 0.4192,
+   "w": 0.1198,
+   "h": 0.1123
+  },
+  {
+   "x": 0.381,
+   "y": 0.425,
+   "w": 0.1178,
+   "h": 0.0766
+  },
+  {
+   "x": 0.5284,
+   "y": 0.4422,
+   "w": 0.0781,
+   "h": 0.1065
+  },
+  {
+   "x": 0.0233,
+   "y": 0.5079,
+   "w": 0.1116,
+   "h": 0.0651
+  },
+  {
+   "x": 0.8779,
+   "y": 0.6621,
+   "w": 0.1137,
+   "h": 0.0708
+  },
+  {
+   "x": 0.3389,
+   "y": 0.6852,
+   "w": 0.1579,
+   "h": 0.0708
+  },
+  {
+   "x": 0.5349,
+   "y": 0.7209,
+   "w": 0.101,
+   "h": 0.0708
+  },
+  {
+   "x": 0.3769,
+   "y": 0.798,
+   "w": 0.101,
+   "h": 0.0708
+  },
+  {
+   "x": 0.3768,
+   "y": 0.3068,
+   "w": 0.12,
+   "h": 0.0773
+  },
+  {
+   "x": 0.5189,
+   "y": 0.2705,
+   "w": 0.12,
+   "h": 0.0773
+  }
+ ]
+}

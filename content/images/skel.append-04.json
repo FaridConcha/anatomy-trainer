@@ -1,0 +1,387 @@
+{
+ "id": "skel.append-04",
+ "src": "img/skel.append-04.webp",
+ "width": 1600,
+ "height": 900,
+ "labId": "lab5",
+ "groupIds": [
+  "hip"
+ ],
+ "title": "Right hip bone, medial and lateral",
+ "hotspots": [
+  {
+   "termId": "hip.iliac-crest",
+   "shape": {
+    "kind": "point",
+    "x": 0.8829,
+    "y": 0.1356,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.auricular-surface",
+   "shape": {
+    "kind": "point",
+    "x": 0.421,
+    "y": 0.3459,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.greater-sciatic-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.4137,
+    "y": 0.4243,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.obturator-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.4124,
+    "y": 0.5683,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.ischial-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.5746,
+    "y": 0.6114,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.obturator-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.8997,
+    "y": 0.6184,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.ilium",
+   "shape": {
+    "kind": "point",
+    "x": 0.7095,
+    "y": 0.9464,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.ischium",
+   "shape": {
+    "kind": "point",
+    "x": 0.7897,
+    "y": 0.9502,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.pubis",
+   "shape": {
+    "kind": "point",
+    "x": 0.8693,
+    "y": 0.9553,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.greater-sciatic-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.5968,
+    "y": 0.4304,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.acetabulum",
+   "shape": {
+    "kind": "point",
+    "x": 0.5874,
+    "y": 0.4652,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.pubic-symphysis",
+   "shape": {
+    "kind": "point",
+    "x": 0.0942,
+    "y": 0.5312,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.iliac-fossa",
+   "shape": {
+    "kind": "point",
+    "x": 0.0916,
+    "y": 0.2029,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.iliac-crest",
+   "shape": {
+    "kind": "point",
+    "x": 0.41,
+    "y": 0.1246,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.anterior-superior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.1053,
+    "y": 0.2797,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.arcuate-line",
+   "shape": {
+    "kind": "point",
+    "x": 0.1,
+    "y": 0.3261,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.anterior-inferior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.1053,
+    "y": 0.3587,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.posterior-superior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.4284,
+    "y": 0.3188,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.posterior-inferior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.4284,
+    "y": 0.387,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.ischial-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.4179,
+    "y": 0.4667,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.ischial-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.5716,
+    "y": 0.5159,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.lesser-sciatic-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.5821,
+    "y": 0.5507,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.posterior-superior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.5768,
+    "y": 0.3536,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hip.posterior-inferior-iliac-spine",
+   "shape": {
+    "kind": "point",
+    "x": 0.5768,
+    "y": 0.3971,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.8377,
+   "y": 0.1132,
+   "w": 0.0903,
+   "h": 0.0447
+  },
+  {
+   "x": 0.3409,
+   "y": 0.3197,
+   "w": 0.1602,
+   "h": 0.0525
+  },
+  {
+   "x": 0.3369,
+   "y": 0.3981,
+   "w": 0.1536,
+   "h": 0.0525
+  },
+  {
+   "x": 0.3409,
+   "y": 0.544,
+   "w": 0.1431,
+   "h": 0.0486
+  },
+  {
+   "x": 0.5072,
+   "y": 0.589,
+   "w": 0.1348,
+   "h": 0.0447
+  },
+  {
+   "x": 0.8251,
+   "y": 0.596,
+   "w": 0.1493,
+   "h": 0.0447
+  },
+  {
+   "x": 0.6801,
+   "y": 0.9221,
+   "w": 0.0589,
+   "h": 0.0486
+  },
+  {
+   "x": 0.7517,
+   "y": 0.9259,
+   "w": 0.0759,
+   "h": 0.0486
+  },
+  {
+   "x": 0.8399,
+   "y": 0.9329,
+   "w": 0.0589,
+   "h": 0.0447
+  },
+  {
+   "x": 0.5158,
+   "y": 0.4043,
+   "w": 0.1621,
+   "h": 0.0522
+  },
+  {
+   "x": 0.5326,
+   "y": 0.4391,
+   "w": 0.1095,
+   "h": 0.0522
+  },
+  {
+   "x": 0.0316,
+   "y": 0.4855,
+   "w": 0.1253,
+   "h": 0.0913
+  },
+  {
+   "x": 0.0211,
+   "y": 0.1725,
+   "w": 0.1411,
+   "h": 0.0609
+  },
+  {
+   "x": 0.3263,
+   "y": 0.0957,
+   "w": 0.1674,
+   "h": 0.058
+  },
+  {
+   "x": 0.0505,
+   "y": 0.2449,
+   "w": 0.1095,
+   "h": 0.0696
+  },
+  {
+   "x": 0.0505,
+   "y": 0.2986,
+   "w": 0.0989,
+   "h": 0.0551
+  },
+  {
+   "x": 0.0505,
+   "y": 0.3275,
+   "w": 0.1095,
+   "h": 0.0623
+  },
+  {
+   "x": 0.3684,
+   "y": 0.2841,
+   "w": 0.12,
+   "h": 0.0696
+  },
+  {
+   "x": 0.3684,
+   "y": 0.3522,
+   "w": 0.12,
+   "h": 0.0696
+  },
+  {
+   "x": 0.3684,
+   "y": 0.4391,
+   "w": 0.0989,
+   "h": 0.0551
+  },
+  {
+   "x": 0.5274,
+   "y": 0.4884,
+   "w": 0.0884,
+   "h": 0.0551
+  },
+  {
+   "x": 0.5274,
+   "y": 0.5232,
+   "w": 0.1095,
+   "h": 0.0551
+  },
+  {
+   "x": 0.5274,
+   "y": 0.3203,
+   "w": 0.0989,
+   "h": 0.0667
+  },
+  {
+   "x": 0.5274,
+   "y": 0.3638,
+   "w": 0.0989,
+   "h": 0.0667
+  },
+  {
+   "x": 0.0421,
+   "y": 0.7681,
+   "w": 0.5263,
+   "h": 0.1884
+  },
+  {
+   "x": 0.0316,
+   "y": 0.6377,
+   "w": 0.1684,
+   "h": 0.0507
+  }
+ ]
+}

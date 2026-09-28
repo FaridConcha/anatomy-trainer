@@ -1,0 +1,181 @@
+{
+ "id": "skel.append-10",
+ "src": "img/skel.append-10.webp",
+ "width": 1527,
+ "height": 1244,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.mandible",
+  "skull.foramina"
+ ],
+ "title": "Mandible, lateral view",
+ "hotspots": [
+  {
+   "termId": "skull.mandible.condylar-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.7617,
+    "y": 0.1613,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.coronoid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.2263,
+    "y": 0.2674,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.mandibular-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.2292,
+    "y": 0.3501,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.mandibular-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.2365,
+    "y": 0.4217,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.alveolar-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.1372,
+    "y": 0.5543,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.ramus",
+   "shape": {
+    "kind": "point",
+    "x": 0.8862,
+    "y": 0.5615,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.mental-foramen",
+   "shape": {
+    "kind": "point",
+    "x": 0.1556,
+    "y": 0.6451,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.mental-protuberance",
+   "shape": {
+    "kind": "point",
+    "x": 0.151,
+    "y": 0.7412,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.angle",
+   "shape": {
+    "kind": "point",
+    "x": 0.8154,
+    "y": 0.7866,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.body",
+   "shape": {
+    "kind": "point",
+    "x": 0.4984,
+    "y": 0.8505,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.mandible.condylar-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.2346,
+    "y": 0.2,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.6434,
+   "y": 0.1321,
+   "w": 0.2367,
+   "h": 0.0582
+  },
+  {
+   "x": 0.1234,
+   "y": 0.2423,
+   "w": 0.2059,
+   "h": 0.0502
+  },
+  {
+   "x": 0.1201,
+   "y": 0.325,
+   "w": 0.2183,
+   "h": 0.0502
+  },
+  {
+   "x": 0.1135,
+   "y": 0.3966,
+   "w": 0.2458,
+   "h": 0.0502
+  },
+  {
+   "x": 0.031,
+   "y": 0.5292,
+   "w": 0.2124,
+   "h": 0.0502
+  },
+  {
+   "x": 0.8307,
+   "y": 0.5364,
+   "w": 0.1109,
+   "h": 0.0502
+  },
+  {
+   "x": 0.0526,
+   "y": 0.616,
+   "w": 0.2059,
+   "h": 0.0582
+  },
+  {
+   "x": 0.0218,
+   "y": 0.7141,
+   "w": 0.2583,
+   "h": 0.0542
+  },
+  {
+   "x": 0.7691,
+   "y": 0.7559,
+   "w": 0.0926,
+   "h": 0.0615
+  },
+  {
+   "x": 0.4554,
+   "y": 0.8234,
+   "w": 0.086,
+   "h": 0.0542
+  },
+  {
+   "x": 0.12,
+   "y": 0.1708,
+   "w": 0.2292,
+   "h": 0.0585
+  }
+ ]
+}

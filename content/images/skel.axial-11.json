@@ -1,0 +1,268 @@
+{
+ "id": "skel.axial-11",
+ "src": "img/skel.axial-11.webp",
+ "width": 1426,
+ "height": 1310,
+ "labId": "lab5",
+ "groupIds": [
+  "radius",
+  "ulna"
+ ],
+ "title": "Right radius and ulna, anterior and posterior",
+ "hotspots": [
+  {
+   "termId": "radius.ulnar-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.4874,
+    "y": 0.7695,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.styloid-process-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.209,
+    "y": 0.8847,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.styloid-process-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.8488,
+    "y": 0.9046,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.radial-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.1591,
+    "y": 0.162,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.head-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.1409,
+    "y": 0.2113,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.neck-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.1818,
+    "y": 0.2676,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.radial-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.1636,
+    "y": 0.338,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.head-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.8091,
+    "y": 0.1972,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "radius.neck-of-the-radius",
+   "shape": {
+    "kind": "point",
+    "x": 0.7545,
+    "y": 0.2606,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.olecranon",
+   "shape": {
+    "kind": "point",
+    "x": 0.1909,
+    "y": 0.0951,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.trochlear-notch",
+   "shape": {
+    "kind": "point",
+    "x": 0.4636,
+    "y": 0.1232,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.coronoid-process",
+   "shape": {
+    "kind": "point",
+    "x": 0.4727,
+    "y": 0.2183,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.head-of-the-ulna",
+   "shape": {
+    "kind": "point",
+    "x": 0.4955,
+    "y": 0.8204,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.olecranon",
+   "shape": {
+    "kind": "point",
+    "x": 0.7591,
+    "y": 0.0951,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.ulnar-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.4591,
+    "y": 0.2866,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "ulna.styloid-process-of-the-ulna",
+   "shape": {
+    "kind": "point",
+    "x": 0.4864,
+    "y": 0.8592,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.4039,
+   "y": 0.7449,
+   "w": 0.167,
+   "h": 0.049
+  },
+  {
+   "x": 0.1199,
+   "y": 0.8442,
+   "w": 0.1783,
+   "h": 0.0811
+  },
+  {
+   "x": 0.7488,
+   "y": 0.8839,
+   "w": 0.2,
+   "h": 0.0414
+  },
+  {
+   "x": 0.0418,
+   "y": 0.1282,
+   "w": 0.2345,
+   "h": 0.0676
+  },
+  {
+   "x": 0.0236,
+   "y": 0.1775,
+   "w": 0.2345,
+   "h": 0.0676
+  },
+  {
+   "x": 0.1055,
+   "y": 0.2338,
+   "w": 0.1527,
+   "h": 0.0676
+  },
+  {
+   "x": 0.06,
+   "y": 0.2901,
+   "w": 0.2073,
+   "h": 0.0958
+  },
+  {
+   "x": 0.6782,
+   "y": 0.1634,
+   "w": 0.2618,
+   "h": 0.0676
+  },
+  {
+   "x": 0.6782,
+   "y": 0.2268,
+   "w": 0.1527,
+   "h": 0.0676
+  },
+  {
+   "x": 0.1055,
+   "y": 0.0648,
+   "w": 0.1709,
+   "h": 0.0606
+  },
+  {
+   "x": 0.3782,
+   "y": 0.0789,
+   "w": 0.1709,
+   "h": 0.0887
+  },
+  {
+   "x": 0.3691,
+   "y": 0.1775,
+   "w": 0.2073,
+   "h": 0.0817
+  },
+  {
+   "x": 0.3873,
+   "y": 0.7901,
+   "w": 0.2164,
+   "h": 0.0606
+  },
+  {
+   "x": 0.6782,
+   "y": 0.0648,
+   "w": 0.1618,
+   "h": 0.0606
+  },
+  {
+   "x": 0.3691,
+   "y": 0.262,
+   "w": 0.18,
+   "h": 0.0493
+  },
+  {
+   "x": 0.3691,
+   "y": 0.8324,
+   "w": 0.2345,
+   "h": 0.0535
+  },
+  {
+   "x": 0.3909,
+   "y": 0.3732,
+   "w": 0.1545,
+   "h": 0.0563
+  },
+  {
+   "x": 0.4091,
+   "y": 0.4479,
+   "w": 0.1455,
+   "h": 0.0563
+  }
+ ]
+}

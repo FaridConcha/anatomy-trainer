@@ -1,0 +1,2214 @@
+{
+ "axial-10": {
+  "title": "Right humerus, anterior and posterior",
+  "groups": [
+   "humerus"
+  ],
+  "crop": [
+   0.25,
+   0.19,
+   0.73,
+   0.71
+  ],
+  "masks": [
+   [
+    0.0,
+    0.33,
+    0.34,
+    0.26
+   ]
+  ]
+ },
+ "axial-11": {
+  "title": "Right radius and ulna, anterior and posterior",
+  "groups": [
+   "radius",
+   "ulna"
+  ],
+  "crop": [
+   0.44,
+   0.19,
+   0.55,
+   0.71
+  ],
+  "drop": [
+   0,
+   1,
+   2,
+   4,
+   5,
+   7
+  ],
+  "add": [
+   {
+    "box": [
+     0.475,
+     0.29,
+     0.105,
+     0.03
+    ],
+    "termId": "ulna.radial-notch"
+   },
+   {
+    "box": [
+     0.465,
+     0.325,
+     0.105,
+     0.03
+    ],
+    "termId": "radius.head-of-the-radius"
+   },
+   {
+    "box": [
+     0.51,
+     0.365,
+     0.06,
+     0.03
+    ],
+    "termId": "radius.neck-of-the-radius"
+   },
+   {
+    "box": [
+     0.485,
+     0.405,
+     0.09,
+     0.05
+    ],
+    "termId": "radius.radial-tuberosity"
+   },
+   {
+    "box": [
+     0.825,
+     0.315,
+     0.12,
+     0.03
+    ],
+    "termId": "radius.head-of-the-radius"
+   },
+   {
+    "box": [
+     0.825,
+     0.36,
+     0.06,
+     0.03
+    ],
+    "termId": "radius.neck-of-the-radius"
+   },
+   {
+    "box": [
+     0.51,
+     0.245,
+     0.07,
+     0.025
+    ],
+    "termId": "ulna.olecranon"
+   },
+   {
+    "box": [
+     0.66,
+     0.255,
+     0.07,
+     0.045
+    ],
+    "termId": "ulna.trochlear-notch"
+   },
+   {
+    "box": [
+     0.655,
+     0.325,
+     0.09,
+     0.04
+    ],
+    "termId": "ulna.coronoid-process"
+   },
+   {
+    "box": [
+     0.665,
+     0.76,
+     0.095,
+     0.025
+    ],
+    "termId": "ulna.head-of-the-ulna"
+   },
+   {
+    "box": [
+     0.825,
+     0.245,
+     0.065,
+     0.025
+    ],
+    "termId": "ulna.olecranon"
+   },
+   {
+    "box": [
+     0.655,
+     0.385,
+     0.075,
+     0.017
+    ],
+    "termId": "ulna.ulnar-tuberosity"
+   },
+   {
+    "box": [
+     0.655,
+     0.79,
+     0.105,
+     0.02
+    ],
+    "termId": "ulna.styloid-process-of-the-ulna"
+   }
+  ],
+  "masks": [
+   [
+    0.655,
+    0.455,
+    0.085,
+    0.04
+   ],
+   [
+    0.665,
+    0.508,
+    0.08,
+    0.04
+   ]
+  ]
+ },
+ "axial-12": {
+  "title": "Right tibia and fibula, anterior and posterior",
+  "groups": [
+   "tibia",
+   "fibula"
+  ],
+  "crop": [
+   0.41,
+   0.13,
+   0.58,
+   0.72
+  ],
+  "drop": [
+   3,
+   4,
+   5
+  ],
+  "add": [
+   {
+    "box": [
+     0.684,
+     0.237,
+     0.096,
+     0.045
+    ],
+    "termId": "tibia.tibial-tuberosity"
+   },
+   {
+    "box": [
+     0.87,
+     0.215,
+     0.08,
+     0.045
+    ],
+    "termId": "fibula.head-of-the-fibula"
+   },
+   {
+    "box": [
+     0.865,
+     0.19,
+     0.035,
+     0.02
+    ],
+    "termId": "fibula.apex"
+   },
+   {
+    "box": [
+     0.44,
+     0.75,
+     0.1,
+     0.05
+    ],
+    "termId": "fibula.lateral-malleolus"
+   },
+   {
+    "box": [
+     0.87,
+     0.73,
+     0.09,
+     0.05
+    ],
+    "termId": "fibula.lateral-malleolus"
+   },
+   {
+    "box": [
+     0.67,
+     0.425,
+     0.09,
+     0.02
+    ],
+    "termId": "tibia.anterior-border"
+   }
+  ],
+  "masks": [
+   [
+    0.665,
+    0.468,
+    0.075,
+    0.038
+   ],
+   [
+    0.665,
+    0.532,
+    0.075,
+    0.038
+   ]
+  ]
+ },
+ "axial-03": {
+  "title": "Skull, right lateral view",
+  "groups": [
+   "skull.bones"
+  ],
+  "crop": [
+   0.35,
+   0.17,
+   0.63,
+   0.65
+  ],
+  "drop": [
+   0,
+   2,
+   3
+  ],
+  "set": {
+   "1": "skull.bones.temporal-bone"
+  },
+  "add": [
+   {
+    "box": [
+     0.362,
+     0.294,
+     0.125,
+     0.047
+    ],
+    "termId": "skull.bones.parietal-bone"
+   },
+   {
+    "box": [
+     0.81,
+     0.294,
+     0.13,
+     0.047
+    ],
+    "termId": "skull.bones.frontal-bone"
+   },
+   {
+    "box": [
+     0.373,
+     0.442,
+     0.13,
+     0.039
+    ],
+    "termId": "skull.bones.occipital-bone"
+   },
+   {
+    "box": [
+     0.815,
+     0.403,
+     0.13,
+     0.039
+    ],
+    "termId": "skull.bones.sphenoid-bone"
+   },
+   {
+    "box": [
+     0.815,
+     0.458,
+     0.13,
+     0.039
+    ],
+    "termId": "skull.bones.ethmoid-bone"
+   }
+  ]
+ },
+ "axial-04": {
+  "title": "Skull sutures (superior) and frontal bone (anterior)",
+  "groups": [
+   "skull.sutures",
+   "skull.frontal-facial",
+   "skull.bones",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.02,
+   0.22,
+   0.96,
+   0.6
+  ],
+  "drop": [
+   0,
+   2
+  ],
+  "masks": [
+   [
+    0.1,
+    0.69,
+    0.36,
+    0.12
+   ],
+   [
+    0.53,
+    0.26,
+    0.42,
+    0.15
+   ]
+  ],
+  "add": [
+   {
+    "box": [
+     0.05,
+     0.313,
+     0.13,
+     0.04
+    ],
+    "termId": "skull.sutures.coronal-suture"
+   },
+   {
+    "box": [
+     0.04,
+     0.421,
+     0.13,
+     0.04
+    ],
+    "termId": "skull.sutures.sagittal-suture"
+   },
+   {
+    "box": [
+     0.06,
+     0.547,
+     0.13,
+     0.04
+    ],
+    "termId": "skull.sutures.lambdoid-suture"
+   },
+   {
+    "box": [
+     0.468,
+     0.54,
+     0.17,
+     0.032
+    ],
+    "termId": "skull.foramina.supraorbital-foramen"
+   },
+   {
+    "box": [
+     0.485,
+     0.587,
+     0.152,
+     0.032
+    ],
+    "termId": "skull.frontal-facial.supraorbital-margin"
+   },
+   {
+    "box": [
+     0.09,
+     0.278,
+     0.07,
+     0.018
+    ],
+    "termId": "skull.bones.frontal-bone"
+   },
+   {
+    "box": [
+     0.092,
+     0.381,
+     0.065,
+     0.018
+    ],
+    "termId": "skull.bones.parietal-bone"
+   },
+   {
+    "box": [
+     0.092,
+     0.607,
+     0.07,
+     0.018
+    ],
+    "termId": "skull.bones.occipital-bone"
+   },
+   {
+    "box": [
+     0.543,
+     0.482,
+     0.075,
+     0.018
+    ],
+    "termId": "skull.bones.frontal-bone"
+   },
+   {
+    "box": [
+     0.543,
+     0.636,
+     0.085,
+     0.018
+    ],
+    "termId": "skull.bones.sphenoid-bone"
+   },
+   {
+    "box": [
+     0.543,
+     0.719,
+     0.06,
+     0.018
+    ],
+    "termId": "skull.bones.nasal-bone"
+   }
+  ]
+ },
+ "axial-05": {
+  "title": "Skull, lateral view and median section",
+  "groups": [
+   "skull.bones",
+   "skull.sutures",
+   "skull.temporal",
+   "skull.sphenoid",
+   "skull.ethmoid",
+   "skull.foramina",
+   "skull.frontal-facial"
+  ],
+  "crop": [
+   0.02,
+   0.15,
+   0.96,
+   0.72
+  ],
+  "drop": [
+   0,
+   6,
+   15
+  ],
+  "masks": [
+   [
+    0.55,
+    0.17,
+    0.4,
+    0.26
+   ]
+  ],
+  "set": {
+   "1": "skull.bones.frontal-bone",
+   "2": "skull.bones.ethmoid-bone",
+   "3": "skull.bones.lacrimal-bone",
+   "4": "skull.bones.nasal-bone",
+   "5": "skull.bones.maxilla",
+   "7": "skull.bones.zygomatic-bone",
+   "8": "skull.bones.parietal-bone",
+   "9": "skull.bones.sphenoid-bone",
+   "10": "skull.bones.mandible",
+   "11": "skull.bones.frontal-bone",
+   "12": "skull.bones.temporal-bone",
+   "13": "skull.bones.nasal-bone",
+   "14": "skull.bones.occipital-bone",
+   "16": "skull.bones.maxilla",
+   "17": "skull.bones.mandible"
+  },
+  "add": [
+   {
+    "box": [
+     0.03,
+     0.198,
+     0.095,
+     0.017
+    ],
+    "termId": "skull.bones.parietal-bone"
+   },
+   {
+    "box": [
+     0.03,
+     0.232,
+     0.09,
+     0.018
+    ],
+    "termId": "skull.bones.sphenoid-bone"
+   },
+   {
+    "box": [
+     0.025,
+     0.34,
+     0.065,
+     0.04
+    ],
+    "termId": "skull.bones.occipital-bone"
+   },
+   {
+    "box": [
+     0.025,
+     0.391,
+     0.065,
+     0.02
+    ],
+    "termId": "skull.bones.temporal-bone"
+   },
+   {
+    "box": [
+     0.762,
+     0.728,
+     0.075,
+     0.03
+    ],
+    "termId": "skull.bones.vomer"
+   },
+   {
+    "box": [
+     0.415,
+     0.235,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.sutures.coronal-suture"
+   },
+   {
+    "box": [
+     0.028,
+     0.263,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.sutures.squamous-suture"
+   },
+   {
+    "box": [
+     0.025,
+     0.318,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.sutures.lambdoid-suture"
+   },
+   {
+    "box": [
+     0.035,
+     0.429,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.temporal.zygomatic-process"
+   },
+   {
+    "box": [
+     0.028,
+     0.463,
+     0.07,
+     0.026
+    ],
+    "termId": "skull.foramina.external-acoustic-meatus"
+   },
+   {
+    "box": [
+     0.028,
+     0.5,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.temporal.mastoid-process"
+   },
+   {
+    "box": [
+     0.045,
+     0.528,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.temporal.styloid-process"
+   },
+   {
+    "box": [
+     0.42,
+     0.543,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.temporal.zygomatic-arch"
+   },
+   {
+    "box": [
+     0.43,
+     0.48,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.foramina.infraorbital-foramen"
+   },
+   {
+    "box": [
+     0.9,
+     0.516,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.sphenoid.sella-turcica"
+   },
+   {
+    "box": [
+     0.9,
+     0.537,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.sphenoid.sphenoidal-sinus"
+   },
+   {
+    "box": [
+     0.9,
+     0.575,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.frontal-sinus"
+   },
+   {
+    "box": [
+     0.9,
+     0.661,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.ethmoid.crista-galli"
+   },
+   {
+    "box": [
+     0.9,
+     0.679,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.ethmoid.cribriform-plate"
+   },
+   {
+    "box": [
+     0.9,
+     0.698,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.ethmoid.perpendicular-plate"
+   },
+   {
+    "box": [
+     0.5,
+     0.523,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.sutures.squamous-suture"
+   },
+   {
+    "box": [
+     0.5,
+     0.559,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.sutures.lambdoid-suture"
+   },
+   {
+    "box": [
+     0.505,
+     0.629,
+     0.075,
+     0.026
+    ],
+    "termId": "skull.foramina.internal-acoustic-meatus"
+   },
+   {
+    "box": [
+     0.5,
+     0.68,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.foramina.jugular-foramen"
+   },
+   {
+    "box": [
+     0.505,
+     0.74,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.foramina.hypoglossal-canal"
+   },
+   {
+    "box": [
+     0.9,
+     0.762,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.incisive-fossa"
+   },
+   {
+    "box": [
+     0.9,
+     0.78,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.palatine-process"
+   },
+   {
+    "box": [
+     0.9,
+     0.83,
+     0.08,
+     0.016
+    ],
+    "termId": "skull.foramina.mandibular-foramen"
+   }
+  ]
+ },
+ "axial-06": {
+  "title": "Cranial floor (superior) and skull base (inferior)",
+  "groups": [
+   "skull.bones",
+   "skull.foramina",
+   "skull.sphenoid",
+   "skull.ethmoid",
+   "skull.temporal",
+   "skull.occipital",
+   "skull.frontal-facial"
+  ],
+  "crop": [
+   0.03,
+   0.17,
+   0.95,
+   0.68
+  ],
+  "drop": [
+   2,
+   3,
+   8,
+   10,
+   11,
+   13,
+   15
+  ],
+  "set": {
+   "12": "skull.bones.parietal-bone"
+  },
+  "masks": [
+   [
+    0.05,
+    0.2,
+    0.42,
+    0.19
+   ]
+  ],
+  "add": [
+   {
+    "box": [
+     0.36,
+     0.597,
+     0.095,
+     0.026
+    ],
+    "termId": "skull.bones.temporal-bone"
+   },
+   {
+    "box": [
+     0.355,
+     0.735,
+     0.095,
+     0.026
+    ],
+    "termId": "skull.bones.parietal-bone"
+   },
+   {
+    "box": [
+     0.088,
+     0.565,
+     0.045,
+     0.016
+    ],
+    "termId": "skull.foramina.optic-canal"
+   },
+   {
+    "box": [
+     0.088,
+     0.6,
+     0.05,
+     0.016
+    ],
+    "termId": "skull.sphenoid.sella-turcica"
+   },
+   {
+    "box": [
+     0.088,
+     0.625,
+     0.05,
+     0.026
+    ],
+    "termId": "skull.foramina.foramen-rotundum"
+   },
+   {
+    "box": [
+     0.088,
+     0.665,
+     0.05,
+     0.026
+    ],
+    "termId": "skull.foramina.foramen-spinosum"
+   },
+   {
+    "box": [
+     0.088,
+     0.709,
+     0.05,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-ovale"
+   },
+   {
+    "box": [
+     0.088,
+     0.762,
+     0.05,
+     0.026
+    ],
+    "termId": "skull.foramina.hypoglossal-canal"
+   },
+   {
+    "box": [
+     0.378,
+     0.484,
+     0.055,
+     0.018
+    ],
+    "termId": "skull.ethmoid.crista-galli"
+   },
+   {
+    "box": [
+     0.378,
+     0.528,
+     0.06,
+     0.028
+    ],
+    "termId": "skull.ethmoid.cribriform-plate"
+   },
+   {
+    "box": [
+     0.378,
+     0.628,
+     0.05,
+     0.016
+    ],
+    "termId": "skull.temporal.petrous-part"
+   },
+   {
+    "box": [
+     0.378,
+     0.648,
+     0.055,
+     0.028
+    ],
+    "termId": "skull.foramina.internal-acoustic-meatus"
+   },
+   {
+    "box": [
+     0.378,
+     0.684,
+     0.05,
+     0.028
+    ],
+    "termId": "skull.foramina.jugular-foramen"
+   },
+   {
+    "box": [
+     0.505,
+     0.204,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.incisive-fossa"
+   },
+   {
+    "box": [
+     0.505,
+     0.225,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.palatine-process"
+   },
+   {
+    "box": [
+     0.505,
+     0.248,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.frontal-facial.intermaxillary-suture"
+   },
+   {
+    "box": [
+     0.505,
+     0.362,
+     0.065,
+     0.016
+    ],
+    "termId": "skull.temporal.mandibular-fossa"
+   },
+   {
+    "box": [
+     0.505,
+     0.378,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.temporal.styloid-process"
+   },
+   {
+    "box": [
+     0.505,
+     0.394,
+     0.055,
+     0.016
+    ],
+    "termId": "skull.foramina.carotid-canal"
+   },
+   {
+    "box": [
+     0.505,
+     0.41,
+     0.065,
+     0.026
+    ],
+    "termId": "skull.foramina.external-acoustic-meatus"
+   },
+   {
+    "box": [
+     0.505,
+     0.44,
+     0.08,
+     0.016
+    ],
+    "termId": "skull.foramina.stylomastoid-foramen"
+   },
+   {
+    "box": [
+     0.505,
+     0.457,
+     0.065,
+     0.016
+    ],
+    "termId": "skull.temporal.mastoid-process"
+   },
+   {
+    "box": [
+     0.505,
+     0.489,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.foramina.jugular-foramen"
+   },
+   {
+    "box": [
+     0.87,
+     0.279,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.temporal.zygomatic-arch"
+   },
+   {
+    "box": [
+     0.87,
+     0.348,
+     0.09,
+     0.032
+    ],
+    "termId": "skull.sphenoid.pterygoid-processes"
+   },
+   {
+    "box": [
+     0.87,
+     0.39,
+     0.06,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-ovale"
+   },
+   {
+    "box": [
+     0.87,
+     0.406,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-spinosum"
+   },
+   {
+    "box": [
+     0.87,
+     0.424,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-lacerum"
+   },
+   {
+    "box": [
+     0.87,
+     0.492,
+     0.075,
+     0.016
+    ],
+    "termId": "skull.occipital.occipital-condyle"
+   },
+   {
+    "box": [
+     0.87,
+     0.527,
+     0.05,
+     0.016
+    ],
+    "termId": "skull.occipital.basilar-part"
+   },
+   {
+    "box": [
+     0.87,
+     0.545,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-magnum"
+   },
+   {
+    "box": [
+     0.87,
+     0.563,
+     0.08,
+     0.016
+    ],
+    "termId": "skull.occipital.inferior-nuchal-line"
+   },
+   {
+    "box": [
+     0.87,
+     0.582,
+     0.08,
+     0.016
+    ],
+    "termId": "skull.occipital.superior-nuchal-line"
+   },
+   {
+    "box": [
+     0.87,
+     0.6,
+     0.08,
+     0.026
+    ],
+    "termId": "skull.occipital.external-occipital-protuberance"
+   }
+  ]
+ },
+ "axial-07": {
+  "title": "Occipital bone: cranial floor and inferior skull",
+  "groups": [
+   "skull.occipital",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.03,
+   0.16,
+   0.95,
+   0.62
+  ],
+  "drop": [
+   1,
+   2,
+   3,
+   6,
+   8
+  ],
+  "masks": [
+   [
+    0.05,
+    0.24,
+    0.4,
+    0.2
+   ],
+   [
+    0.48,
+    0.66,
+    0.5,
+    0.14
+   ]
+  ],
+  "add": [
+   {
+    "box": [
+     0.045,
+     0.703,
+     0.13,
+     0.03
+    ],
+    "termId": "skull.foramina.hypoglossal-canal"
+   },
+   {
+    "box": [
+     0.83,
+     0.22,
+     0.09,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-ovale"
+   },
+   {
+    "box": [
+     0.83,
+     0.249,
+     0.11,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-spinosum"
+   },
+   {
+    "box": [
+     0.83,
+     0.277,
+     0.11,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-lacerum"
+   },
+   {
+    "box": [
+     0.83,
+     0.503,
+     0.11,
+     0.016
+    ],
+    "termId": "skull.occipital.inferior-nuchal-line"
+   },
+   {
+    "box": [
+     0.83,
+     0.533,
+     0.12,
+     0.016
+    ],
+    "termId": "skull.occipital.superior-nuchal-line"
+   },
+   {
+    "box": [
+     0.045,
+     0.505,
+     0.06,
+     0.03
+    ],
+    "termId": "skull.foramina.foramen-rotundum"
+   },
+   {
+    "box": [
+     0.045,
+     0.565,
+     0.06,
+     0.03
+    ],
+    "termId": "skull.foramina.foramen-spinosum"
+   },
+   {
+    "box": [
+     0.045,
+     0.625,
+     0.07,
+     0.016
+    ],
+    "termId": "skull.foramina.foramen-ovale"
+   }
+  ],
+  "maskDropped": [
+   2
+  ]
+ },
+ "axial-08": {
+  "title": "Right temporal bone, lateral and medial",
+  "groups": [
+   "skull.temporal",
+   "skull.foramina",
+   "skull.sutures"
+  ],
+  "crop": [
+   0.03,
+   0.38,
+   0.95,
+   0.44
+  ],
+  "drop": [
+   3,
+   8,
+   10
+  ],
+  "set": {
+   "6": "skull.temporal.zygomatic-process"
+  },
+  "add": [
+   {
+    "box": [
+     0.4,
+     0.524,
+     0.09,
+     0.016
+    ],
+    "termId": "skull.sutures.squamous-suture"
+   },
+   {
+    "box": [
+     0.535,
+     0.508,
+     0.09,
+     0.016
+    ],
+    "termId": "skull.sutures.squamous-suture"
+   }
+  ]
+ },
+ "axial-09": {
+  "title": "Right foot: dorsal, plantar, medial",
+  "groups": [
+   "foot.tarsals",
+   "foot.bones"
+  ],
+  "crop": [
+   0.03,
+   0.17,
+   0.95,
+   0.78
+  ],
+  "drop": [
+   2,
+   5,
+   6,
+   7,
+   8,
+   10,
+   14,
+   15,
+   16,
+   17
+  ],
+  "set": {
+   "11": "foot.tarsals.cuboid"
+  },
+  "masks": [
+   [
+    0.69,
+    0.19,
+    0.3,
+    0.41
+   ]
+  ],
+  "add": [
+   {
+    "box": [
+     0.342,
+     0.44,
+     0.05,
+     0.045
+    ],
+    "termId": "foot.bones.proximal-phalanx"
+   },
+   {
+    "box": [
+     0.058,
+     0.549,
+     0.128,
+     0.03
+    ],
+    "termId": "foot.tarsals.intermediate-cuneiform"
+   },
+   {
+    "box": [
+     0.06,
+     0.585,
+     0.11,
+     0.03
+    ],
+    "termId": "foot.tarsals.lateral-cuneiform"
+   },
+   {
+    "box": [
+     0.766,
+     0.665,
+     0.06,
+     0.02
+    ],
+    "termId": "foot.tarsals.navicular"
+   },
+   {
+    "box": [
+     0.836,
+     0.665,
+     0.045,
+     0.02
+    ],
+    "termId": "foot.tarsals.talus"
+   },
+   {
+    "box": [
+     0.06,
+     0.69,
+     0.09,
+     0.035
+    ],
+    "termId": "foot.tarsals.trochlea-of-the-talus"
+   },
+   {
+    "box": [
+     0.3,
+     0.765,
+     0.12,
+     0.02
+    ],
+    "termId": "foot.tarsals.calcaneal-tuberosity"
+   },
+   {
+    "box": [
+     0.67,
+     0.885,
+     0.07,
+     0.02
+    ],
+    "termId": "foot.bones.sesamoid-bone"
+   },
+   {
+    "box": [
+     0.89,
+     0.64,
+     0.07,
+     0.032
+    ],
+    "termId": "foot.tarsals.trochlea-of-the-talus"
+   }
+  ],
+  "maskDropped": [
+   2,
+   5,
+   8,
+   14,
+   16,
+   17
+  ]
+ },
+ "append-03": {
+  "title": "Right hand, anterior view",
+  "groups": [
+   "hand.carpals",
+   "hand.bones"
+  ],
+  "crop": [
+   0.28,
+   0.22,
+   0.7,
+   0.64
+  ],
+  "drop": [
+   0,
+   5,
+   7,
+   9,
+   11
+  ],
+  "masks": [
+   [
+    0.0,
+    0.38,
+    0.33,
+    0.4
+   ],
+   [
+    0.86,
+    0.39,
+    0.14,
+    0.11
+   ]
+  ],
+  "set": {
+   "1": "hand.bones.distal-phalanx",
+   "2": "hand.bones.middle-phalanx",
+   "3": "hand.bones.proximal-phalanx",
+   "4": "hand.bones.distal-phalanx",
+   "6": "hand.bones.proximal-phalanx",
+   "8": "hand.carpals.trapezoid",
+   "10": "hand.carpals.trapezium",
+   "12": "hand.carpals.capitate",
+   "13": "hand.carpals.scaphoid",
+   "14": "hand.carpals.lunate"
+  },
+  "add": [
+   {
+    "box": [
+     0.465,
+     0.741,
+     0.06,
+     0.014
+    ],
+    "termId": "hand.carpals.hamate"
+   },
+   {
+    "box": [
+     0.465,
+     0.757,
+     0.06,
+     0.014
+    ],
+    "termId": "hand.carpals.pisiform"
+   },
+   {
+    "box": [
+     0.465,
+     0.773,
+     0.06,
+     0.014
+    ],
+    "termId": "hand.carpals.triquetrum"
+   },
+   {
+    "box": [
+     0.79,
+     0.674,
+     0.06,
+     0.03
+    ],
+    "termId": "hand.bones.metacarpal-i"
+   }
+  ],
+  "maskDropped": [
+   5,
+   7,
+   11
+  ]
+ },
+ "append-04": {
+  "title": "Right hip bone, medial and lateral",
+  "groups": [
+   "hip"
+  ],
+  "crop": [
+   0.03,
+   0.14,
+   0.95,
+   0.69
+  ],
+  "drop": [
+   2,
+   4,
+   5,
+   9
+  ],
+  "masks": [
+   [
+    0.07,
+    0.67,
+    0.5,
+    0.13
+   ],
+   [
+    0.06,
+    0.58,
+    0.16,
+    0.035
+   ]
+  ],
+  "set": {
+   "0": "hip.iliac-crest",
+   "1": "hip.auricular-surface",
+   "3": "hip.greater-sciatic-notch",
+   "6": "hip.obturator-foramen",
+   "7": "hip.ischial-tuberosity",
+   "8": "hip.obturator-foramen",
+   "10": "hip.ilium",
+   "11": "hip.ischium",
+   "12": "hip.pubis"
+  },
+  "add": [
+   {
+    "box": [
+     0.532,
+     0.428,
+     0.13,
+     0.018
+    ],
+    "termId": "hip.greater-sciatic-notch"
+   },
+   {
+    "box": [
+     0.548,
+     0.452,
+     0.08,
+     0.018
+    ],
+    "termId": "hip.acetabulum"
+   },
+   {
+    "box": [
+     0.072,
+     0.484,
+     0.095,
+     0.045
+    ],
+    "termId": "hip.pubic-symphysis"
+   },
+   {
+    "box": [
+     0.062,
+     0.268,
+     0.11,
+     0.024
+    ],
+    "termId": "hip.iliac-fossa"
+   },
+   {
+    "box": [
+     0.352,
+     0.215,
+     0.135,
+     0.022
+    ],
+    "termId": "hip.iliac-crest"
+   },
+   {
+    "box": [
+     0.09,
+     0.318,
+     0.08,
+     0.03
+    ],
+    "termId": "hip.anterior-superior-iliac-spine"
+   },
+   {
+    "box": [
+     0.09,
+     0.355,
+     0.07,
+     0.02
+    ],
+    "termId": "hip.arcuate-line"
+   },
+   {
+    "box": [
+     0.09,
+     0.375,
+     0.08,
+     0.025
+    ],
+    "termId": "hip.anterior-inferior-iliac-spine"
+   },
+   {
+    "box": [
+     0.392,
+     0.345,
+     0.09,
+     0.03
+    ],
+    "termId": "hip.posterior-superior-iliac-spine"
+   },
+   {
+    "box": [
+     0.392,
+     0.392,
+     0.09,
+     0.03
+    ],
+    "termId": "hip.posterior-inferior-iliac-spine"
+   },
+   {
+    "box": [
+     0.392,
+     0.452,
+     0.07,
+     0.02
+    ],
+    "termId": "hip.ischial-spine"
+   },
+   {
+    "box": [
+     0.543,
+     0.486,
+     0.06,
+     0.02
+    ],
+    "termId": "hip.ischial-spine"
+   },
+   {
+    "box": [
+     0.543,
+     0.51,
+     0.08,
+     0.02
+    ],
+    "termId": "hip.lesser-sciatic-notch"
+   },
+   {
+    "box": [
+     0.543,
+     0.37,
+     0.07,
+     0.028
+    ],
+    "termId": "hip.posterior-superior-iliac-spine"
+   },
+   {
+    "box": [
+     0.543,
+     0.4,
+     0.07,
+     0.028
+    ],
+    "termId": "hip.posterior-inferior-iliac-spine"
+   }
+  ]
+ },
+ "append-05": {
+  "title": "Right scapula and clavicle",
+  "groups": [
+   "scapula",
+   "clavicle"
+  ],
+  "crop": [
+   0.03,
+   0.2,
+   0.95,
+   0.7
+  ],
+  "drop": [
+   1,
+   3,
+   5,
+   10
+  ],
+  "masks": [
+   [
+    0.05,
+    0.26,
+    0.23,
+    0.15
+   ],
+   [
+    0.05,
+    0.52,
+    0.32,
+    0.11
+   ],
+   [
+    0.57,
+    0.73,
+    0.36,
+    0.15
+   ]
+  ],
+  "set": {
+   "0": "scapula.acromion",
+   "2": "scapula.supraspinous-fossa",
+   "4": "scapula.coracoid-process",
+   "6": "scapula.glenoid-cavity",
+   "7": "scapula.spine-of-the-scapula",
+   "8": "scapula.subscapular-fossa",
+   "9": "scapula.infraspinous-fossa",
+   "11": "clavicle.sternal-end",
+   "12": "clavicle.acromial-end",
+   "13": "clavicle.conoid-tubercle",
+   "14": "clavicle.sternal-end",
+   "15": "clavicle.acromial-end"
+  },
+  "add": [
+   {
+    "box": [
+     0.405,
+     0.312,
+     0.075,
+     0.03
+    ],
+    "termId": "scapula.suprascapular-notch"
+   },
+   {
+    "box": [
+     0.415,
+     0.58,
+     0.05,
+     0.03
+    ],
+    "termId": "scapula.lateral-border"
+   },
+   {
+    "box": [
+     0.64,
+     0.588,
+     0.055,
+     0.028
+    ],
+    "termId": "scapula.medial-border"
+   },
+   {
+    "box": [
+     0.76,
+     0.68,
+     0.06,
+     0.02
+    ],
+    "termId": "scapula.inferior-angle"
+   }
+  ]
+ },
+ "append-07": {
+  "title": "Maxilla and facial bones, anterior view",
+  "groups": [
+   "skull.frontal-facial",
+   "skull.foramina",
+   "skull.bones"
+  ],
+  "crop": [
+   0.18,
+   0.4,
+   0.77,
+   0.38
+  ],
+  "drop": [
+   0,
+   1
+  ],
+  "add": [
+   {
+    "box": [
+     0.212,
+     0.475,
+     0.08,
+     0.02
+    ],
+    "termId": "skull.bones.nasal-bone"
+   },
+   {
+    "box": [
+     0.21,
+     0.515,
+     0.09,
+     0.035
+    ],
+    "termId": "skull.bones.inferior-nasal-concha"
+   },
+   {
+    "box": [
+     0.21,
+     0.593,
+     0.11,
+     0.02
+    ],
+    "termId": "skull.bones.zygomatic-bone"
+   },
+   {
+    "box": [
+     0.21,
+     0.7,
+     0.065,
+     0.02
+    ],
+    "termId": "skull.bones.mandible"
+   },
+   {
+    "box": [
+     0.735,
+     0.44,
+     0.04,
+     0.02
+    ],
+    "termId": "skull.frontal-facial.orbit"
+   },
+   {
+    "box": [
+     0.748,
+     0.53,
+     0.095,
+     0.02
+    ],
+    "termId": "skull.bones.ethmoid-bone"
+   },
+   {
+    "box": [
+     0.748,
+     0.556,
+     0.05,
+     0.02
+    ],
+    "termId": "skull.bones.vomer"
+   },
+   {
+    "box": [
+     0.735,
+     0.634,
+     0.05,
+     0.02
+    ],
+    "termId": "skull.bones.maxilla"
+   },
+   {
+    "box": [
+     0.735,
+     0.505,
+     0.095,
+     0.02
+    ],
+    "termId": "skull.frontal-facial.nasal-septum"
+   }
+  ]
+ },
+ "append-08": {
+  "title": "Ethmoid bone",
+  "groups": [
+   "skull.ethmoid",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.3,
+   0.13,
+   0.68,
+   0.42
+  ],
+  "drop": [
+   2,
+   3,
+   6
+  ],
+  "set": {
+   "0": "skull.ethmoid.cribriform-plate",
+   "1": "skull.ethmoid.crista-galli",
+   "4": "skull.ethmoid.middle-nasal-concha",
+   "5": "skull.ethmoid.perpendicular-plate"
+  },
+  "add": [
+   {
+    "box": [
+     0.37,
+     0.28,
+     0.075,
+     0.035
+    ],
+    "termId": "skull.foramina.cribriform-foramina"
+   },
+   {
+    "box": [
+     0.79,
+     0.42,
+     0.1,
+     0.035
+    ],
+    "termId": "skull.ethmoid.superior-nasal-concha"
+   }
+  ]
+ },
+ "append-09": {
+  "title": "Bones of the orbit",
+  "groups": [
+   "skull.bones",
+   "skull.sphenoid",
+   "skull.frontal-facial",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.02,
+   0.24,
+   0.96,
+   0.46
+  ],
+  "drop": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9
+  ],
+  "add": [
+   {
+    "box": [
+     0.2,
+     0.325,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.frontal-bone"
+   },
+   {
+    "box": [
+     0.2,
+     0.357,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.sphenoid-bone"
+   },
+   {
+    "box": [
+     0.2,
+     0.466,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.ethmoid-bone"
+   },
+   {
+    "box": [
+     0.108,
+     0.496,
+     0.09,
+     0.026
+    ],
+    "termId": "skull.bones.lacrimal-bone"
+   },
+   {
+    "box": [
+     0.222,
+     0.525,
+     0.07,
+     0.024
+    ],
+    "termId": "skull.bones.maxilla"
+   },
+   {
+    "box": [
+     0.118,
+     0.612,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.palatine-bone"
+   },
+   {
+    "box": [
+     0.118,
+     0.655,
+     0.085,
+     0.024
+    ],
+    "termId": "skull.bones.maxilla"
+   },
+   {
+    "box": [
+     0.735,
+     0.354,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.frontal-bone"
+   },
+   {
+    "box": [
+     0.735,
+     0.408,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.sphenoid-bone"
+   },
+   {
+    "box": [
+     0.735,
+     0.46,
+     0.09,
+     0.024
+    ],
+    "termId": "skull.bones.zygomatic-bone"
+   },
+   {
+    "box": [
+     0.09,
+     0.29,
+     0.13,
+     0.022
+    ],
+    "termId": "skull.foramina.supraorbital-foramen"
+   },
+   {
+    "box": [
+     0.095,
+     0.416,
+     0.075,
+     0.022
+    ],
+    "termId": "skull.foramina.optic-canal"
+   },
+   {
+    "box": [
+     0.705,
+     0.275,
+     0.105,
+     0.022
+    ],
+    "termId": "skull.bones.temporal-bone"
+   },
+   {
+    "box": [
+     0.712,
+     0.487,
+     0.16,
+     0.022
+    ],
+    "termId": "skull.foramina.superior-orbital-fissure"
+   },
+   {
+    "box": [
+     0.712,
+     0.522,
+     0.08,
+     0.045
+    ],
+    "termId": "skull.foramina.inferior-orbital-fissure"
+   },
+   {
+    "box": [
+     0.712,
+     0.586,
+     0.08,
+     0.045
+    ],
+    "termId": "skull.foramina.infraorbital-foramen"
+   }
+  ]
+ },
+ "append-10": {
+  "title": "Mandible, lateral view",
+  "groups": [
+   "skull.mandible",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.03,
+   0.17,
+   0.65,
+   0.65
+  ],
+  "set": {
+   "0": "skull.mandible.condylar-process"
+  },
+  "add": [
+   {
+    "box": [
+     0.12,
+     0.29,
+     0.125,
+     0.02
+    ],
+    "termId": "skull.mandible.condylar-process"
+   }
+  ]
+ },
+ "append-12": {
+  "title": "Skull, anterior view",
+  "groups": [
+   "skull.bones",
+   "skull.frontal-facial",
+   "skull.foramina"
+  ],
+  "crop": [
+   0.36,
+   0.2,
+   0.62,
+   0.6
+  ],
+  "drop": [
+   1,
+   2
+  ],
+  "set": {
+   "3": "skull.bones.parietal-bone",
+   "4": "skull.bones.temporal-bone",
+   "6": "skull.bones.nasal-bone",
+   "7": "skull.bones.ethmoid-bone"
+  },
+  "add": [
+   {
+    "box": [
+     0.452,
+     0.284,
+     0.05,
+     0.02
+    ],
+    "termId": "skull.frontal-facial.glabella"
+   },
+   {
+    "box": [
+     0.452,
+     0.308,
+     0.07,
+     0.035
+    ],
+    "termId": "skull.foramina.supraorbital-foramen"
+   },
+   {
+    "box": [
+     0.452,
+     0.355,
+     0.07,
+     0.032
+    ],
+    "termId": "skull.frontal-facial.supraorbital-margin"
+   },
+   {
+    "box": [
+     0.44,
+     0.51,
+     0.075,
+     0.035
+    ],
+    "termId": "skull.bones.inferior-nasal-concha"
+   },
+   {
+    "box": [
+     0.845,
+     0.443,
+     0.04,
+     0.02
+    ],
+    "termId": "skull.frontal-facial.orbit"
+   },
+   {
+    "box": [
+     0.855,
+     0.616,
+     0.115,
+     0.02
+    ],
+    "termId": "skull.frontal-facial.intermaxillary-suture"
+   },
+   {
+    "box": [
+     0.855,
+     0.643,
+     0.11,
+     0.02
+    ],
+    "termId": "skull.foramina.infraorbital-foramen"
+   },
+   {
+    "box": [
+     0.452,
+     0.673,
+     0.09,
+     0.02
+    ],
+    "termId": "skull.foramina.mental-foramen"
+   },
+   {
+    "box": [
+     0.452,
+     0.708,
+     0.11,
+     0.02
+    ],
+    "termId": "skull.mandible.mental-protuberance"
+   }
+  ]
+ }
+}

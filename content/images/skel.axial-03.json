@@ -1,0 +1,195 @@
+{
+ "id": "skel.axial-03",
+ "src": "img/skel.axial-03.webp",
+ "width": 1468,
+ "height": 1251,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.bones"
+ ],
+ "title": "Skull, right lateral view",
+ "hotspots": [
+  {
+   "termId": "skull.bones.temporal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.1461,
+    "y": 0.5413,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.nasal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.9078,
+    "y": 0.6064,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.zygomatic-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.4796,
+    "y": 0.6284,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.lacrimal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8921,
+    "y": 0.6807,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.vomer",
+   "shape": {
+    "kind": "point",
+    "x": 0.3774,
+    "y": 0.6939,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.maxilla",
+   "shape": {
+    "kind": "point",
+    "x": 0.8843,
+    "y": 0.7518,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.mandible",
+   "shape": {
+    "kind": "point",
+    "x": 0.3985,
+    "y": 0.811,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.parietal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.1183,
+    "y": 0.2269,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.frontal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8333,
+    "y": 0.2269,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.occipital-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.1397,
+    "y": 0.4485,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.sphenoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8413,
+    "y": 0.3885,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.bones.ethmoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.8413,
+    "y": 0.4731,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.0508,
+   "y": 0.5142,
+   "w": 0.1907,
+   "h": 0.0541
+  },
+  {
+   "x": 0.8315,
+   "y": 0.5814,
+   "w": 0.1525,
+   "h": 0.0501
+  },
+  {
+   "x": 0.3812,
+   "y": 0.5997,
+   "w": 0.1968,
+   "h": 0.0573
+  },
+  {
+   "x": 0.8001,
+   "y": 0.6557,
+   "w": 0.1839,
+   "h": 0.0501
+  },
+  {
+   "x": 0.3267,
+   "y": 0.6709,
+   "w": 0.1015,
+   "h": 0.0461
+  },
+  {
+   "x": 0.8288,
+   "y": 0.7268,
+   "w": 0.111,
+   "h": 0.0501
+  },
+  {
+   "x": 0.3335,
+   "y": 0.786,
+   "w": 0.1301,
+   "h": 0.0501
+  },
+  {
+   "x": 0,
+   "y": 0.1769,
+   "w": 0.2365,
+   "h": 0.1
+  },
+  {
+   "x": 0.7111,
+   "y": 0.1769,
+   "w": 0.2444,
+   "h": 0.1
+  },
+  {
+   "x": 0.0175,
+   "y": 0.4046,
+   "w": 0.2444,
+   "h": 0.0877
+  },
+  {
+   "x": 0.719,
+   "y": 0.3446,
+   "w": 0.2444,
+   "h": 0.0877
+  },
+  {
+   "x": 0.719,
+   "y": 0.4292,
+   "w": 0.2444,
+   "h": 0.0877
+  }
+ ]
+}

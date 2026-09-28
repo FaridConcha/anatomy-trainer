@@ -1,0 +1,2410 @@
+[
+ {
+  "page": "axial-03",
+  "file": "raw/skeleton/axial-03.png",
+  "width": 2330,
+  "height": 1925,
+  "groups": [
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 885,
+    "y": 391,
+    "w": 1268,
+    "h": 550,
+    "text": "Parietal bone bone bone Sphenoid bone Occipital Ethmoid bone",
+    "match": {
+     "termId": "tibia.lateral-condyle-of-the-tibia",
+     "name": "lateral condyle of the tibia",
+     "score": 0.24
+    }
+   },
+   {
+    "x": 918,
+    "y": 988,
+    "w": 224,
+    "h": 33,
+    "text": "bone Temporal",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.46
+    }
+   },
+   {
+    "x": 359,
+    "y": 1062,
+    "w": 196,
+    "h": 51,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1757,
+    "y": 1062,
+    "w": 182,
+    "h": 242,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2064,
+    "y": 1072,
+    "w": 168,
+    "h": 28,
+    "text": "Nasal bone",
+    "match": {
+     "termId": "skull.bones.nasal-bone",
+     "name": "nasal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1403,
+    "y": 1095,
+    "w": 233,
+    "h": 37,
+    "text": "żygomatic bone",
+    "match": {
+     "termId": "skull.bones.zygomatic-bone",
+     "name": "zygomatic bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 2018,
+    "y": 1165,
+    "w": 214,
+    "h": 28,
+    "text": "Lacrimal bone",
+    "match": {
+     "termId": "skull.bones.lacrimal-bone",
+     "name": "lacrimal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1323,
+    "y": 1184,
+    "w": 93,
+    "h": 23,
+    "text": "Vomer",
+    "match": {
+     "termId": "skull.bones.vomer",
+     "name": "vomer",
+     "score": 1
+    }
+   },
+   {
+    "x": 2060,
+    "y": 1254,
+    "w": 107,
+    "h": 28,
+    "text": "Maxilla",
+    "match": {
+     "termId": "skull.bones.maxilla",
+     "name": "maxilla",
+     "score": 1
+    }
+   },
+   {
+    "x": 1333,
+    "y": 1328,
+    "w": 135,
+    "h": 28,
+    "text": "Mandible",
+    "match": {
+     "termId": "skull.bones.mandible",
+     "name": "mandible",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-04",
+  "file": "raw/skeleton/axial-04.png",
+  "width": 2324,
+  "height": 1755,
+  "groups": [
+   "skull.sutures",
+   "skull.frontal-facial",
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 139,
+    "y": 535,
+    "w": 809,
+    "h": 553,
+    "text": "al suture bone Par ietal suture Sagittal Sutural bone foramen Parietal Lambdoid suture bone Occipital",
+    "match": {
+     "termId": "skull.frontal-facial.palatine-process",
+     "name": "palatine process",
+     "score": 0.2
+    }
+   },
+   {
+    "x": 1246,
+    "y": 897,
+    "w": 107,
+    "h": 28,
+    "text": "Glabella",
+    "match": {
+     "termId": "skull.frontal-facial.glabella",
+     "name": "glabella",
+     "score": 1
+    }
+   },
+   {
+    "x": 1139,
+    "y": 939,
+    "w": 1083,
+    "h": 367,
+    "text": "Supraorbital foramen Supraorbital margin - bone Sphenoid Nasal bone",
+    "match": {
+     "termId": "skull.frontal-facial.supraorbital-margin",
+     "name": "supraorbital margin",
+     "score": 0.29
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-05",
+  "file": "raw/skeleton/axial-05.png",
+  "width": 2473,
+  "height": 1787,
+  "groups": [
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 84,
+    "y": 341,
+    "w": 870,
+    "h": 549,
+    "text": "lateral o vi th ew e f skull.",
+    "match": {
+     "termId": "fibula.apex",
+     "name": "apex",
+     "score": 0.36
+    }
+   },
+   {
+    "x": 1024,
+    "y": 371,
+    "w": 153,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1049,
+    "y": 509,
+    "w": 168,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1058,
+    "y": 579,
+    "w": 168,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1058,
+    "y": 643,
+    "w": 129,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1044,
+    "y": 707,
+    "w": 84,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1474,
+    "y": 801,
+    "w": 658,
+    "h": 420,
+    "text": "Temporal lines Coronal suture Ethmoid bone Lacrimal bone bone Frontal Nasal bone Frontal • Vomer bone Nasal bone Parietal bone Sphenoid bone Lygomatic bone",
+    "match": {
+     "termId": "skull.temporal.zygomatic-process",
+     "name": "zygomatic process",
+     "score": 0.14
+    }
+   },
+   {
+    "x": 1044,
+    "y": 816,
+    "w": 124,
+    "h": 54,
+    "text": "Zygomatic arch",
+    "match": {
+     "termId": "skull.temporal.zygomatic-arch",
+     "name": "zygomatic arch",
+     "score": 0.85
+    }
+   },
+   {
+    "x": 1286,
+    "y": 856,
+    "w": 163,
+    "h": 20,
+    "text": "Infraorbital foramen",
+    "match": {
+     "termId": "skull.foramina.infraorbital-foramen",
+     "name": "infraorbital foramen",
+     "score": 0.85
+    }
+   },
+   {
+    "x": 2201,
+    "y": 861,
+    "w": 173,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 94,
+    "y": 984,
+    "w": 114,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2206,
+    "y": 984,
+    "w": 153,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1187,
+    "y": 1063,
+    "w": 173,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2221,
+    "y": 1088,
+    "w": 129,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1187,
+    "y": 1276,
+    "w": 163,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1870,
+    "y": 1296,
+    "w": 213,
+    "h": 69,
+    "text": "skull with the bones Label of terms.",
+    "match": {
+     "termId": "skull.mandible.angle",
+     "name": "angle",
+     "score": 0.27
+    }
+   },
+   {
+    "x": 2231,
+    "y": 1321,
+    "w": 84,
+    "h": 20,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2211,
+    "y": 1434,
+    "w": 104,
+    "h": 25,
+    "text": "",
+    "match": null
+   }
+  ]
+ },
+ {
+  "page": "axial-06",
+  "file": "raw/skeleton/axial-06.png",
+  "width": 2512,
+  "height": 1911,
+  "groups": [
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 2145,
+    "y": 477,
+    "w": 201,
+    "h": 25,
+    "text": "Zygomatic bone",
+    "match": {
+     "termId": "skull.bones.zygomatic-bone",
+     "name": "zygomatic bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1216,
+    "y": 522,
+    "w": 166,
+    "h": 20,
+    "text": "Palatine bone",
+    "match": {
+     "termId": "skull.bones.palatine-bone",
+     "name": "palatine bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1618,
+    "y": 533,
+    "w": 126,
+    "h": 85,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1869,
+    "y": 553,
+    "w": 55,
+    "h": 65,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1306,
+    "y": 608,
+    "w": 65,
+    "h": 15,
+    "text": "Vomer",
+    "match": {
+     "termId": "skull.bones.vomer",
+     "name": "vomer",
+     "score": 1
+    }
+   },
+   {
+    "x": 2195,
+    "y": 623,
+    "w": 181,
+    "h": 20,
+    "text": "Sphenoid bone",
+    "match": {
+     "termId": "skull.bones.sphenoid-bone",
+     "name": "sphenoid bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1226,
+    "y": 648,
+    "w": 181,
+    "h": 25,
+    "text": "Temporal bone",
+    "match": {
+     "termId": "skull.bones.temporal-bone",
+     "name": "temporal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 2201,
+    "y": 909,
+    "w": 176,
+    "h": 20,
+    "text": "Occipital bone",
+    "match": {
+     "termId": "skull.bones.occipital-bone",
+     "name": "occipital bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 497,
+    "y": 950,
+    "w": 256,
+    "h": 50,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 186,
+    "y": 960,
+    "w": 151,
+    "h": 20,
+    "text": "Frontal bone",
+    "match": {
+     "termId": "skull.bones.frontal-bone",
+     "name": "frontal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1547,
+    "y": 960,
+    "w": 75,
+    "h": 116,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2000,
+    "y": 960,
+    "w": 80,
+    "h": 126,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1231,
+    "y": 1015,
+    "w": 161,
+    "h": 20,
+    "text": "Parietal bone Lambdoid suture",
+    "match": {
+     "termId": "skull.bones.parietal-bone",
+     "name": "parietal bone",
+     "score": 0.45
+    }
+   },
+   {
+    "x": 462,
+    "y": 1025,
+    "w": 55,
+    "h": 35,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 186,
+    "y": 1030,
+    "w": 171,
+    "h": 20,
+    "text": "Sphenoid bone",
+    "match": {
+     "termId": "skull.bones.sphenoid-bone",
+     "name": "sphenoid bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 382,
+    "y": 1090,
+    "w": 734,
+    "h": 427,
+    "text": "Temporal bone • Petrous part Internal acoustic Jugular toramen Parietal bone",
+    "match": {
+     "termId": "skull.temporal.zygomatic-process",
+     "name": "zygomatic process",
+     "score": 0.25
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-07",
+  "file": "raw/skeleton/axial-07.png",
+  "width": 2375,
+  "height": 1925,
+  "groups": [
+   "skull.occipital",
+   "skull.foramina"
+  ],
+  "boxes": [
+   {
+    "x": 1986,
+    "y": 717,
+    "w": 219,
+    "h": 29,
+    "text": "Occipital condule",
+    "match": {
+     "termId": "skull.occipital.occipital-condyle",
+     "name": "occipital condyle",
+     "score": 0.94
+    }
+   },
+   {
+    "x": 1663,
+    "y": 751,
+    "w": 133,
+    "h": 204,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2028,
+    "y": 784,
+    "w": 190,
+    "h": 24,
+    "text": "condyiar canal",
+    "match": {
+     "termId": "skull.foramina.optic-canal",
+     "name": "optic canal",
+     "score": 0.57
+    }
+   },
+   {
+    "x": 926,
+    "y": 798,
+    "w": 162,
+    "h": 613,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1924,
+    "y": 836,
+    "w": 171,
+    "h": 29,
+    "text": "Basilar part",
+    "match": {
+     "termId": "skull.occipital.basilar-part",
+     "name": "basilar part",
+     "score": 1
+    }
+   },
+   {
+    "x": 1986,
+    "y": 903,
+    "w": 242,
+    "h": 33,
+    "text": "Foramen magnum",
+    "match": {
+     "termId": "skull.foramina.foramen-magnum",
+     "name": "foramen magnum",
+     "score": 1
+    }
+   },
+   {
+    "x": 157,
+    "y": 979,
+    "w": 356,
+    "h": 447,
+    "text": "Foramen - rotundum Foramen spinosum Foramen ovale - bone: Hypoglossal canal",
+    "match": {
+     "termId": "skull.foramina.hypoglossal-canal",
+     "name": "hypoglossal canal",
+     "score": 0.24
+    }
+   },
+   {
+    "x": 1986,
+    "y": 1088,
+    "w": 233,
+    "h": 67,
+    "text": "External occipital protuberance",
+    "match": {
+     "termId": "skull.occipital.external-occipital-protuberance",
+     "name": "external occipital protuberance",
+     "score": 1
+    }
+   },
+   {
+    "x": 1610,
+    "y": 1416,
+    "w": 209,
+    "h": 29,
+    "text": "The spinal Cord",
+    "match": {
+     "termId": "skull.occipital.occipital-condyle",
+     "name": "occipital condyle",
+     "score": 0.41
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-08",
+  "file": "raw/skeleton/axial-08.png",
+  "width": 2572,
+  "height": 1974,
+  "groups": [
+   "skull.temporal",
+   "skull.foramina"
+  ],
+  "boxes": [
+   {
+    "x": 1019,
+    "y": 910,
+    "w": 226,
+    "h": 26,
+    "text": "Squamous portion",
+    "match": {
+     "termId": "skull.temporal.squamous-part",
+     "name": "squamous part",
+     "score": 1
+    }
+   },
+   {
+    "x": 1404,
+    "y": 936,
+    "w": 221,
+    "h": 26,
+    "text": "Squamous portion",
+    "match": {
+     "termId": "skull.temporal.squamous-part",
+     "name": "squamous part",
+     "score": 1
+    }
+   },
+   {
+    "x": 1039,
+    "y": 967,
+    "w": 221,
+    "h": 26,
+    "text": "Mandibular fossa",
+    "match": {
+     "termId": "skull.temporal.mandibular-fossa",
+     "name": "mandibular fossa",
+     "score": 1
+    }
+   },
+   {
+    "x": 1770,
+    "y": 1013,
+    "w": 93,
+    "h": 62,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2243,
+    "y": 1060,
+    "w": 206,
+    "h": 26,
+    "text": "Petrous portion",
+    "match": {
+     "termId": "skull.temporal.petrous-part",
+     "name": "petrous part",
+     "score": 1
+    }
+   },
+   {
+    "x": 2253,
+    "y": 1132,
+    "w": 231,
+    "h": 62,
+    "text": "Internal auditory meatus",
+    "match": {
+     "termId": "skull.foramina.internal-acoustic-meatus",
+     "name": "internal acoustic meatus",
+     "score": 1
+    }
+   },
+   {
+    "x": 1039,
+    "y": 1137,
+    "w": 226,
+    "h": 31,
+    "text": "process Żygomatic",
+    "match": {
+     "termId": "skull.frontal-facial.palatine-process",
+     "name": "palatine process",
+     "score": 0.3
+    }
+   },
+   {
+    "x": 1399,
+    "y": 1152,
+    "w": 129,
+    "h": 57,
+    "text": "Zygomatic process",
+    "match": {
+     "termId": "skull.temporal.zygomatic-process",
+     "name": "zygomatic process",
+     "score": 1
+    }
+   },
+   {
+    "x": 1790,
+    "y": 1173,
+    "w": 376,
+    "h": 231,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 165,
+    "y": 1209,
+    "w": 211,
+    "h": 21,
+    "text": "Mastoid process",
+    "match": {
+     "termId": "skull.temporal.mastoid-process",
+     "name": "mastoid process",
+     "score": 1
+    }
+   },
+   {
+    "x": 674,
+    "y": 1214,
+    "w": 252,
+    "h": 159,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2253,
+    "y": 1343,
+    "w": 216,
+    "h": 26,
+    "text": "Mastoid process",
+    "match": {
+     "termId": "skull.temporal.mastoid-process",
+     "name": "mastoid process",
+     "score": 1
+    }
+   },
+   {
+    "x": 936,
+    "y": 1363,
+    "w": 324,
+    "h": 26,
+    "text": "External auditory meatus",
+    "match": {
+     "termId": "skull.foramina.external-acoustic-meatus",
+     "name": "external acoustic meatus",
+     "score": 1
+    }
+   },
+   {
+    "x": 1415,
+    "y": 1394,
+    "w": 185,
+    "h": 26,
+    "text": "Styloid process",
+    "match": {
+     "termId": "skull.temporal.styloid-process",
+     "name": "styloid process",
+     "score": 1
+    }
+   },
+   {
+    "x": 1029,
+    "y": 1461,
+    "w": 185,
+    "h": 26,
+    "text": "Styloid process",
+    "match": {
+     "termId": "skull.temporal.styloid-process",
+     "name": "styloid process",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-09",
+  "file": "raw/skeleton/axial-09.png",
+  "width": 2357,
+  "height": 1596,
+  "groups": [
+   "foot.tarsals",
+   "foot.bones"
+  ],
+  "boxes": [
+   {
+    "x": 189,
+    "y": 453,
+    "w": 278,
+    "h": 28,
+    "text": "Distal phalanx",
+    "match": {
+     "termId": "foot.bones.distal-phalanx",
+     "name": "distal phalanx",
+     "score": 1
+    }
+   },
+   {
+    "x": 811,
+    "y": 476,
+    "w": 108,
+    "h": 66,
+    "text": "Distal phalanx",
+    "match": {
+     "termId": "foot.bones.distal-phalanx",
+     "name": "distal phalanx",
+     "score": 1
+    }
+   },
+   {
+    "x": 1452,
+    "y": 533,
+    "w": 141,
+    "h": 28,
+    "text": "Phalanges",
+    "match": {
+     "termId": "foot.tarsals.calcaneus",
+     "name": "calcaneus",
+     "score": 0.44
+    }
+   },
+   {
+    "x": 151,
+    "y": 547,
+    "w": 240,
+    "h": 24,
+    "text": "Proximal phalanx",
+    "match": {
+     "termId": "foot.bones.proximal-phalanx",
+     "name": "proximal phalanx",
+     "score": 1
+    }
+   },
+   {
+    "x": 721,
+    "y": 599,
+    "w": 297,
+    "h": 61,
+    "text": "Intermediate phalanx",
+    "match": {
+     "termId": "foot.bones.middle-phalanx",
+     "name": "middle phalanx",
+     "score": 1
+    }
+   },
+   {
+    "x": 174,
+    "y": 693,
+    "w": 184,
+    "h": 24,
+    "text": "Metatarsals",
+    "match": {
+     "termId": "foot.bones.metatarsal-i",
+     "name": "metatarsal i",
+     "score": 0.91
+    }
+   },
+   {
+    "x": 806,
+    "y": 702,
+    "w": 118,
+    "h": 24,
+    "text": "Proximal",
+    "match": {
+     "termId": "foot.bones.proximal-phalanx",
+     "name": "proximal phalanx",
+     "score": 0.5
+    }
+   },
+   {
+    "x": 811,
+    "y": 750,
+    "w": 104,
+    "h": 19,
+    "text": "phalanx",
+    "match": {
+     "termId": "foot.bones.middle-phalanx",
+     "name": "middle phalanx",
+     "score": 0.5
+    }
+   },
+   {
+    "x": 1442,
+    "y": 750,
+    "w": 174,
+    "h": 28,
+    "text": "Metatarsals",
+    "match": {
+     "termId": "foot.bones.metatarsal-i",
+     "name": "metatarsal i",
+     "score": 0.91
+    }
+   },
+   {
+    "x": 146,
+    "y": 825,
+    "w": 240,
+    "h": 28,
+    "text": "Medial cuneiform",
+    "match": {
+     "termId": "foot.tarsals.medial-cuneiform",
+     "name": "medial cuneiform",
+     "score": 1
+    }
+   },
+   {
+    "x": 137,
+    "y": 877,
+    "w": 302,
+    "h": 108,
+    "text": "cuneiform Intermediate atteral cunelform avicular",
+    "match": {
+     "termId": "foot.tarsals.intermediate-cuneiform",
+     "name": "intermediate cuneiform",
+     "score": 0.43
+    }
+   },
+   {
+    "x": 820,
+    "y": 952,
+    "w": 85,
+    "h": 24,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 165,
+    "y": 1014,
+    "w": 80,
+    "h": 28,
+    "text": "Talus",
+    "match": {
+     "termId": "foot.tarsals.talus",
+     "name": "talus",
+     "score": 1
+    }
+   },
+   {
+    "x": 797,
+    "y": 1037,
+    "w": 132,
+    "h": 24,
+    "text": "Calcaneus",
+    "match": {
+     "termId": "foot.tarsals.calcaneus",
+     "name": "calcaneus",
+     "score": 1
+    }
+   },
+   {
+    "x": 1471,
+    "y": 1042,
+    "w": 104,
+    "h": 28,
+    "text": "Tarsals",
+    "match": {
+     "termId": "foot.bones.metatarsal-i",
+     "name": "metatarsal i",
+     "score": 0.5
+    }
+   },
+   {
+    "x": 1805,
+    "y": 1061,
+    "w": 269,
+    "h": 24,
+    "text": "Talus Navicular",
+    "match": {
+     "termId": "foot.tarsals.navicular",
+     "name": "navicular",
+     "score": 0.6
+    }
+   },
+   {
+    "x": 1589,
+    "y": 1122,
+    "w": 174,
+    "h": 28,
+    "text": "Metatarsals",
+    "match": {
+     "termId": "foot.bones.metatarsal-i",
+     "name": "metatarsal i",
+     "score": 0.91
+    }
+   },
+   {
+    "x": 1466,
+    "y": 1240,
+    "w": 141,
+    "h": 28,
+    "text": "Phalanges",
+    "match": {
+     "termId": "foot.tarsals.calcaneus",
+     "name": "calcaneus",
+     "score": 0.44
+    }
+   },
+   {
+    "x": 2032,
+    "y": 1419,
+    "w": 127,
+    "h": 24,
+    "text": "Calcaneus",
+    "match": {
+     "termId": "foot.tarsals.calcaneus",
+     "name": "calcaneus",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-10",
+  "file": "raw/skeleton/axial-10.png",
+  "width": 2561,
+  "height": 1890,
+  "groups": [
+   "humerus"
+  ],
+  "boxes": [
+   {
+    "x": 891,
+    "y": 487,
+    "w": 118,
+    "h": 61,
+    "text": "Greater tuberde",
+    "match": {
+     "termId": "humerus.greater-tubercle",
+     "name": "greater tubercle",
+     "score": 0.88
+    }
+   },
+   {
+    "x": 1342,
+    "y": 522,
+    "w": 77,
+    "h": 31,
+    "text": "Head",
+    "match": {
+     "termId": "humerus.head-of-the-humerus",
+     "name": "head of the humerus",
+     "score": 1
+    }
+   },
+   {
+    "x": 1752,
+    "y": 533,
+    "w": 82,
+    "h": 20,
+    "text": "Head",
+    "match": {
+     "termId": "humerus.head-of-the-humerus",
+     "name": "head of the humerus",
+     "score": 1
+    }
+   },
+   {
+    "x": 901,
+    "y": 584,
+    "w": 118,
+    "h": 61,
+    "text": "Lesser tuberce",
+    "match": {
+     "termId": "humerus.lesser-tubercle",
+     "name": "lesser tubercle",
+     "score": 0.93
+    }
+   },
+   {
+    "x": 2161,
+    "y": 584,
+    "w": 174,
+    "h": 67,
+    "text": "Anatomical neck",
+    "match": {
+     "termId": "humerus.anatomical-neck",
+     "name": "anatomical neck",
+     "score": 1
+    }
+   },
+   {
+    "x": 1736,
+    "y": 640,
+    "w": 118,
+    "h": 72,
+    "text": "Surgical neck",
+    "match": {
+     "termId": "humerus.surgical-neck",
+     "name": "surgical neck",
+     "score": 1
+    }
+   },
+   {
+    "x": 1321,
+    "y": 650,
+    "w": 118,
+    "h": 72,
+    "text": "Surgical neck",
+    "match": {
+     "termId": "humerus.surgical-neck",
+     "name": "surgical neck",
+     "score": 1
+    }
+   },
+   {
+    "x": 707,
+    "y": 712,
+    "w": 451,
+    "h": 77,
+    "text": "Intertubercular (bicipital) sulcus (groove)",
+    "match": {
+     "termId": "humerus.intertubercular-sulcus",
+     "name": "intertubercular sulcus",
+     "score": 0.82
+    }
+   },
+   {
+    "x": 779,
+    "y": 871,
+    "w": 266,
+    "h": 26,
+    "text": "Deltoid tuberosity",
+    "match": {
+     "termId": "humerus.deltoid-tuberosity",
+     "name": "deltoid tuberosity",
+     "score": 1
+    }
+   },
+   {
+    "x": 2146,
+    "y": 901,
+    "w": 282,
+    "h": 36,
+    "text": "Deltoid tuberosity",
+    "match": {
+     "termId": "humerus.deltoid-tuberosity",
+     "name": "deltoid tuberosity",
+     "score": 1
+    }
+   },
+   {
+    "x": 932,
+    "y": 1224,
+    "w": 118,
+    "h": 67,
+    "text": "Coronoid fossa",
+    "match": {
+     "termId": "humerus.coronoid-fossa",
+     "name": "coronoid fossa",
+     "score": 1
+    }
+   },
+   {
+    "x": 814,
+    "y": 1429,
+    "w": 256,
+    "h": 26,
+    "text": "Lateral epicondyle",
+    "match": {
+     "termId": "humerus.lateral-epicondyle",
+     "name": "lateral epicondyle",
+     "score": 1
+    }
+   },
+   {
+    "x": 1731,
+    "y": 1450,
+    "w": 138,
+    "h": 67,
+    "text": "Medial epicondyle",
+    "match": {
+     "termId": "humerus.medial-epicondyle",
+     "name": "medial epicondyle",
+     "score": 1
+    }
+   },
+   {
+    "x": 1383,
+    "y": 1455,
+    "w": 138,
+    "h": 72,
+    "text": "Medial epicondule",
+    "match": {
+     "termId": "humerus.medial-epicondyle",
+     "name": "medial epicondyle",
+     "score": 0.94
+    }
+   },
+   {
+    "x": 2182,
+    "y": 1480,
+    "w": 277,
+    "h": 31,
+    "text": "Lateral epicondyle",
+    "match": {
+     "termId": "humerus.lateral-epicondyle",
+     "name": "lateral epicondyle",
+     "score": 1
+    }
+   },
+   {
+    "x": 937,
+    "y": 1496,
+    "w": 143,
+    "h": 26,
+    "text": "Capitulum",
+    "match": {
+     "termId": "humerus.capitulum",
+     "name": "capitulum",
+     "score": 1
+    }
+   },
+   {
+    "x": 2208,
+    "y": 1537,
+    "w": 149,
+    "h": 77,
+    "text": "Olecrano n fossa",
+    "match": {
+     "termId": "humerus.olecranon-fossa",
+     "name": "olecranon fossa",
+     "score": 0.94
+    }
+   },
+   {
+    "x": 1347,
+    "y": 1557,
+    "w": 128,
+    "h": 31,
+    "text": "Trochlea",
+    "match": {
+     "termId": "humerus.trochlea",
+     "name": "trochlea",
+     "score": 1
+    }
+   },
+   {
+    "x": 1741,
+    "y": 1557,
+    "w": 133,
+    "h": 26,
+    "text": "Trochlea",
+    "match": {
+     "termId": "humerus.trochlea",
+     "name": "trochlea",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-11",
+  "file": "raw/skeleton/axial-11.png",
+  "width": 2593,
+  "height": 1845,
+  "groups": [
+   "radius",
+   "ulna"
+  ],
+  "boxes": [
+   {
+    "x": 1924,
+    "y": 482,
+    "w": 477,
+    "h": 233,
+    "text": "Head (of radius) Neck",
+    "match": {
+     "termId": "radius.head-of-the-radius",
+     "name": "head of the radius",
+     "score": 0.74
+    }
+   },
+   {
+    "x": 1203,
+    "y": 524,
+    "w": 467,
+    "h": 311,
+    "text": "Radial notch Head (of radius) Neck Radial tuberosity",
+    "match": {
+     "termId": "radius.ulnar-notch",
+     "name": "ulnar notch",
+     "score": 0.38
+    }
+   },
+   {
+    "x": 1779,
+    "y": 959,
+    "w": 104,
+    "h": 26,
+    "text": "Radius",
+    "match": {
+     "termId": "skull.mandible.ramus",
+     "name": "ramus",
+     "score": 0.57
+    }
+   },
+   {
+    "x": 1748,
+    "y": 1343,
+    "w": 176,
+    "h": 31,
+    "text": "Unar notch",
+    "match": {
+     "termId": "radius.ulnar-notch",
+     "name": "ulnar notch",
+     "score": 0.91
+    }
+   },
+   {
+    "x": 2033,
+    "y": 1390,
+    "w": 130,
+    "h": 119,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1618,
+    "y": 1405,
+    "w": 47,
+    "h": 31,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1343,
+    "y": 1473,
+    "w": 192,
+    "h": 73,
+    "text": "Styloid process",
+    "match": {
+     "termId": "radius.styloid-process-of-the-radius",
+     "name": "styloid process of the radius",
+     "score": 1
+    }
+   },
+   {
+    "x": 617,
+    "y": 1499,
+    "w": 93,
+    "h": 26,
+    "text": "Medial",
+    "match": {
+     "termId": "clavicle.sternal-end",
+     "name": "sternal end",
+     "score": 0.51
+    }
+   },
+   {
+    "x": 2240,
+    "y": 1525,
+    "w": 223,
+    "h": 21,
+    "text": "Styloid process",
+    "match": {
+     "termId": "radius.styloid-process-of-the-radius",
+     "name": "styloid process of the radius",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "axial-12",
+  "file": "raw/skeleton/axial-12.png",
+  "width": 2832,
+  "height": 2155,
+  "groups": [
+   "tibia",
+   "fibula"
+  ],
+  "boxes": [
+   {
+    "x": 1184,
+    "y": 357,
+    "w": 385,
+    "h": 28,
+    "text": "Intercondular eminence",
+    "match": {
+     "termId": "tibia.intercondylar-eminence",
+     "name": "intercondylar eminence",
+     "score": 0.95
+    }
+   },
+   {
+    "x": 1869,
+    "y": 357,
+    "w": 266,
+    "h": 102,
+    "text": "Medial condule",
+    "match": {
+     "termId": "tibia.medial-condyle-of-the-tibia",
+     "name": "medial condyle of the tibia",
+     "score": 0.93
+    }
+   },
+   {
+    "x": 2481,
+    "y": 362,
+    "w": 249,
+    "h": 28,
+    "text": "Lateral condule",
+    "match": {
+     "termId": "tibia.lateral-condyle-of-the-tibia",
+     "name": "lateral condyle of the tibia",
+     "score": 0.93
+    }
+   },
+   {
+    "x": 1937,
+    "y": 510,
+    "w": 272,
+    "h": 193,
+    "text": "Tibial tuberosity",
+    "match": {
+     "termId": "tibia.tibial-tuberosity",
+     "name": "tibial tuberosity",
+     "score": 1
+    }
+   },
+   {
+    "x": 1977,
+    "y": 1037,
+    "w": 85,
+    "h": 28,
+    "text": "Tibia",
+    "match": {
+     "termId": "skull.frontal-facial.orbit",
+     "name": "orbit",
+     "score": 0.34
+    }
+   },
+   {
+    "x": 589,
+    "y": 1552,
+    "w": 102,
+    "h": 34,
+    "text": "Medial",
+    "match": {
+     "termId": "clavicle.sternal-end",
+     "name": "sternal end",
+     "score": 0.51
+    }
+   },
+   {
+    "x": 1858,
+    "y": 1569,
+    "w": 329,
+    "h": 79,
+    "text": "Medial malleolus",
+    "match": {
+     "termId": "tibia.medial-malleolus",
+     "name": "medial malleolus",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "append-03",
+  "file": "raw/skeleton/append-03.png",
+  "width": 2250,
+  "height": 1961,
+  "groups": [
+   "hand.carpals",
+   "hand.bones"
+  ],
+  "boxes": [
+   {
+    "x": 2106,
+    "y": 608,
+    "w": 81,
+    "h": 77,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1701,
+    "y": 711,
+    "w": 185,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1679,
+    "y": 806,
+    "w": 216,
+    "h": 63,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1674,
+    "y": 927,
+    "w": 221,
+    "h": 27,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1841,
+    "y": 1053,
+    "w": 189,
+    "h": 27,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 792,
+    "y": 1116,
+    "w": 135,
+    "h": 32,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1814,
+    "y": 1179,
+    "w": 221,
+    "h": 27,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 702,
+    "y": 1296,
+    "w": 239,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1737,
+    "y": 1427,
+    "w": 113,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1044,
+    "y": 1454,
+    "w": 131,
+    "h": 90,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1787,
+    "y": 1476,
+    "w": 122,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 761,
+    "y": 1490,
+    "w": 171,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1836,
+    "y": 1526,
+    "w": 99,
+    "h": 18,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1737,
+    "y": 1566,
+    "w": 99,
+    "h": 23,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1071,
+    "y": 1571,
+    "w": 77,
+    "h": 14,
+    "text": "",
+    "match": null
+   }
+  ]
+ },
+ {
+  "page": "append-04",
+  "file": "raw/skeleton/append-04.png",
+  "width": 2411,
+  "height": 1867,
+  "groups": [
+   "hip"
+  ],
+  "boxes": [
+   {
+    "x": 2020,
+    "y": 424,
+    "w": 149,
+    "h": 24,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 882,
+    "y": 690,
+    "w": 309,
+    "h": 34,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 212,
+    "y": 786,
+    "w": 434,
+    "h": 251,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 873,
+    "y": 791,
+    "w": 294,
+    "h": 34,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1283,
+    "y": 800,
+    "w": 362,
+    "h": 72,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1770,
+    "y": 887,
+    "w": 231,
+    "h": 207,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 882,
+    "y": 979,
+    "w": 270,
+    "h": 29,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1263,
+    "y": 1037,
+    "w": 251,
+    "h": 24,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1991,
+    "y": 1046,
+    "w": 284,
+    "h": 24,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 198,
+    "y": 1099,
+    "w": 294,
+    "h": 29,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1659,
+    "y": 1466,
+    "w": 77,
+    "h": 29,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1823,
+    "y": 1471,
+    "w": 116,
+    "h": 29,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 2025,
+    "y": 1480,
+    "w": 77,
+    "h": 24,
+    "text": "",
+    "match": null
+   }
+  ]
+ },
+ {
+  "page": "append-05",
+  "file": "raw/skeleton/append-05.png",
+  "width": 2113,
+  "height": 1559,
+  "groups": [
+   "scapula",
+   "clavicle"
+  ],
+  "boxes": [
+   {
+    "x": 828,
+    "y": 532,
+    "w": 110,
+    "h": 21,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 186,
+    "y": 554,
+    "w": 76,
+    "h": 21,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1378,
+    "y": 554,
+    "w": 165,
+    "h": 63,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1576,
+    "y": 579,
+    "w": 296,
+    "h": 123,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 828,
+    "y": 583,
+    "w": 101,
+    "h": 55,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 177,
+    "y": 596,
+    "w": 93,
+    "h": 13,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 790,
+    "y": 659,
+    "w": 165,
+    "h": 30,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1428,
+    "y": 672,
+    "w": 68,
+    "h": 21,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 896,
+    "y": 769,
+    "w": 148,
+    "h": 59,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1766,
+    "y": 786,
+    "w": 228,
+    "h": 59,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1855,
+    "y": 1006,
+    "w": 177,
+    "h": 55,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 123,
+    "y": 1052,
+    "w": 148,
+    "h": 25,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 761,
+    "y": 1069,
+    "w": 156,
+    "h": 21,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 389,
+    "y": 1188,
+    "w": 186,
+    "h": 21,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 131,
+    "y": 1251,
+    "w": 211,
+    "h": 30,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 782,
+    "y": 1268,
+    "w": 152,
+    "h": 21,
+    "text": "",
+    "match": null
+   }
+  ]
+ },
+ {
+  "page": "append-07",
+  "file": "raw/skeleton/append-07.png",
+  "width": 2455,
+  "height": 1966,
+  "groups": [
+   "skull.frontal-facial",
+   "skull.foramina",
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 1036,
+    "y": 840,
+    "w": 604,
+    "h": 579,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 948,
+    "y": 1129,
+    "w": 133,
+    "h": 93,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1846,
+    "y": 1311,
+    "w": 354,
+    "h": 29,
+    "text": "Intermaxillary suture",
+    "match": {
+     "termId": "skull.frontal-facial.intermaxillary-suture",
+     "name": "intermaxillary suture",
+     "score": 1
+    }
+   },
+   {
+    "x": 1856,
+    "y": 1390,
+    "w": 349,
+    "h": 39,
+    "text": "Infraorbital foramen",
+    "match": {
+     "termId": "skull.foramina.infraorbital-foramen",
+     "name": "infraorbital foramen",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "append-08",
+  "file": "raw/skeleton/append-08.png",
+  "width": 2216,
+  "height": 1686,
+  "groups": [
+   "skull.ethmoid"
+  ],
+  "boxes": [
+   {
+    "x": 833,
+    "y": 284,
+    "w": 235,
+    "h": 27,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 811,
+    "y": 390,
+    "w": 142,
+    "h": 31,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1183,
+    "y": 541,
+    "w": 35,
+    "h": 35,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1152,
+    "y": 612,
+    "w": 120,
+    "h": 111,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1702,
+    "y": 824,
+    "w": 306,
+    "h": 31,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 847,
+    "y": 842,
+    "w": 284,
+    "h": 31,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 346,
+    "y": 984,
+    "w": 199,
+    "h": 186,
+    "text": "",
+    "match": null
+   }
+  ]
+ },
+ {
+  "page": "append-09",
+  "file": "raw/skeleton/append-09.png",
+  "width": 2316,
+  "height": 1794,
+  "groups": [
+   "skull.bones",
+   "skull.sphenoid",
+   "skull.frontal-facial"
+  ],
+  "boxes": [
+   {
+    "x": 482,
+    "y": 463,
+    "w": 959,
+    "h": 764,
+    "text": "frontal bone bone Sphenoid Ethmoid bone of Maxilla of of",
+    "match": {
+     "termId": "skull.frontal-facial.palatine-process",
+     "name": "palatine process",
+     "score": 0.36
+    }
+   },
+   {
+    "x": 1454,
+    "y": 565,
+    "w": 69,
+    "h": 79,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1723,
+    "y": 648,
+    "w": 148,
+    "h": 19,
+    "text": "frontal bone",
+    "match": {
+     "termId": "skull.bones.frontal-bone",
+     "name": "frontal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1403,
+    "y": 699,
+    "w": 144,
+    "h": 190,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1681,
+    "y": 741,
+    "w": 171,
+    "h": 23,
+    "text": "Greater hama Sphenoid",
+    "match": {
+     "termId": "skull.sphenoid.greater-wing",
+     "name": "greater wing",
+     "score": 0.61
+    }
+   },
+   {
+    "x": 1686,
+    "y": 838,
+    "w": 190,
+    "h": 19,
+    "text": "bone Zugomatic",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.3
+    }
+   },
+   {
+    "x": 278,
+    "y": 908,
+    "w": 148,
+    "h": 19,
+    "text": "bone Lacrimal",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.39
+    }
+   },
+   {
+    "x": 2020,
+    "y": 1056,
+    "w": 167,
+    "h": 167,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 306,
+    "y": 1112,
+    "w": 148,
+    "h": 14,
+    "text": "Palatine bone",
+    "match": {
+     "termId": "skull.bones.palatine-bone",
+     "name": "palatine bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 324,
+    "y": 1190,
+    "w": 74,
+    "h": 19,
+    "text": "Maxilla",
+    "match": {
+     "termId": "skull.bones.maxilla",
+     "name": "maxilla",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "append-10",
+  "file": "raw/skeleton/append-10.png",
+  "width": 2349,
+  "height": 1914,
+  "groups": [
+   "skull.mandible",
+   "skull.foramina"
+  ],
+  "boxes": [
+   {
+    "x": 1081,
+    "y": 507,
+    "w": 305,
+    "h": 38,
+    "text": "Mandibular condules",
+    "match": {
+     "termId": "skull.mandible.condylar-process",
+     "name": "condylar process",
+     "score": 0.89
+    }
+   },
+   {
+    "x": 287,
+    "y": 644,
+    "w": 258,
+    "h": 28,
+    "text": "Coronoid process",
+    "match": {
+     "termId": "skull.mandible.coronoid-process",
+     "name": "coronoid process",
+     "score": 1
+    }
+   },
+   {
+    "x": 282,
+    "y": 747,
+    "w": 277,
+    "h": 28,
+    "text": "Mandibular notch",
+    "match": {
+     "termId": "skull.mandible.mandibular-notch",
+     "name": "mandibular notch",
+     "score": 1
+    }
+   },
+   {
+    "x": 272,
+    "y": 836,
+    "w": 319,
+    "h": 28,
+    "text": "Mandibular foramen",
+    "match": {
+     "termId": "skull.foramina.mandibular-foramen",
+     "name": "mandibular foramen",
+     "score": 1
+    }
+   },
+   {
+    "x": 146,
+    "y": 1001,
+    "w": 268,
+    "h": 28,
+    "text": "Alveolar process",
+    "match": {
+     "termId": "skull.mandible.alveolar-process",
+     "name": "alveolar process",
+     "score": 1
+    }
+   },
+   {
+    "x": 1367,
+    "y": 1010,
+    "w": 113,
+    "h": 28,
+    "text": "Ramus",
+    "match": {
+     "termId": "skull.mandible.ramus",
+     "name": "ramus",
+     "score": 1
+    }
+   },
+   {
+    "x": 179,
+    "y": 1109,
+    "w": 258,
+    "h": 38,
+    "text": "Mental foramen",
+    "match": {
+     "termId": "skull.foramina.mental-foramen",
+     "name": "mental foramen",
+     "score": 1
+    }
+   },
+   {
+    "x": 132,
+    "y": 1231,
+    "w": 338,
+    "h": 33,
+    "text": "mental protuberance",
+    "match": {
+     "termId": "skull.mandible.mental-protuberance",
+     "name": "mental protuberance",
+     "score": 1
+    }
+   },
+   {
+    "x": 1273,
+    "y": 1283,
+    "w": 85,
+    "h": 42,
+    "text": "Angle",
+    "match": {
+     "termId": "skull.mandible.angle",
+     "name": "angle",
+     "score": 1
+    }
+   },
+   {
+    "x": 794,
+    "y": 1367,
+    "w": 75,
+    "h": 33,
+    "text": "Body",
+    "match": {
+     "termId": "skull.mandible.body",
+     "name": "body",
+     "score": 1
+    }
+   }
+  ]
+ },
+ {
+  "page": "append-12",
+  "file": "raw/skeleton/append-12.png",
+  "width": 2067,
+  "height": 1642,
+  "groups": [
+   "skull.bones"
+  ],
+  "boxes": [
+   {
+    "x": 918,
+    "y": 401,
+    "w": 174,
+    "h": 25,
+    "text": "Frontal bone",
+    "match": {
+     "termId": "skull.bones.frontal-bone",
+     "name": "frontal bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1124,
+    "y": 488,
+    "w": 521,
+    "h": 575,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1670,
+    "y": 508,
+    "w": 33,
+    "h": 62,
+    "text": "",
+    "match": null
+   },
+   {
+    "x": 1807,
+    "y": 529,
+    "w": 161,
+    "h": 17,
+    "text": "bone Parietal",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.39
+    }
+   },
+   {
+    "x": 1877,
+    "y": 633,
+    "w": 91,
+    "h": 17,
+    "text": "bone",
+    "match": {
+     "termId": "thorax.body-of-the-sternum",
+     "name": "body of the sternum",
+     "score": 0.42
+    }
+   },
+   {
+    "x": 856,
+    "y": 653,
+    "w": 194,
+    "h": 29,
+    "text": "Sphenoid bone",
+    "match": {
+     "termId": "skull.bones.sphenoid-bone",
+     "name": "sphenoid bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 835,
+    "y": 757,
+    "w": 153,
+    "h": 25,
+    "text": "bone Nasal",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.42
+    }
+   },
+   {
+    "x": 1769,
+    "y": 814,
+    "w": 190,
+    "h": 21,
+    "text": "bone Ethmoid",
+    "match": {
+     "termId": "vertebrae.pathology.bone-spur",
+     "name": "bone spur",
+     "score": 0.35
+    }
+   },
+   {
+    "x": 1819,
+    "y": 876,
+    "w": 87,
+    "h": 17,
+    "text": "Vomer",
+    "match": {
+     "termId": "skull.bones.vomer",
+     "name": "vomer",
+     "score": 1
+    }
+   },
+   {
+    "x": 843,
+    "y": 934,
+    "w": 219,
+    "h": 33,
+    "text": "Zygomatic bone",
+    "match": {
+     "termId": "skull.bones.zygomatic-bone",
+     "name": "zygomatic bone",
+     "score": 1
+    }
+   },
+   {
+    "x": 1811,
+    "y": 943,
+    "w": 95,
+    "h": 25,
+    "text": "Maxilla",
+    "match": {
+     "termId": "skull.bones.maxilla",
+     "name": "maxilla",
+     "score": 1
+    }
+   },
+   {
+    "x": 835,
+    "y": 1038,
+    "w": 124,
+    "h": 29,
+    "text": "Mandible",
+    "match": {
+     "termId": "skull.bones.mandible",
+     "name": "mandible",
+     "score": 1
+    }
+   }
+  ]
+ }
+]

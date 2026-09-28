@@ -1,0 +1,328 @@
+{
+ "id": "skel.axial-09",
+ "src": "img/skel.axial-09.webp",
+ "width": 1600,
+ "height": 890,
+ "labId": "lab5",
+ "groupIds": [
+  "foot.bones",
+  "foot.tarsals"
+ ],
+ "title": "Right foot: dorsal, plantar, medial",
+ "hotspots": [
+  {
+   "termId": "foot.bones.distal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.1149,
+    "y": 0.1572,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.bones.distal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.3547,
+    "y": 0.1909,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.bones.proximal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.0894,
+    "y": 0.2311,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.bones.middle-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.3567,
+    "y": 0.2877,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.medial-cuneiform",
+   "shape": {
+    "kind": "point",
+    "x": 0.0872,
+    "y": 0.456,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.cuboid",
+   "shape": {
+    "kind": "point",
+    "x": 0.3536,
+    "y": 0.5564,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.talus",
+   "shape": {
+    "kind": "point",
+    "x": 0.06,
+    "y": 0.6078,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.calcaneus",
+   "shape": {
+    "kind": "point",
+    "x": 0.3538,
+    "y": 0.6247,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.calcaneus",
+   "shape": {
+    "kind": "point",
+    "x": 0.9043,
+    "y": 0.9316,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.bones.proximal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.3547,
+    "y": 0.375,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.intermediate-cuneiform",
+   "shape": {
+    "kind": "point",
+    "x": 0.0968,
+    "y": 0.5051,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.lateral-cuneiform",
+   "shape": {
+    "kind": "point",
+    "x": 0.0895,
+    "y": 0.5513,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.navicular",
+   "shape": {
+    "kind": "point",
+    "x": 0.8063,
+    "y": 0.6474,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.talus",
+   "shape": {
+    "kind": "point",
+    "x": 0.8721,
+    "y": 0.6474,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.trochlea-of-the-talus",
+   "shape": {
+    "kind": "point",
+    "x": 0.0789,
+    "y": 0.6891,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.calcaneal-tuberosity",
+   "shape": {
+    "kind": "point",
+    "x": 0.3474,
+    "y": 0.7756,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.bones.sesamoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.7105,
+    "y": 0.9295,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "foot.tarsals.trochlea-of-the-talus",
+   "shape": {
+    "kind": "point",
+    "x": 0.9421,
+    "y": 0.6231,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.0402,
+   "y": 0.1344,
+   "w": 0.1494,
+   "h": 0.0456
+  },
+  {
+   "x": 0.318,
+   "y": 0.1529,
+   "w": 0.0735,
+   "h": 0.0761
+  },
+  {
+   "x": 0.0232,
+   "y": 0.2099,
+   "w": 0.1324,
+   "h": 0.0424
+  },
+  {
+   "x": 0.2778,
+   "y": 0.2517,
+   "w": 0.1579,
+   "h": 0.0721
+  },
+  {
+   "x": 0.021,
+   "y": 0.4332,
+   "w": 0.1324,
+   "h": 0.0456
+  },
+  {
+   "x": 0.322,
+   "y": 0.5352,
+   "w": 0.0632,
+   "h": 0.0424
+  },
+  {
+   "x": 0.0295,
+   "y": 0.585,
+   "w": 0.061,
+   "h": 0.0456
+  },
+  {
+   "x": 0.3117,
+   "y": 0.6035,
+   "w": 0.0842,
+   "h": 0.0424
+  },
+  {
+   "x": 0.8633,
+   "y": 0.9104,
+   "w": 0.082,
+   "h": 0.0424
+  },
+  {
+   "x": 0.3158,
+   "y": 0.3346,
+   "w": 0.0779,
+   "h": 0.0808
+  },
+  {
+   "x": 0.0168,
+   "y": 0.4744,
+   "w": 0.16,
+   "h": 0.0615
+  },
+  {
+   "x": 0.0189,
+   "y": 0.5205,
+   "w": 0.1411,
+   "h": 0.0615
+  },
+  {
+   "x": 0.7621,
+   "y": 0.6231,
+   "w": 0.0884,
+   "h": 0.0487
+  },
+  {
+   "x": 0.8358,
+   "y": 0.6231,
+   "w": 0.0726,
+   "h": 0.0487
+  },
+  {
+   "x": 0.0189,
+   "y": 0.6551,
+   "w": 0.12,
+   "h": 0.0679
+  },
+  {
+   "x": 0.2716,
+   "y": 0.7513,
+   "w": 0.1516,
+   "h": 0.0487
+  },
+  {
+   "x": 0.6611,
+   "y": 0.9051,
+   "w": 0.0989,
+   "h": 0.0487
+  },
+  {
+   "x": 0.8926,
+   "y": 0.591,
+   "w": 0.0989,
+   "h": 0.0641
+  },
+  {
+   "x": 0.6947,
+   "y": 0.0256,
+   "w": 0.3053,
+   "h": 0.5256
+  },
+  {
+   "x": 0.6042,
+   "y": 0.1987,
+   "w": 0.0882,
+   "h": 0.0456
+  },
+  {
+   "x": 0.0335,
+   "y": 0.3272,
+   "w": 0.1074,
+   "h": 0.0424
+  },
+  {
+   "x": 0.5998,
+   "y": 0.373,
+   "w": 0.103,
+   "h": 0.0456
+  },
+  {
+   "x": 0.6127,
+   "y": 0.6075,
+   "w": 0.0717,
+   "h": 0.0456
+  },
+  {
+   "x": 0.6654,
+   "y": 0.6718,
+   "w": 0.103,
+   "h": 0.0456
+  },
+  {
+   "x": 0.6105,
+   "y": 0.7666,
+   "w": 0.0882,
+   "h": 0.0456
+  }
+ ]
+}

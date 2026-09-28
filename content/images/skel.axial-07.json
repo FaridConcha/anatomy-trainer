@@ -1,0 +1,229 @@
+{
+ "id": "skel.axial-07",
+ "src": "img/skel.axial-07.webp",
+ "width": 1600,
+ "height": 847,
+ "labId": "lab4",
+ "groupIds": [
+  "skull.occipital",
+  "skull.foramina"
+ ],
+ "title": "Occipital bone: cranial floor and inferior skull",
+ "hotspots": [
+  {
+   "termId": "skull.occipital.occipital-condyle",
+   "shape": {
+    "kind": "point",
+    "x": 0.8972,
+    "y": 0.3548,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.occipital.basilar-part",
+   "shape": {
+    "kind": "point",
+    "x": 0.8591,
+    "y": 0.4545,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-magnum",
+   "shape": {
+    "kind": "point",
+    "x": 0.9023,
+    "y": 0.5124,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.occipital.external-occipital-protuberance",
+   "shape": {
+    "kind": "point",
+    "x": 0.9003,
+    "y": 0.6816,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.hypoglossal-canal",
+   "shape": {
+    "kind": "point",
+    "x": 0.0842,
+    "y": 0.9,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-ovale",
+   "shape": {
+    "kind": "point",
+    "x": 0.8895,
+    "y": 0.1097,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-spinosum",
+   "shape": {
+    "kind": "point",
+    "x": 0.9,
+    "y": 0.1565,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-lacerum",
+   "shape": {
+    "kind": "point",
+    "x": 0.9,
+    "y": 0.2016,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.occipital.inferior-nuchal-line",
+   "shape": {
+    "kind": "point",
+    "x": 0.9,
+    "y": 0.5661,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.occipital.superior-nuchal-line",
+   "shape": {
+    "kind": "point",
+    "x": 0.9053,
+    "y": 0.6145,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-rotundum",
+   "shape": {
+    "kind": "point",
+    "x": 0.0474,
+    "y": 0.5806,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-spinosum",
+   "shape": {
+    "kind": "point",
+    "x": 0.0474,
+    "y": 0.6774,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skull.foramina.foramen-ovale",
+   "shape": {
+    "kind": "point",
+    "x": 0.0526,
+    "y": 0.7629,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.836,
+   "y": 0.3282,
+   "w": 0.1223,
+   "h": 0.0533
+  },
+  {
+   "x": 0.8085,
+   "y": 0.4279,
+   "w": 0.1011,
+   "h": 0.0533
+  },
+  {
+   "x": 0.836,
+   "y": 0.484,
+   "w": 0.1325,
+   "h": 0.0567
+  },
+  {
+   "x": 0.836,
+   "y": 0.639,
+   "w": 0.1285,
+   "h": 0.0852
+  },
+  {
+   "x": 0.0032,
+   "y": 0.8613,
+   "w": 0.1621,
+   "h": 0.0774
+  },
+  {
+   "x": 0.8295,
+   "y": 0.0823,
+   "w": 0.12,
+   "h": 0.0548
+  },
+  {
+   "x": 0.8295,
+   "y": 0.129,
+   "w": 0.1411,
+   "h": 0.0548
+  },
+  {
+   "x": 0.8295,
+   "y": 0.1742,
+   "w": 0.1411,
+   "h": 0.0548
+  },
+  {
+   "x": 0.8295,
+   "y": 0.5387,
+   "w": 0.1411,
+   "h": 0.0548
+  },
+  {
+   "x": 0.8295,
+   "y": 0.5871,
+   "w": 0.1516,
+   "h": 0.0548
+  },
+  {
+   "x": 0.0032,
+   "y": 0.5419,
+   "w": 0.0884,
+   "h": 0.0774
+  },
+  {
+   "x": 0.0032,
+   "y": 0.6387,
+   "w": 0.0884,
+   "h": 0.0774
+  },
+  {
+   "x": 0.0032,
+   "y": 0.7355,
+   "w": 0.0989,
+   "h": 0.0548
+  },
+  {
+   "x": 0.0211,
+   "y": 0.129,
+   "w": 0.4211,
+   "h": 0.3226
+  },
+  {
+   "x": 0.4737,
+   "y": 0.8065,
+   "w": 0.5263,
+   "h": 0.1935
+  },
+  {
+   "x": 0.8546,
+   "y": 0.3843,
+   "w": 0.1095,
+   "h": 0.0491
+  }
+ ]
+}

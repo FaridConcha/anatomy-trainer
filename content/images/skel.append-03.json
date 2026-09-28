@@ -1,0 +1,256 @@
+{
+ "id": "skel.append-03",
+ "src": "img/skel.append-03.webp",
+ "width": 1575,
+ "height": 1255,
+ "labId": "lab5",
+ "groupIds": [
+  "hand.bones",
+  "hand.carpals"
+ ],
+ "title": "Right hand, anterior view",
+ "hotspots": [
+  {
+   "termId": "hand.bones.distal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.7387,
+    "y": 0.2319,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.middle-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.7346,
+    "y": 0.3236,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.proximal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.733,
+    "y": 0.4056,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.distal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.8289,
+    "y": 0.506,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.proximal-phalanx",
+   "shape": {
+    "kind": "point",
+    "x": 0.8219,
+    "y": 0.6064,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.trapezoid",
+   "shape": {
+    "kind": "point",
+    "x": 0.7387,
+    "y": 0.8024,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.trapezium",
+   "shape": {
+    "kind": "point",
+    "x": 0.7733,
+    "y": 0.8415,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.capitate",
+   "shape": {
+    "kind": "point",
+    "x": 0.7971,
+    "y": 0.8793,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.scaphoid",
+   "shape": {
+    "kind": "point",
+    "x": 0.7343,
+    "y": 0.9132,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.lunate",
+   "shape": {
+    "kind": "point",
+    "x": 0.3044,
+    "y": 0.9136,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.hamate",
+   "shape": {
+    "kind": "point",
+    "x": 0.3071,
+    "y": 0.825,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.pisiform",
+   "shape": {
+    "kind": "point",
+    "x": 0.3071,
+    "y": 0.85,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.carpals.triquetrum",
+   "shape": {
+    "kind": "point",
+    "x": 0.3071,
+    "y": 0.875,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "hand.bones.metacarpal-i",
+   "shape": {
+    "kind": "point",
+    "x": 0.7714,
+    "y": 0.7328,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.6629,
+   "y": 0.2087,
+   "w": 0.1517,
+   "h": 0.0465
+  },
+  {
+   "x": 0.6489,
+   "y": 0.2844,
+   "w": 0.1714,
+   "h": 0.0783
+  },
+  {
+   "x": 0.6457,
+   "y": 0.3808,
+   "w": 0.1746,
+   "h": 0.0496
+  },
+  {
+   "x": 0.7517,
+   "y": 0.4812,
+   "w": 0.1543,
+   "h": 0.0496
+  },
+  {
+   "x": 0.7346,
+   "y": 0.5816,
+   "w": 0.1746,
+   "h": 0.0496
+  },
+  {
+   "x": 0.6857,
+   "y": 0.7792,
+   "w": 0.106,
+   "h": 0.0465
+  },
+  {
+   "x": 0.7175,
+   "y": 0.8182,
+   "w": 0.1117,
+   "h": 0.0465
+  },
+  {
+   "x": 0.7486,
+   "y": 0.8581,
+   "w": 0.0971,
+   "h": 0.0425
+  },
+  {
+   "x": 0.6857,
+   "y": 0.89,
+   "w": 0.0971,
+   "h": 0.0465
+  },
+  {
+   "x": 0.2629,
+   "y": 0.8939,
+   "w": 0.0832,
+   "h": 0.0393
+  },
+  {
+   "x": 0.2471,
+   "y": 0.8,
+   "w": 0.12,
+   "h": 0.05
+  },
+  {
+   "x": 0.2471,
+   "y": 0.825,
+   "w": 0.12,
+   "h": 0.05
+  },
+  {
+   "x": 0.2471,
+   "y": 0.85,
+   "w": 0.12,
+   "h": 0.05
+  },
+  {
+   "x": 0.7114,
+   "y": 0.6953,
+   "w": 0.12,
+   "h": 0.075
+  },
+  {
+   "x": 0,
+   "y": 0.25,
+   "w": 0.0714,
+   "h": 0.625
+  },
+  {
+   "x": 0.8286,
+   "y": 0.2656,
+   "w": 0.1714,
+   "h": 0.1719
+  },
+  {
+   "x": 0.0857,
+   "y": 0.5314,
+   "w": 0.12,
+   "h": 0.0536
+  },
+  {
+   "x": 0.0286,
+   "y": 0.6748,
+   "w": 0.186,
+   "h": 0.0465
+  },
+  {
+   "x": 0.066,
+   "y": 0.8294,
+   "w": 0.1429,
+   "h": 0.0465
+  }
+ ]
+}

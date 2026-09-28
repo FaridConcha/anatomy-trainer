@@ -1,0 +1,72 @@
+{
+ "id": "skin.dermis",
+ "src": "img/skin.dermis.webp",
+ "width": 1006,
+ "height": 685,
+ "labId": "lab3",
+ "groupIds": [
+  "skin.layers"
+ ],
+ "title": "Dermis: micrograph and SEM",
+ "hotspots": [
+  {
+   "termId": "skin.layers.papillary-layer",
+   "shape": {
+    "kind": "point",
+    "x": 0.29,
+    "y": 0.38,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skin.layers.reticular-layer",
+   "shape": {
+    "kind": "point",
+    "x": 0.34,
+    "y": 0.67,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skin.layers.epidermis",
+   "shape": {
+    "kind": "point",
+    "x": 0.15,
+    "y": 0.3,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skin.layers.papillary-layer",
+   "shape": {
+    "kind": "point",
+    "x": 0.85,
+    "y": 0.2,
+    "r": 0.03
+   }
+  },
+  {
+   "termId": "skin.layers.reticular-layer",
+   "shape": {
+    "kind": "point",
+    "x": 0.85,
+    "y": 0.75,
+    "r": 0.03
+   }
+  }
+ ],
+ "masks": [
+  {
+   "x": 0.69,
+   "y": 0.42,
+   "w": 0.31,
+   "h": 0.055
+  },
+  {
+   "x": 0.69,
+   "y": 0.94,
+   "w": 0.31,
+   "h": 0.06
+  }
+ ]
+}

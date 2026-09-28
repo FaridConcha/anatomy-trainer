@@ -1,0 +1,22 @@
+{
+ "id": "hist.muscle-skeletal-w",
+ "src": "img/hist.muscle-skeletal-w.webp",
+ "width": 317,
+ "height": 500,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.muscle"
+ ],
+ "title": "Skeletal muscle",
+ "hotspots": [
+  {
+   "termId": "tissue.muscle.skeletal-muscle",
+   "shape": {
+    "kind": "whole",
+    "x": null,
+    "y": null
+   }
+  }
+ ],
+ "masks": []
+}

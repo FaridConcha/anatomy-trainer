@@ -6565,5 +6565,515 @@
     "h": 0.0633
    }
   ]
+ },
+ {
+  "id": "skin.block",
+  "whiteOutBlack": true,
+  "from": "raw/lab3/img-000.png",
+  "labId": "lab3",
+  "groupIds": [
+   "skin.layers",
+   "skin.appendages",
+   "skin.receptors"
+  ],
+  "title": "Skin block diagram",
+  "hotspots": [
+   {
+    "termId": "skin.appendages.hair-shaft",
+    "shape": {
+     "kind": "point",
+     "x": 0.885,
+     "y": 0.115,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.sweat-pore",
+    "shape": {
+     "kind": "point",
+     "x": 0.905,
+     "y": 0.225,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.epidermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.905,
+     "y": 0.29,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.dermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.895,
+     "y": 0.46,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.hypodermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.93,
+     "y": 0.685,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.eccrine-sweat-gland",
+    "shape": {
+     "kind": "point",
+     "x": 0.915,
+     "y": 0.795,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.epidermal-ridges",
+    "shape": {
+     "kind": "point",
+     "x": 0.06,
+     "y": 0.225,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.dermal-papillae",
+    "shape": {
+     "kind": "point",
+     "x": 0.06,
+     "y": 0.26,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.receptors.tactile-corpuscle",
+    "shape": {
+     "kind": "point",
+     "x": 0.065,
+     "y": 0.315,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.hair-follicle",
+    "shape": {
+     "kind": "point",
+     "x": 0.045,
+     "y": 0.465,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.sebaceous-gland",
+    "shape": {
+     "kind": "point",
+     "x": 0.065,
+     "y": 0.51,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.receptors.hair-receptor",
+    "shape": {
+     "kind": "point",
+     "x": 0.05,
+     "y": 0.555,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.apocrine-sweat-gland",
+    "shape": {
+     "kind": "point",
+     "x": 0.08,
+     "y": 0.62,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.hair-bulb",
+    "shape": {
+     "kind": "point",
+     "x": 0.035,
+     "y": 0.68,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.appendages.arrector-pili-muscle",
+    "shape": {
+     "kind": "point",
+     "x": 0.25,
+     "y": 0.865,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.receptors.lamellated-corpuscle",
+    "shape": {
+     "kind": "point",
+     "x": 0.3,
+     "y": 0.92,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.855,
+    "y": 0.1,
+    "w": 0.07,
+    "h": 0.035
+   },
+   {
+    "x": 0.855,
+    "y": 0.21,
+    "w": 0.11,
+    "h": 0.035
+   },
+   {
+    "x": 0.86,
+    "y": 0.275,
+    "w": 0.1,
+    "h": 0.035
+   },
+   {
+    "x": 0.86,
+    "y": 0.445,
+    "w": 0.08,
+    "h": 0.035
+   },
+   {
+    "x": 0.855,
+    "y": 0.655,
+    "w": 0.145,
+    "h": 0.065
+   },
+   {
+    "x": 0.855,
+    "y": 0.765,
+    "w": 0.13,
+    "h": 0.065
+   },
+   {
+    "x": 0,
+    "y": 0.21,
+    "w": 0.125,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.245,
+    "w": 0.125,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.285,
+    "w": 0.135,
+    "h": 0.065
+   },
+   {
+    "x": 0,
+    "y": 0.45,
+    "w": 0.095,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.495,
+    "w": 0.135,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.54,
+    "w": 0.105,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.605,
+    "w": 0.165,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.665,
+    "w": 0.075,
+    "h": 0.032
+   },
+   {
+    "x": 0.185,
+    "y": 0.85,
+    "w": 0.13,
+    "h": 0.035
+   },
+   {
+    "x": 0.185,
+    "y": 0.89,
+    "w": 0.23,
+    "h": 0.065
+   },
+   {
+    "x": 0,
+    "y": 0.39,
+    "w": 0.125,
+    "h": 0.032
+   },
+   {
+    "x": 0,
+    "y": 0.755,
+    "w": 0.1,
+    "h": 0.06
+   },
+   {
+    "x": 0.855,
+    "y": 0.85,
+    "w": 0.145,
+    "h": 0.06
+   },
+   {
+    "x": 0.855,
+    "y": 0.945,
+    "w": 0.145,
+    "h": 0.04
+   }
+  ]
+ },
+ {
+  "id": "skin.epidermis",
+  "from": "raw/lab3/img-014.png",
+  "crop": [
+   0,
+   54,
+   551,
+   769
+  ],
+  "labId": "lab3",
+  "groupIds": [
+   "skin.strata",
+   "skin.layers"
+  ],
+  "title": "Epidermis, photomicrograph",
+  "hotspots": [
+   {
+    "termId": "skin.strata.stratum-corneum",
+    "shape": {
+     "kind": "point",
+     "x": 0.5195,
+     "y": 0.1412,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.strata.stratum-lucidum",
+    "shape": {
+     "kind": "point",
+     "x": 0.6494,
+     "y": 0.3,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.strata.stratum-granulosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.6494,
+     "y": 0.3529,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.strata.stratum-spinosum",
+    "shape": {
+     "kind": "point",
+     "x": 0.5195,
+     "y": 0.5765,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.strata.stratum-basale",
+    "shape": {
+     "kind": "point",
+     "x": 0.7273,
+     "y": 0.8235,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.dermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.3896,
+     "y": 0.9647,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.epidermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.2597,
+     "y": 0.4588,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": []
+ },
+ {
+  "id": "skin.dermis",
+  "from": "raw/lab3/img-038.png",
+  "labId": "lab3",
+  "groupIds": [
+   "skin.layers"
+  ],
+  "title": "Dermis: micrograph and SEM",
+  "hotspots": [
+   {
+    "termId": "skin.layers.papillary-layer",
+    "shape": {
+     "kind": "point",
+     "x": 0.29,
+     "y": 0.38,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.reticular-layer",
+    "shape": {
+     "kind": "point",
+     "x": 0.34,
+     "y": 0.67,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.epidermis",
+    "shape": {
+     "kind": "point",
+     "x": 0.15,
+     "y": 0.3,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.papillary-layer",
+    "shape": {
+     "kind": "point",
+     "x": 0.85,
+     "y": 0.2,
+     "r": 0.03
+    }
+   },
+   {
+    "termId": "skin.layers.reticular-layer",
+    "shape": {
+     "kind": "point",
+     "x": 0.85,
+     "y": 0.75,
+     "r": 0.03
+    }
+   }
+  ],
+  "masks": [
+   {
+    "x": 0.69,
+    "y": 0.42,
+    "w": 0.31,
+    "h": 0.055
+   },
+   {
+    "x": 0.69,
+    "y": 0.94,
+    "w": 0.31,
+    "h": 0.06
+   }
+  ]
+ },
+ {
+  "id": "hist.muscle-smooth-w",
+  "from": "raw/histology/hist-21.png",
+  "crop": [
+   785,
+   155,
+   309,
+   577
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Smooth muscle",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.smooth-muscle",
+    "shape": {
+     "kind": "whole",
+     "x": null,
+     "y": null
+    }
+   }
+  ],
+  "masks": []
+ },
+ {
+  "id": "hist.muscle-cardiac-w",
+  "from": "raw/histology/hist-21.png",
+  "crop": [
+   785,
+   866,
+   309,
+   533
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Cardiac muscle",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.cardiac-muscle",
+    "shape": {
+     "kind": "whole",
+     "x": null,
+     "y": null
+    }
+   }
+  ],
+  "masks": []
+ },
+ {
+  "id": "hist.muscle-skeletal-w",
+  "from": "raw/histology/hist-21.png",
+  "crop": [
+   768,
+   1577,
+   317,
+   500
+  ],
+  "labId": "lab2",
+  "groupIds": [
+   "tissue.muscle"
+  ],
+  "title": "Skeletal muscle",
+  "hotspots": [
+   {
+    "termId": "tissue.muscle.skeletal-muscle",
+    "shape": {
+     "kind": "whole",
+     "x": null,
+     "y": null
+    }
+   }
+  ],
+  "masks": []
  }
 ]

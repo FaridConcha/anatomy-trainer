@@ -27,11 +27,11 @@ export function distractorsFor(idx: Indexes, term: Term, n: number, rng: Rng): T
   return chosen;
 }
 
-function options(idx: Indexes, term: Term, rng: Rng): { options: string[]; answerIndex: number } | null {
+function options(idx: Indexes, term: Term, rng: Rng): { options: string[]; optionTermIds: string[]; answerIndex: number } | null {
   const ds = distractorsFor(idx, term, 3, rng);
   if (ds.length < 2) return null;
-  const opts = shuffle([term, ...ds].map((t) => t.name), rng);
-  return { options: opts, answerIndex: opts.indexOf(term.name) };
+  const ts = shuffle([term, ...ds], rng);
+  return { options: ts.map((t) => t.name), optionTermIds: ts.map((t) => t.id), answerIndex: ts.indexOf(term) };
 }
 
 type FactKey = 'transmits' | 'location' | 'definition';

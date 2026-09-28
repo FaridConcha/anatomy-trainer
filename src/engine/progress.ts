@@ -33,6 +33,7 @@ export interface Settings {
 export interface ProgressState {
   version: 1;
   terms: Record<string, TermProgress>;
+  confusions: Record<string, Record<string, number>>;
   sessions: SessionSummary[];
   settings: Settings;
 }
@@ -47,7 +48,7 @@ export const defaultSettings: Settings = {
 };
 
 export function defaultProgress(): ProgressState {
-  return { version: 1, terms: {}, sessions: [], settings: { ...defaultSettings } };
+  return { version: 1, terms: {}, confusions: {}, sessions: [], settings: { ...defaultSettings } };
 }
 
 export function today(): number {
@@ -85,6 +86,19 @@ export function weightFor(t: TermProgress | undefined, day = today()): number {
 
 export function mastered(t: TermProgress | undefined): boolean {
   return !!t && t.box >= 4;
+}
+
+// The student answered `otherId` when `termId` was asked.
+export function recordConfusion(state: ProgressState, termId: string, otherId: string): ProgressState {
+  const row = { ...(state.confusions[termId] ?? {}) };
+  row[otherId] = (row[otherId] ?? 0) + 1;
+  return { ...state, confusions: { ...state.confusions, [termId]: row } };
+}
+
+export function topConfusions(state: ProgressState, limit = 6): { termId: string; otherId: string; n: number }[] {
+  const out: { termId: string; otherId: string; n: number }[] = [];
+  for (const [termId, row] of Object.entries(state.confusions)) for (const [otherId, n] of Object.entries(row)) out.push({ termId, otherId, n });
+  return out.sort((a, b) => b.n - a.n).slice(0, limit);
 }
 
 export function addSession(state: ProgressState, s: SessionSummary): ProgressState {

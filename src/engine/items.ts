@@ -11,6 +11,7 @@ export type Item =
       imageId?: string;
       hotspotIndex?: number;
       options: string[];
+      optionTermIds?: string[];
       answerIndex: number;
       progressId: string;
     }

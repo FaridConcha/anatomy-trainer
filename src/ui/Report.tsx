@@ -1,10 +1,15 @@
 import { useContent } from '../App';
 import type { AnswerResult, Item } from '../engine/items';
 import { navigate } from '../router';
+import { topConfusions } from '../engine/progress';
+import { useProgress } from '../storage/local';
 import { reviewQueue } from './Session';
 
 export function Report({ deckId, mode, items, results }: { deckId: string; mode: string; items: Item[]; results: AnswerResult[] }) {
   const idx = useContent();
+  const progress = useProgress();
+  const asked = new Set(results.flatMap((r) => r.progressIds));
+  const pairs = topConfusions(progress, 20).filter((p) => asked.has(p.termId)).slice(0, 5);
   const correct = results.filter((r) => r.ok).length;
   const spelling = results.filter((r) => r.ok && r.spelling).length;
   const missed = results.filter((r) => !r.ok);
@@ -75,6 +80,16 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
                 <span>{m.expected}</span>
                 <span>{m.given ? `wrote: ${m.given}` : 'blank'}</span>
               </div>
+            ))}
+          </div>
+        </>
+      )}
+      {pairs.length > 0 && (
+        <>
+          <div className="eyebrow">Pairs you mix up</div>
+          <div className="pairs">
+            {pairs.map((p) => (
+              <div key={p.termId + p.otherId} className="pair"><span><b>{idx.termsById.get(p.termId)?.name}</b> answered as {idx.termsById.get(p.otherId)?.name ?? p.otherId}</span><span>{p.n}×</span></div>
             ))}
           </div>
         </>

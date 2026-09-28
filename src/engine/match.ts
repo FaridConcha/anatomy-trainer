@@ -7,6 +7,7 @@ export interface Grade {
   canonical: string;
   distance?: number;
   siblingName?: string;
+  siblingId?: string;
   spelling?: boolean;
 }
 
@@ -81,23 +82,23 @@ export function gradeAnswer(input: string, target: Term, siblings: Term[], stric
   const others = siblings.filter((s) => s.id !== target.id);
   for (const s of others) {
     const sf = forms(s);
-    if (variants.some((v) => sf.includes(v))) return { verdict: 'sibling', canonical, siblingName: s.name };
+    if (variants.some((v) => sf.includes(v))) return { verdict: 'sibling', canonical, siblingName: s.name, siblingId: s.id };
   }
   const partials = (target.partials ?? []).map(normalize);
   if (variants.some((v) => partials.includes(v))) return { verdict: 'partial', canonical };
 
   const own = bestDistance(n, targetForms);
   const near = own.d <= tolerance(own.form.length);
-  let nearestSibling: { d: number; name: string } | null = null;
+  let nearestSibling: { d: number; name: string; id: string } | null = null;
   for (const s of others) {
     const b = bestDistance(n, forms(s));
-    if (b.d <= tolerance(b.form.length) && (!nearestSibling || b.d < nearestSibling.d)) nearestSibling = { d: b.d, name: s.name };
+    if (b.d <= tolerance(b.form.length) && (!nearestSibling || b.d < nearestSibling.d)) nearestSibling = { d: b.d, name: s.name, id: s.id };
   }
   if (near && (!nearestSibling || own.d <= nearestSibling.d)) {
     if (strict || target.strict) return { verdict: 'wrong', canonical, distance: own.d, spelling: true };
     return { verdict: 'close', canonical, distance: own.d, spelling: true };
   }
-  if (nearestSibling) return { verdict: 'sibling', canonical, siblingName: nearestSibling.name };
+  if (nearestSibling) return { verdict: 'sibling', canonical, siblingName: nearestSibling.name, siblingId: nearestSibling.id };
   return { verdict: 'wrong', canonical };
 }
 

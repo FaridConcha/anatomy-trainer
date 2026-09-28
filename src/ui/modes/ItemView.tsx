@@ -5,7 +5,9 @@ import type { Term } from '../../content/types';
 import type { AnswerResult, Item } from '../../engine/items';
 import { acceptsExact, gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
 import { progressStore, useProgress } from '../../storage/local';
+import { recordConfusion } from '../../engine/progress';
 import { ImageStage } from '../ImageStage';
+import { Explain } from '../Explain';
 
 interface Props {
   item: Item;
@@ -49,6 +51,7 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
   const [phase, setPhase] = useState<'first' | 'retry' | 'retype' | 'done'>('first');
   const [grade, setGrade] = useState<Grade | null>(null);
   const [note, setNote] = useState<{ tone: string; text: string } | null>(null);
+  const [hinted, setHinted] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const group = idx.groupsById.get(term.groupId)!;
   useEffect(() => inputRef.current?.focus(), [phase]);
@@ -68,11 +71,12 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
       return;
     }
     const g = gradeAnswer(value, term, siblingsOf(idx, term), strict);
+    if (g.verdict === 'sibling' && g.siblingId) progressStore.update((s) => recordConfusion(s, term.id, g.siblingId!));
     if (phase === 'first') {
       setGrade(g);
       onGrade?.(g);
-      onAnswer({ itemId, ok: isCorrect(g) || g.verdict === 'partial', spelling: g.verdict === 'close' || g.verdict === 'partial', given: value, expected: term.name, progressIds: [term.id] });
-      if (g.verdict === 'correct') return finish('correct', `Correct: ${term.name}`);
+      onAnswer({ itemId, ok: isCorrect(g) || g.verdict === 'partial', spelling: g.verdict === 'close' || g.verdict === 'partial' || hinted, given: value, expected: term.name, progressIds: [term.id] });
+      if (g.verdict === 'correct') return finish('correct', hinted ? `Correct with a hint: ${term.name}` : `Correct: ${term.name}`);
       if (g.verdict === 'close') {
         setNote({ tone: 'close', text: `Close, the spelling is ${term.name}. Type it correctly once so it sticks.` });
         setValue('');
@@ -105,10 +109,12 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
       {note && <div className={`feedback ${note.tone}`}>{note.text}{grade?.spelling && phase === 'done' && strict && <small>strict spelling is on; a near-miss counted as wrong</small>}</div>}
       {phase === 'first' && (
         <div className="toggles">
+          {hinted ? <span className="toggle">Hint: {hintFor(term, group.title)}</span> : <button className="toggle" type="button" onClick={() => setHinted(true)}>Hint (half credit)</button>}
           <label className="toggle"><input type="checkbox" checked={strict} onChange={(e) => setStrict(e.target.checked)} /> Strict spelling</label>
           {extra && <span className="toggle">{extra}</span>}
         </div>
       )}
+      {phase === 'done' && <Explain termId={term.id} />}
     </>
   );
 }
@@ -157,6 +163,7 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
     if (done || picks.includes(k)) return;
     const next = [...picks, k];
     setPicks(next);
+    if (k !== item.answerIndex && item.termId && item.optionTermIds) progressStore.update((s) => recordConfusion(s, item.termId!, item.optionTermIds![k]));
     if (picks.length === 0) onAnswer({ itemId: item.id, ok: k === item.answerIndex, given: item.options[k], expected: item.options[item.answerIndex], progressIds: [item.progressId] });
     if (k === item.answerIndex || next.length >= 2) onDone();
   };
@@ -180,6 +187,7 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
           {picks[0] === item.answerIndex ? `Correct: ${answer}` : picks.includes(item.answerIndex) ? `Right on the second pick: ${answer}` : done ? `The answer is ${answer}.` : 'Not that one. Pick again.'}
         </div>
       )}
+      {done && item.termId && <Explain termId={item.termId} />}
     </>
   );
 }
@@ -297,6 +305,7 @@ function WordformItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, 
         <button className="btn" type="submit" disabled={phase === 'done'}>{phase === 'retype' ? 'Lock in' : 'Check'}</button>
       </form>
       {note && <div className={`feedback ${note.tone}`}>{note.text}</div>}
+      {phase === 'done' && <Explain termId={item.termId} />}
     </>
   );
 }

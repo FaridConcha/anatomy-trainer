@@ -28,6 +28,7 @@ export interface Settings {
   sessionCount: number;
   groupSel: Record<string, string[]>;
   toured?: string[];
+  examDate?: string;
   lastExport?: number;
 }
 
@@ -35,6 +36,7 @@ export interface ProgressState {
   version: 1;
   terms: Record<string, TermProgress>;
   confusions: Record<string, Record<string, number>>;
+  confidentMisses: Record<string, number>;
   sessions: SessionSummary[];
   settings: Settings;
 }
@@ -49,7 +51,7 @@ export const defaultSettings: Settings = {
 };
 
 export function defaultProgress(): ProgressState {
-  return { version: 1, terms: {}, confusions: {}, sessions: [], settings: { ...defaultSettings } };
+  return { version: 1, terms: {}, confusions: {}, confidentMisses: {}, sessions: [], settings: { ...defaultSettings } };
 }
 
 export function today(): number {
@@ -58,7 +60,7 @@ export function today(): number {
 
 const intervals = [0, 1, 3, 7, 14];
 
-export function recordAnswer(state: ProgressState, id: string, ok: boolean, kind: ItemKind, spelling = false): ProgressState {
+export function recordAnswer(state: ProgressState, id: string, ok: boolean, kind: ItemKind, spelling = false, confident = true): ProgressState {
   const t = state.terms[id] ?? { box: 1, due: today(), seen: 0, correct: 0, streak: 0, spellingMisses: 0, byMode: {}, lastSeen: 0 };
   const next: TermProgress = { ...t, byMode: { ...t.byMode } };
   next.seen += 1;
@@ -76,7 +78,33 @@ export function recordAnswer(state: ProgressState, id: string, ok: boolean, kind
     next.box = 1;
     next.due = today();
   }
-  return { ...state, terms: { ...state.terms, [id]: next } };
+  let confidentMisses = state.confidentMisses;
+  if (!ok && confident) confidentMisses = { ...confidentMisses, [id]: (confidentMisses[id] ?? 0) + 1 };
+  else if (ok && confidentMisses[id]) {
+    confidentMisses = { ...confidentMisses };
+    delete confidentMisses[id];
+  }
+  return { ...state, terms: { ...state.terms, [id]: next }, confidentMisses };
+}
+
+export function daysToExam(settings: Settings, now = Date.now()): number | null {
+  if (!settings.examDate) return null;
+  const exam = new Date(settings.examDate + 'T23:59:59').getTime();
+  return Math.ceil((exam - now) / 86400000);
+}
+
+// Sampling weight for study: base Leitner weight, confident misses first, and an exam-week ramp that
+// stops introducing new material three days out.
+export function studyWeight(state: ProgressState, termId: string, day = today()): number {
+  const t = state.terms[termId];
+  let w = weightFor(t, day);
+  if (state.confidentMisses[termId]) w *= 4;
+  const d = daysToExam(state.settings);
+  if (d !== null && d <= 7) {
+    if (!t) w = d <= 3 ? 0 : w * 0.3;
+    else if (t.due <= day || t.box <= 2) w *= 2;
+  }
+  return w;
 }
 
 export function weightFor(t: TermProgress | undefined, day = today()): number {

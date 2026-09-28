@@ -23,6 +23,9 @@ export function SettingsScreen() {
         <label className="field grow">Practical stations<input type="number" min={5} max={150} value={s.practicalCount} onChange={(e) => set({ practicalCount: +e.target.value || 100 })} /></label>
         <label className="field grow">Seconds each<input type="number" min={10} max={180} value={s.practicalSeconds} onChange={(e) => set({ practicalSeconds: +e.target.value || 45 })} /></label>
       </div>
+      <div className="eyebrow">Exam</div>
+      <label className="field">Practical date<input type="date" value={s.examDate ?? ''} onChange={(e) => set({ examDate: e.target.value || undefined })} /></label>
+      <div className="hint">In the last week, Study leans on due and shaky terms and stops introducing new ones three days before the exam.</div>
       <div className="eyebrow">Progress</div>
       {confirmReset ? (
         <div className="banner">

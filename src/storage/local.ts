@@ -10,7 +10,7 @@ function load(): ProgressState {
     const parsed = JSON.parse(raw) as ProgressState;
     const settings = { ...defaultSettings, ...(parsed.settings ?? {}) };
     if (settings.practicalCount === 20) settings.practicalCount = defaultSettings.practicalCount;
-    return { ...defaultProgress(), ...parsed, confusions: parsed.confusions ?? {}, settings };
+    return { ...defaultProgress(), ...parsed, confusions: parsed.confusions ?? {}, confidentMisses: parsed.confidentMisses ?? {}, settings };
   } catch {
     return defaultProgress();
   }

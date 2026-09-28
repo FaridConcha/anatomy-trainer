@@ -26,6 +26,7 @@ export interface AnswerResult {
   itemId: string;
   ok: boolean;
   spelling?: boolean;
+  confident?: boolean;
   given?: string;
   expected: string;
   progressIds: string[];

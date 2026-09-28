@@ -1,7 +1,7 @@
 import type { Indexes } from '../content/index';
 import type { Group, Image, Question, Term, TermFacts } from '../content/types';
 import type { Item } from './items';
-import { weightFor, type ProgressState } from './progress';
+import { studyWeight, type ProgressState } from './progress';
 import { pick, shuffle, weightedSample, type Rng } from './rng';
 
 export function distractorsFor(idx: Indexes, term: Term, n: number, rng: Rng): Term[] {
@@ -107,10 +107,25 @@ export function askable(idx: Indexes, term: Term): boolean {
 // One item per sampled term, chosen by how well the term is known: recognition first, recall once it sticks.
 export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[], questions: Question[], count: number, rng: Rng): Item[] {
   const shorts = shortItems(questions);
-  const shortWeight = (i: Item) => (i.kind === 'short' ? (i.termIds.length ? i.termIds : [i.questionId]).reduce((s, id) => s + weightFor(progress.terms[id]), 0) / Math.max(1, i.termIds.length) : 0);
+  const shortWeight = (i: Item) => (i.kind === 'short' ? (i.termIds.length ? i.termIds : [i.questionId]).reduce((s, id) => s + studyWeight(progress, id), 0) / Math.max(1, i.termIds.length) : 0);
   const pickedShorts = weightedSample(shorts, shortWeight, Math.min(shorts.length, Math.round(count * 0.15)), rng);
   const pool = terms.filter((t) => askable(idx, t));
-  const sampled = weightedSample(pool, (t) => weightFor(progress.terms[t.id]), count - pickedShorts.length, rng);
+  const sampled = weightedSample(pool, (t) => studyWeight(progress, t.id), count - pickedShorts.length, rng);
+  // interleave neighbours: a term the student confuses with a sampled one comes along in the same session
+  const poolIds = new Set(pool.map((t) => t.id));
+  const sampledIds = new Set(sampled.map((t) => t.id));
+  for (const t of sampled.slice()) {
+    const row = progress.confusions[t.id];
+    if (!row) continue;
+    const partner = Object.entries(row).sort((a, b) => b[1] - a[1]).map(([id]) => id).find((id) => poolIds.has(id) && !sampledIds.has(id));
+    if (!partner) continue;
+    sampledIds.add(partner);
+    sampled.push(idx.termsById.get(partner)!);
+    if (sampled.length > count - pickedShorts.length) {
+      const drop = sampled.findIndex((s) => !progress.confusions[s.id] && !Object.values(progress.confusions).some((r) => r[s.id]));
+      if (drop >= 0) { sampledIds.delete(sampled[drop].id); sampled.splice(drop, 1); }
+    }
+  }
   const items: Item[] = [];
   const stickerByImage = new Map<string, { hotspotIndex: number; termId: string }[]>();
   for (const term of sampled) {
@@ -151,5 +166,19 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
     out.push({ kind: 'match', id: `match:${imageId}`, imageId, hotspotIndexes: distinct.slice(0, 6) });
   }
   const bank = shuffle(bankMcItems(questions), rng).slice(0, Math.max(0, Math.round(count * 0.1)));
-  return shuffle([...out, ...bank, ...pickedShorts], rng);
+  return separateNeighbours(shuffle([...out, ...bank, ...pickedShorts], rng), progress);
+}
+
+const termOf = (i: Item): string | undefined => (i.kind === 'sticker' || i.kind === 'recall' || i.kind === 'wordform' ? i.termId : i.kind === 'mc' ? i.termId : undefined);
+
+// Confused pairs must not sit next to each other, or the second is answered by elimination.
+export function separateNeighbours(items: Item[], progress: ProgressState): Item[] {
+  const out = items.slice();
+  const confused = (a?: string, b?: string) => !!a && !!b && (!!progress.confusions[a]?.[b] || !!progress.confusions[b]?.[a]);
+  for (let i = 1; i < out.length; i++) {
+    if (!confused(termOf(out[i - 1]), termOf(out[i]))) continue;
+    const j = out.findIndex((it, k) => k > i && !confused(termOf(out[i - 1]), termOf(it)) && !confused(termOf(it), termOf(out[k + 1])));
+    if (j > i) [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
 }

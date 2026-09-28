@@ -64,7 +64,7 @@ export function SessionScreen({ deckId, mode }: { deckId: string; mode: string }
 
   const onAnswer = (r: AnswerResult) => {
     answeredRef.current = true;
-    progressStore.update((s) => r.progressIds.reduce((acc, id) => recordAnswer(acc, id, r.ok, item.kind, r.spelling), s));
+    progressStore.update((s) => r.progressIds.reduce((acc, id) => recordAnswer(acc, id, r.ok, item.kind, r.spelling, r.confident ?? true), s));
     setResults((rs) => [...rs, r]);
   };
 

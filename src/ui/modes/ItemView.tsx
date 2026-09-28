@@ -52,6 +52,7 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
   const [grade, setGrade] = useState<Grade | null>(null);
   const [note, setNote] = useState<{ tone: string; text: string } | null>(null);
   const [hinted, setHinted] = useState(false);
+  const [unsure, setUnsure] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
   const group = idx.groupsById.get(term.groupId)!;
   useEffect(() => inputRef.current?.focus(), [phase]);
@@ -75,7 +76,7 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
     if (phase === 'first') {
       setGrade(g);
       onGrade?.(g);
-      onAnswer({ itemId, ok: isCorrect(g) || g.verdict === 'partial', spelling: g.verdict === 'close' || g.verdict === 'partial' || hinted, given: value, expected: term.name, progressIds: [term.id] });
+      onAnswer({ itemId, ok: isCorrect(g) || g.verdict === 'partial', spelling: g.verdict === 'close' || g.verdict === 'partial' || hinted, confident: !unsure && !hinted, given: value, expected: term.name, progressIds: [term.id] });
       if (g.verdict === 'correct') return finish('correct', hinted ? `Correct with a hint: ${term.name}` : `Correct: ${term.name}`);
       if (g.verdict === 'close') {
         setNote({ tone: 'close', text: `Close, the spelling is ${term.name}. Type it correctly once so it sticks.` });
@@ -109,6 +110,7 @@ function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term:
       {note && <div className={`feedback ${note.tone}`}>{note.text}{grade?.spelling && phase === 'done' && strict && <small>strict spelling is on; a near-miss counted as wrong</small>}</div>}
       {phase === 'first' && (
         <div className="toggles">
+          <label className="toggle"><input type="checkbox" checked={unsure} onChange={(e) => setUnsure(e.target.checked)} /> Not sure</label>
           {hinted ? <span className="toggle">Hint: {hintFor(term, group.title)}</span> : <button className="toggle" type="button" onClick={() => setHinted(true)}>Hint (half credit)</button>}
           <label className="toggle"><input type="checkbox" checked={strict} onChange={(e) => setStrict(e.target.checked)} /> Strict spelling</label>
           {extra && <span className="toggle">{extra}</span>}
@@ -156,6 +158,7 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
   const idx = useContent();
   const progress = useProgress();
   const [picks, setPicks] = useState<number[]>([]);
+  const [unsure, setUnsure] = useState(false);
   const [zoom, setZoom] = useState(progress.settings.zoomDefault);
   const image = item.imageId ? idx.imagesById.get(item.imageId) : undefined;
   const done = picks.includes(item.answerIndex) || picks.length >= 2;
@@ -164,7 +167,7 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
     const next = [...picks, k];
     setPicks(next);
     if (k !== item.answerIndex && item.termId && item.optionTermIds) progressStore.update((s) => recordConfusion(s, item.termId!, item.optionTermIds![k]));
-    if (picks.length === 0) onAnswer({ itemId: item.id, ok: k === item.answerIndex, given: item.options[k], expected: item.options[item.answerIndex], progressIds: [item.progressId] });
+    if (picks.length === 0) onAnswer({ itemId: item.id, ok: k === item.answerIndex, confident: !unsure, given: item.options[k], expected: item.options[item.answerIndex], progressIds: [item.progressId] });
     if (k === item.answerIndex || next.length >= 2) onDone();
   };
   const answer = item.options[item.answerIndex];
@@ -182,6 +185,7 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
           </button>
         ))}
       </div>
+      {picks.length === 0 && <div className="toggles"><label className="toggle"><input type="checkbox" checked={unsure} onChange={(e) => setUnsure(e.target.checked)} /> Not sure</label></div>}
       {picks.length > 0 && (
         <div className={`feedback ${picks[picks.length - 1] === item.answerIndex ? 'correct' : done ? 'wrong' : 'close'}`}>
           {picks[0] === item.answerIndex ? `Correct: ${answer}` : picks.includes(item.answerIndex) ? `Right on the second pick: ${answer}` : done ? `The answer is ${answer}.` : 'Not that one. Pick again.'}

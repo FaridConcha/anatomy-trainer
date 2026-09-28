@@ -5,7 +5,7 @@ import { allDecks } from '../content/decks';
 import type { Content } from '../content/types';
 import { distractorsFor, studyItems } from './generate';
 import type { Mode } from './items';
-import { defaultProgress, recordAnswer, today, type ProgressState } from './progress';
+import { defaultProgress, recordAnswer, recordConfusion, studyWeight, today, type ProgressState } from './progress';
 import { seededRng } from './rng';
 import { buildSession, dueTerms, poolSize } from './session';
 
@@ -116,5 +116,32 @@ describe('distractorsFor', () => {
   it('widens to the region when a group is tiny', () => {
     const term = idx.termsById.get('fibula.apex')!;
     expect(distractorsFor(idx, term, 3, seededRng(3)).length).toBe(3);
+  });
+});
+
+describe('teaching layer', () => {
+  it('drills confident misses first and clears them once answered right', () => {
+    let p = recordAnswer(fresh, 'humerus.capitulum', false, 'sticker', false, true);
+    expect(p.confidentMisses['humerus.capitulum']).toBe(1);
+    expect(studyWeight(p, 'humerus.capitulum')).toBeGreaterThan(studyWeight(p, 'humerus.trochlea') * 3);
+    p = recordAnswer(p, 'humerus.capitulum', true, 'sticker');
+    expect(p.confidentMisses['humerus.capitulum']).toBeUndefined();
+  });
+  it('stops introducing new terms three days before the exam', () => {
+    const soon = new Date(Date.now() + 2 * 86400000).toISOString().slice(0, 10);
+    const p: ProgressState = { ...fresh, settings: { ...fresh.settings, examDate: soon } };
+    expect(studyWeight(p, 'humerus.capitulum')).toBe(0);
+    const seen = recordAnswer(p, 'humerus.trochlea', false, 'sticker');
+    expect(studyWeight(seen, 'humerus.trochlea')).toBeGreaterThan(0);
+  });
+  it('brings a confused neighbour into the session and keeps the pair apart', () => {
+    let p = recordConfusion(fresh, 'humerus.greater-tubercle', 'humerus.lesser-tubercle');
+    for (let i = 0; i < 3; i++) p = recordAnswer(p, 'humerus.greater-tubercle', false, 'sticker');
+    const terms = idx.termsByGroup.get('humerus')!.filter((t) => t.id === 'humerus.greater-tubercle' || t.id === 'humerus.capitulum' || t.id === 'humerus.lesser-tubercle' || t.id === 'humerus.trochlea');
+    const items = studyItems(idx, p, terms, [], 3, seededRng(9));
+    const ids = items.map((i) => (i.kind === 'mc' ? i.termId : i.kind === 'sticker' ? i.termId : undefined));
+    expect(ids).toContain('humerus.greater-tubercle');
+    expect(ids).toContain('humerus.lesser-tubercle');
+    for (let k = 1; k < ids.length; k++) expect(new Set([ids[k - 1], ids[k]])).not.toEqual(new Set(['humerus.greater-tubercle', 'humerus.lesser-tubercle']));
   });
 });

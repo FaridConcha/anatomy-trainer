@@ -1,0 +1,20 @@
+{
+ "id": "hist.urothelium-1",
+ "src": "img/hist.urothelium-1.webp",
+ "width": 334,
+ "height": 552,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Urothelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.urothelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

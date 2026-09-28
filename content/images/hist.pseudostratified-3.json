@@ -1,0 +1,20 @@
+{
+ "id": "hist.pseudostratified-3",
+ "src": "img/hist.pseudostratified-3.webp",
+ "width": 828,
+ "height": 915,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Pseudostratified columnar epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.pseudostratified-columnar-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

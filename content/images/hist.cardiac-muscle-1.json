@@ -1,0 +1,20 @@
+{
+ "id": "hist.cardiac-muscle-1",
+ "src": "img/hist.cardiac-muscle-1.webp",
+ "width": 458,
+ "height": 727,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.muscle"
+ ],
+ "title": "Cardiac muscle",
+ "hotspots": [
+  {
+   "termId": "tissue.muscle.cardiac-muscle",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

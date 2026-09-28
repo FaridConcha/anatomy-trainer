@@ -1,0 +1,20 @@
+{
+ "id": "hist.bone-2",
+ "src": "img/hist.bone-2.webp",
+ "width": 416,
+ "height": 606,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.other"
+ ],
+ "title": "Bone",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.other.bone",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

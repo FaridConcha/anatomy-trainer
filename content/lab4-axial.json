@@ -1,0 +1,257 @@
+{
+  "lab": { "id": "lab4", "title": "Axial skeleton", "order": 4, "blurb": "skull · vertebrae · thoracic cage" },
+  "groups": [
+    {
+      "id": "skull.bones", "title": "Skull bones", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "frontal bone", "facts": { "category": "cranial, single", "definition": "Forms the forehead and the roof of the orbits." } },
+        { "name": "parietal bone", "facts": { "category": "cranial, paired", "definition": "Forms the sides and roof of the cranium; the two meet at the sagittal suture." } },
+        { "name": "temporal bone", "facts": { "category": "cranial, paired", "definition": "Forms the lower sides of the cranium; houses the ear." } },
+        { "name": "occipital bone", "facts": { "category": "cranial, single", "definition": "Forms the back and base of the skull; contains the foramen magnum." } },
+        { "name": "sphenoid bone", "facts": { "category": "cranial, single", "definition": "The butterfly-shaped keystone bone that touches every other cranial bone; holds the sella turcica." } },
+        { "name": "ethmoid bone", "facts": { "category": "cranial, single", "definition": "Forms the roof of the nasal cavity and part of the medial orbit; crista galli and cribriform plate." } },
+        { "name": "maxilla", "aliases": ["maxillae", "maxillary bone"], "facts": { "category": "facial, paired", "definition": "The upper jaw; holds the upper teeth and forms the hard palate and part of the orbit floor." } },
+        { "name": "mandible", "facts": { "category": "facial, single", "definition": "The lower jaw; the only freely movable skull bone." } },
+        { "name": "zygomatic bone", "facts": { "category": "facial, paired", "definition": "The cheekbone; forms the lateral orbit and part of the zygomatic arch." } },
+        { "name": "nasal bone", "facts": { "category": "facial, paired", "definition": "Forms the bridge of the nose." } },
+        { "name": "lacrimal bone", "facts": { "category": "facial, paired", "definition": "A small bone in the medial wall of the orbit with a groove for the tear duct." } },
+        { "name": "palatine bone", "facts": { "category": "facial, paired", "definition": "Forms the back of the hard palate and part of the orbit floor." } },
+        { "name": "vomer", "facts": { "category": "facial, single", "definition": "Forms the lower part of the nasal septum." } },
+        { "name": "inferior nasal concha", "aliases": ["inferior nasal conchae"], "facts": { "category": "facial, paired", "definition": "A separate curled bone on the lateral wall of the nasal cavity (the superior and middle conchae are parts of the ethmoid)." } }
+      ]
+    },
+    {
+      "id": "skull.sutures", "title": "Sutures", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "coronal suture", "facts": { "definition": "Between the frontal bone and the two parietal bones." } },
+        { "name": "sagittal suture", "facts": { "definition": "Between the two parietal bones, along the midline." } },
+        { "name": "lambdoid suture", "facts": { "definition": "Between the parietal bones and the occipital bone." } },
+        { "name": "squamous suture", "facts": { "definition": "Between the parietal bone and the temporal bone on each side." } }
+      ]
+    },
+    {
+      "id": "skull.foramina", "title": "Skull foramina", "region": "axial.skull", "kind": "foramen",
+      "terms": [
+        { "name": "supraorbital foramen", "aliases": ["supraorbital notch"], "facts": { "category": "frontal bone", "transmits": "Supraorbital nerve, artery, and vein; ophthalmic nerve" } },
+        { "name": "carotid canal", "facts": { "category": "temporal bone", "transmits": "Internal carotid artery" } },
+        { "name": "external acoustic meatus", "aliases": ["external auditory meatus"], "facts": { "category": "temporal bone", "transmits": "Sound waves to the eardrum" } },
+        { "name": "jugular foramen", "facts": { "category": "temporal and occipital bones", "transmits": "Internal jugular vein; glossopharyngeal, vagus, and accessory nerves" } },
+        { "name": "foramen magnum", "facts": { "category": "occipital bone", "transmits": "Spinal cord; accessory nerve; vertebral arteries" } },
+        { "name": "hypoglossal canal", "facts": { "category": "occipital bone", "transmits": "Hypoglossal nerve to the muscles of the tongue" } },
+        { "name": "foramen ovale", "facts": { "category": "sphenoid bone", "transmits": "Mandibular division of the trigeminal nerve; accessory meningeal artery" } },
+        { "name": "foramen rotundum", "facts": { "category": "sphenoid bone", "transmits": "Maxillary division of the trigeminal nerve" } },
+        { "name": "optic canal", "aliases": ["optic foramen"], "facts": { "category": "sphenoid bone", "transmits": "Optic nerve; ophthalmic artery" } },
+        { "name": "superior orbital fissure", "facts": { "category": "sphenoid bone", "transmits": "Oculomotor, trochlear, and abducens nerves; ophthalmic division of the trigeminal nerve; ophthalmic veins" } },
+        { "name": "inferior orbital fissure", "facts": { "category": "maxilla and sphenoid", "transmits": "Infraorbital nerve; zygomatic nerve; infraorbital vessels" } },
+        { "name": "infraorbital foramen", "facts": { "category": "maxilla", "transmits": "Infraorbital nerve and vessels" } },
+        { "name": "mental foramen", "facts": { "category": "mandible", "transmits": "Mental nerve and vessels" } },
+        { "name": "mandibular foramen", "facts": { "category": "mandible", "transmits": "Inferior alveolar nerves and vessels to the lower teeth" } },
+        { "name": "foramen spinosum", "facts": { "category": "sphenoid bone", "transmits": "Middle meningeal artery" } },
+        { "name": "foramen lacerum", "facts": { "category": "between sphenoid, temporal, and occipital", "transmits": "Mostly closed by cartilage in life; the internal carotid artery passes over it" } },
+        { "name": "stylomastoid foramen", "facts": { "category": "temporal bone", "transmits": "Facial nerve" } },
+        { "name": "internal acoustic meatus", "aliases": ["internal auditory meatus"], "facts": { "category": "temporal bone", "transmits": "Facial and vestibulocochlear nerves" } },
+        { "name": "cribriform foramina", "facts": { "category": "ethmoid bone", "transmits": "Olfactory nerve fibers" } }
+      ]
+    },
+    {
+      "id": "skull.temporal", "title": "Temporal bone features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "mastoid process", "facts": { "definition": "The rounded bump behind the ear; attachment for neck muscles." } },
+        { "name": "zygomatic process", "aliases": ["zygomatic process of the temporal bone"], "facts": { "definition": "The bar of the temporal bone that reaches forward to join the zygomatic bone, forming the zygomatic arch." } },
+        { "name": "styloid process", "facts": { "definition": "A slender spike below the ear for attachment of tongue and pharynx muscles and ligaments." } },
+        { "name": "mandibular fossa", "facts": { "definition": "The depression that receives the condyle of the mandible (temporomandibular joint)." } },
+        { "name": "squamous part", "aliases": ["squamous portion"], "facts": { "definition": "The flat plate forming the side of the cranium." } },
+        { "name": "petrous part", "aliases": ["petrous portion"], "facts": { "definition": "The dense wedge inside the cranial floor that houses the inner ear." } },
+        { "name": "zygomatic arch", "facts": { "definition": "The cheek arch formed by the zygomatic process of the temporal bone and the temporal process of the zygomatic bone." } }
+      ]
+    },
+    {
+      "id": "skull.ethmoid", "title": "Ethmoid bone features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "perpendicular plate", "facts": { "definition": "The vertical plate forming the upper part of the nasal septum." } },
+        { "name": "crista galli", "facts": { "definition": "The rooster's-comb ridge projecting up into the cranial cavity; anchors the dura mater." } },
+        { "name": "cribriform plate", "facts": { "definition": "The perforated horizontal plate forming the roof of the nasal cavity; olfactory nerves pass through its foramina." } },
+        { "name": "middle nasal concha", "facts": { "definition": "A curled plate of the ethmoid on the lateral nasal wall." } },
+        { "name": "superior nasal concha", "facts": { "definition": "The uppermost curled plate of the ethmoid on the lateral nasal wall." } }
+      ]
+    },
+    {
+      "id": "skull.occipital", "title": "Occipital bone features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "basilar part", "facts": { "definition": "The thick part anterior to the foramen magnum that joins the sphenoid." } },
+        { "name": "occipital condyle", "aliases": ["occipital condyles"], "facts": { "definition": "Paired smooth knobs beside the foramen magnum that articulate with the atlas (atlanto-occipital joint)." } },
+        { "name": "external occipital protuberance", "facts": { "definition": "The midline bump at the back of the skull you can feel with your fingers." } },
+        { "name": "superior nuchal line", "facts": { "definition": "A ridge running laterally from the external occipital protuberance; attachment for neck muscles." } },
+        { "name": "inferior nuchal line", "facts": { "definition": "A ridge below and parallel to the superior nuchal line." } }
+      ]
+    },
+    {
+      "id": "skull.mandible", "title": "Mandible features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "ramus", "aliases": ["ramus of the mandible", "mandibular ramus"], "facts": { "definition": "The vertical upright portion on each side." } },
+        { "name": "body", "aliases": ["body of the mandible", "mandibular body"], "facts": { "definition": "The horizontal portion that holds the lower teeth." } },
+        { "name": "angle", "aliases": ["angle of the mandible", "mandibular angle"], "facts": { "definition": "The corner where the body meets the ramus." } },
+        { "name": "mental protuberance", "facts": { "definition": "The bony chin." } },
+        { "name": "mandibular notch", "facts": { "definition": "The U-shaped dip between the coronoid and condylar processes." } },
+        { "name": "coronoid process", "aliases": ["coronoid process of the mandible"], "facts": { "definition": "The anterior projection of the ramus; attachment of the temporalis muscle." } },
+        { "name": "condylar process", "aliases": ["mandibular condyle", "condyle of the mandible"], "facts": { "definition": "The posterior projection of the ramus whose head fits the mandibular fossa of the temporal bone." } },
+        { "name": "alveolar process", "aliases": ["alveolar process of the mandible"], "facts": { "definition": "The ridge of bone containing the tooth sockets." } }
+      ]
+    },
+    {
+      "id": "skull.sphenoid", "title": "Sphenoid bone features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "sella turcica", "facts": { "definition": "The saddle-shaped depression on top of the sphenoid that holds the pituitary gland." } },
+        { "name": "pterygoid processes", "aliases": ["pterygoid process", "pterygoid plates"], "facts": { "definition": "Paired plates hanging down from the sphenoid behind the maxilla; attachment for chewing muscles." } },
+        { "name": "greater wing", "aliases": ["greater wing of the sphenoid"], "facts": { "definition": "The large lateral wing seen on the side of the skull and in the cranial floor." } },
+        { "name": "lesser wing", "aliases": ["lesser wing of the sphenoid"], "facts": { "definition": "The small anterior wing forming part of the orbit roof; the optic canal passes through it." } },
+        { "name": "sphenoidal sinus", "aliases": ["sphenoid sinus"], "facts": { "definition": "The air space inside the body of the sphenoid, below the sella turcica." } }
+      ]
+    },
+    {
+      "id": "skull.frontal-facial", "title": "Frontal and facial features", "region": "axial.skull", "kind": "structure",
+      "terms": [
+        { "name": "glabella", "facts": { "definition": "The smooth area of the frontal bone between the eyebrows." } },
+        { "name": "supraorbital margin", "facts": { "definition": "The upper rim of the orbit, formed by the frontal bone." } },
+        { "name": "frontal sinus", "facts": { "definition": "The air space in the frontal bone above the orbits." } },
+        { "name": "palatine process", "aliases": ["palatine process of the maxilla"], "facts": { "definition": "The horizontal shelf of the maxilla forming the front of the hard palate." } },
+        { "name": "intermaxillary suture", "facts": { "definition": "The midline joint between the two maxillae." } },
+        { "name": "incisive fossa", "facts": { "definition": "The depression behind the upper incisors in the hard palate." } },
+        { "name": "orbit", "facts": { "definition": "The eye socket, formed by seven bones: frontal, sphenoid, zygomatic, maxilla, lacrimal, ethmoid, palatine." } },
+        { "name": "nasal septum", "facts": { "definition": "The wall dividing the nasal cavity: perpendicular plate of the ethmoid above, vomer below, cartilage in front." } }
+      ]
+    },
+    {
+      "id": "vertebrae.regions", "title": "Vertebral column regions", "region": "axial.vertebral", "kind": "structure",
+      "terms": [
+        { "name": "cervical vertebrae", "aliases": ["cervical vertebra"], "facts": { "definition": "C1 to C7, the neck. Identified by a transverse foramen in each transverse process; small body; often a bifid spinous process.", "category": "7 vertebrae" } },
+        { "name": "thoracic vertebrae", "aliases": ["thoracic vertebra"], "facts": { "definition": "T1 to T12, the chest. Identified by costal facets for the ribs; heart-shaped body; long spinous process pointing downward.", "category": "12 vertebrae" } },
+        { "name": "lumbar vertebrae", "aliases": ["lumbar vertebra"], "facts": { "definition": "L1 to L5, the lower back. Identified by a large kidney-shaped body and a thick, blunt, hatchet-shaped spinous process.", "category": "5 vertebrae" } },
+        { "name": "sacrum", "facts": { "definition": "Five fused vertebrae forming the back wall of the pelvis.", "category": "5 fused" } },
+        { "name": "coccyx", "aliases": ["tailbone"], "facts": { "definition": "Three to five small fused vertebrae at the tip of the column.", "category": "3 to 5 fused" } },
+        { "name": "atlas", "aliases": ["c1", "atlas (c1)"], "facts": { "definition": "The first cervical vertebra: a ring with no body and no spinous process; its superior facets receive the occipital condyles and let you nod yes.", "category": "C1" } },
+        { "name": "axis", "aliases": ["c2", "axis (c2)"], "facts": { "definition": "The second cervical vertebra, with the dens projecting upward as a pivot for the atlas; lets you shake your head no.", "category": "C2" } }
+      ]
+    },
+    {
+      "id": "vertebrae.features", "title": "Vertebral features", "region": "axial.vertebral", "kind": "structure",
+      "terms": [
+        { "name": "body", "aliases": ["vertebral body", "body of the vertebra", "centrum"], "facts": { "definition": "The thick anterior weight-bearing mass." } },
+        { "name": "vertebral arch", "facts": { "definition": "The bony ring behind the body, made of two pedicles and two laminae." } },
+        { "name": "pedicle", "facts": { "definition": "The short stalk joining the arch to the body on each side." } },
+        { "name": "lamina", "facts": { "definition": "The flat plate joining the pedicle to the spinous process on each side." } },
+        { "name": "spinous process", "facts": { "definition": "The single posterior projection you can feel down your back." } },
+        { "name": "transverse process", "facts": { "definition": "The lateral projection on each side, for muscle and rib attachment." } },
+        { "name": "vertebral foramen", "facts": { "definition": "The large hole enclosed by the body and arch; the spinal cord passes through the stacked foramina." } },
+        { "name": "superior articular facet", "aliases": ["superior articular process"], "facts": { "definition": "The smooth upward-facing surface that meets the vertebra above." } },
+        { "name": "inferior articular facet", "aliases": ["inferior articular process"], "facts": { "definition": "The smooth downward-facing surface that meets the vertebra below." } },
+        { "name": "transverse foramen", "facts": { "definition": "A hole in the transverse process found only in cervical vertebrae; carries the vertebral artery." } },
+        { "name": "intervertebral foramen", "facts": { "definition": "The opening between adjacent vertebrae, on the side, where a spinal nerve exits." } },
+        { "name": "costal facet", "facts": { "definition": "A smooth surface on a thoracic vertebra where a rib articulates." } },
+        { "name": "dens", "aliases": ["odontoid process"], "facts": { "definition": "The tooth-like peg projecting up from the axis; the atlas pivots around it. It is the body of the atlas that fused to the axis." } },
+        { "name": "intervertebral disc", "facts": { "definition": "The fibrocartilage pad between vertebral bodies: anulus fibrosus around a nucleus pulposus." } },
+        { "name": "anulus fibrosus", "aliases": ["annulus fibrosus"], "facts": { "definition": "The tough outer ring of fibrocartilage of an intervertebral disc." } },
+        { "name": "nucleus pulposus", "facts": { "definition": "The gelatinous center of an intervertebral disc that bulges out in a herniated disc." } }
+      ]
+    },
+    {
+      "id": "vertebrae.pathology", "title": "Lumbar degeneration models", "region": "axial.vertebral", "kind": "vocab",
+      "terms": [
+        { "name": "herniated disc", "aliases": ["slipped disc", "ruptured disc"], "facts": { "definition": "The anulus fibrosus cracks and the nucleus pulposus bulges outward, which can compress a nearby spinal nerve root." } },
+        { "name": "bone and disc degeneration", "aliases": ["disc degeneration"], "facts": { "definition": "Gradual breakdown of the discs and surrounding bone from aging, wear, or injury; discs thin and bone spurs form." } },
+        { "name": "advanced osteoporosis", "aliases": ["osteoporosis"], "facts": { "definition": "Loss of bone density that leaves vertebrae fragile and prone to compression fractures and bone spurs." } },
+        { "name": "bone spur", "aliases": ["osteophyte"], "facts": { "definition": "An abnormal bony outgrowth at the edge of a vertebral body or joint." } }
+      ]
+    },
+    {
+      "id": "sacrum.coccyx", "title": "Sacrum and coccyx", "region": "axial.vertebral", "kind": "structure",
+      "terms": [
+        { "name": "ala", "aliases": ["ala of the sacrum", "alae"], "facts": { "definition": "The wing-like lateral part of the sacrum on each side." } },
+        { "name": "sacral promontory", "facts": { "definition": "The anterior lip of the first sacral vertebra's body, projecting forward at the top of the sacrum." } },
+        { "name": "anterior sacral foramina", "facts": { "definition": "Four pairs of holes on the front of the sacrum for the anterior branches of the sacral nerves." } },
+        { "name": "auricular surface", "aliases": ["auricular surface of the sacrum"], "facts": { "definition": "The ear-shaped surface on the side of the sacrum that joins the ilium at the sacroiliac joint." } },
+        { "name": "sacral canal", "facts": { "definition": "The continuation of the vertebral canal through the sacrum." } },
+        { "name": "median sacral crest", "facts": { "definition": "The ridge down the back of the sacrum formed by the fused spinous processes." } }
+      ]
+    },
+    {
+      "id": "thorax", "title": "Thoracic cage", "region": "axial.thorax", "kind": "structure",
+      "terms": [
+        { "name": "manubrium", "facts": { "definition": "The superior, broad part of the sternum; articulates with the clavicles and first ribs." } },
+        { "name": "body of the sternum", "aliases": ["sternal body", "body"], "facts": { "definition": "The long middle part of the sternum; ribs 2 to 7 attach along its sides." } },
+        { "name": "xiphoid process", "facts": { "definition": "The small pointed inferior tip of the sternum; cartilage in youth, bone in adults." } },
+        { "name": "jugular notch", "aliases": ["suprasternal notch"], "facts": { "definition": "The dip at the top of the manubrium you can feel at the base of your throat." } },
+        { "name": "sternal angle", "aliases": ["angle of louis"], "facts": { "definition": "The ridge where the manubrium meets the body; level with the second rib, the landmark for counting ribs." } },
+        { "name": "true ribs", "aliases": ["true rib", "vertebrosternal ribs"], "facts": { "definition": "Ribs 1 to 7: each attaches to the sternum by its own costal cartilage." } },
+        { "name": "false ribs", "aliases": ["false rib"], "facts": { "definition": "Ribs 8 to 12: they do not reach the sternum directly; 8 to 10 attach to the cartilage of rib 7 and 11 to 12 float." } },
+        { "name": "floating ribs", "aliases": ["floating rib", "vertebral ribs"], "facts": { "definition": "Ribs 11 and 12: they have no anterior attachment at all." } },
+        { "name": "costal cartilage", "facts": { "definition": "The hyaline cartilage joining a rib to the sternum." } },
+        { "name": "head of the rib", "aliases": ["rib head"], "facts": { "definition": "The posterior end that articulates with the costal facets of the vertebral bodies." } },
+        { "name": "tubercle of the rib", "aliases": ["rib tubercle"], "facts": { "definition": "The small bump near the head that articulates with the transverse process of a thoracic vertebra." } }
+      ]
+    },
+    {
+      "id": "bone.markings", "title": "Bone markings", "region": "axial.vocab", "kind": "vocab",
+      "terms": [
+        { "name": "condyle", "facts": { "category": "articulation", "definition": "A rounded knob that articulates with another bone (occipital condyles)." } },
+        { "name": "facet", "facts": { "category": "articulation", "definition": "A smooth, flat articular surface (superior articular facet of a vertebra)." } },
+        { "name": "head", "facts": { "category": "articulation", "definition": "The prominent expanded end of a bone (head of the femur)." } },
+        { "name": "crest", "facts": { "category": "projection", "definition": "A narrow, prominent ridge (iliac crest)." } },
+        { "name": "epicondyle", "facts": { "category": "projection", "definition": "An expanded region superior to a condyle (medial epicondyle of the femur)." } },
+        { "name": "line", "facts": { "category": "projection", "definition": "A slightly raised, elongated ridge (nuchal lines of the skull)." } },
+        { "name": "process", "facts": { "category": "projection", "definition": "Any bony prominence (mastoid process, spinous process)." } },
+        { "name": "protuberance", "facts": { "category": "projection", "definition": "A bony outgrowth or protruding part (mental protuberance of the chin)." } },
+        { "name": "spine", "facts": { "category": "projection", "definition": "A sharp, slender projection (spinous process of a vertebra)." } },
+        { "name": "trochanter", "facts": { "category": "projection", "definition": "Two massive processes unique to the femur." } },
+        { "name": "tubercle", "facts": { "category": "projection", "definition": "A small, rounded process (tubercle of a rib; greater tubercle of the humerus)." } },
+        { "name": "tuberosity", "facts": { "category": "projection", "definition": "A rough elevated surface (tibial tuberosity; deltoid tuberosity)." } },
+        { "name": "fossa", "facts": { "category": "depression", "definition": "A shallow, broad, or elongated basin (mandibular fossa; olecranon fossa)." } },
+        { "name": "fovea", "facts": { "category": "depression", "definition": "A small pit (fovea capitis of the femur)." } },
+        { "name": "sulcus", "facts": { "category": "depression", "definition": "A groove for a tendon, nerve, or blood vessel (intertubercular sulcus of the humerus)." } },
+        { "name": "canal", "facts": { "category": "passage", "definition": "A tubular passage or tunnel through a bone (carotid canal, sacral canal)." } },
+        { "name": "fissure", "facts": { "category": "passage", "definition": "A slit through a bone (orbital fissures behind the eye)." } },
+        { "name": "foramen", "facts": { "category": "passage", "definition": "A hole through a bone, usually round (foramen magnum, mental foramen)." } },
+        { "name": "meatus", "facts": { "category": "passage", "definition": "A canal (external acoustic meatus of the ear)." } },
+        { "name": "sinus", "facts": { "category": "cavity", "definition": "An air-filled space within a bone (frontal sinus, maxillary sinus)." } },
+        { "name": "notch", "facts": { "category": "depression", "definition": "An indentation at the edge of a bone (greater sciatic notch, jugular notch)." } }
+      ]
+    },
+    {
+      "id": "axial.counts", "title": "Bone counts", "region": "axial.vocab", "kind": "vocab",
+      "terms": [
+        { "name": "skull", "facts": { "definition": "22 bones: 8 cranial and 14 facial." } },
+        { "name": "auditory ossicles", "facts": { "definition": "6 bones: malleus, incus, and stapes in each middle ear." } },
+        { "name": "hyoid bone", "aliases": ["hyoid"], "facts": { "definition": "1 bone in the neck that touches no other bone; anchors the tongue." } },
+        { "name": "vertebral column", "facts": { "definition": "26 bones: 7 cervical, 12 thoracic, 5 lumbar, sacrum, coccyx." } },
+        { "name": "thoracic cage", "facts": { "definition": "25 bones: 24 ribs and the sternum." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "kind": "mc", "groupId": "bone.markings", "prompt": "Which term describes a rounded knob on a bone that articulates with another bone?", "options": ["Fossa", "Facet", "Condyle", "Tuberosity"], "answerIndex": 2, "termIds": ["bone.markings.condyle"] },
+    { "kind": "mc", "groupId": "skull.bones", "prompt": "Which of the following is one of the eight cranial bones that encloses and protects the brain?", "options": ["Maxilla", "Zygomatic bone", "Mandible", "Sphenoid bone"], "answerIndex": 3, "termIds": ["skull.bones.sphenoid-bone"] },
+    { "kind": "mc", "groupId": "vertebrae.regions", "prompt": "What is the primary distinguishing feature that allows a vertebra to be identified as cervical?", "options": ["A heart-shaped body", "A transverse foramen in each transverse process", "Costal facets for rib articulation", "A thick, blunt spinous process"], "answerIndex": 1, "termIds": ["vertebrae.features.transverse-foramen"] },
+    { "kind": "mc", "groupId": "thorax", "prompt": "A rib that attaches directly to the sternum by way of its own costal cartilage is classified as a:", "options": ["True rib", "False rib", "Floating rib", "Transverse rib"], "answerIndex": 0, "termIds": ["thorax.true-ribs"] },
+    { "kind": "mc", "groupId": "skull.foramina", "prompt": "Which opening allows the spinal cord to pass from the vertebral canal into the cranial cavity?", "options": ["Foramen magnum", "Foramen ovale", "Mental foramen", "Supraorbital foramen"], "answerIndex": 0, "termIds": ["skull.foramina.foramen-magnum"] },
+    { "kind": "short", "groupId": "skull.bones", "prompt": "Which of the skull bones are paired?", "modelAnswer": "Parietal, temporal, maxilla, zygomatic, nasal, lacrimal, palatine, and inferior nasal concha. Single bones: frontal, occipital, sphenoid, ethmoid, mandible, vomer." },
+    { "kind": "short", "groupId": "skull.sutures", "prompt": "Which suture separates the two parietal bones from each other?", "modelAnswer": "The sagittal suture.", "termIds": ["skull.sutures.sagittal-suture"] },
+    { "kind": "short", "groupId": "skull.sutures", "prompt": "Sutures are classified as immovable joints. Why is this functionally important for the skull?", "modelAnswer": "The cranial bones form a rigid case around the brain; movement between them would leave the brain unprotected and could tear the blood vessels and membranes attached to the bone. Rigidity also gives chewing muscles a stable base." },
+    { "kind": "short", "groupId": "skull.foramina", "prompt": "Why are we learning the foramina of the skull?", "modelAnswer": "Every cranial nerve and major vessel enters or leaves the skull through a foramen. Knowing which structure passes through which opening explains the symptoms of fractures, tumors, and infections at that site." },
+    { "kind": "short", "groupId": "skull.occipital", "prompt": "Which bony landmarks articulate with the first cervical vertebra to form the atlanto-occipital joint?", "modelAnswer": "The occipital condyles, on either side of the foramen magnum, sit in the superior articular facets of the atlas.", "termIds": ["skull.occipital.occipital-condyle", "vertebrae.regions.atlas"] },
+    { "kind": "short", "groupId": "skull.temporal", "prompt": "Why are landmarks like the mastoid process and zygomatic arch useful for clinicians to locate by touch?", "modelAnswer": "They are palpable through the skin, so they serve as fixed reference points for finding deeper structures, describing injuries, placing injections, and orienting on imaging." },
+    { "kind": "short", "groupId": "vertebrae.features", "prompt": "What is the functional significance of the dens of the axis?", "modelAnswer": "The dens is a pivot: the atlas (and the head on it) rotates around it, allowing you to shake your head no. The transverse ligament holds the dens against the atlas.", "termIds": ["vertebrae.features.dens", "vertebrae.regions.axis"] },
+    { "kind": "short", "groupId": "vertebrae.regions", "prompt": "Which vertebra is unique in lacking a body altogether?", "modelAnswer": "The atlas (C1). Its body became the dens of the axis during development.", "termIds": ["vertebrae.regions.atlas"] },
+    { "kind": "short", "groupId": "vertebrae.regions", "prompt": "Describe the feature that lets you tell cervical, thoracic, and lumbar vertebrae apart at a glance.", "modelAnswer": "Cervical: transverse foramina and a small body, often a bifid spinous process. Thoracic: costal facets for ribs and a long spinous process angled downward, heart-shaped body. Lumbar: large kidney-shaped body and a thick, blunt, hatchet-shaped spinous process.", "termIds": ["vertebrae.regions.cervical-vertebrae", "vertebrae.regions.thoracic-vertebrae", "vertebrae.regions.lumbar-vertebrae"] },
+    { "kind": "short", "groupId": "vertebrae.pathology", "prompt": "Explain how a herniated disc could compress a spinal nerve root, referencing the anulus fibrosus and nucleus pulposus.", "modelAnswer": "The anulus fibrosus cracks or weakens and the soft nucleus pulposus squeezes out through the tear, usually posterolaterally, into the intervertebral foramen where it presses on the spinal nerve root, causing pain or numbness along that nerve.", "termIds": ["vertebrae.features.anulus-fibrosus", "vertebrae.features.nucleus-pulposus", "vertebrae.pathology.herniated-disc"] },
+    { "kind": "short", "groupId": "vertebrae.pathology", "prompt": "Advanced osteoporosis and disc herniation can both cause back pain, but through different mechanisms. Contrast them.", "modelAnswer": "Herniation is a soft-tissue problem: nucleus pulposus bulges and directly compresses a nerve root. Osteoporosis is a bone problem: vertebral bodies lose density and collapse (compression fracture), shortening the spine and forming bone spurs that can narrow the canal or foramina.", "termIds": ["vertebrae.pathology.advanced-osteoporosis", "vertebrae.pathology.herniated-disc"] },
+    { "kind": "short", "groupId": "thorax", "prompt": "Which sternal landmark is used clinically to locate the second rib and count ribs from there?", "modelAnswer": "The sternal angle (angle of Louis), where the manubrium meets the body of the sternum; the second costal cartilage attaches there.", "termIds": ["thorax.sternal-angle"] },
+    { "kind": "short", "groupId": "thorax", "prompt": "How do floating ribs (11 and 12) differ from the other false ribs in their anterior attachment?", "modelAnswer": "Ribs 8 to 10 attach anteriorly to the costal cartilage of rib 7; ribs 11 and 12 have no anterior attachment at all and end in the muscles of the body wall.", "termIds": ["thorax.floating-ribs", "thorax.false-ribs"] },
+    { "kind": "short", "groupId": "thorax", "prompt": "Why might improperly performed chest compressions during CPR risk driving the xiphoid process into the liver?", "modelAnswer": "The xiphoid is a small, pointed tip at the bottom of the sternum lying just above the liver. Pressing too low can snap it and push it into the liver.", "termIds": ["thorax.xiphoid-process"] },
+    { "kind": "short", "groupId": "vertebrae.regions", "prompt": "A patient arrives after a car accident with a suspected fracture near 'T4.' Which bone and specific structure does this refer to, and roughly where in the body is it located?", "modelAnswer": "The fourth thoracic vertebra, in the upper back at about the level of the sternal angle and the fourth rib, between the shoulder blades.", "termIds": ["vertebrae.regions.thoracic-vertebrae"] },
+    { "kind": "short", "groupId": "vertebrae.regions", "prompt": "Why do the atlas and axis have such a different structure from the other cervical vertebrae, and how does that relate to their function?", "modelAnswer": "They form the joints that move the head. The atlas is a ring with no body so its facets can cradle the occipital condyles for nodding; the axis has the dens as a pivot so the atlas and head can rotate for shaking the head." },
+    { "kind": "short", "groupId": "skull.foramina", "prompt": "What structure passes through the foramen magnum?", "modelAnswer": "The spinal cord (plus the vertebral arteries and the accessory nerve).", "termIds": ["skull.foramina.foramen-magnum"] },
+    { "kind": "short", "groupId": "skull.ethmoid", "prompt": "List five bones that articulate with the ethmoid bone.", "modelAnswer": "Frontal, sphenoid, both nasal bones, both lacrimal bones, both maxillae, both palatine bones, both inferior nasal conchae, and the vomer.", "termIds": ["skull.bones.ethmoid-bone"] },
+    { "kind": "short", "groupId": "skull.frontal-facial", "prompt": "What bones form the orbit?", "modelAnswer": "Seven: frontal (roof), sphenoid (greater and lesser wings), zygomatic (lateral wall), maxilla (floor), palatine (floor), lacrimal and ethmoid (medial wall).", "termIds": ["skull.frontal-facial.orbit"] },
+    { "kind": "short", "groupId": "axial.counts", "prompt": "List the components of the axial skeleton with their bone counts.", "modelAnswer": "Skull 22, auditory ossicles 6, hyoid 1, vertebral column 26, thoracic cage 25; 80 bones total." }
+  ]
+}

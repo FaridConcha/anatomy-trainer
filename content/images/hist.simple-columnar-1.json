@@ -1,0 +1,20 @@
+{
+ "id": "hist.simple-columnar-1",
+ "src": "img/hist.simple-columnar-1.webp",
+ "width": 325,
+ "height": 541,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Simple columnar epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.simple-columnar-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

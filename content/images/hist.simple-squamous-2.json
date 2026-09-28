@@ -1,0 +1,20 @@
+{
+ "id": "hist.simple-squamous-2",
+ "src": "img/hist.simple-squamous-2.webp",
+ "width": 717,
+ "height": 691,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Simple squamous epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.simple-squamous-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

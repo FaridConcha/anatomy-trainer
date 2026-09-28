@@ -1,0 +1,20 @@
+{
+ "id": "hist.reticular-1",
+ "src": "img/hist.reticular-1.webp",
+ "width": 553,
+ "height": 786,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.fibrous"
+ ],
+ "title": "Reticular tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.fibrous.reticular-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

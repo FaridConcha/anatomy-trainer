@@ -1,0 +1,20 @@
+{
+ "id": "hist.areolar-1",
+ "src": "img/hist.areolar-1.webp",
+ "width": 539,
+ "height": 876,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.fibrous"
+ ],
+ "title": "Areolar tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.fibrous.areolar-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

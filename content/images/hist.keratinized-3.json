@@ -1,0 +1,20 @@
+{
+ "id": "hist.keratinized-3",
+ "src": "img/hist.keratinized-3.webp",
+ "width": 734,
+ "height": 693,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Keratinized stratified squamous epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.keratinized-stratified-squamous-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

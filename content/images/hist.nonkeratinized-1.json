@@ -1,0 +1,20 @@
+{
+ "id": "hist.nonkeratinized-1",
+ "src": "img/hist.nonkeratinized-1.webp",
+ "width": 586,
+ "height": 1040,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Nonkeratinized stratified squamous epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.nonkeratinized-stratified-squamous-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

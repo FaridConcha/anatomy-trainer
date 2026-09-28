@@ -1,0 +1,20 @@
+{
+ "id": "hist.nervous-1",
+ "src": "img/hist.nervous-1.webp",
+ "width": 942,
+ "height": 1600,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.nervous"
+ ],
+ "title": "Nervous tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.nervous.nervous-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

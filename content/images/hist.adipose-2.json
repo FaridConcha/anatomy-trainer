@@ -1,0 +1,20 @@
+{
+ "id": "hist.adipose-2",
+ "src": "img/hist.adipose-2.webp",
+ "width": 414,
+ "height": 673,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.fibrous"
+ ],
+ "title": "Adipose tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.fibrous.adipose-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

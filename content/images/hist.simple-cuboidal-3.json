@@ -1,0 +1,20 @@
+{
+ "id": "hist.simple-cuboidal-3",
+ "src": "img/hist.simple-cuboidal-3.webp",
+ "width": 917,
+ "height": 1062,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Simple cuboidal epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.simple-cuboidal-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

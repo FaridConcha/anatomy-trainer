@@ -1,0 +1,227 @@
+{
+  "lab": { "id": "lab5", "title": "Appendicular skeleton", "order": 5, "blurb": "girdles · limbs · hand · foot" },
+  "groups": [
+    {
+      "id": "clavicle", "title": "Clavicle", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "acromial end", "aliases": ["acromial end of the clavicle", "lateral end"], "facts": { "definition": "The flat lateral end that articulates with the acromion of the scapula." } },
+        { "name": "sternal end", "aliases": ["sternal end of the clavicle", "medial end"], "facts": { "definition": "The rounded medial end that articulates with the manubrium; the only bony attachment of the upper limb to the axial skeleton." } },
+        { "name": "conoid tubercle", "facts": { "definition": "A bump on the inferior surface near the acromial end for the coracoclavicular ligament." } }
+      ]
+    },
+    {
+      "id": "scapula", "title": "Scapula", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "spine of the scapula", "aliases": ["spine", "scapular spine"], "facts": { "definition": "The ridge across the posterior surface, dividing the supraspinous and infraspinous fossae." } },
+        { "name": "acromion", "facts": { "definition": "The flat lateral extension of the spine forming the point of the shoulder; articulates with the clavicle." } },
+        { "name": "coracoid process", "facts": { "definition": "The hook-like anterior projection under the clavicle for muscle attachment." } },
+        { "name": "glenoid cavity", "aliases": ["glenoid fossa"], "facts": { "definition": "The shallow socket that receives the head of the humerus (glenohumeral joint)." } },
+        { "name": "supraspinous fossa", "facts": { "definition": "The depression above the spine on the posterior surface." } },
+        { "name": "infraspinous fossa", "facts": { "definition": "The large depression below the spine on the posterior surface." } },
+        { "name": "subscapular fossa", "facts": { "definition": "The broad concave anterior surface facing the ribs." } },
+        { "name": "suprascapular notch", "facts": { "definition": "The notch in the superior border medial to the coracoid process." } },
+        { "name": "medial border", "aliases": ["vertebral border"], "facts": { "definition": "The long edge nearest the vertebral column." } },
+        { "name": "lateral border", "aliases": ["axillary border"], "facts": { "definition": "The thick edge nearest the armpit." } },
+        { "name": "inferior angle", "facts": { "definition": "The pointed bottom corner." } }
+      ]
+    },
+    {
+      "id": "humerus", "title": "Humerus", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "head of the humerus", "aliases": ["head", "humeral head", "head of humerus"], "facts": { "definition": "The smooth hemisphere that fits the glenoid cavity." } },
+        { "name": "anatomical neck", "facts": { "definition": "The groove just distal to the head." } },
+        { "name": "surgical neck", "facts": { "definition": "The narrowing distal to the tubercles; the most common fracture site of the humerus." } },
+        { "name": "greater tubercle", "facts": { "definition": "The large lateral bump below the head for rotator cuff attachment." } },
+        { "name": "lesser tubercle", "facts": { "definition": "The smaller anterior bump below the head." } },
+        { "name": "intertubercular sulcus", "aliases": ["bicipital groove", "intertubercular groove", "intertubercular (bicipital) sulcus"], "facts": { "definition": "The groove between the tubercles holding the tendon of the biceps." } },
+        { "name": "deltoid tuberosity", "facts": { "definition": "The rough lateral area midway down the shaft where the deltoid inserts." } },
+        { "name": "capitulum", "facts": { "definition": "The lateral rounded knob at the distal end that articulates with the head of the radius." } },
+        { "name": "trochlea", "facts": { "definition": "The medial pulley-shaped surface at the distal end that articulates with the trochlear notch of the ulna." } },
+        { "name": "medial epicondyle", "aliases": ["medial epicondyle of the humerus"], "facts": { "definition": "The large bump on the medial side of the distal end; the funny bone, where the ulnar nerve runs." } },
+        { "name": "lateral epicondyle", "aliases": ["lateral epicondyle of the humerus"], "facts": { "definition": "The smaller bump on the lateral side of the distal end." } },
+        { "name": "olecranon fossa", "facts": { "definition": "The deep posterior depression that receives the olecranon of the ulna when the elbow is straight." } },
+        { "name": "coronoid fossa", "facts": { "definition": "The anterior depression above the trochlea that receives the coronoid process of the ulna when the elbow bends." } },
+        { "name": "radial fossa", "facts": { "definition": "The small anterior depression above the capitulum that receives the head of the radius when the elbow bends." } }
+      ]
+    },
+    {
+      "id": "radius", "title": "Radius", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "head of the radius", "aliases": ["head", "radial head", "head of radius"], "facts": { "definition": "The disc-shaped proximal end that spins against the capitulum and the radial notch." } },
+        { "name": "neck of the radius", "aliases": ["neck", "radial neck"], "facts": { "definition": "The narrow part just below the head." } },
+        { "name": "radial tuberosity", "facts": { "definition": "The rough bump below the neck where the biceps inserts." } },
+        { "name": "ulnar notch", "aliases": ["ulnar notch of the radius"], "facts": { "definition": "The notch on the medial side of the distal radius that receives the head of the ulna." } },
+        { "name": "styloid process of the radius", "aliases": ["radial styloid process", "styloid process"], "facts": { "definition": "The pointed lateral projection at the distal end, on the thumb side of the wrist." } }
+      ]
+    },
+    {
+      "id": "ulna", "title": "Ulna", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "olecranon", "aliases": ["olecranon process"], "facts": { "definition": "The large proximal hook forming the point of the elbow." } },
+        { "name": "trochlear notch", "facts": { "definition": "The C-shaped notch that wraps around the trochlea of the humerus." } },
+        { "name": "coronoid process", "aliases": ["coronoid process of the ulna"], "facts": { "definition": "The anterior lip of the trochlear notch." } },
+        { "name": "radial notch", "aliases": ["radial notch of the ulna"], "facts": { "definition": "The lateral notch below the trochlear notch that receives the head of the radius." } },
+        { "name": "head of the ulna", "aliases": ["head", "ulnar head", "head of ulna"], "facts": { "definition": "The small rounded distal end on the little-finger side of the wrist." } },
+        { "name": "styloid process of the ulna", "aliases": ["ulnar styloid process", "styloid process"], "facts": { "definition": "The pointed projection from the distal head on the medial side of the wrist." } },
+        { "name": "ulnar tuberosity", "facts": { "definition": "The rough area below the coronoid process where the brachialis inserts." } }
+      ]
+    },
+    {
+      "id": "hand.carpals", "title": "Carpal bones", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "scaphoid", "facts": { "definition": "Proximal row, lateral (thumb side); boat-shaped; the most frequently fractured carpal.", "category": "proximal row" } },
+        { "name": "lunate", "facts": { "definition": "Proximal row, next to the scaphoid; crescent-shaped.", "category": "proximal row" } },
+        { "name": "triquetrum", "facts": { "definition": "Proximal row, medial; three-cornered.", "category": "proximal row" } },
+        { "name": "pisiform", "facts": { "definition": "Proximal row, a pea-shaped bone sitting on the triquetrum on the palm side.", "category": "proximal row" } },
+        { "name": "trapezium", "facts": { "definition": "Distal row, lateral; articulates with the first metacarpal at the base of the thumb.", "category": "distal row" } },
+        { "name": "trapezoid", "facts": { "definition": "Distal row, next to the trapezium; wedge-shaped.", "category": "distal row" } },
+        { "name": "capitate", "facts": { "definition": "Distal row, the largest carpal, at the center of the wrist.", "category": "distal row" } },
+        { "name": "hamate", "facts": { "definition": "Distal row, medial; has a hook (hamulus) on the palm side.", "category": "distal row" } }
+      ]
+    },
+    {
+      "id": "hand.bones", "title": "Metacarpals and phalanges", "region": "appendicular.upper", "kind": "structure",
+      "terms": [
+        { "name": "metacarpal i", "aliases": ["first metacarpal", "metacarpal 1"], "facts": { "definition": "The thumb metacarpal, articulating with the trapezium." } },
+        { "name": "metacarpal ii", "aliases": ["second metacarpal", "metacarpal 2"], "facts": { "definition": "The index finger metacarpal." } },
+        { "name": "metacarpal iii", "aliases": ["third metacarpal", "metacarpal 3"], "facts": { "definition": "The middle finger metacarpal, articulating with the capitate." } },
+        { "name": "metacarpal iv", "aliases": ["fourth metacarpal", "metacarpal 4"], "facts": { "definition": "The ring finger metacarpal." } },
+        { "name": "metacarpal v", "aliases": ["fifth metacarpal", "metacarpal 5"], "facts": { "definition": "The little finger metacarpal, articulating with the hamate." } },
+        { "name": "proximal phalanx", "facts": { "definition": "The first finger bone, articulating with the metacarpal head." } },
+        { "name": "middle phalanx", "aliases": ["intermediate phalanx"], "facts": { "definition": "The second finger bone; the thumb has none." } },
+        { "name": "distal phalanx", "facts": { "definition": "The fingertip bone." } }
+      ]
+    },
+    {
+      "id": "hip", "title": "Hip bone", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "ilium", "facts": { "definition": "The large flaring upper part of the hip bone.", "category": "one of three fused bones" } },
+        { "name": "ischium", "facts": { "definition": "The posteroinferior part of the hip bone; you sit on its tuberosity.", "category": "one of three fused bones" } },
+        { "name": "pubis", "facts": { "definition": "The anterior part of the hip bone; the two pubes meet at the pubic symphysis.", "category": "one of three fused bones" } },
+        { "name": "iliac crest", "facts": { "definition": "The thick upper rim of the ilium you can feel at your waist." } },
+        { "name": "anterior superior iliac spine", "aliases": ["asis"], "facts": { "definition": "The front end of the iliac crest, palpable at the front of the hip." } },
+        { "name": "posterior superior iliac spine", "aliases": ["psis"], "facts": { "definition": "The back end of the iliac crest, marked by the dimples of the lower back." } },
+        { "name": "anterior inferior iliac spine", "aliases": ["aiis"], "facts": { "definition": "The projection below the ASIS." } },
+        { "name": "posterior inferior iliac spine", "aliases": ["piis"], "facts": { "definition": "The projection below the PSIS, above the greater sciatic notch." } },
+        { "name": "iliac fossa", "facts": { "definition": "The smooth concave inner surface of the ilium." } },
+        { "name": "ischial tuberosity", "facts": { "definition": "The rough, thick lower part of the ischium that bears your weight when sitting." } },
+        { "name": "ischial spine", "facts": { "definition": "The pointed projection between the greater and lesser sciatic notches." } },
+        { "name": "greater sciatic notch", "facts": { "definition": "The deep notch below the PSIS through which the sciatic nerve passes." } },
+        { "name": "lesser sciatic notch", "facts": { "definition": "The small notch below the ischial spine." } },
+        { "name": "pubic symphysis", "facts": { "definition": "The fibrocartilage joint between the two pubic bones at the midline." } },
+        { "name": "obturator foramen", "facts": { "definition": "The large opening between the ischium and pubis, mostly closed by a membrane in life." } },
+        { "name": "acetabulum", "facts": { "definition": "The deep cup-shaped socket, formed by all three hip bones, that receives the head of the femur." } },
+        { "name": "auricular surface", "aliases": ["auricular surface of the ilium"], "facts": { "definition": "The ear-shaped surface of the ilium that joins the sacrum at the sacroiliac joint." } },
+        { "name": "arcuate line", "facts": { "definition": "The curved ridge on the inner ilium marking the pelvic brim." } }
+      ]
+    },
+    {
+      "id": "femur", "title": "Femur and patella", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "head of the femur", "aliases": ["head", "femoral head", "head of femur"], "facts": { "definition": "The ball that fits the acetabulum." } },
+        { "name": "neck of the femur", "aliases": ["neck", "femoral neck"], "facts": { "definition": "The constricted region below the head; a common fracture site in osteoporosis." } },
+        { "name": "fovea capitis", "facts": { "definition": "The small pit in the head for the ligament to the acetabulum." } },
+        { "name": "greater trochanter", "facts": { "definition": "The large lateral projection at the top of the shaft you can feel on the side of the hip." } },
+        { "name": "lesser trochanter", "facts": { "definition": "The smaller posteromedial projection below the neck." } },
+        { "name": "linea aspera", "facts": { "definition": "The rough ridge running down the posterior shaft." } },
+        { "name": "medial condyle of the femur", "aliases": ["medial condyle"], "facts": { "definition": "The large medial knuckle at the distal end that rests on the tibia." } },
+        { "name": "lateral condyle of the femur", "aliases": ["lateral condyle"], "facts": { "definition": "The lateral knuckle at the distal end that rests on the tibia." } },
+        { "name": "patellar surface", "facts": { "definition": "The smooth anterior groove between the condyles where the patella glides." } },
+        { "name": "intercondylar fossa", "facts": { "definition": "The deep posterior notch between the condyles for the cruciate ligaments." } },
+        { "name": "medial epicondyle of the femur", "aliases": ["medial epicondyle"], "facts": { "definition": "The bump above the medial condyle." } },
+        { "name": "lateral epicondyle of the femur", "aliases": ["lateral epicondyle"], "facts": { "definition": "The bump above the lateral condyle." } },
+        { "name": "patella", "aliases": ["kneecap"], "facts": { "definition": "The triangular sesamoid bone in the quadriceps tendon in front of the knee; the largest sesamoid bone." } }
+      ]
+    },
+    {
+      "id": "tibia", "title": "Tibia", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "medial condyle of the tibia", "aliases": ["medial condyle"], "facts": { "definition": "The flat medial surface of the proximal tibia that receives the femur." } },
+        { "name": "lateral condyle of the tibia", "aliases": ["lateral condyle"], "facts": { "definition": "The flat lateral surface of the proximal tibia that receives the femur." } },
+        { "name": "intercondylar eminence", "facts": { "definition": "The pair of small peaks between the tibial condyles." } },
+        { "name": "tibial tuberosity", "facts": { "definition": "The rough bump on the front of the proximal tibia where the patellar ligament attaches." } },
+        { "name": "medial malleolus", "facts": { "definition": "The bump on the inside of the ankle, formed by the distal tibia." } },
+        { "name": "anterior border", "aliases": ["anterior border of the tibia", "anterior crest"], "facts": { "definition": "The sharp ridge down the front of the shaft: the shin." } }
+      ]
+    },
+    {
+      "id": "fibula", "title": "Fibula", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "head of the fibula", "aliases": ["head", "fibular head", "head of fibula"], "facts": { "definition": "The knob at the proximal end, articulating with the lateral condyle of the tibia below the knee." } },
+        { "name": "lateral malleolus", "facts": { "definition": "The bump on the outside of the ankle, formed by the distal fibula." } },
+        { "name": "apex", "aliases": ["apex of the fibula"], "facts": { "definition": "The pointed tip on top of the head of the fibula." } }
+      ]
+    },
+    {
+      "id": "foot.tarsals", "title": "Tarsal bones", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "talus", "facts": { "definition": "The ankle bone that sits between the tibia and fibula above and the calcaneus below; it forms the ankle joint.", "category": "proximal tarsals" } },
+        { "name": "calcaneus", "aliases": ["heel bone"], "facts": { "definition": "The heel bone, the largest tarsal; the Achilles tendon attaches to its tuberosity.", "category": "proximal tarsals" } },
+        { "name": "calcaneal tuberosity", "aliases": ["tuberosity of the calcaneus"], "facts": { "definition": "The rough posterior end of the calcaneus where the Achilles tendon inserts." } },
+        { "name": "navicular", "facts": { "definition": "The boat-shaped bone in front of the talus on the medial side.", "category": "intermediate" } },
+        { "name": "cuboid", "facts": { "definition": "The cube-shaped bone on the lateral side in front of the calcaneus.", "category": "distal tarsals" } },
+        { "name": "medial cuneiform", "facts": { "definition": "The wedge-shaped bone behind metatarsal I.", "category": "distal tarsals" } },
+        { "name": "intermediate cuneiform", "facts": { "definition": "The wedge-shaped bone behind metatarsal II.", "category": "distal tarsals" } },
+        { "name": "lateral cuneiform", "facts": { "definition": "The wedge-shaped bone behind metatarsal III.", "category": "distal tarsals" } },
+        { "name": "trochlea of the talus", "aliases": ["trochlear surface of the talus"], "facts": { "definition": "The smooth dome on top of the talus that articulates with the tibia." } }
+      ]
+    },
+    {
+      "id": "foot.bones", "title": "Metatarsals and phalanges", "region": "appendicular.lower", "kind": "structure",
+      "terms": [
+        { "name": "metatarsal i", "aliases": ["first metatarsal", "metatarsal 1"], "facts": { "definition": "The thick great-toe metatarsal." } },
+        { "name": "metatarsal ii", "aliases": ["second metatarsal", "metatarsal 2"], "facts": { "definition": "The longest metatarsal." } },
+        { "name": "metatarsal iii", "aliases": ["third metatarsal", "metatarsal 3"], "facts": { "definition": "The middle metatarsal." } },
+        { "name": "metatarsal iv", "aliases": ["fourth metatarsal", "metatarsal 4"], "facts": { "definition": "The fourth metatarsal." } },
+        { "name": "metatarsal v", "aliases": ["fifth metatarsal", "metatarsal 5"], "facts": { "definition": "The little-toe metatarsal; its base is a bump on the outer edge of the foot." } },
+        { "name": "proximal phalanx", "facts": { "definition": "The first toe bone." } },
+        { "name": "middle phalanx", "aliases": ["intermediate phalanx"], "facts": { "definition": "The second toe bone; the great toe has none." } },
+        { "name": "distal phalanx", "facts": { "definition": "The toe-tip bone." } },
+        { "name": "sesamoid bone", "facts": { "definition": "A bone that forms inside a tendon in response to strain; two sit under the head of metatarsal I; the patella is the largest." } }
+      ]
+    },
+    {
+      "id": "joints", "title": "Joint replacements and osteoarthritis", "region": "appendicular.vocab", "kind": "vocab",
+      "terms": [
+        { "name": "endoprosthesis", "facts": { "definition": "An artificial device implanted to replace a damaged joint." } },
+        { "name": "total hip replacement", "facts": { "definition": "A metal stem in the femur with a ball replacing the head, seated in a cup replacing the acetabulum; a true ball-and-socket design." } },
+        { "name": "total knee replacement", "facts": { "definition": "Metal caps on the femoral condyles and a metal tray with a plastic insert on the tibial plateau." } },
+        { "name": "total shoulder replacement", "facts": { "definition": "A metal ball on a stem replacing the humeral head and a plastic socket replacing the glenoid cavity." } },
+        { "name": "reverse shoulder replacement", "facts": { "definition": "The ball is fixed to the scapula and the socket to the humerus, swapping their positions so the deltoid can move the arm when the rotator cuff is torn." } },
+        { "name": "osteoarthritis", "facts": { "definition": "Wear-and-tear breakdown of articular cartilage; bone rubs on bone, osteophytes form, and the joint stiffens and hurts." } },
+        { "name": "osteophyte", "aliases": ["bone spur"], "facts": { "definition": "A bony outgrowth at the joint margin that appears as osteoarthritis progresses." } },
+        { "name": "articular cartilage", "facts": { "definition": "The smooth hyaline cartilage that cushions the ends of bones in a joint; it thins and erodes in osteoarthritis." } },
+        { "name": "pectoral girdle", "facts": { "definition": "Clavicle and scapula. Attaches to the axial skeleton at one joint only (sternoclavicular), sacrificing stability for mobility." } },
+        { "name": "pelvic girdle", "facts": { "definition": "The two hip bones. Attaches to the sacrum at two sacroiliac joints and has a deep socket, sacrificing mobility for stability." } }
+      ]
+    }
+  ],
+  "questions": [
+    { "kind": "mc", "groupId": "scapula", "prompt": "Which bone forms the lateral part of the pectoral girdle and articulates with the head of the humerus?", "options": ["Clavicle", "Scapula", "Sternum", "Manubrium"], "answerIndex": 1, "termIds": ["scapula.glenoid-cavity"] },
+    { "kind": "mc", "groupId": "hand.carpals", "prompt": "Which of the following is NOT one of the eight carpal (wrist) bones?", "options": ["Scaphoid", "Lunate", "Capitate", "Cuboid"], "answerIndex": 3, "termIds": ["foot.tarsals.cuboid"] },
+    { "kind": "mc", "groupId": "femur", "prompt": "Which bone is the longest bone in the body?", "options": ["Tibia", "Femur", "Humerus", "Fibula"], "answerIndex": 1 },
+    { "kind": "mc", "groupId": "hip", "prompt": "Which three bones fuse together to form each hip (coxal) bone?", "options": ["Ilium, ischium, and pubis", "Femur, tibia, and fibula", "Sacrum, coccyx, and ilium", "Talus, calcaneus, and navicular"], "answerIndex": 0, "termIds": ["hip.ilium", "hip.ischium", "hip.pubis"] },
+    { "kind": "mc", "groupId": "joints", "prompt": "A joint replacement that substitutes an artificial device for a damaged joint is called a(n):", "options": ["Suture", "Symphysis", "Endoprosthesis", "Synchondrosis"], "answerIndex": 2, "termIds": ["joints.endoprosthesis"] },
+    { "kind": "short", "groupId": "clavicle", "prompt": "Which two bones make up the pectoral girdle, and which of the two attaches directly to the axial skeleton?", "modelAnswer": "The clavicle and the scapula. Only the clavicle attaches to the axial skeleton, at the sternoclavicular joint with the manubrium.", "termIds": ["clavicle.sternal-end", "joints.pectoral-girdle"] },
+    { "kind": "short", "groupId": "radius", "prompt": "Which forearm bone lies on the thumb side of the forearm in anatomical position?", "modelAnswer": "The radius. The ulna is medial, on the little-finger side.", "termIds": ["radius.styloid-process-of-the-radius"] },
+    { "kind": "short", "groupId": "joints", "prompt": "The pectoral girdle attaches to the axial skeleton at only one joint (the sternoclavicular joint). How does this loose attachment contribute to the upper limb's wide range of motion?", "modelAnswer": "The scapula is held mostly by muscles, not bone, so it can slide, rotate, and tilt on the rib cage. Combined with the shallow glenoid cavity, this lets the shoulder move through the widest range of any joint, at the cost of stability.", "termIds": ["joints.pectoral-girdle"] },
+    { "kind": "short", "groupId": "scapula", "prompt": "What feature of the scapula articulates with the head of the humerus, and what feature articulates with the clavicle?", "modelAnswer": "The glenoid cavity receives the head of the humerus; the acromion articulates with the clavicle.", "termIds": ["scapula.glenoid-cavity", "scapula.acromion"] },
+    { "kind": "short", "groupId": "hand.carpals", "prompt": "How many carpal bones are in each wrist, and how are they arranged?", "modelAnswer": "Eight, in two rows of four. Proximal row (lateral to medial): scaphoid, lunate, triquetrum, pisiform. Distal row: trapezium, trapezoid, capitate, hamate." },
+    { "kind": "short", "groupId": "hand.bones", "prompt": "How many phalanges does the thumb have? How many does the pinky have?", "modelAnswer": "The thumb has two (proximal and distal). The pinky and every other finger have three (proximal, middle, distal). 14 per hand.", "termIds": ["hand.bones.middle-phalanx"] },
+    { "kind": "short", "groupId": "hand.carpals", "prompt": "Why might a fracture of the scaphoid be more clinically significant than a fracture of one of the other carpal bones?", "modelAnswer": "The scaphoid's blood supply enters at its distal end, so a fracture across the waist can cut off blood to the proximal fragment. It heals slowly and can die (avascular necrosis), leading to wrist arthritis. It is also the most commonly fractured carpal, from falls on an outstretched hand.", "termIds": ["hand.carpals.scaphoid"] },
+    { "kind": "short", "groupId": "hip", "prompt": "Which structure forms the deep socket that receives the head of the femur?", "modelAnswer": "The acetabulum, formed where the ilium, ischium, and pubis meet.", "termIds": ["hip.acetabulum"] },
+    { "kind": "short", "groupId": "joints", "prompt": "Compare the pelvic girdle to the pectoral girdle. Which is built for mobility and which for stability, and how do their bony features reflect that?", "modelAnswer": "The pectoral girdle is built for mobility: a shallow glenoid cavity and a single bony attachment to the axial skeleton (sternoclavicular joint). The pelvic girdle is built for stability: a deep acetabulum enclosing the femoral head and firm attachment to the sacrum at two sacroiliac joints plus the pubic symphysis.", "termIds": ["joints.pectoral-girdle", "joints.pelvic-girdle"] },
+    { "kind": "short", "groupId": "tibia", "prompt": "Which bony landmarks form the bumps you can feel on the inside and outside of your ankle, and which bone forms each?", "modelAnswer": "Inside: the medial malleolus of the tibia. Outside: the lateral malleolus of the fibula.", "termIds": ["tibia.medial-malleolus", "fibula.lateral-malleolus"] },
+    { "kind": "short", "groupId": "fibula", "prompt": "The fibula bears very little body weight, yet a fracture near the lateral malleolus can still be seriously disabling. Why?", "modelAnswer": "The lateral malleolus forms the outer wall of the ankle mortise that holds the talus in place. If it breaks, the ankle joint loses its lateral stability and the talus can shift, making walking painful and unstable.", "termIds": ["fibula.lateral-malleolus"] },
+    { "kind": "short", "groupId": "foot.tarsals", "prompt": "Which tarsal bone articulates directly with the tibia and fibula to form the ankle joint?", "modelAnswer": "The talus.", "termIds": ["foot.tarsals.talus"] },
+    { "kind": "short", "groupId": "foot.tarsals", "prompt": "Which tarsal bone forms the heel?", "modelAnswer": "The calcaneus.", "termIds": ["foot.tarsals.calcaneus"] },
+    { "kind": "short", "groupId": "foot.tarsals", "prompt": "Compare the bones of the foot to the bones of the hand. Which bones are analogous, and how do their proportions differ?", "modelAnswer": "Tarsals correspond to carpals, metatarsals to metacarpals, and the toe phalanges to the finger phalanges. The foot has 7 tarsals to the hand's 8 carpals. The tarsals, especially the talus and calcaneus, are much larger for weight bearing, while the toe phalanges are short; the hand has long phalanges for grasping." },
+    { "kind": "short", "groupId": "femur", "prompt": "A patient arrives after a fall with a suspected fracture of the 'greater trochanter.' Which bone and region does this refer to?", "modelAnswer": "The femur, at the top of the thigh just below the hip joint; the greater trochanter is the lateral bump you can feel on the side of the hip.", "termIds": ["femur.greater-trochanter"] },
+    { "kind": "short", "groupId": "joints", "prompt": "Which of the three joint replacements is a true ball-and-socket design, and which components form the ball and socket?", "modelAnswer": "The hip replacement. The femoral component (a ball on a stem in the femur) is the ball; the acetabular cup with its liner is the socket.", "termIds": ["joints.total-hip-replacement"] },
+    { "kind": "short", "groupId": "joints", "prompt": "How does a reverse shoulder replacement swap the position of the ball and socket compared with the standard replacement?", "modelAnswer": "In the standard design the ball is on the humerus and the socket on the scapula, like the natural joint. In the reverse design the ball is fixed to the glenoid of the scapula and the socket is on the humeral stem, which lets the deltoid raise the arm when the rotator cuff is torn.", "termIds": ["joints.reverse-shoulder-replacement"] },
+    { "kind": "short", "groupId": "joints", "prompt": "What are osteophytes, and when do they appear in osteoarthritis?", "modelAnswer": "Bone spurs: bony outgrowths at the joint margins. They appear once cartilage has worn enough for bone to bear load, typically from the moderate stage onward, and are prominent in advanced disease.", "termIds": ["joints.osteophyte"] },
+    { "kind": "short", "groupId": "joints", "prompt": "Describe two changes in advanced osteoarthritis and explain how each could make a joint replacement necessary.", "modelAnswer": "Articular cartilage is worn away so bone grinds on bone, causing pain and loss of motion; and osteophytes plus thickened, deformed bone surfaces distort the joint. A replacement resurfaces both bone ends with smooth artificial components to restore pain-free movement.", "termIds": ["joints.osteoarthritis", "joints.articular-cartilage"] },
+    { "kind": "short", "groupId": "ulna", "prompt": "Is the ulna the medial or lateral bone of the forearm? Is the tibia the medial or lateral bone of the leg?", "modelAnswer": "The ulna is medial (little-finger side). The tibia is medial (big-toe side).", "termIds": ["ulna.olecranon", "tibia.medial-malleolus"] },
+    { "kind": "short", "groupId": "joints", "prompt": "List the bone groups of the appendicular skeleton with counts.", "modelAnswer": "Pectoral girdle: 2 clavicles, 2 scapulae. Upper limbs: 2 humeri, 2 radii, 2 ulnae, 16 carpals, 10 metacarpals, 28 phalanges. Pelvic girdle: 2 hip bones. Lower limbs: 2 femora, 2 patellae, 2 tibiae, 2 fibulae, 14 tarsals, 10 metatarsals, 28 phalanges. 126 bones total." }
+  ]
+}

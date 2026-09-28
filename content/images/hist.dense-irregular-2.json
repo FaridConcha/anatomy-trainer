@@ -1,0 +1,20 @@
+{
+ "id": "hist.dense-irregular-2",
+ "src": "img/hist.dense-irregular-2.webp",
+ "width": 428,
+ "height": 626,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.fibrous"
+ ],
+ "title": "Dense irregular connective tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.fibrous.dense-irregular-connective-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

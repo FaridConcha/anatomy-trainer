@@ -1,0 +1,20 @@
+{
+ "id": "hist.hyaline-cartilage-3",
+ "src": "img/hist.hyaline-cartilage-3.webp",
+ "width": 560,
+ "height": 323,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.cartilage"
+ ],
+ "title": "Hyaline cartilage",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.cartilage.hyaline-cartilage",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

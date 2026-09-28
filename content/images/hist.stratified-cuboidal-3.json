@@ -1,0 +1,20 @@
+{
+ "id": "hist.stratified-cuboidal-3",
+ "src": "img/hist.stratified-cuboidal-3.webp",
+ "width": 860,
+ "height": 901,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.epithelial"
+ ],
+ "title": "Stratified cuboidal epithelium",
+ "hotspots": [
+  {
+   "termId": "tissue.epithelial.stratified-cuboidal-epithelium",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

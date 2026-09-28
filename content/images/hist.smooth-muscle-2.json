@@ -1,0 +1,20 @@
+{
+ "id": "hist.smooth-muscle-2",
+ "src": "img/hist.smooth-muscle-2.webp",
+ "width": 396,
+ "height": 683,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.muscle"
+ ],
+ "title": "Smooth muscle",
+ "hotspots": [
+  {
+   "termId": "tissue.muscle.smooth-muscle",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

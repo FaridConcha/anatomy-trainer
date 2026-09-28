@@ -1,0 +1,20 @@
+{
+ "id": "hist.dense-regular-3",
+ "src": "img/hist.dense-regular-3.webp",
+ "width": 787,
+ "height": 857,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.fibrous"
+ ],
+ "title": "Dense regular connective tissue",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.fibrous.dense-regular-connective-tissue",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

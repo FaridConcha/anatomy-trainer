@@ -1,0 +1,20 @@
+{
+ "id": "hist.fibrocartilage-1",
+ "src": "img/hist.fibrocartilage-1.webp",
+ "width": 859,
+ "height": 728,
+ "labId": "lab2",
+ "groupIds": [
+  "tissue.connective.cartilage"
+ ],
+ "title": "Fibrocartilage",
+ "hotspots": [
+  {
+   "termId": "tissue.connective.cartilage.fibrocartilage",
+   "shape": {
+    "kind": "whole"
+   }
+  }
+ ],
+ "masks": []
+}

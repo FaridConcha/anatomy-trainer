@@ -183,6 +183,86 @@
     "y": 0.8633,
     "r": 0.03
    }
+  },
+  {
+   "termId": "skull.bones.frontal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.5484,
+    "y": 0.2333,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.parietal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.7419,
+    "y": 0.295,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.temporal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.7581,
+    "y": 0.5267,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.sphenoid-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.371,
+    "y": 0.4633,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.zygomatic-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.6613,
+    "y": 0.5467,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.nasal-bone",
+   "shape": {
+    "kind": "point",
+    "x": 0.5242,
+    "y": 0.5467,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.maxilla",
+   "shape": {
+    "kind": "point",
+    "x": 0.5484,
+    "y": 0.6733,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "skull.bones.mandible",
+   "shape": {
+    "kind": "point",
+    "x": 0.5323,
+    "y": 0.925,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
   }
  ],
  "masks": [

@@ -117,6 +117,10 @@ select, input[type='number'], input[type='date'] { font: inherit; font-size: 14p
 .rows { display: flex; flex-direction: column; gap: 10px; }
 .rrow { display: grid; grid-template-columns: 1fr 90px 44px; gap: 10px; align-items: center; font-size: 14px; }
 .rrow.sub { padding-left: 14px; font-size: 13px; color: var(--muted); }
+.grouprow { text-align: left; padding: 8px 10px; border-radius: 10px; border: 1.5px solid transparent; }
+.grouprow.sel { border-color: var(--accent); background: var(--warn-bg); }
+.grouprow .progress { display: flex; }
+.grouprow .progress i.seen { background: var(--accent); border-radius: 0 999px 999px 0; }
 .rrow .n { font-family: var(--ff-mono); font-size: 12px; text-align: right; font-variant-numeric: tabular-nums; }
 .misses { display: flex; flex-direction: column; gap: 6px; }
 .miss { display: flex; justify-content: space-between; gap: 10px; font-size: 13px; padding: 8px 10px; border-radius: 10px; background: var(--bad-bg); color: var(--bad); }

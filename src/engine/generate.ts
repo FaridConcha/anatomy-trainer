@@ -2,7 +2,7 @@ import type { Indexes } from '../content/index';
 import type { Group, Image, Question, Term, TermFacts } from '../content/types';
 import type { Item } from './items';
 import { studyWeight, type ProgressState } from './progress';
-import { pick, shuffle, weightedSample, type Rng } from './rng';
+import { shuffle, weightedSample, type Rng } from './rng';
 
 export function distractorsFor(idx: Indexes, term: Term, n: number, rng: Rng): Term[] {
   const group = idx.groupsById.get(term.groupId)!;
@@ -105,7 +105,7 @@ export function askable(idx: Indexes, term: Term): boolean {
 }
 
 // One item per sampled term, chosen by how well the term is known: recognition first, recall once it sticks.
-export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[], questions: Question[], count: number, rng: Rng): Item[] {
+export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[], questions: Question[], count: number, rng: Rng, opts: { typedOnly?: boolean } = {}): Item[] {
   const shorts = shortItems(questions);
   const shortWeight = (i: Item) => (i.kind === 'short' ? (i.termIds.length ? i.termIds : [i.questionId]).reduce((s, id) => s + studyWeight(progress, id), 0) / Math.max(1, i.termIds.length) : 0);
   const pickedShorts = weightedSample(shorts, shortWeight, Math.min(shorts.length, Math.round(count * 0.15)), rng);
@@ -129,13 +129,13 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
   const items: Item[] = [];
   const stickerByImage = new Map<string, { hotspotIndex: number; termId: string }[]>();
   for (const term of sampled) {
-    const box = progress.terms[term.id]?.box ?? 1;
+    const box = opts.typedOnly ? 2 : progress.terms[term.id]?.box ?? 1;
     const g = idx.groupsById.get(term.groupId)!;
     const wf = wordformFor(idx, term);
     if (wf) { items.push(wf); continue; }
     const refs = idx.imagesByTerm.get(term.id) ?? [];
     if (refs.length) {
-      const ref = refs.find((r) => stickerByImage.has(r.image.id)) ?? pick(refs, rng);
+      const ref = refs.find((r) => stickerByImage.has(r.image.id)) ?? refs[(progress.terms[term.id]?.seen ?? 0) % refs.length];
       if (box <= 1) {
         const it = mcForImage(idx, ref.image, ref.hotspotIndex, rng);
         if (it) items.push(it);
@@ -169,7 +169,7 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
   return separateNeighbours(shuffle([...out, ...bank, ...pickedShorts], rng), progress);
 }
 
-const termOf = (i: Item): string | undefined => (i.kind === 'sticker' || i.kind === 'recall' || i.kind === 'wordform' ? i.termId : i.kind === 'mc' ? i.termId : undefined);
+const termOf = (i?: Item): string | undefined => (!i ? undefined : i.kind === 'sticker' || i.kind === 'recall' || i.kind === 'wordform' ? i.termId : i.kind === 'mc' ? i.termId : undefined);
 
 // Confused pairs must not sit next to each other, or the second is answered by elimination.
 export function separateNeighbours(items: Item[], progress: ProgressState): Item[] {

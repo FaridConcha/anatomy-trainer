@@ -27,15 +27,15 @@ for (const page of det) {
     if (!termId) return;
     boxes.push({ x: b.x / W, y: b.y / H, w: b.w / W, h: b.h / H, termId });
   });
-  for (const a of o.add ?? []) boxes.push({ x: a.box[0], y: a.box[1], w: a.box[2], h: a.box[3], termId: a.termId });
+  for (const a of o.add ?? []) boxes.push({ x: a.box[0], y: a.box[1], w: a.box[2], h: a.box[3], termId: a.termId, prompt: a.prompt, nomask: !!a.prompt });
   for (const b of boxes) if (!termIds.has(b.termId)) { console.error(`${page.page}: unknown term ${b.termId}`); bad++; }
   const rel = (x, y) => [(x - cx) / cw, (y - cy) / ch];
   const clamp = (v) => Math.min(1, Math.max(0, v));
   const hotspots = boxes.map((b) => {
     const [px, py] = rel(b.x + b.w / 2, b.y + b.h / 2);
-    return { termId: b.termId, shape: { kind: 'point', x: +clamp(px).toFixed(4), y: +clamp(py).toFixed(4), r: 0.03 } };
+    return { termId: b.termId, shape: { kind: 'point', x: +clamp(px).toFixed(4), y: +clamp(py).toFixed(4), r: 0.03 }, ...(b.prompt ? { prompt: b.prompt } : {}) };
   });
-  const maskRects = [...boxes.map((b) => [b.x - MX, b.y - MY, b.w + 2 * MX, b.h + 2 * MY]), ...(o.masks ?? []), ...extraMasks.map(([x, y, w, h]) => [x - MX, y - MY, w + 2 * MX, h + 2 * MY])];
+  const maskRects = [...boxes.filter((b) => !b.nomask).map((b) => [b.x - MX, b.y - MY, b.w + 2 * MX, b.h + 2 * MY]), ...(o.masks ?? []), ...extraMasks.map(([x, y, w, h]) => [x - MX, y - MY, w + 2 * MX, h + 2 * MY])];
   const masks = maskRects.map(([x, y, w, h]) => {
     const [x0, y0] = rel(x, y), [x1, y1] = rel(x + w, y + h);
     return { x: +clamp(x0).toFixed(4), y: +clamp(y0).toFixed(4), w: +(clamp(x1) - clamp(x0)).toFixed(4), h: +(clamp(y1) - clamp(y0)).toFixed(4) };

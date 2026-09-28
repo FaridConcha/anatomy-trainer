@@ -13,6 +13,7 @@ export interface SessionSpec {
   count: number;
   seed?: number;
   dueOnly?: boolean;
+  spellOnly?: boolean;
 }
 
 export function progressIds(item: Item): string[] {
@@ -76,6 +77,10 @@ export function buildSession(idx: Indexes, progress: ProgressState, spec: Sessio
     case 'study': {
       let terms = deckTerms(idx, groups);
       let questions = deckQuestions(idx, spec.deck, groups);
+      if (spec.spellOnly) {
+        const weak = terms.filter((t) => (progress.terms[t.id]?.spellingMisses ?? 0) > 0);
+        if (weak.length) { terms = weak; questions = []; }
+      }
       if (spec.dueOnly) {
         const due = terms.filter((t) => isDue(progress, t.id));
         if (due.length) {
@@ -84,7 +89,7 @@ export function buildSession(idx: Indexes, progress: ProgressState, spec: Sessio
           questions = questions.filter((q) => q.termIds?.some((id) => dueIds.has(id)));
         }
       }
-      return studyItems(idx, progress, terms, questions, spec.count, rng);
+      return studyItems(idx, progress, terms, questions, spec.count, rng, { typedOnly: !!spec.spellOnly });
     }
   }
 }

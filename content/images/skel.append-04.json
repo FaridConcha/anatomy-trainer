@@ -243,6 +243,36 @@
     "y": 0.3978,
     "r": 0.03
    }
+  },
+  {
+   "termId": "hip.ilium",
+   "shape": {
+    "kind": "point",
+    "x": 0.2421,
+    "y": 0.2464,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "hip.ischium",
+   "shape": {
+    "kind": "point",
+    "x": 0.2842,
+    "y": 0.6029,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
+  },
+  {
+   "termId": "hip.pubis",
+   "shape": {
+    "kind": "point",
+    "x": 0.1789,
+    "y": 0.5275,
+    "r": 0.03
+   },
+   "prompt": "Name the bone the sticker is on."
   }
  ],
  "masks": [

@@ -84,6 +84,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
           </div>
         </>
       )}
+      {(() => { const subs = Array.from(rows.values()).flatMap((r) => Array.from(r.subs.values())).filter((s) => s.n >= 2).sort((a, b) => a.ok / a.n - b.ok / b.n); const w = subs[0]; return w && w.ok < w.n ? <div className="model"><b>Study next:</b> {w.title} ({w.ok}/{w.n} here). Open the deck, tap Change, pick it, then Study.</div> : null; })()}
       {pairs.length > 0 && (
         <>
           <div className="eyebrow">Pairs you mix up</div>

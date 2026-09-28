@@ -18,16 +18,18 @@ export function SessionScreen({ deckId, mode }: { deckId: string; mode: string }
   const deck = deckById(idx, deckId);
   const isReview = mode === 'review';
   const practical = mode === 'practical';
-  const dueOnly = useHash().query.get('due') === '1';
+  const query = useHash().query;
+  const dueOnly = query.get('due') === '1';
+  const spellOnly = query.get('spell') === '1';
   const [seed] = useState(() => Date.now());
 
   const items = useMemo<Item[]>(() => {
     if (isReview) return reviewQueue.items;
     if (!deck) return [];
     const count = practical ? progress.settings.practicalCount : progress.settings.sessionCount;
-    return buildSession(idx, progressStore.get(), { deck, mode: mode as Mode, groupIds: deck.id === 'exam1' ? [] : progress.settings.groupSel[deck.id], count, seed, dueOnly });
+    return buildSession(idx, progressStore.get(), { deck, mode: mode as Mode, groupIds: deck.id === 'exam1' ? [] : progress.settings.groupSel[deck.id], count, seed, dueOnly, spellOnly });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [idx, deck?.id, mode, seed, dueOnly]);
+  }, [idx, deck?.id, mode, seed, dueOnly, spellOnly]);
 
   const [i, setI] = useState(0);
   const [results, setResults] = useState<AnswerResult[]>([]);
@@ -85,7 +87,7 @@ export function SessionScreen({ deckId, mode }: { deckId: string; mode: string }
   if (!items.length) return <div className="screen"><div className="bar"><button className="back" onClick={() => navigate(`deck/${deckId}`)}>‹ Back</button></div><div className="banner">Nothing to practise here yet.</div></div>;
   if (finished) return <Report deckId={deck?.id ?? deckId} mode={mode} items={items} results={results} />;
 
-  const title = isReview ? `Review round ${reviewQueue.round}` : dueOnly ? 'Due today' : modeInfo[mode as Mode]?.title ?? mode;
+  const title = isReview ? `Review round ${reviewQueue.round}` : dueOnly ? 'Due today' : spellOnly ? 'Spelling drill' : modeInfo[mode as Mode]?.title ?? mode;
 
   return (
     <div className="screen">

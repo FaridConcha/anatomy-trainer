@@ -1,6 +1,7 @@
 export function TabBar({ current }: { current: string }) {
   const tabs = [
     ['', 'Decks'],
+    ['log', 'Mistakes'],
     ['settings', 'Settings'],
   ];
   const on = (id: string) => (id === '' ? ['', 'deck', 'play', 'review', 'learn'].includes(current) : current === id);

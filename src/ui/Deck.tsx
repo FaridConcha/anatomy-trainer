@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useContent } from '../App';
 import { deckById, deckGroups, deckTerms } from '../content/decks';
 import { modeInfo, type Mode } from '../engine/items';
+import { mastered } from '../engine/progress';
 import { poolBreakdown } from '../engine/session';
 import { navigate } from '../router';
 import { progressStore, useProgress } from '../storage/local';
@@ -22,6 +23,8 @@ export function DeckScreen({ deckId }: { deckId: string }) {
   const terms = deckTerms(idx, selected);
 
   const fresh = isExam ? [] : untouredGroups(groups, progress.settings.toured ?? []);
+  const masteryOf = (gid: string) => { const ts = idx.termsByGroup.get(gid) ?? []; const seenN = ts.filter((t) => progress.terms[t.id]).length; return { n: ts.length, seen: seenN, done: ts.filter((t) => mastered(progress.terms[t.id])).length }; };
+  const weakest = groups.map((g) => ({ g, m: masteryOf(g.id) })).filter((x) => x.m.seen > 0).sort((a, b) => a.m.done / a.m.n - b.m.done / b.m.n).slice(0, 3);
   const setSel = (next: string[]) => progressStore.update((s) => ({ ...s, settings: { ...s.settings, groupSel: { ...s.settings.groupSel, [deck.id]: next } } }));
   const toggle = (gid: string) => setSel(sel.includes(gid) ? sel.filter((x) => x !== gid) : [...sel, gid]);
 
@@ -60,18 +63,19 @@ export function DeckScreen({ deckId }: { deckId: string }) {
       {!isExam && (
         <>
           <div className="row">
-            <span className="hint grow">Focus: {sel.length ? `${sel.length} of ${groups.length} groups` : 'all groups'}</span>
+            <span className="hint grow">Focus: {sel.length ? `${sel.length} of ${groups.length} groups` : 'all groups'}{!sel.length && weakest.length ? ` · weakest: ${weakest.map((w) => w.g.title).join(', ')}` : ''}</span>
             {sel.length > 0 && <button className="btn sm secondary" onClick={() => setSel([])}>Clear</button>}
             <button className="btn sm secondary" onClick={() => setShowGroups((v) => !v)}>{showGroups ? 'Done' : 'Change'}</button>
           </div>
           {showGroups && (
-            <div className="chips">
-              {groups.map((g) => (
-                <button key={g.id} className={`chip ${sel.includes(g.id) ? 'sel' : ''}`} onClick={() => toggle(g.id)}>
-                  {g.title}
-                  <small>{(idx.termsByGroup.get(g.id) ?? []).length}</small>
+            <div className="rows">
+              {groups.map((g) => { const m = masteryOf(g.id); return (
+                <button key={g.id} className={`rrow grouprow ${sel.includes(g.id) ? 'sel' : ''}`} onClick={() => toggle(g.id)}>
+                  <span>{g.title}</span>
+                  <span className="progress"><i style={{ width: `${m.n ? (m.done / m.n) * 100 : 0}%` }} /><i className="seen" style={{ width: `${m.n ? ((m.seen - m.done) / m.n) * 100 : 0}%` }} /></span>
+                  <span className="n">{m.done}/{m.n}</span>
                 </button>
-              ))}
+              ); })}
             </div>
           )}
         </>

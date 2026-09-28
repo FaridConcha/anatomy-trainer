@@ -345,6 +345,86 @@
      0.039
     ],
     "termId": "skull.bones.ethmoid-bone"
+   },
+   {
+    "box": [
+     0.59,
+     0.293,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.parietal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.73,
+     0.34099999999999997,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.frontal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.55,
+     0.414,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.temporal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.495,
+     0.426,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.occipital-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.69,
+     0.438,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.sphenoid-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.765,
+     0.5529999999999999,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.zygomatic-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.78,
+     0.62,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.maxilla",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.75,
+     0.728,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.mandible",
+    "prompt": "Name the bone the sticker is on."
    }
   ]
  },
@@ -1760,6 +1840,36 @@
      0.031
     ],
     "termId": "hip.anterior-inferior-iliac-spine"
+   },
+   {
+    "box": [
+     0.25,
+     0.3,
+     0.02,
+     0.02
+    ],
+    "termId": "hip.ilium",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.29,
+     0.546,
+     0.02,
+     0.02
+    ],
+    "termId": "hip.ischium",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.19,
+     0.494,
+     0.02,
+     0.02
+    ],
+    "termId": "hip.pubis",
+    "prompt": "Name the bone the sticker is on."
    }
   ]
  },
@@ -2312,6 +2422,86 @@
      0.02
     ],
     "termId": "skull.mandible.mental-protuberance"
+   },
+   {
+    "box": [
+     0.69,
+     0.33,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.frontal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.8099999999999999,
+     0.367,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.parietal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.82,
+     0.506,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.temporal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.58,
+     0.46799999999999997,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.sphenoid-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.76,
+     0.518,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.zygomatic-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.675,
+     0.518,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.nasal-bone",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.69,
+     0.594,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.maxilla",
+    "prompt": "Name the bone the sticker is on."
+   },
+   {
+    "box": [
+     0.6799999999999999,
+     0.745,
+     0.02,
+     0.02
+    ],
+    "termId": "skull.bones.mandible",
+    "prompt": "Name the bone the sticker is on."
    }
   ]
  }

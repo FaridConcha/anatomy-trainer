@@ -70,7 +70,7 @@ a { color: inherit; }
 
 .imgstage { position: relative; border-radius: 14px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
 .imgstage svg { display: block; width: 100%; height: auto; max-height: 52vh; touch-action: manipulation; user-select: none; -webkit-user-select: none; }
-.imgstage .tools { position: absolute; right: 8px; top: 8px; display: flex; gap: 6px; }
+.imgstage .tools { position: absolute; right: 8px; bottom: 8px; display: flex; gap: 6px; }
 .tools button { background: rgba(24, 34, 32, 0.78); color: #fff; font-size: 12px; font-weight: 600; padding: 6px 10px; border-radius: 999px; }
 .tools button[aria-pressed='true'] { background: var(--accent); color: var(--accent-ink); }
 .sticker { cursor: pointer; }

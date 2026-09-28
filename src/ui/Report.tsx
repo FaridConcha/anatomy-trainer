@@ -75,12 +75,16 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
         <>
           <div className="eyebrow">Misses · review them until a round comes back clean</div>
           <div className="misses">
-            {missed.map((m, k) => (
-              <div key={k} className="miss">
-                <span>{m.expected}</span>
-                <span>{m.given ? `wrote: ${m.given}` : 'blank'}</span>
-              </div>
-            ))}
+            {missed.map((m, k) => {
+              const it = items.find((x) => x.id === m.itemId || m.itemId.startsWith(x.id));
+              if (it?.kind === 'short') return <div key={k} className="miss"><span>Written: {it.prompt.length > 70 ? it.prompt.slice(0, 70) + '…' : it.prompt}</span><span>{m.given ? 'self-marked missed' : 'blank'}</span></div>;
+              return (
+                <div key={k} className="miss">
+                  <span>{m.expected}</span>
+                  <span>{m.given ? `wrote: ${m.given}` : 'blank'}</span>
+                </div>
+              );
+            })}
           </div>
         </>
       )}

@@ -130,7 +130,8 @@ function StickerItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, {
   const whole = hotspot.shape.kind === 'whole';
   const [zoom, setZoom] = useState(progress.settings.zoomDefault);
   const [state, setState] = useState<'done' | 'wrong' | undefined>();
-  const prompt = hotspot.prompt ?? (whole ? 'What tissue is this?' : <>What structure is sticker <b>1</b> on?</>);
+  const groupTitle = idx.groupsById.get(term.groupId)?.title;
+  const prompt = hotspot.prompt ?? (whole ? 'What tissue is this?' : <>What structure is sticker <b>1</b> on? <span className="hint">({groupTitle})</span></>);
   return (
     <>
       <ImageStage image={image} stickers={whole ? [] : [{ hotspotIndex: item.hotspotIndex, label: 1, state }]} focus={item.hotspotIndex} zoom={zoom} onZoomToggle={setZoom} />
@@ -187,8 +188,8 @@ function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind
       </div>
       {picks.length === 0 && <div className="toggles"><label className="toggle"><input type="checkbox" checked={unsure} onChange={(e) => setUnsure(e.target.checked)} /> Not sure</label>{image?.view && <span className="toggle">{image.view}</span>}</div>}
       {picks.length > 0 && (
-        <div className={`feedback ${picks[picks.length - 1] === item.answerIndex ? 'correct' : done ? 'wrong' : 'close'}`}>
-          {picks[0] === item.answerIndex ? `Correct: ${answer}` : picks.includes(item.answerIndex) ? `Right on the second pick: ${answer}` : done ? `The answer is ${answer}.` : 'Not that one. Pick again.'}
+        <div className={`feedback ${picks[0] === item.answerIndex ? 'correct' : done ? (picks.includes(item.answerIndex) ? 'close' : 'wrong') : 'close'}`}>
+          {picks[0] === item.answerIndex ? `Correct: ${answer}` : picks.includes(item.answerIndex) ? `Second pick, so it still counts as a miss: ${answer}. It will come back.` : done ? `The answer is ${answer}.` : 'Not that one. One more try, then the answer is shown.'}
         </div>
       )}
       {done && item.termId && <Explain termId={item.termId} />}

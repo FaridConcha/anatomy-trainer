@@ -40,7 +40,7 @@ const factOrder: FactKey[] = ['transmits', 'location', 'definition'];
 function factPrompt(key: FactKey, f: TermFacts): string {
   if (key === 'transmits') return `Which opening transmits: ${f.transmits}?`;
   if (key === 'location') return `Which tissue or structure is found in: ${f.location}?`;
-  return `Which term matches: “${f.definition}”`;
+  return `What is the name for: “${f.definition}”`;
 }
 
 function askableFacts(term: Term, group: Group): FactKey[] {
@@ -53,7 +53,8 @@ export function mcForImage(idx: Indexes, img: Image, hotspotIndex: number, rng: 
   const term = idx.termsById.get(h.termId)!;
   const o = options(idx, term, rng);
   if (!o) return null;
-  const prompt = h.prompt ?? (h.shape.kind === 'whole' ? 'What tissue is this?' : 'The sticker marks the…');
+  const group = idx.groupsById.get(term.groupId);
+  const prompt = h.prompt ?? (h.shape.kind === 'whole' ? 'What tissue is this?' : `The sticker marks which structure? (${group?.title ?? ''})`);
   return { kind: 'mc', id: `mc:img:${img.id}:${hotspotIndex}`, termId: term.id, progressId: term.id, prompt, imageId: img.id, hotspotIndex, ...o };
 }
 
@@ -166,6 +167,8 @@ export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[],
     out.push({ kind: 'match', id: `match:${imageId}`, imageId, hotspotIndexes: distinct.slice(0, 6) });
   }
   const bank = shuffle(bankMcItems(questions), rng).slice(0, Math.max(0, Math.round(count * 0.1)));
+  // keep the session at `count`: bank questions replace the lowest-weight term items
+  while (out.length + bank.length + pickedShorts.length > count && out.length) out.pop();
   return separateNeighbours(shuffle([...out, ...bank, ...pickedShorts], rng), progress);
 }
 

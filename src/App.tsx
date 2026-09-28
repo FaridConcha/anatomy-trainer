@@ -10,6 +10,7 @@ import { DeckScreen } from './ui/Deck';
 import { SessionScreen } from './ui/Session';
 import { SettingsScreen } from './ui/Settings';
 import { AuthorScreen } from './author/Author';
+import { TourScreen } from './ui/Tour';
 import { TabBar } from './ui/TabBar';
 
 const ContentCtx = createContext<{ idx: Indexes; refreshUserImages: () => Promise<void> } | null>(null);
@@ -54,6 +55,7 @@ export function App() {
   if (head === 'deck' && a) screen = <DeckScreen deckId={a} />;
   else if (head === 'play' && a && b) screen = <SessionScreen deckId={a} mode={b} />;
   else if (head === 'review') screen = <SessionScreen deckId={a ?? 'exam1'} mode="review" />;
+  else if (head === 'learn' && a) screen = <TourScreen deckId={a} />;
   else if (head === 'settings') screen = <SettingsScreen />;
   else if (head === 'author') screen = <AuthorScreen imageId={a} />;
   else screen = <Home />;

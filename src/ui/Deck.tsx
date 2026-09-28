@@ -5,6 +5,7 @@ import { modeInfo, type Mode } from '../engine/items';
 import { poolBreakdown } from '../engine/session';
 import { navigate } from '../router';
 import { progressStore, useProgress } from '../storage/local';
+import { untouredGroups } from './Tour';
 
 const modes: Mode[] = ['study', 'practical'];
 
@@ -20,6 +21,7 @@ export function DeckScreen({ deckId }: { deckId: string }) {
   const selected = sel.length ? groups.filter((g) => sel.includes(g.id)) : groups;
   const terms = deckTerms(idx, selected);
 
+  const fresh = isExam ? [] : untouredGroups(groups, progress.settings.toured ?? []);
   const setSel = (next: string[]) => progressStore.update((s) => ({ ...s, settings: { ...s.settings, groupSel: { ...s.settings.groupSel, [deck.id]: next } } }));
   const toggle = (gid: string) => setSel(sel.includes(gid) ? sel.filter((x) => x !== gid) : [...sel, gid]);
 
@@ -30,6 +32,15 @@ export function DeckScreen({ deckId }: { deckId: string }) {
         <span className="title">{deck.title}</span>
         <span className="meta">{terms.length} terms</span>
       </div>
+      {fresh.length > 0 && (
+        <button className="opt mode" style={{ borderColor: 'var(--accent)' }} onClick={() => navigate(`learn/${deck.id}`)}>
+          <span className="grow">
+            <div style={{ fontWeight: 600, fontSize: 17 }}>Learn first</div>
+            <div className="hint">{fresh.length === groups.length ? 'See every structure named before you are tested.' : `${fresh.length} group${fresh.length === 1 ? '' : 's'} you haven't met yet: ${fresh.slice(0, 3).map((g) => g.title).join(', ')}${fresh.length > 3 ? '…' : ''}`}</div>
+          </span>
+          <span className="key" style={{ width: 'auto', whiteSpace: 'nowrap' }}>{fresh.length} new</span>
+        </button>
+      )}
       <div className="opts">
         {modes.map((m) => {
           const b = poolBreakdown(idx, { deck, mode: m, groupIds: sel, count: 0 });

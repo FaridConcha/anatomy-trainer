@@ -27,6 +27,7 @@ export interface Settings {
   practicalCount: number;
   sessionCount: number;
   groupSel: Record<string, string[]>;
+  toured?: string[];
   lastExport?: number;
 }
 
@@ -99,6 +100,11 @@ export function topConfusions(state: ProgressState, limit = 6): { termId: string
   const out: { termId: string; otherId: string; n: number }[] = [];
   for (const [termId, row] of Object.entries(state.confusions)) for (const [otherId, n] of Object.entries(row)) out.push({ termId, otherId, n });
   return out.sort((a, b) => b.n - a.n).slice(0, limit);
+}
+
+export function markToured(state: ProgressState, groupId: string): ProgressState {
+  const toured = Array.from(new Set([...(state.settings.toured ?? []), groupId]));
+  return { ...state, settings: { ...state.settings, toured } };
 }
 
 export function addSession(state: ProgressState, s: SessionSummary): ProgressState {

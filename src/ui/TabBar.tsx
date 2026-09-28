@@ -3,7 +3,7 @@ export function TabBar({ current }: { current: string }) {
     ['', 'Decks'],
     ['settings', 'Settings'],
   ];
-  const on = (id: string) => (id === '' ? ['', 'deck', 'play', 'review'].includes(current) : current === id);
+  const on = (id: string) => (id === '' ? ['', 'deck', 'play', 'review', 'learn'].includes(current) : current === id);
   return (
     <div className="tabbar">
       <nav>

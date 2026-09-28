@@ -37,6 +37,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
     const its = items.filter((it) => missedIds.has(it.id) || missed.some((m) => m.itemId.startsWith(it.id)));
     reviewQueue.items = its;
     reviewQueue.deckId = deckId;
+    reviewQueue.round = mode === 'review' ? reviewQueue.round + 1 : 1;
     navigate(`review/${deckId}`);
   };
 
@@ -44,7 +45,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
     <div className="screen">
       <div className="bar">
         <button className="back" onClick={() => navigate(`deck/${deckId}`)}>‹ Deck</button>
-        <span className="title">{mode === 'practical' ? 'Practical report' : 'Session report'}</span>
+        <span className="title">{mode === 'practical' ? 'Practical report' : mode === 'review' ? `Review round ${reviewQueue.round}` : 'Session report'}</span>
         <span className="meta">{results.length} answers</span>
       </div>
       <div className="score">
@@ -62,9 +63,12 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
           </div>
         ))}
       </div>
+      {missed.length === 0 && (
+        <div className="model"><b>All correct.</b> {mode === 'review' ? 'Every miss from this run is now answered right. Come back tomorrow and they will be due again.' : 'Nothing to review from this run.'}</div>
+      )}
       {missed.length > 0 && (
         <>
-          <div className="eyebrow">Misses</div>
+          <div className="eyebrow">Misses · review them until a round comes back clean</div>
           <div className="misses">
             {missed.map((m, k) => (
               <div key={k} className="miss">
@@ -76,7 +80,7 @@ export function Report({ deckId, mode, items, results }: { deckId: string; mode:
         </>
       )}
       <div className="row">
-        {missed.length > 0 && <button className="btn accent grow" onClick={reviewMisses}>Review the {missed.length} misses</button>}
+        {missed.length > 0 && <button className="btn accent grow" onClick={reviewMisses}>{mode === 'review' ? `Again: ${missed.length} still missed` : `Review the ${missed.length} misses`}</button>}
         <button className="btn secondary grow" onClick={() => navigate(`deck/${deckId}`)}>Done</button>
       </div>
     </div>

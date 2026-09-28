@@ -5,12 +5,10 @@ import type { Term } from '../../content/types';
 import type { AnswerResult, Item } from '../../engine/items';
 import { gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
 import { progressStore, useProgress } from '../../storage/local';
-import { Feedback } from '../Feedback';
 import { ImageStage } from '../ImageStage';
 
 interface Props {
   item: Item;
-  reveal: boolean;
   onAnswer: (r: AnswerResult) => void;
   onDone: () => void;
 }
@@ -37,31 +35,70 @@ function useStrict() {
   return [p.settings.strict, (v: boolean) => progressStore.update((s) => ({ ...s, settings: { ...s.settings, strict: v } }))] as const;
 }
 
-// Typed answer against a term: input, check, graded feedback, strict toggle. Shared by sticker and recall items.
-function TypedAnswer({ term, itemId, reveal, extra, onAnswer, onDone, onGrade }: { term: Term; itemId: string; reveal: boolean; extra?: string; onAnswer: (r: AnswerResult) => void; onDone: () => void; onGrade?: (g: Grade) => void }) {
+export function hintFor(term: Term, groupTitle: string): string {
+  const name = term.name;
+  return `${groupTitle} · ${name.replace(/[^a-z]/gi, '').length} letters, starts with “${name[0].toUpperCase()}”`;
+}
+
+// Typed answer against a term. First attempt is scored; a miss gets a hint and a second try, then the answer
+// must be typed correctly before moving on. Shared by sticker and recall items.
+function TypedAnswer({ term, itemId, extra, onAnswer, onDone, onGrade }: { term: Term; itemId: string; extra?: string; onAnswer: (r: AnswerResult) => void; onDone: () => void; onGrade?: (g: Grade) => void }) {
   const idx = useContent();
   const [strict, setStrict] = useStrict();
   const [value, setValue] = useState('');
+  const [phase, setPhase] = useState<'first' | 'retry' | 'retype' | 'done'>('first');
   const [grade, setGrade] = useState<Grade | null>(null);
+  const [note, setNote] = useState<{ tone: string; text: string } | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  useEffect(() => inputRef.current?.focus(), []);
-  const submit = (e: FormEvent) => {
-    e.preventDefault();
-    if (grade) return;
-    const g = gradeAnswer(value, term, siblingsOf(idx, term), strict);
-    setGrade(g);
-    onGrade?.(g);
-    onAnswer({ itemId, ok: isCorrect(g), spelling: g.verdict === 'close', given: value, expected: term.name, progressIds: [term.id] });
+  const group = idx.groupsById.get(term.groupId)!;
+  useEffect(() => inputRef.current?.focus(), [phase]);
+
+  const finish = (tone: string, text: string) => {
+    setNote({ tone, text });
+    setPhase('done');
     onDone();
   };
+
+  const submit = (e: FormEvent) => {
+    e.preventDefault();
+    if (phase === 'done') return;
+    if (phase === 'retype') {
+      if (normalize(value) === normalize(term.name)) finish('correct', `Locked in: ${term.name}`);
+      else setNote({ tone: 'wrong', text: `Not quite. Type it exactly: ${term.name}` });
+      return;
+    }
+    const g = gradeAnswer(value, term, siblingsOf(idx, term), strict);
+    if (phase === 'first') {
+      setGrade(g);
+      onGrade?.(g);
+      onAnswer({ itemId, ok: isCorrect(g), spelling: g.verdict === 'close', given: value, expected: term.name, progressIds: [term.id] });
+      if (g.verdict === 'correct') return finish('correct', `Correct: ${term.name}`);
+      if (g.verdict === 'close') {
+        setNote({ tone: 'close', text: `Close, the spelling is ${term.name}. Type it correctly once so it sticks.` });
+        setValue('');
+        setPhase('retype');
+        return;
+      }
+      setNote({ tone: 'wrong', text: `${g.verdict === 'sibling' ? `That is the ${g.siblingName}. ` : ''}Try once more. Hint: ${hintFor(term, group.title)}` });
+      setValue('');
+      setPhase('retry');
+      return;
+    }
+    // second attempt
+    if (isCorrect(g)) return finish('correct', `Got it on the second try: ${term.name}`);
+    setNote({ tone: 'wrong', text: `The answer is ${term.name}. Type it correctly to move on.` });
+    setValue('');
+    setPhase('retype');
+  };
+
   return (
     <>
       <form className="answer" onSubmit={submit}>
-        <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} placeholder="type the name…" autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={!!grade} />
-        <button className="btn" type="submit" disabled={!!grade}>Check</button>
+        <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} placeholder={phase === 'retype' ? term.name : 'type the name…'} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={phase === 'done'} />
+        <button className="btn" type="submit" disabled={phase === 'done'}>{phase === 'retype' ? 'Lock in' : 'Check'}</button>
       </form>
-      {grade && reveal && <Feedback grade={grade} given={value} strictNote={strict} />}
-      {!grade && (
+      {note && <div className={`feedback ${note.tone}`}>{note.text}{grade?.spelling && phase === 'done' && strict && <small>strict spelling is on; a near-miss counted as wrong</small>}</div>}
+      {phase === 'first' && (
         <div className="toggles">
           <label className="toggle"><input type="checkbox" checked={strict} onChange={(e) => setStrict(e.target.checked)} /> Strict spelling</label>
           {extra && <span className="toggle">{extra}</span>}
@@ -71,7 +108,7 @@ function TypedAnswer({ term, itemId, reveal, extra, onAnswer, onDone, onGrade }:
   );
 }
 
-function StickerItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'sticker' }> }) {
+function StickerItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'sticker' }> }) {
   const idx = useContent();
   const progress = useProgress();
   const image = idx.imagesById.get(item.imageId)!;
@@ -85,12 +122,12 @@ function StickerItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract
     <>
       <ImageStage image={image} stickers={whole ? [] : [{ hotspotIndex: item.hotspotIndex, label: 1, state }]} focus={item.hotspotIndex} zoom={zoom} onZoomToggle={setZoom} />
       <div className="prompt">{prompt}</div>
-      <TypedAnswer term={term} itemId={item.id} reveal={reveal} extra={image.title} onAnswer={onAnswer} onDone={onDone} onGrade={(g) => setState(isCorrect(g) ? 'done' : 'wrong')} />
+      <TypedAnswer term={term} itemId={item.id} extra={image.title} onAnswer={onAnswer} onDone={onDone} onGrade={(g) => setState(isCorrect(g) ? 'done' : 'wrong')} />
     </>
   );
 }
 
-function RecallItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'recall' }> }) {
+function RecallItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'recall' }> }) {
   const idx = useContent();
   const term = idx.termsById.get(item.termId)!;
   return (
@@ -99,24 +136,26 @@ function RecallItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<
         <div className="eyebrow">{item.label}</div>
         <div style={{ fontSize: 17, marginTop: 6 }}>{item.prompt}</div>
       </div>
-      <TypedAnswer term={term} itemId={item.id} reveal={reveal} onAnswer={onAnswer} onDone={onDone} />
+      <TypedAnswer term={term} itemId={item.id} onAnswer={onAnswer} onDone={onDone} />
     </>
   );
 }
 
-function McItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'mc' }> }) {
+function McItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'mc' }> }) {
   const idx = useContent();
   const progress = useProgress();
-  const [picked, setPicked] = useState<number | null>(null);
+  const [picks, setPicks] = useState<number[]>([]);
   const [zoom, setZoom] = useState(progress.settings.zoomDefault);
   const image = item.imageId ? idx.imagesById.get(item.imageId) : undefined;
+  const done = picks.includes(item.answerIndex) || picks.length >= 2;
   const choose = (k: number) => {
-    if (picked !== null) return;
-    setPicked(k);
-    const ok = k === item.answerIndex;
-    onAnswer({ itemId: item.id, ok, given: item.options[k], expected: item.options[item.answerIndex], progressIds: [item.progressId] });
-    onDone();
+    if (done || picks.includes(k)) return;
+    const next = [...picks, k];
+    setPicks(next);
+    if (picks.length === 0) onAnswer({ itemId: item.id, ok: k === item.answerIndex, given: item.options[k], expected: item.options[item.answerIndex], progressIds: [item.progressId] });
+    if (k === item.answerIndex || next.length >= 2) onDone();
   };
+  const answer = item.options[item.answerIndex];
   return (
     <>
       {image && item.hotspotIndex !== undefined && (
@@ -125,17 +164,22 @@ function McItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item
       <div className="prompt">{item.prompt}</div>
       <div className="opts">
         {item.options.map((o, k) => (
-          <button key={k} className="opt" disabled={picked !== null} data-state={picked === null || !reveal ? '' : k === item.answerIndex ? 'right' : picked === k ? 'wrong' : ''} onClick={() => choose(k)}>
+          <button key={k} className="opt" disabled={done || picks.includes(k)} data-state={done && k === item.answerIndex ? 'right' : picks.includes(k) && k !== item.answerIndex ? 'wrong' : ''} onClick={() => choose(k)}>
             <span className="key">{'ABCD'[k]}</span>
             {o}
           </button>
         ))}
       </div>
+      {picks.length > 0 && (
+        <div className={`feedback ${picks[picks.length - 1] === item.answerIndex ? 'correct' : done ? 'wrong' : 'close'}`}>
+          {picks[0] === item.answerIndex ? `Correct: ${answer}` : picks.includes(item.answerIndex) ? `Right on the second pick: ${answer}` : done ? `The answer is ${answer}.` : 'Not that one. Pick again.'}
+        </div>
+      )}
     </>
   );
 }
 
-function MatchItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'match' }> }) {
+function MatchItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'match' }> }) {
   const idx = useContent();
   const image = idx.imagesById.get(item.imageId)!;
   const [order] = useState(() => item.hotspotIndexes.slice().sort(() => Math.random() - 0.5));
@@ -162,7 +206,7 @@ function MatchItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
     } else {
       setWrongOnce((w) => new Set(w).add(t.id));
       const wrong = idx.termsById.get(termId)!;
-      setMsg(['wrong', reveal ? `Sticker ${item.hotspotIndexes.indexOf(sel) + 1} is not the ${wrong.name}. Try again.` : 'Try again.']);
+      setMsg(['wrong', `Sticker ${item.hotspotIndexes.indexOf(sel) + 1} is not the ${wrong.name}. Try again.`]);
     }
     setSel(null);
   };
@@ -186,7 +230,7 @@ function MatchItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
   );
 }
 
-function ShortItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'short' }> }) {
+function ShortItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'short' }> }) {
   const idx = useContent();
   const [value, setValue] = useState('');
   const [revealed, setRevealed] = useState(false);
@@ -196,12 +240,6 @@ function ShortItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
   const mark = (ok: boolean) => {
     onAnswer({ itemId: item.id, ok, given: value, expected: item.modelAnswer, progressIds: ids });
     onDone();
-  };
-  const submit = () => {
-    if (!reveal) {
-      onAnswer({ itemId: item.id, ok: normalize(value).length > 0, given: value, expected: item.modelAnswer, progressIds: ids });
-      onDone();
-    } else setRevealed(true);
   };
   return (
     <>
@@ -219,39 +257,41 @@ function ShortItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
           </div>
         </>
       ) : (
-        <button className="btn" onClick={submit}>{reveal ? 'Reveal answer' : 'Submit'}</button>
+        <button className="btn" onClick={() => setRevealed(true)}>Reveal answer</button>
       )}
-      {!reveal && <div className="hint">Written stations are self-marked in the report.</div>}
     </>
   );
 }
 
-function WordformItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'wordform' }> }) {
+function WordformItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'wordform' }> }) {
   const [value, setValue] = useState('');
-  const [result, setResult] = useState<boolean | null>(null);
+  const [phase, setPhase] = useState<'first' | 'retype' | 'done'>('first');
+  const [note, setNote] = useState<{ tone: string; text: string } | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
-  useEffect(() => inputRef.current?.focus(), []);
+  useEffect(() => inputRef.current?.focus(), [phase]);
   const submit = (e: FormEvent) => {
     e.preventDefault();
-    if (result !== null) return;
+    if (phase === 'done') return;
     const ok = normalize(value) === normalize(item.answer);
-    setResult(ok);
-    onAnswer({ itemId: item.id, ok, given: value, expected: item.answer, progressIds: [item.termId] });
-    onDone();
+    if (phase === 'first') {
+      onAnswer({ itemId: item.id, ok, given: value, expected: item.answer, progressIds: [item.termId] });
+      if (ok) { setNote({ tone: 'correct', text: `Correct: ${item.answer}` }); setPhase('done'); onDone(); return; }
+      setNote({ tone: 'wrong', text: `It is ${item.answer}${item.note ? ` (${item.note})` : ''}. Type it correctly to move on.` });
+      setValue('');
+      setPhase('retype');
+      return;
+    }
+    if (ok) { setNote({ tone: 'correct', text: `Locked in: ${item.answer}` }); setPhase('done'); onDone(); }
+    else setNote({ tone: 'wrong', text: `Not quite. Type it exactly: ${item.answer}` });
   };
   return (
     <>
       <div className="card"><div className="eyebrow">exact spelling</div><div style={{ fontSize: 18, marginTop: 6 }}>{item.prompt}</div></div>
       <form className="answer" onSubmit={submit}>
-        <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} placeholder="type it…" autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={result !== null} />
-        <button className="btn" type="submit" disabled={result !== null}>Check</button>
+        <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} placeholder={phase === 'retype' ? item.answer : 'type it…'} autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={phase === 'done'} />
+        <button className="btn" type="submit" disabled={phase === 'done'}>{phase === 'retype' ? 'Lock in' : 'Check'}</button>
       </form>
-      {result !== null && reveal && (
-        <div className={`feedback ${result ? 'correct' : 'wrong'}`}>
-          {result ? <>Correct: <b>{item.answer}</b></> : <>No. It is <b>{item.answer}</b>.</>}
-          {item.note && <small>{item.note}</small>}
-        </div>
-      )}
+      {note && <div className={`feedback ${note.tone}`}>{note.text}</div>}
     </>
   );
 }

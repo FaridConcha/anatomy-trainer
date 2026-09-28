@@ -1,7 +1,8 @@
 import type { Indexes } from '../content/index';
-import type { Group, Image, Question, Term } from '../content/types';
+import type { Group, Image, Question, Term, TermFacts } from '../content/types';
 import type { Item } from './items';
-import { shuffle, type Rng } from './rng';
+import { weightFor, type ProgressState } from './progress';
+import { pick, shuffle, weightedSample, type Rng } from './rng';
 
 export function distractorsFor(idx: Indexes, term: Term, n: number, rng: Rng): Term[] {
   const group = idx.groupsById.get(term.groupId)!;
@@ -26,23 +27,6 @@ export function distractorsFor(idx: Indexes, term: Term, n: number, rng: Rng): T
   return chosen;
 }
 
-export function stickerItems(images: Image[], termIds: Set<string>): Item[] {
-  return images.flatMap((img) =>
-    img.hotspots.flatMap((h, i) => (termIds.has(h.termId) ? [{ kind: 'sticker' as const, id: `sticker:${img.id}:${i}`, termId: h.termId, imageId: img.id, hotspotIndex: i }] : [])),
-  );
-}
-
-export function matchItems(images: Image[], termIds: Set<string>, rng: Rng): Item[] {
-  return images.flatMap((img) => {
-    const usable = img.hotspots.map((h, i) => ({ h, i })).filter(({ h }) => termIds.has(h.termId) && h.shape.kind !== 'whole');
-    const distinct = new Map<string, number>();
-    for (const { h, i } of shuffle(usable, rng)) if (!distinct.has(h.termId)) distinct.set(h.termId, i);
-    if (distinct.size < 3) return [];
-    const picked = Array.from(distinct.values()).slice(0, 6);
-    return [{ kind: 'match' as const, id: `match:${img.id}`, imageId: img.id, hotspotIndexes: picked }];
-  });
-}
-
 function options(idx: Indexes, term: Term, rng: Rng): { options: string[]; answerIndex: number } | null {
   const ds = distractorsFor(idx, term, 3, rng);
   if (ds.length < 2) return null;
@@ -50,67 +34,118 @@ function options(idx: Indexes, term: Term, rng: Rng): { options: string[]; answe
   return { options: opts, answerIndex: opts.indexOf(term.name) };
 }
 
+type FactKey = 'transmits' | 'location' | 'definition';
+const factOrder: FactKey[] = ['transmits', 'location', 'definition'];
+
+function factPrompt(key: FactKey, f: TermFacts): string {
+  if (key === 'transmits') return `Which opening transmits: ${f.transmits}?`;
+  if (key === 'location') return `Which tissue or structure is found in: ${f.location}?`;
+  return `Which term matches: “${f.definition}”`;
+}
+
+function askableFacts(term: Term, group: Group): FactKey[] {
+  if (group.kind === 'spelling' || group.kind === 'wordform') return [];
+  return factOrder.filter((k) => term.facts?.[k]);
+}
+
+export function mcForImage(idx: Indexes, img: Image, hotspotIndex: number, rng: Rng): Item | null {
+  const h = img.hotspots[hotspotIndex];
+  const term = idx.termsById.get(h.termId)!;
+  const o = options(idx, term, rng);
+  if (!o) return null;
+  const prompt = h.prompt ?? (h.shape.kind === 'whole' ? 'What tissue is this?' : 'The sticker marks the…');
+  return { kind: 'mc', id: `mc:img:${img.id}:${hotspotIndex}`, termId: term.id, progressId: term.id, prompt, imageId: img.id, hotspotIndex, ...o };
+}
+
+export function mcForFact(idx: Indexes, term: Term, key: FactKey, rng: Rng): Item | null {
+  const o = options(idx, term, rng);
+  if (!o) return null;
+  return { kind: 'mc', id: `mc:fact:${term.id}:${key}`, termId: term.id, progressId: term.id, prompt: factPrompt(key, term.facts!), ...o };
+}
+
+export function recallForFact(idx: Indexes, term: Term, key: FactKey): Item {
+  const g = idx.groupsById.get(term.groupId)!;
+  return { kind: 'recall', id: `recall:${term.id}:${key}`, termId: term.id, prompt: factPrompt(key, term.facts!), label: g.title };
+}
+
+export function wordformFor(idx: Indexes, term: Term): Item | null {
+  const g = idx.groupsById.get(term.groupId)!;
+  if (g.kind === 'wordform' && term.facts?.plural) return { kind: 'wordform', id: `wf:${term.id}`, termId: term.id, prompt: `Plural of ${term.name}`, answer: term.facts.plural, note: term.facts.note };
+  if (g.kind === 'spelling' && term.facts?.definition) return { kind: 'wordform', id: `sp:${term.id}`, termId: term.id, prompt: `Spell the term: ${term.facts.definition}`, answer: term.name, note: term.facts.note };
+  return null;
+}
+
+export function stickerItems(images: Image[], termIds: Set<string>): Item[] {
+  return images.flatMap((img) =>
+    img.hotspots.flatMap((h, i) => (termIds.has(h.termId) ? [{ kind: 'sticker' as const, id: `sticker:${img.id}:${i}`, termId: h.termId, imageId: img.id, hotspotIndex: i }] : [])),
+  );
+}
+
 export function mcItems(idx: Indexes, terms: Term[], images: Image[], questions: Question[], rng: Rng): Item[] {
   const out: Item[] = [];
   const termIds = new Set(terms.map((t) => t.id));
-  for (const img of images) {
-    img.hotspots.forEach((h, i) => {
-      if (!termIds.has(h.termId)) return;
-      const term = idx.termsById.get(h.termId)!;
-      const o = options(idx, term, rng);
-      if (!o) return;
-      const prompt = h.shape.kind === 'whole' ? 'What tissue is this?' : 'The sticker marks the…';
-      out.push({ kind: 'mc', id: `mc:img:${img.id}:${i}`, termId: term.id, progressId: term.id, prompt, imageId: img.id, hotspotIndex: i, ...o });
-    });
-  }
-  for (const term of terms) {
-    const f = term.facts ?? {};
-    const g = idx.groupsById.get(term.groupId)!;
-    const prompts: [string, string][] = [];
-    if (f.definition && g.kind !== 'spelling') prompts.push(['definition', `Which term matches: “${f.definition}”`]);
-    if (f.location) prompts.push(['location', `Which tissue is found in: ${f.location}?`]);
-    if (f.transmits) prompts.push(['transmits', `Which opening transmits: ${f.transmits}?`]);
-    if (f.note && g.kind === 'spelling') prompts.push(['spelling', `${f.definition}. Which spelling is correct?`]);
-    for (const [key, prompt] of prompts) {
-      const o = options(idx, term, rng);
-      if (o) out.push({ kind: 'mc', id: `mc:fact:${term.id}:${key}`, termId: term.id, progressId: term.id, prompt, ...o });
-    }
-  }
-  for (const q of questions) {
-    if (q.kind !== 'mc' || !q.options || q.answerIndex === undefined) continue;
-    out.push({ kind: 'mc', id: `mc:q:${q.id}`, questionId: q.id, progressId: q.id, prompt: q.prompt, options: q.options, answerIndex: q.answerIndex });
-  }
+  for (const img of images) img.hotspots.forEach((h, i) => { if (termIds.has(h.termId)) { const it = mcForImage(idx, img, i, rng); if (it) out.push(it); } });
+  for (const term of terms) for (const key of askableFacts(term, idx.groupsById.get(term.groupId)!)) { const it = mcForFact(idx, term, key, rng); if (it) out.push(it); }
+  out.push(...bankMcItems(questions));
   return out;
 }
 
-export function flashItems(idx: Indexes, terms: Term[]): Item[] {
-  const out: Item[] = [];
-  for (const t of terms) {
-    const f = t.facts ?? {};
-    const g = idx.groupsById.get(t.groupId)!;
-    const cat = f.category ? ` · ${f.category}` : '';
-    if (f.definition) out.push({ kind: 'flash', id: `flash:${t.id}:def`, termId: t.id, front: t.name, back: f.definition, label: `${g.title}${cat}` });
-    if (f.location) out.push({ kind: 'flash', id: `flash:${t.id}:loc`, termId: t.id, front: t.name, back: f.location, label: 'where in the body' });
-    if (f.transmits) out.push({ kind: 'flash', id: `flash:${t.id}:tx`, termId: t.id, front: t.name, back: f.transmits, label: `passes through · ${f.category ?? ''}` });
-    if (f.plural) out.push({ kind: 'flash', id: `flash:${t.id}:pl`, termId: t.id, front: t.name, back: `${f.plural}${f.note ? ` (${f.note})` : ''}`, label: 'plural' });
-  }
-  return out;
+export function bankMcItems(questions: Question[]): Item[] {
+  return questions.flatMap((q) => (q.kind === 'mc' && q.options && q.answerIndex !== undefined ? [{ kind: 'mc' as const, id: `mc:q:${q.id}`, questionId: q.id, progressId: q.id, prompt: q.prompt, options: q.options, answerIndex: q.answerIndex }] : []));
 }
 
 export function shortItems(questions: Question[]): Item[] {
   return questions.filter((q) => q.kind === 'short' && q.modelAnswer).map((q) => ({ kind: 'short' as const, id: `short:${q.id}`, questionId: q.id, prompt: q.prompt, modelAnswer: q.modelAnswer!, termIds: q.termIds ?? [] }));
 }
 
-export function wordformItems(idx: Indexes, terms: Term[]): Item[] {
-  const out: Item[] = [];
-  for (const t of terms) {
-    const g = idx.groupsById.get(t.groupId)!;
-    if (g.kind === 'wordform' && t.facts?.plural) out.push({ kind: 'wordform', id: `wf:${t.id}`, termId: t.id, prompt: `Plural of ${t.name}`, answer: t.facts.plural, note: t.facts.note });
-    if (g.kind === 'spelling' && t.facts?.definition) out.push({ kind: 'wordform', id: `sp:${t.id}`, termId: t.id, prompt: `Spell the term: ${t.facts.definition}`, answer: t.name, note: t.facts.note });
-  }
-  return out;
+export function askable(idx: Indexes, term: Term): boolean {
+  const g = idx.groupsById.get(term.groupId)!;
+  if (g.kind === 'wordform' || g.kind === 'spelling') return !!wordformFor(idx, term);
+  return (idx.imagesByTerm.get(term.id)?.length ?? 0) > 0 || askableFacts(term, g).length > 0;
 }
 
-export function groupsWithImages(idx: Indexes, groups: Group[]): Set<string> {
-  return new Set(groups.filter((g) => (idx.imagesByGroup.get(g.id) ?? []).length > 0).map((g) => g.id));
+// One item per sampled term, chosen by how well the term is known: recognition first, recall once it sticks.
+export function studyItems(idx: Indexes, progress: ProgressState, terms: Term[], questions: Question[], count: number, rng: Rng): Item[] {
+  const pool = terms.filter((t) => askable(idx, t));
+  const sampled = weightedSample(pool, (t) => weightFor(progress.terms[t.id]), count, rng);
+  const items: Item[] = [];
+  const stickerByImage = new Map<string, { hotspotIndex: number; termId: string }[]>();
+  for (const term of sampled) {
+    const box = progress.terms[term.id]?.box ?? 1;
+    const g = idx.groupsById.get(term.groupId)!;
+    const wf = wordformFor(idx, term);
+    if (wf) { items.push(wf); continue; }
+    const refs = idx.imagesByTerm.get(term.id) ?? [];
+    if (refs.length) {
+      const ref = refs.find((r) => stickerByImage.has(r.image.id)) ?? pick(refs, rng);
+      if (box <= 1) {
+        const it = mcForImage(idx, ref.image, ref.hotspotIndex, rng);
+        if (it) items.push(it);
+      } else {
+        items.push({ kind: 'sticker', id: `sticker:${ref.image.id}:${ref.hotspotIndex}`, termId: term.id, imageId: ref.image.id, hotspotIndex: ref.hotspotIndex });
+        if (ref.image.hotspots[ref.hotspotIndex].shape.kind !== 'whole') {
+          const arr = stickerByImage.get(ref.image.id) ?? [];
+          arr.push({ hotspotIndex: ref.hotspotIndex, termId: term.id });
+          stickerByImage.set(ref.image.id, arr);
+        }
+      }
+      continue;
+    }
+    const key = askableFacts(term, g)[0];
+    if (!key) continue;
+    if (box <= 1) {
+      const it = mcForFact(idx, term, key, rng);
+      if (it) items.push(it);
+    } else items.push(recallForFact(idx, term, key));
+  }
+  // consolidation round: several known terms on one image become a single match item
+  let out = items;
+  for (const [imageId, hs] of stickerByImage) {
+    const distinct = Array.from(new Map(hs.map((h) => [h.termId, h.hotspotIndex])).values());
+    if (distinct.length < 4) continue;
+    out = out.filter((i) => !(i.kind === 'sticker' && i.imageId === imageId && distinct.includes(i.hotspotIndex)));
+    out.push({ kind: 'match', id: `match:${imageId}`, imageId, hotspotIndexes: distinct.slice(0, 6) });
+  }
+  const bank = shuffle(bankMcItems(questions), rng).slice(0, Math.max(0, Math.round(count * 0.1)));
+  return shuffle([...out, ...bank], rng);
 }

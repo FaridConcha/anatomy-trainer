@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import { useContent } from '../../App';
 import { siblingsOf } from '../../content/index';
+import type { Term } from '../../content/types';
 import type { AnswerResult, Item } from '../../engine/items';
 import { gradeAnswer, isCorrect, normalize, type Grade } from '../../engine/match';
 import { progressStore, useProgress } from '../../storage/local';
@@ -22,8 +23,8 @@ export function ItemView(props: Props) {
       return <McItem {...props} item={props.item} />;
     case 'match':
       return <MatchItem {...props} item={props.item} />;
-    case 'flash':
-      return <FlashItem {...props} item={props.item} />;
+    case 'recall':
+      return <RecallItem {...props} item={props.item} />;
     case 'short':
       return <ShortItem {...props} item={props.item} />;
     case 'wordform':
@@ -36,34 +37,25 @@ function useStrict() {
   return [p.settings.strict, (v: boolean) => progressStore.update((s) => ({ ...s, settings: { ...s.settings, strict: v } }))] as const;
 }
 
-function StickerItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'sticker' }> }) {
+// Typed answer against a term: input, check, graded feedback, strict toggle. Shared by sticker and recall items.
+function TypedAnswer({ term, itemId, reveal, extra, onAnswer, onDone, onGrade }: { term: Term; itemId: string; reveal: boolean; extra?: string; onAnswer: (r: AnswerResult) => void; onDone: () => void; onGrade?: (g: Grade) => void }) {
   const idx = useContent();
-  const progress = useProgress();
   const [strict, setStrict] = useStrict();
-  const image = idx.imagesById.get(item.imageId)!;
-  const term = idx.termsById.get(item.termId)!;
-  const hotspot = image.hotspots[item.hotspotIndex];
-  const whole = hotspot.shape.kind === 'whole';
-  const [zoom, setZoom] = useState(progress.settings.zoomDefault);
   const [value, setValue] = useState('');
   const [grade, setGrade] = useState<Grade | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   useEffect(() => inputRef.current?.focus(), []);
-
   const submit = (e: FormEvent) => {
     e.preventDefault();
     if (grade) return;
     const g = gradeAnswer(value, term, siblingsOf(idx, term), strict);
     setGrade(g);
-    onAnswer({ itemId: item.id, ok: isCorrect(g), spelling: g.verdict === 'close', given: value, expected: term.name, progressIds: [term.id] });
+    onGrade?.(g);
+    onAnswer({ itemId, ok: isCorrect(g), spelling: g.verdict === 'close', given: value, expected: term.name, progressIds: [term.id] });
     onDone();
   };
-
-  const prompt = hotspot.prompt ?? (whole ? 'What tissue is this?' : <>What structure is sticker <b>1</b> on?</>);
   return (
     <>
-      <ImageStage image={image} stickers={whole ? [] : [{ hotspotIndex: item.hotspotIndex, label: 1, state: grade ? (isCorrect(grade) ? 'done' : 'wrong') : undefined }]} focus={item.hotspotIndex} zoom={zoom} onZoomToggle={setZoom} />
-      <div className="prompt">{prompt}</div>
       <form className="answer" onSubmit={submit}>
         <input ref={inputRef} value={value} onChange={(e) => setValue(e.target.value)} placeholder="type the name…" autoComplete="off" autoCapitalize="off" autoCorrect="off" spellCheck={false} disabled={!!grade} />
         <button className="btn" type="submit" disabled={!!grade}>Check</button>
@@ -72,9 +64,42 @@ function StickerItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract
       {!grade && (
         <div className="toggles">
           <label className="toggle"><input type="checkbox" checked={strict} onChange={(e) => setStrict(e.target.checked)} /> Strict spelling</label>
-          {image.title && <span className="toggle">{image.title}</span>}
+          {extra && <span className="toggle">{extra}</span>}
         </div>
       )}
+    </>
+  );
+}
+
+function StickerItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'sticker' }> }) {
+  const idx = useContent();
+  const progress = useProgress();
+  const image = idx.imagesById.get(item.imageId)!;
+  const term = idx.termsById.get(item.termId)!;
+  const hotspot = image.hotspots[item.hotspotIndex];
+  const whole = hotspot.shape.kind === 'whole';
+  const [zoom, setZoom] = useState(progress.settings.zoomDefault);
+  const [state, setState] = useState<'done' | 'wrong' | undefined>();
+  const prompt = hotspot.prompt ?? (whole ? 'What tissue is this?' : <>What structure is sticker <b>1</b> on?</>);
+  return (
+    <>
+      <ImageStage image={image} stickers={whole ? [] : [{ hotspotIndex: item.hotspotIndex, label: 1, state }]} focus={item.hotspotIndex} zoom={zoom} onZoomToggle={setZoom} />
+      <div className="prompt">{prompt}</div>
+      <TypedAnswer term={term} itemId={item.id} reveal={reveal} extra={image.title} onAnswer={onAnswer} onDone={onDone} onGrade={(g) => setState(isCorrect(g) ? 'done' : 'wrong')} />
+    </>
+  );
+}
+
+function RecallItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'recall' }> }) {
+  const idx = useContent();
+  const term = idx.termsById.get(item.termId)!;
+  return (
+    <>
+      <div className="card">
+        <div className="eyebrow">{item.label}</div>
+        <div style={{ fontSize: 17, marginTop: 6 }}>{item.prompt}</div>
+      </div>
+      <TypedAnswer term={term} itemId={item.id} reveal={reveal} onAnswer={onAnswer} onDone={onDone} />
     </>
   );
 }
@@ -161,44 +186,20 @@ function MatchItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
   );
 }
 
-function FlashItem({ item, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'flash' }> }) {
-  const [flipped, setFlipped] = useState(false);
-  const rate = (ok: boolean) => {
-    onAnswer({ itemId: item.id, ok, expected: item.back, progressIds: [item.termId] });
-    onDone();
-  };
-  return (
-    <>
-      <button className="card flash" onClick={() => setFlipped((f) => !f)}>
-        <div className="eyebrow">{flipped ? item.label : 'term'}</div>
-        <div className="term">{flipped ? '' : item.front}</div>
-        <div className="ans">{flipped ? item.back : 'tap to flip'}</div>
-      </button>
-      {flipped ? (
-        <div className="row">
-          <button className="btn secondary grow" onClick={() => rate(false)}>Again</button>
-          <button className="btn grow" onClick={() => rate(true)}>Got it</button>
-        </div>
-      ) : (
-        <div className="hint">Say the answer out loud, then flip.</div>
-      )}
-    </>
-  );
-}
-
 function ShortItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<Item, { kind: 'short' }> }) {
   const idx = useContent();
   const [value, setValue] = useState('');
   const [revealed, setRevealed] = useState(false);
   const q = idx.content.questions.find((x) => x.id === item.questionId);
   const group = q?.groupId ? idx.groupsById.get(q.groupId) : undefined;
+  const ids = item.termIds.length ? item.termIds : [item.questionId];
   const mark = (ok: boolean) => {
-    onAnswer({ itemId: item.id, ok, given: value, expected: item.modelAnswer, progressIds: item.termIds.length ? item.termIds : [item.questionId] });
+    onAnswer({ itemId: item.id, ok, given: value, expected: item.modelAnswer, progressIds: ids });
     onDone();
   };
-  const submitPractical = () => {
+  const submit = () => {
     if (!reveal) {
-      onAnswer({ itemId: item.id, ok: normalize(value).length > 0, given: value, expected: item.modelAnswer, progressIds: item.termIds.length ? item.termIds : [item.questionId] });
+      onAnswer({ itemId: item.id, ok: normalize(value).length > 0, given: value, expected: item.modelAnswer, progressIds: ids });
       onDone();
     } else setRevealed(true);
   };
@@ -218,7 +219,7 @@ function ShortItem({ item, reveal, onAnswer, onDone }: Props & { item: Extract<I
           </div>
         </>
       ) : (
-        <button className="btn" onClick={submitPractical}>{reveal ? 'Reveal answer' : 'Submit'}</button>
+        <button className="btn" onClick={submit}>{reveal ? 'Reveal answer' : 'Submit'}</button>
       )}
       {!reveal && <div className="hint">Written stations are self-marked in the report.</div>}
     </>

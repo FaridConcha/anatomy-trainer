@@ -65,7 +65,8 @@ a { color: inherit; }
 .opt .key { font-family: var(--ff-mono); font-size: 12px; color: var(--muted); width: 18px; flex: none; }
 .opt[data-state='right'] { border-color: var(--good); background: var(--good-bg); }
 .opt[data-state='wrong'] { border-color: var(--bad); background: var(--bad-bg); }
-.opt:disabled { cursor: default; }
+.opt:disabled { cursor: default; opacity: 0.45; }
+.opt.mode { padding: 16px 14px; }
 
 .imgstage { position: relative; border-radius: 14px; overflow: hidden; background: #fff; border: 1px solid var(--line); }
 .imgstage svg { display: block; width: 100%; height: auto; max-height: 52vh; touch-action: manipulation; user-select: none; -webkit-user-select: none; }

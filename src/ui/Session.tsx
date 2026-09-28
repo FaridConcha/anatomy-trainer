@@ -5,7 +5,7 @@ import type { AnswerResult, Item, Mode } from '../engine/items';
 import { modeInfo } from '../engine/items';
 import { addSession, recordAnswer } from '../engine/progress';
 import { buildSession, progressIds } from '../engine/session';
-import { navigate } from '../router';
+import { navigate, useHash } from '../router';
 import { progressStore, useProgress } from '../storage/local';
 import { ItemView } from './modes/ItemView';
 import { Report } from './Report';
@@ -18,15 +18,16 @@ export function SessionScreen({ deckId, mode }: { deckId: string; mode: string }
   const deck = deckById(idx, deckId);
   const isReview = mode === 'review';
   const practical = mode === 'practical';
+  const dueOnly = useHash().query.get('due') === '1';
   const [seed] = useState(() => Date.now());
 
   const items = useMemo<Item[]>(() => {
     if (isReview) return reviewQueue.items;
     if (!deck) return [];
     const count = practical ? progress.settings.practicalCount : progress.settings.sessionCount;
-    return buildSession(idx, progressStore.get(), { deck, mode: mode as Mode, groupIds: progress.settings.groupSel[deck.id], count, seed });
+    return buildSession(idx, progressStore.get(), { deck, mode: mode as Mode, groupIds: deck.id === 'exam1' ? [] : progress.settings.groupSel[deck.id], count, seed, dueOnly });
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [idx, deck?.id, mode, seed]);
+  }, [idx, deck?.id, mode, seed, dueOnly]);
 
   const [i, setI] = useState(0);
   const [results, setResults] = useState<AnswerResult[]>([]);
@@ -94,7 +95,7 @@ export function SessionScreen({ deckId, mode }: { deckId: string; mode: string }
   if (!items.length) return <div className="screen"><div className="bar"><button className="back" onClick={() => navigate(`deck/${deckId}`)}>‹ Back</button></div><div className="banner">Nothing to practise here yet.</div></div>;
   if (finished) return <Report deckId={deck?.id ?? deckId} mode={mode} items={items} results={results} />;
 
-  const title = isReview ? 'Review misses' : modeInfo[mode as Mode]?.title ?? mode;
+  const title = isReview ? 'Review misses' : dueOnly ? 'Due today' : modeInfo[mode as Mode]?.title ?? mode;
 
   return (
     <div className="screen">
@@ -121,7 +122,7 @@ function itemKindOf(r: AnswerResult, items: Item[]) {
 export function expectedOf(item: Item, idx: ReturnType<typeof useContent>): string {
   switch (item.kind) {
     case 'sticker':
-    case 'flash':
+    case 'recall':
       return idx.termsById.get(item.termId)?.name ?? item.termId;
     case 'mc':
       return item.options[item.answerIndex];
